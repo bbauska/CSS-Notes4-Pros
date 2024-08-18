@@ -235,25 +235,37 @@ inside conditional group at-rules
 <a href="https://developer.mozilla.org/en/docs/Web/CSS/@import" 
 target="_blank" rel="noopener noreferrer">@import</a>.</p>
 
-<h4>How to use @import</h4>
+<h4>How to use @import:</h4>
 
 <p>You can use @import rule in the following ways:</p>
+
 <ol type="A">
-  <li><b>With internal style tag</b></li>
-</ol>
-<pre><code>  <style>
+  <li><b>With internal style tag</b><br/>
+
+<pre><code>
+  &lt;style&gt;
     @import url('/css/styles.css');
-  </style></code></pre>
-  
-<ol start="2" type="A">
-  <li><b>With external stylesheet</b></li>
-</ol>
+  &lt;/style&gt;
+</code></pre>
+
+</li>
+
+<!-- <ol start="2" type="A"> -->
+
+<li><b>With external stylesheet</b><br/>
+
 <p>The following line imports a CSS file named additional-styles.css in the
 root directory into the CSS file in which it appears:</p>
 
-<pre><code>@import '/additional-styles.css';</code></pre>
+<pre><code>
+@import '/additional-styles.css';
+</code></pre>
 
-<p>Importing external CSS is also possible. A common use case are font files.</p>
+</li>
+
+</ol>
+
+<p>Importing external CSS is also possible. A common use case are font files:</p>
 
 <pre><code>@import 'https://fonts.googleapis.com/css?family=Lato';</code></pre>
 
