@@ -13,13 +13,13 @@
   <meta name="description" content="CSS Notes for Professionals - Alot of great CSS notes
     for Professional Web Developers; This CSS Notes for Professionals website is compiled 
     from Stack Overflow Documentation, the content is written by the beautiful people at 
-    Stack Overflow. Text content is released under Creative Commons BY-SA, see credits at 
-    the end of this website whom contributed to the various chapters. Images may be copyright 
-    of their respective owners unless otherwise specified. This is an unofficial free website
-    created for educational purposes and is not affiliated with official CSS group(s) or 
-    company(s) nor Stack Overflow. All trademarks and registered trademarks are the property 
-    of their respective company owners. The information presented in this website is not 
-    guaranteed to be correct nor accurate, use at your own risk." />
+    Stack Overflow and subsequently, Brian Bauska. Text content is released under Creative 
+	Commons BY-SA, see credits at the end of this website whom contributed to the various 
+	chapters. Images may be copyright of their respective owners unless otherwise specified. 
+	This is an unofficial free website created for educational purposes and is not affiliated 
+	with official CSS group(s) or company(s) nor Stack Overflow. All trademarks and registered 
+	trademarks are the property of their respective company owners. The information presented 
+	in this website is not guaranteed to be correct nor accurate, use at your own risk." />
 
   <title>CSS Notes 4 Pros</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -13629,16 +13629,19 @@ breaks onto a new line, you will have two very tall lines of text.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch50-5">Section 50.5: Centering with Position: absolute</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML &amp; CSS:</summary>
+
 <h4>HTML:</h4>
 
 <pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;img</b> 
   src=&quot;http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a&quot;<b>&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+.wrapper {
   <b>position</b>: relative;
   <b>height</b>: 600px;
 }
@@ -13651,20 +13654,21 @@ breaks onto a new line, you will have two very tall lines of text.</p>
   <b>margin</b>: auto;
 }</code></pre>
 
+</details>
+
 <p>If you want to center other then images, then you must give height and
 width to that element.</p>
 
-<h4>HTML:</h4>
+<details>
+  <summary>HTML &amp; CSS:</summary>
 
 <pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;child&quot;<b>&gt;</b>
     make me center
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b>
 
-<h4>CSS:</h4>
-
-<pre><code>.wrapper {
+.wrapper {
   <b>position</b>: relative;
   <b>height</b>: 600px;
 }
@@ -13679,19 +13683,24 @@ width to that element.</p>
   <b>height</b>: 30px;
   <b>border</b>: 1px solid #f00;
 }</code></pre>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch50-6">Section 50.6: Centering with pseudo element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML:</h4>
+<details>
+  <summary>HTML &amp; CSS:</summary>
 
+<h4>HTML:</h4>
+  
 <pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+.wrapper {
   <b>min-height</b>: 600px;
 }
 .wrapper:before {
@@ -13705,6 +13714,8 @@ width to that element.</p>
   <b>height</b>: 80px;
   <b>vertical-align</b>: middle;
 }</code></pre>
+
+</details>
 
 <p>This method is best used in cases where you have a varied-height
 .content centered inside .wrapper; and you want .wrapper's height to
@@ -13975,6 +13986,9 @@ standard.</p>
   Reset.</p>
 </blockquote>
 
+<details>
+  <summary>Reset CSS</summary>
+  
 <pre><code>html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, <b>p</b>, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13995,6 +14009,8 @@ time, mark, audio, video <b>{</b>
   font: inherit; 
   vertical-align: baseline;
 }</code></pre>
+
+</details>
 
 <p><a href="http://meyerweb.com/eric/tools/css/reset/" 
 target="_blank" rel="noopener noreferrer">Eric Meyer's Reset CSS</a>.</p>
@@ -14117,6 +14133,7 @@ Documentation</a> on -ms-high-contrast. Not worth your time to read.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To target Internet Explorer 6 and Internet Explorer 7, start your
 properties with *:</p>
+
 <pre><code>.hide-on-ie6-and-ie7 {
 &ast;<b>display</b>: none; // This line is processed only on IE6 and IE7
 }</code></pre>
@@ -14221,3 +14238,4 @@ same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
 <!-- 7/8/2024 Mon 8:50am -->
 <!-- 7/14/2024 Sun 12:22am -->
 <!-- 7/18/2024 Thu 4:48pm -->
+<!-- 8/18/2024 Sun 2:14pm -->
