@@ -2,8 +2,8 @@
 
 table.greenTbl {
   font-family: Arial, Helvetica, sans-serif;
-  border: 0px solid #A41B09;
-  background-color: #DFEE8B;
+  border: 0px solid #a41b09;  /* dark red */
+  background-color: #dfee8b;  /* very soft yellow */
   width: 100%;
   text-align: left;
   border-collapse: collapse;
@@ -13,23 +13,23 @@ table.greenTbl td, table.greenTbl th {
 }
 table.greenTbl tbody td {
   font-size: 14px;
-  color: #33050C;
+  color: #33050C;  /* very dark red */
 }
 table.greenTbl tr:nth-child(even) {
-  background: #D0E4F5;
+  background: #d0e4f5;  /* vivid yellow */
 }
 table.greenTbl thead {
-  background: #1C6EA4;
+  background: #1e6ea4;  /* dark blue */
   background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
   background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
   background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid #444444;  /* very dark gray */
 }
 table.greenTbl thead th {
   font-size: 15px;
   font-weight: bold;
-  color: #FFFFFF;
-  border-left: 2px solid #D0E4F5;
+  color: #ffffff;  /* white */
+  border-left: 2px solid #e0e4f5;  /* light grayish blue */
 }
 table.greenTbl thead th:first-child {
   border-left: none;
@@ -42,8 +42,8 @@ table.greenTbl tfoot .links {
 }
 table.greenTbl tfoot .links a{
   display: inline-block;
-  background: #1C6EA4;
-  color: #FFFFFF;
+  background: #1c6ea4;  /* dark blue */
+  color: #ffffff;  /* white */
   padding: 2px 8px;
   border-radius: 5px;
 }
@@ -75,12 +75,13 @@ p.em4 {
 
 /* background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%); */
 background: linear-gradient(34deg, #5cc0fb 0%, transparent 48.18%, #83d8ff 56.429%, rgba(134,252,212,0.36) 100%);
+
 a {
   text-decoration: none; 
 }
 a[href]:hover {
-  color: #000000;
-  background-color: #ffff00;  /* yellow */
+  color: #000000;  /* black */
+  background-color: #ffff00;  /* pure (or mostly pure) yellow */
   text-decoration: underline; 
 }
 
@@ -149,7 +150,7 @@ details > p {
   cursor: pointer;
 }
 details[open] > summary {
-  background-color: yellow;
+  background-color: #ffff00;  /* pure (or mostly pure) yellow */
 }
 
 pre, code {
@@ -194,7 +195,7 @@ pre:hover, pre:focust { width: min-content; }
   .line-numbers span::before {
     content: counter(linenumber);
     display: block;
-    color: #506882;
+    color: #506882;  /* mostly desaturated dark blue */
   }
 textarea {
   height: 9999px;
@@ -202,8 +203,8 @@ textarea {
   overflow-y: hidden;
   padding: 0;
   border: 0;
-  background: #282a3a;
-  color: #FFF;
+  background: #282a3a;  /* very dark grayish blue */
+  color: #fff;  /* white */
   min-width: 500px;
   outline: none;
   resize: none;
