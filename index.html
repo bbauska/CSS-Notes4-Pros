@@ -200,7 +200,7 @@ faster.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2">Section 1.2: Internal Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>CSS enclosed in <b>&amp;ltstyle&gt;&lt;/style&gt;</b> tags within an
+<p>CSS enclosed in <b>&lt;style&gt;&lt;/style&gt;</b> tags within an
 HTML document function like an external stylesheet, except that it lives
 in the HTML document it styles instead of in a separate file, and
 therefore can only be applied to the document in which it lives. Note
@@ -1538,6 +1538,17 @@ Selectors Level 4:</p>
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
 <p>See background syntax here.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 02. input focused, background blue (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div style="load: right">
+  <p><img src="./images/image002.png"
+  class="lazyload"
+    align="left"
+    width="50%"
+    title="Input focused, background blue"
+    alt="Input focused, background blue." />
+  </p>
+</div>
 
 <h4>B. The :focus-within CSS pseudo-class</h4>
 
@@ -1549,17 +1560,6 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
   <b>&lt;/div&gt;</b></code></pre>
 
 <h4>CSS:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 02. input focused, background blue (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div style="load: right">
-  <p><img src="./images/image002.png"
-  class="lazyload"
-    align="right"
-    width="50%"
-    title="Input focused, background blue"
-    alt="Input focused, background blue." />
-  </p>
-</div>
 
 <pre><code>div {
     <b>height</b>: 80px;
@@ -1575,7 +1575,7 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 <p align="center" width="100%">
 <img src="./images/image003.png"
   class="lazyload"
-  style="width:65%"
+  style="width:50%"
   title=":focus-within CSS pseudo-class"
   alt=":focus-within CSS pseudo-class." />
 </p>
@@ -1928,14 +1928,14 @@ has a non-repeating variant and a repeating variant:</p>
         target="_blank" rel="noopener noreferrer">angle</a> as 0deg,</td>
     </tr>
     <tr class="even">
-      <td style="text-align: center;"></td>
+      <td></td>
       <td>90deg… . The angle starts from top and rotates clockwise. Can be
         specified in <a href="https://www.w3.org/TR/css3-values/#deg" target="_blank" rel="noopener noreferrer">deg</a>,
         <a href="https://www.w3.org/TR/css3-values/#grad" target="_blank" rel="noopener noreferrer">grad</a>,
         <a href="https://www.w3.org/TR/css3-values/#rad" target="_blank" rel="noopener noreferrer">rad</a>,</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: center;"></td>
+      <td></td>
       <td>or <a href="https://www.w3.org/TR/css3-values/#turn" target="_blank" rel="noopener noreferrer">turn</a>. If
         omitted, the gradient flows from top to bottom.</td>
     </tr>
@@ -1945,7 +1945,7 @@ has a non-repeating variant and a repeating variant:</p>
         length to display it at. For</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: center;"></td>
+      <td></td>
       <td>example, yellow 10%, rgba(0,0,0,.5) 40px, #fff 100%…</td>
     </tr>
   </tbody>
@@ -2014,19 +2014,15 @@ gradient with 8 color stops;</p>
     </tr>
     <tr class="even">
       <td>farthest-corner</td>
-      <td>Keywords describing how big the ending shape must be. Values</td>
+      <td>Keywords describing how big the ending shape must be. Values are closes-side,</td>
     </tr>
     <tr class="odd">
       <td></td>
-      <td>are closest-side, farthest-side, closest-corner, farthest-corner</td>
+      <td>farthest-side, closest-corner, farthest-corner.</td>
     </tr>
     <tr class="even">
       <td>top left</td>
-      <td>Sets the position of the gradient center, in the same way as</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>background-position.</td>
+      <td>Sets the position of the gradient center, in the same way as background-position.</td>
     </tr>
   </tbody>
 </table>
@@ -2045,8 +2041,8 @@ examples, but tile the gradient across the background of the element.</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 20%" />
-    <col style="width: 79%" />
+    <col style="width: 15%" />
+    <col style="width: 84%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -2059,18 +2055,14 @@ examples, but tile the gradient across the background of the element.</p>
       <td>-45deg</td>
       <td><a href="https://www.w3.org/TR/css3-values/#angles" target="_blank" rel="noopener noreferrer">Angle unit</a>.
         The angle starts from the top and rotates clockwise. Can be specified in 
-	<a href="https://www.w3.org/TR/css3-values/#deg" target="_blank" rel="noopener noreferrer">deg</a>,
-	<a href="https://www.w3.org/TR/css3-values/#grad" target="_blank" rel="noopener noreferrer">grad</a>,
-	<a href="https://www.w3.org/TR/css3-values/#rad" target="_blank" rel="noopener noreferrer">rad</a>, 
-	or</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td><a href="https://www.w3.org/TR/css3-values/#turn" target="_blank" rel="noopener noreferrer">turn</a>.</td>
-    </tr>
+		<a href="https://www.w3.org/TR/css3-values/#deg" target="_blank" rel="noopener noreferrer">deg</a>,
+		<a href="https://www.w3.org/TR/css3-values/#grad" target="_blank" rel="noopener noreferrer">grad</a>,
+		<a href="https://www.w3.org/TR/css3-values/#rad" target="_blank" rel="noopener noreferrer">rad</a>, or
+		<a href="https://www.w3.org/TR/css3-values/#turn" target="_blank" rel="noopener noreferrer">turn</a>.</td>
+	</tr>
     <tr class="odd">
       <td>to left</td>
-      <td>Direction of gradient, default is to bottom. Syntax: to [y-axis(top or bottom)] &amp;lbrackx-asis(left OR</td>
+      <td>Direction of gradient, default is to bottom. Syntax: to [y-axis(top or bottom)] [x-axis(left OR </td>
     </tr>
     <tr class="even">
       <td></td>
@@ -3007,7 +2999,7 @@ for a workaround.</p>
   <b>position</b>: absolute;
   <b>top</b>: 50&percnt;;
   <b>left</b>: 50&percnt;;
-  <b>transform</b>: translate(-50&percnt;, -50&percnt);
+  <b>transform</b>: translate(-50&percnt;, -50&percnt;);
 }</code></pre>
 
 <p><a href="https://jsfiddle.net/webtiki/rz3p3ufs/" 
@@ -8812,7 +8804,7 @@ gradient boxes for bullets.</p>
     </tr>
     <tr class="even">
       <td></td>
-      <td>20 pixels to the element&amp;aposs LEFT position.</td>
+      <td>20 pixels to the element&apos;s LEFT position.</td>
     </tr>
     <tr class="odd">
       <td>fixed</td>
@@ -9874,7 +9866,7 @@ animations.</p>
 <p>In this example, we'll make a basic background animation that cycles
 between all colors.</p>
 
-<pre><code><span style="color:blue">&commat;keyframes</span> rainbow-background {
+<pre><code>&lt;span style="color:blue"&gt;&commat;keyframes&lt;/span&gt; rainbow-background {
  0&percnt;       { <b>background-color</b>: #ff0000; } 
  8.333&percnt;   { <b>background-color</b>: #ff8000; } 
  16.667&percnt;  { <b>background-color</b>: #ffff00; } 
@@ -10177,7 +10169,7 @@ increasing the amount of processing done by the GPU.</p>
     </tr>
     <tr class="odd">
       <td></td>
-      <td>In scale (&amp;rpar function, the second scale-factor is optional. If not provided, the first scale-factor</td>
+      <td>In scale function, the second scale-factor is optional. If not provided, the first scale-factor</td>
     </tr>
     <tr class="even">
       <td></td>
@@ -10581,7 +10573,7 @@ CSS cube example:</p>
 }
 .face2 {
   <b>transform-origin</b>: 50&percnt; 50&percnt;;
-  <b>transform</b>: rotatez&lpar;90deg&rpar; translateX&lpar;100&percnt&rpar; rotateY&lpar;90deg&rpar;;
+  <b>transform</b>: rotatez&lpar;90deg&rpar; translateX&lpar;100&percnt;&rpar; rotateY&lpar;90deg&rpar;;
 }
 .cubeFace:before, cubeFace:after {
   <b>content</b>: &apos;&apos;
@@ -11119,7 +11111,7 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle):</a></p>
     </tr>
     <tr class="odd">
       <td>basic-shape</td>
-      <td>Refers to one among inset(), circle(&amp;rpar, ellipse() or polygon(). Using one of these functions and its</td>
+      <td>Refers to one among inset(), circle(), ellipse() or polygon(). Using one of these functions and its</td>
     </tr>
     <tr class="even">
       <td></td>
@@ -11239,13 +11231,15 @@ p {
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
+<pre><code>&lt;img src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;&gt;
 
-<b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
-<b>&lt;p&gt;</b>Some paragraph whose text content is required to be wrapped
+&lt;p&gt;&lt;img src="http://images.clipartpanda.com/circle-clip-art-circlergb.jpg"&gt;
+
+&lt;p&gt;Some paragraph whose text content is required to be wrapped
 such that it follows the curve of the circle on either side. And then
 there is some filler text just to make the text long enough. Lorem
-Ipsum Dolor Sit Amet&period;...<b>&lt;/p&gt;</b></code></pre>
+Ipsum Dolor Sit Amet....&lt;/p&gt;</code></pre>
+
 <p>In this example, a 10px margin is added around the <b>shape</b> using
 shape-margin. This creates a bit more space between the <i>imaginary
 circle</i> that defines the float area and the actual content that is
@@ -11350,8 +11344,7 @@ li {
 <b>list-style</b>: square; /* A filled square */ 
 <b>list-style</b>: &apos;-&apos;; /* any string */</code></pre>
 
-<p>Specific for <b>&lt;li&gt;</b> tags within an ordered list
-(<b>&lt;ol&gt;</b>);</p>
+<p>Specific for <b>&lt;li&gt;</b> tags within an ordered list (<b>&lt;ol&gt;</b>);</p>
 
 <pre><code><b>list-style</b>: decimal; /* Decimal numbers beginning with 1 (default) */ 
 <b>list-style</b>: decimal-leading-zero; /* Decimal numbers padded by initial zeros (01, 02, 03,* ... *10) */
@@ -11444,7 +11437,7 @@ li {
     </tr>
       <tr class="even">
       <td></td>
-      <td>(like the &amp;quot.&amp;quot in &amp;quot2.1.1").</td>
+      <td>(like the "." in "2.1.1").</td>
     </tr>
   </tbody>
 </table>
@@ -12991,7 +12984,7 @@ at) 0 0 - which is the top-left corner of the box, then goes to 0 100% -
 which is botom-left cornder of the box and then finally to 100% 50%
 which is nothing but the right-middle point of the box. These paths are
 self closing (that is, the starting point will be the ending point) and
-so the final shape is that of a&amp;gt triangle.</p>
+so the final shape is that of a triangle.</p>
 <p>This can also be used on an element with an image or a gradient as background.</p>
 <p><a href="https://jsfiddle.net/eoa4a94k/" target="_blank" rel="noopener noreferrer">
 View Demo (jsFiddle)</a>.</p>
