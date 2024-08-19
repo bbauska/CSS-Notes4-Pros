@@ -3532,7 +3532,7 @@ height of the content:</p>
 
 <h4>CSS:</h4>
 
-<pre><center>.vcenter &minus;- container {
+<pre><code>.vcenter &minus;- container {
   <b>display</b>: table;
   <b>height</b>: 100&percnt;;
   <b>position</b>: absolute;
@@ -3546,10 +3546,10 @@ height of the content:</p>
 .vcenter &minus;- content {
   <b>margin</b>: 0 auto;
   <b>width</b>: 200px;
-}</center></pre>
+}</code></pre>
 
 <p><a href="http://jsfiddle.net/ovfiddle/yVAW9/" target="_blank" rel="noopener noreferrer">
-Demo (jsFiddle)</a> from <a href="http://stackoverflow.com/a/12417336/1081234" 
+Demo (jsFiddle) vertical align dynamic height elements </a> from <a href="http://stackoverflow.com/a/12417336/1081234" 
 target="_blank" rel="noopener noreferrer">original question</a>.</p>
 
 <h4>This approach;</h4>
@@ -3599,8 +3599,8 @@ target="_blank" rel="noopener noreferrer">original question</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 28%" />
-    <col style="width: 71%" />
+    <col style="width: 18%" />
+    <col style="width: 81%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -4693,8 +4693,8 @@ element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 33%" />
-    <col style="width: 66%" />
+    <col style="width: 18%" />
+    <col style="width: 81%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -4705,23 +4705,23 @@ element.</p>
   <tbody>
     <tr class="odd">
       <td>visible</td>
-      <td>Shows all overflowing content outside the element</td>
+      <td>Shows all overflowing content outside the element.</td>
     </tr>
     <tr class="even">
       <td>scroll</td>
-      <td>Hides the overflowing content and adds a scroll bar</td>
+      <td>Hides the overflowing content and adds a scroll bar.</td>
     </tr>
     <tr class="odd">
       <td>hidden</td>
-      <td>Hides the overflowing content, both scroll bars disappear and the page becomes fixed</td>
+      <td>Hides the overflowing content, both scroll bars disappear and the page becomes fixed.</td>
     </tr>
     <tr class="even">
       <td>auto</td>
-      <td>Same as scroll if content overflows, but doesn't add scroll bar if content fits</td>
+      <td>Same as scroll if content overflows, but doesn't add scroll bar if content fits.</td>
     </tr>
     <tr class="odd">
       <td>inherit</td>
-      <td>Inherit's the parent element's value for this property</td>
+      <td>Inherit's the parent element's value for this property.</td>
     </tr>
   </tbody>
 </table>
@@ -4764,7 +4764,7 @@ to overflowing it's container.</p>
 <p align="left" width="100%">
 <img src="./images/image032.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="div, overflow-wrap"
   alt="div, overflow-wrap." />
 </p>
@@ -4922,7 +4922,7 @@ div {
 <p align="left" width="100%">
 <img src="./images/image035.jpg"
   class="lazyload"
-  style="width:65%"
+  style="width:50%"
   title="2 images; 1 without overflow & 1 with overflow: hidden"
   alt="2 images; 1 without overflow & 1 with overflow: hidden." />
 </p>
@@ -5046,8 +5046,8 @@ property set will interact with a floated image.</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 25%" />
-    <col style="width: 74%" />
+    <col style="width: 21%" />
+    <col style="width: 78%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -5058,7 +5058,7 @@ property set will interact with a floated image.</p>
   <tbody>
     <tr class="odd">
       <td>device-aspect-ratio</td>
-      <td><b>Deprecated</b> CSS will only display on devices whose height/width</td>
+      <td><b>Deprecated</b> CSS will only display on devices whose height/width.</td>
     </tr>
     <tr class="even">
       <td></td>
@@ -5141,13 +5141,10 @@ features</b> such as the availability of color or viewport dimensions.</p>
 <p>The above media query specifies two conditions:</p>
 
 <ol>
-<li>
-The page must be viewed on a normal screen (not a printed page,
-projector, etc).
-</li>
-<li>
-The width of the user's view port must be at least 720 pixels.
-</li>
+
+  <li>The page must be viewed on a normal screen (not a printed page, 
+    projector, etc).</li>
+  <li>The width of the user's view port must be at least 720 pixels.</li>
 </ol>
 
 <p>If these conditions are met, the styles inside the media query will be
@@ -5201,8 +5198,8 @@ used:</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 27%" />
-    <col style="width: 72%" />
+    <col style="width: 18%" />
+    <col style="width: 81%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -5213,39 +5210,39 @@ used:</p>
   <tbody>
     <tr class="odd">
       <td>all</td>
-      <td>Apply to all devices</td>
+      <td>Apply to all devices.</td>
     </tr>
     <tr class="even">
       <td>screen</td>
-      <td>Default computers</td>
+      <td>Default computers.</td>
     </tr>
     <tr class="odd">
       <td>print</td>
-      <td>Printers in general. Used to style print-versions of websites</td>
+      <td>Printers in general. Used to style print-versions of websites.</td>
     </tr>
     <tr class="even">
       <td>handheld</td>
-      <td>PDA's, cellphones and hand-held devices with a small screen</td>
+      <td>PDA's, cellphones and hand-held devices with a small screen.</td>
     </tr>
     <tr class="odd">
       <td>projection</td>
-      <td>For projected presentation, for example projectors</td>
+      <td>For projected presentation, for example projectors.</td>
     </tr>
     <tr class="even">
       <td>aural</td>
-      <td>Speech Systems</td>
+      <td>Speech Systems.</td>
     </tr>
     <tr class="odd">
       <td>braille</td>
-      <td>Braille tactile devices</td>
+      <td>Braille tactile devices.</td>
     </tr>
     <tr class="even">
       <td>embossed</td>
-      <td>Paged braille printers</td>
+      <td>Paged braille printers.</td>
     </tr>
     <tr class="odd">
       <td>tv</td>
-      <td>Television-type devices</td>
+      <td>Television-type devices.</td>
     </tr>
     <tr class="even">
       <td>tty</td>
@@ -5444,7 +5441,7 @@ massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b></code></pr
 <p align="left" width="100%">
 <img src="./images/image036.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="Output from img float: left; margin-right: 1rem;"
   alt="Output from img float: left; margin-right: 1rem;" />
 </p>
@@ -6249,6 +6246,7 @@ originally uppercase.</p>
 <!--~~~~~~~~~~~~~~~~~~~ 39. documentation about css fonts and example (95) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image039.jpg"
+  class="lazyload"
   style="width:25%"
   title="Documentation about CSS Fonts aNd ExAmpLe."
   alt="Documentation about CSS Fonts aNd ExAmpLe." />
@@ -6366,6 +6364,7 @@ target="_blank" rel="noopener noreferrer">demo (CodePen)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 40. 3 square in first row (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image040.jpg"
+  class="lazyload"
   style="width:50%"
   title="3 squares in row 1"
   alt="3 squares in row 1." />
@@ -6389,6 +6388,7 @@ target="_blank" rel="noopener noreferrer">demo (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. 3 square in column 1 (98) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image041.jpg"
+  class="lazyload"
   style="width:50%"
   title="3 squares in column 1"
   alt="3 squares in column 1." />
@@ -6413,6 +6413,7 @@ target="_blank" rel="noopener noreferrer">demo (jsFiddle)</a>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42. 3 squares in center row (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image042.jpg"
+  class="lazyload"
   style="width:50%"
   title="3 square in center row"
   alt="3 square in center row." />
@@ -6437,6 +6438,7 @@ target="_blank" rel="noopener noreferrer">demo jsFiddle</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. 3 square in center column (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image043.jpg"
+  class="lazyload"
   style="width:50%"
   title="3 squares in center column"
   alt="3 squares in center column." />
@@ -6459,6 +6461,7 @@ target="_blank" rel="noopener noreferrer">demo (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ 44. 3 square across in center column & row (101) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image044.jpg"
+  class="lazyload"
   style="width:50%"
   title="3 squares across in center column &amp; row"
   alt="3 squares across in center column &amp; row." />
@@ -6481,6 +6484,7 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ 45. 3 squares down center column & row  (102) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image045.jpg"
+  class="lazyload"
   style="width:50%"
   title="3 squares down center, column &amp; row"
   alt="3 squares down center, column &amp; row." />
@@ -6576,7 +6580,8 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ 46. Columns adapt as screen is resized (104) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image046.png"
-  style="width:75%"
+  class="lazyload"
+  style="width:50%"
   title="Columns adapt as screen is resized"
   alt="Columns adapt as screen is resized." />
 </p>
@@ -6651,7 +6656,8 @@ to actions</b> inside its containing cards like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 47. vertically align call to actions (105) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image047.jpg"
-  style="width:75%"
+  class="lazyload"
+  style="width:50%"
   title="Vertically align call to actions"
   alt="Vertically align call to actions." />
 </p>
@@ -6708,7 +6714,8 @@ p: last-child {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 48. display: flex; to container (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image048.jpg"
-  style="width:75%"
+  class="lazyload"
+  style="width:50%"
   title="display: flex; to container"
   alt="display: flex; to container." />
 </p>
@@ -7234,6 +7241,7 @@ background:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ 49. parent element, child element * 2 (116) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image049.png"
+  class="lazyload"
   style="width:50%"
   title="parent element, child element rectangle * 2"
   alt="parent element, child element rectangle * 2." />
@@ -8185,6 +8193,7 @@ saturation and lightness are represented as percentages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 189. saturation, lightness and hue (124) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image189.jpg"
+  class="lazyload"
   style="width:50%"
   title="Saturation, Lightness and Hue"
   alt="Saturation, Lightness and Hue." />
@@ -8481,7 +8490,8 @@ input&lbrack;type=text&rbrack; {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 190. button and text w/slide bar (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image190.jpg"
-  style="width:65%"
+  class="lazyload"
+  style="width:50%"
   title="Button, slide bar, and text"
   alt="Button, slide bar, and text." />
 </p>
@@ -8621,6 +8631,7 @@ the <i>Parent</i>'s, which is <b>50px</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 191. parent, child, div.child (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image191.jpg"
+  class="lazyload"
   style="width:15%"
   title="Parent, child, div.child"
   alt="Parent, child, div.child." />
@@ -8771,6 +8782,7 @@ gradient boxes for bullets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ 193. red/blue linear-gradient background (132) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image193.jpg"
+  class="lazyload"
   style="width:25%"
   title="Example; linear-gradient; Test I, Test II"
   alt="Example; linear-gradient; Test I, Test II." />
@@ -8887,6 +8899,7 @@ div #div3 {
 <!--~~~~~~~~~~~~~~~~~~ 194. 3 overlapping squares; blue, red & green (xxx) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image194.jpg"
+  class="lazyload"
   style="width:35%"
   title="3 overlapping squares; red, blue, green"
   alt="3 overlapping squares; red, blue, green." />
@@ -9189,6 +9202,7 @@ li {
 <!--~~~~~~~~~~~~~~~~~~~~~ 197. 3 light blue horizontal rectangles  (138) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image197.png"
+  class="lazyload"
   style="width:40%"
   title="3 horizontal rectangles; First Element, Second Element, Third Element"
   alt="3 horizontal rectangles; First Element, Second Element, Third Element." />
@@ -9216,7 +9230,7 @@ li {
 <p align="left" width="100%">
 <img src="./images/image198.png"
   class="lazyload"
-  style="width:60%"
+  style="width:50%"
   title="3 vertical rectangles; First Element, Second Element, Third Element"
   alt="3 vertical rectangles; First Element, Second Element, Third Element." />
 </p>
@@ -9241,6 +9255,7 @@ li {
 <!--~~~~~~~~~~~~ 199. 3 light blue rectanges; first, second & third elements (139) ~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image199.png"
+  class="lazyload"
   style="width:40%"
   title="3 horizontal rectangles; First Element, Second Element, Third Element"
   alt="3 horizontal rectangles; First Element, Second Element, Third Element." />
@@ -9458,7 +9473,7 @@ empty-cells property:</p>
 <p align="left" width="100%">
 <img src="./images/image201.jpg"
   class="lazyload"
-  style="width:57%"
+  style="width:50%"
   title="Two tables with different values set to empty-cells property"
   alt="Two tables with different values set to empty-cells property." />
 </p>
@@ -9514,7 +9529,7 @@ border-collapse property:</p>
 <p align="left" width="100%">
 <img src="./images/image202.jpg"
   class="lazyload"
-  style="width:57%"
+  style="width:50%"
   title="Two tables with different values set to the border-collapse property"
   alt="Two tables with different values set to the border-collapse property." />
 </p>
@@ -9557,7 +9572,7 @@ border-spacing property:</p>
 <p align="left" width="100%">
 <img src="./images/image203.jpg"
   class="lazyload"
-  style="width:60%"
+  style="width:50%"
   title="Two tables with diff values to the border-spacing property"
   alt="Two tables with diff values to the border-spacing property." />
 </p>
@@ -9600,7 +9615,7 @@ caption-side property:</p>
 <p align="left" width="100%">
 <img src="./images/image204.jpg"
   class="lazyload"
-  style="width:57%"
+  style="width:50%"
   title="Two tables with diff values set to caption-side property"
   alt="Two tables with diff values set to caption-side property." />
 </p>
@@ -10261,7 +10276,7 @@ an axis rotate 15 degrees clockwise as shown in the following image:</p>
 <p align="left" width="100%">
 <img src="./images/image207.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="Step 1 rotate, step 2 translation"
   alt="Step 1 rotate, step 2 translation." />
 </p>
@@ -10281,7 +10296,7 @@ example will be different to</p>
 <p align="left" width="100%">
 <img src="./images/image208.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="Step 1 translation, step 2 rotate"
   alt="Step 1 translation, step 2 rotate." />
 </p>
@@ -10478,7 +10493,7 @@ additional hover effect (CodePen)</a>.</p>
 <p align="left" width="100%">
 <img src="./images/image212.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="Hover effect 3d with shadow"
   alt="Hover effect 3d with shadow." />
 </p>
@@ -11003,7 +11018,7 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
 <p align="left" width="100%">
 <img src="./images/image220.jpg"
   class="lazyload"
-  style="width:62%"
+  style="width:50%"
   title="Blue rectangle"
   alt="Blue rectangle." />
 </p>
@@ -11082,7 +11097,7 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle):</a></p>
 <p align="left" width="100%">
 <img src="./images/image222.jpg"
   class="lazyload"
-  style="width:61%"
+  style="width:50%"
   title="Orange, green, blue &amp; yellow (MS shit colors)"
   alt="Orange, green, blue &amp; yellow (MS shit colors)." />
 </p>
@@ -11849,7 +11864,7 @@ div {
 <p align="left" width="100%">
 <img src="./images/image227.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="Animated screenshot of the resizing in action"
   alt="Animated screenshot of the resizing in action." />
 </p>
