@@ -242,11 +242,9 @@ target="_blank" rel="noopener noreferrer">@import</a>.</p>
 <ol type="A">
   <li><b>With internal style tag</b><br/>
 
-<pre><code>
-  &lt;style&gt;
-    @import url('/css/styles.css');
-  &lt;/style&gt;
-</code></pre>
+<pre><code>&lt;style&gt;
+  @import url('/css/styles.css');
+&lt;/style&gt;</code></pre>
 
 </li>
 
@@ -257,9 +255,7 @@ target="_blank" rel="noopener noreferrer">@import</a>.</p>
 <p>The following line imports a CSS file named additional-styles.css in the
 root directory into the CSS file in which it appears:</p>
 
-<pre><code>
-@import '/additional-styles.css';
-</code></pre>
+<pre><code>@import '/additional-styles.css';</code></pre>
 
 </li>
 
@@ -388,7 +384,8 @@ points to an image.</p>
 list-item marker, and it accepts one of two values: "inside" or
 "outside".</p>
 
-<pre><code>li {list-style-position: inside;
+<pre><code>li {
+  list-style-position: inside;
 }</code></pre>
 <!-- page 7 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -462,7 +459,7 @@ div {
   comment
 */
 div {
-  color: red;
+  color: <span style='color: red;'>red;</span>
 }</code></pre>
 <!-- page 9 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -497,7 +494,7 @@ and patterns.</p>
       <td>Tag selector (all <b>&lt;div&gt;</b> elements)</td>
     </tr>
     <tr class="odd">
-      <td>.blue</td>
+      <td><span style='color: blue;'>.blue</span></td>
       <td>Class selector (all elements with class blue)</td>
     </tr>
     <tr class="even">
@@ -505,7 +502,7 @@ and patterns.</p>
       <td>All elements with class blue and red (a type of Compound selector)</td>
     </tr>
     <tr class="odd">
-      <td>#headline</td>
+      <td><span style='color: indigo;'>#headline</span></td>
       <td>ID selector (the element with “id” attribute set to headline)</td>
     </tr>
     <tr class="even">
@@ -517,7 +514,7 @@ and patterns.</p>
       <td>Element that matches pseudo-element</td>
     </tr>
     <tr class="even">
-      <td>:lang(en)</td>
+      <td><span style='color: pink;'>:lang</span>(en)</td>
       <td>Element that matches :lang declaration, for example <b>&lt;span lang=“en”&gt;</b></td>
     </tr>
     <tr class="odd">
@@ -14213,3 +14210,4 @@ same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
 <!-- 7/14/2024 Sun 12:22am -->
 <!-- 7/18/2024 Thu 4:48pm -->
 <!-- 8/18/2024 Sun 2:14pm -->
+<!-- 8/19/2024 Mon 2:16pm -->
