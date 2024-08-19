@@ -478,8 +478,8 @@ and patterns.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 20%" />
-    <col style="width: 79%" />
+    <col style="width: 25%" />
+    <col style="width: 74%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -548,9 +548,9 @@ the presence of a given attribute or attribute value.</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 20%" />
+    <col style="width: 25%" />
     <col style="width: 34%" />
-    <col style="width: 44%" />
+    <col style="width: 40%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -783,8 +783,8 @@ element as <b>#my-ID</b> but with lower specificity.</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 11%" />
-    <col style="width: 88%" />
+    <col style="width: 15%" />
+    <col style="width: 84%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -1575,7 +1575,7 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 <p align="center" width="100%">
 <img src="./images/image003.png"
   class="lazyload"
-  style="width:100%"
+  style="width:65%"
   title=":focus-within CSS pseudo-class"
   alt=":focus-within CSS pseudo-class." />
 </p>
@@ -1675,10 +1675,11 @@ element by a specific ID in CSS, the # prefix is used.</p>
 
 <h4>CSS:</h4>
 
+<!-- 23/76 -->
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 23%" />
-    <col style="width: 76%" />
+    <col style="width: 15%" />
+    <col style="width: 84%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -1802,9 +1803,8 @@ same, then the color code can be shortened into three characters (the
 first digit of each pairing). #ff0000 can be shortened to #f00, and
 #ffffff can be shortened to #fff.
 </p>
-<p>
-Hex notation is case-insensitive.
-</p>
+<p>Hex notation is case-insensitive.</p>
+
 <pre><code>body {
   background-color: #de1205; /* red */
 }
@@ -1812,45 +1812,40 @@ Hex notation is case-insensitive.
 .main {
   background-color: #00f; /* blue */
 }</code></pre>
-<h4>
-RGB / RGBa:
-</h4>
-<p>
-<p>Another way to declare a color is to use RGB or RGBa.</p>
-<p>
-RGB stands for Red, Green and Blue, and requires of three separate
+
+<h4>RGB / RGBa:</h4>
+
+<p>Another way to declare a color is to use <b>RGB</b> or <b>RGBa</b>.</p>
+
+<p><b>RGB</b> stands for <b>R</b>ed, <b>G</b>reen and <b>B</b>lue, and requires of three separate
 values between 0 and 255, put between brackets, that correspond with the
-decimal color values for respectively red, green and blue.
-</p>
-<p>
-RGBa allows you to add an additional alpha parameter between 0.0 and 1.0
-to define opacity.
-</p>
+decimal color values for respectively red, green and blue.</p>
+
+<p><b>RGBa</b> allows you to add an additional alpha parameter between 0.0 and 1.0
+to define opacity.</p>
+
 <pre><code>header {
   <b>background-color</b>: rgb(0, 0, 0); /* black */
-}
+  }
 footer {
   <b>background-color</b>: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
-}</code></pre>
-<h4>
-HSL / HSLa:
-</h4>
-<p>
-Another way to declare a color is to use HSL or HSLa and is similar to
-RGB and RGBa.
-</p>
-<p>
-HSL stands for hue, saturation, and lightness, and is also often called
-HLS:
-</p>
+  }</code></pre>
+
+<h4>HSL / HSLa:</h4>
+
+<p>Another way to declare a color is to use <b>HSL</b> or <b>HSLa</b> and is similar to
+RGB and RGBa.</p>
+
+<p><b>HSL</b> stands for hue, saturation, and lightness, and is also often called
+<b>HLS</b>:</p>
 
 <ul>
-  <li>Hue is a degree on the color wheel (from 0 to 360).</li>
-  <li>Saturation is a percentage between 0% and 100%.</li>
-  <li>Lightness is also a percentage between 0% and 100%.</li>
+  <li><b>H</b>ue is a degree on the color wheel (from 0 to 360).</li>
+  <li><b>S</b>aturation is a percentage between 0% and 100%.</li>
+  <li><b>L</b>ightness is also a percentage between 0% and 100%.</li>
 </ul>
 
-<p>HSLa allows you to add an additional alpha parameter between 0.0 and 1.0
+<p><b>HSLa</b> allows you to add an additional alpha parameter between 0.0 and 1.0
 to define opacity.</p>
 
 <pre><code>li a {
@@ -1910,14 +1905,14 @@ has a non-repeating variant and a repeating variant:</p>
 
 <h4>linear-gradient()</h4>
 
-<p>A linear-gradient has the following syntax</p>
+<p>A linear-gradient has the following syntax:</p>
 <p><b>background</b>: linear-gradient( &lt;direction&gt;?,
 &lt;color-stop-1&gt;, &lt;color-stop-2&gt;, …);</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 28%" />
-    <col style="width: 71%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -2002,40 +1997,38 @@ gradient with 8 color stops;</p>
 }</code></pre>
 
 <table border="1" style="border-collapse: collapse;">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 87%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>circle</td>
-<td>Shape of gradient. Values are circle or ellipse, default is
-ellipse.</td>
-</tr>
-<tr class="even">
-<td>farthest-corner</td>
-<td>Keywords describing how big the ending shape must be. Values</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>are closest-side, farthest-side, closest-corner,
-farthest-corner</td>
-</tr>
-<tr class="even">
-<td>top left</td>
-<td>Sets the position of the gradient center, in the same way as</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>background-position.</td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 12%" />
+    <col style="width: 87%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Value</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>circle</td>
+      <td>Shape of gradient. Values are circle or ellipse, default is ellipse.</td>
+    </tr>
+    <tr class="even">
+      <td>farthest-corner</td>
+      <td>Keywords describing how big the ending shape must be. Values</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>are closest-side, farthest-side, closest-corner, farthest-corner</td>
+    </tr>
+    <tr class="even">
+      <td>top left</td>
+      <td>Sets the position of the gradient center, in the same way as</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>background-position.</td>
+    </tr>
+  </tbody>
 </table>
 
 <h4>Repeating gradients</h4>
@@ -2052,8 +2045,8 @@ examples, but tile the gradient across the background of the element.</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 48%" />
-    <col style="width: 51%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -2121,40 +2114,39 @@ url().</p>
 image on top of the others and so on.</p>
 
 <table border="1" style="border-collapse: collapse;">
-<colgroup>
-<col style="width: 42%" />
-<col style="width: 57%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><b>Value</b></th>
-<th><b>Result</b></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>url ('/path/to/image.jpg')</td>
-<td>Specify background image's path(s) or an image resource specified
-with data URI</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>schema (apostrophes can be omitted), separate multiples by
-comma.</td>
-</tr>
-<tr class="odd">
-<td>none</td>
-<td>No backgound image.</td>
-</tr>
-<tr class="even">
-<td>initial</td>
-<td>Default value.</td>
-</tr>
-<tr class="odd">
-<td>inherit</td>
-<td>Inherit parent’s value.</td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 25%" />
+    <col style="width: 74%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><b>Value</b></th>
+      <th><b>Result</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>url ('/path/to/image.jpg')</td>
+      <td>Specify background image's path(s) or an image resource specified 
+	    with data URI</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>schema (apostrophes can be omitted), separate multiples by comma.</td>
+    </tr>
+    <tr class="odd">
+      <td>none</td>
+      <td>No backgound image.</td>
+    </tr>
+    <tr class="even">
+      <td>initial</td>
+      <td>Default value.</td>
+    </tr>
+    <tr class="odd">
+      <td>inherit</td>
+      <td>Inherit parent’s value.</td>
+    </tr>
+  </tbody>
 </table>
 
 <h4>More CSS for Background Image:</h4>
@@ -2174,70 +2166,70 @@ center center | left top | right bottom</h4>
 related properties:</p>
 
 <table border="1" style="border-collapse: collapse;">
-<thead>
-<tr class="header">
-<th><b>Value</b></th>
-<th><b>Description</b></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>background-image</td>
-<td>Background image to use.</td>
-</tr>
-<tr class="even">
-<td>background-color</td>
-<td>Background color to apply.</td>
-</tr>
-<tr class="odd">
-<td>background-position</td>
-<td>Background image's position.</td>
-</tr>
-<tr class="even">
-<td>background-size</td>
-<td>Background image's size.</td>
-</tr>
-<tr class="odd">
-<td>background-repeat</td>
-<td>How to repeat background image.</td>
-</tr>
-<tr class="even">
-<td>background-origin</td>
-<td>How the background is positioned (ignored when</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>background-attachment is fixed).</td>
-</tr>
-<tr class="even">
-<td>background-clip</td>
-<td>How the background is painted relative to the</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>content-box, border-box, or the padding-box.</td>
-</tr>
-<tr class="even">
-<td>background-attachment</td>
-<td>How the background image behaves, whether it</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>scrolls along with its containing block or has a</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>fixed position within the viewport.</td>
-</tr>
-<tr class="odd">
-<td>initial</td>
-<td>Sets the property value to default.</td>
-</tr>
-<tr class="even">
-<td>inherit</td>
-<td>Inherits property value from parent.</td>
-</tr>
-</tbody>
+  <thead>
+    <tr class="header">
+      <th><b>Value</b></th>
+      <th><b>Description</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>background-image</td>
+      <td>Background image to use.</td>
+    </tr>
+    <tr class="even">
+      <td>background-color</td>
+      <td>Background color to apply.</td>
+    </tr>
+    <tr class="odd">
+      <td>background-position</td>
+      <td>Background image's position.</td>
+    </tr>
+    <tr class="even">
+      <td>background-size</td>
+      <td>Background image's size.</td>
+    </tr>
+    <tr class="odd">
+      <td>background-repeat</td>
+      <td>How to repeat background image.</td>
+    </tr>
+    <tr class="even">
+      <td>background-origin</td>
+      <td>How the background is positioned (ignored when</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>background-attachment is fixed).</td>
+    </tr>
+    <tr class="even">
+      <td>background-clip</td>
+      <td>How the background is painted relative to the</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>content-box, border-box, or the padding-box.</td>
+    </tr>
+    <tr class="even">
+      <td>background-attachment</td>
+      <td>How the background image behaves, whether it</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>scrolls along with its containing block or has a</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>fixed position within the viewport.</td>
+    </tr>
+    <tr class="odd">
+      <td>initial</td>
+      <td>Sets the property value to default.</td>
+    </tr>
+    <tr class="even">
+      <td>inherit</td>
+      <td>Inherits property value from parent.</td>
+    </tr>
+  </tbody>
 </table>
 
 <p>The order of the values does not matter and every value is optional.</p>
@@ -2446,6 +2438,11 @@ ratio a great part of your image could be cut off:</p>
 
 <h4>Demonstration with actual code</h4>
 
+<details>
+  <summary>CSS &amp; HTML</summary>
+
+<h4>CSS:</h4>
+
 <pre><code>div &gt; div {
   <b>background-image</b>: url(http://i.stack.imgur.com/r5CAq.jpg);
   <b>background-repeat</b>: no-repeat;
@@ -2483,8 +2480,11 @@ div &gt; div::after {
   <b>width</b>: 10ex;
   <b>font-size</b>: 0.7em;
   <b>content</b>: attr(class);
-}
-  <b>&lt;div&gt;</b>
+}</code></pre>
+
+<h4>HTML:</h4>
+
+<pre><code>  <b>&lt;div&gt;</b>
     <b>&lt;div</b> class=&quot;contain&quot;<b>&gt;&lt;/div&gt;</b>
     <b>&lt;p&gt;</b>Note the grey background. The image does not cover the whole region, 
       but it&apos;s fully<b>&lt;</b>
@@ -2498,6 +2498,8 @@ div &gt; div::after {
     image anymore, but neither do you see any background color;
     the image<b>&lt;em&gt;</b>covers<b>&lt;/em&gt;</b> all of the <b>&lt;code&gt;</b>&lt;div&gt;<b>&lt;/code&gt;</b>.<b>&lt;/p&gt;</b>
 <b>&lt;/div&gt;</b></code></pre>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. example, contain & cover images (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -2524,49 +2526,46 @@ or gradient.</p>
 set using any of the units used within CSS.</p>
 
 <table border="1" style="border-collapse: collapse;">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 82%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><b>Unit</b></th>
-<th><b>Description</b></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>value% value%</td>
-<td>A percentage for the horizontal offset is relative to (width of</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>background positioning area - width of background image).</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>A percentage for the vertical offset is relative to</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(height of background positioning area - height of background
-image)</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>The size of the image is the size given by background-size.</td>
-</tr>
-<tr class="even">
-<td>valuepx valuepx</td>
-<td>Offsets background image by a length given in pixels relative to
-the</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>top left of the background <em>value</em>px <em>value</em>px
-positioning area</td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 20%" />
+    <col style="width: 79%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><b>Unit</b></th>
+      <th><b>Description</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>value% value%</td>
+      <td>A percentage for the horizontal offset is relative to (width of</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>background positioning area - width of background image).</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>A percentage for the vertical offset is relative to</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>(height of background positioning area - height of background image)</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>The size of the image is the size given by background-size.</td>
+    </tr>
+    <tr class="even">
+      <td>valuepx valuepx</td>
+      <td>Offsets background image by a length given in pixels relative to the</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>top left of the background <em>value</em>px <em>value</em>px positioning area</td>
+    </tr>
+  </tbody>
 </table>
 
 <p>Units in CSS can be specified by different methods (see here).</p>
@@ -2604,6 +2603,9 @@ property has no effect.</p>
   <li>initial</li>
   <li>inherit</li>
 </ul>
+
+<details>
+  <summary>CSS &amp; HTML</summary>
 
 <h4>CSS:</h4>
 
@@ -2648,6 +2650,8 @@ property has no effect.</p>
   ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<b>&lt;/p&gt;</b>
 <b>&lt;/div&gt;</b></code></pre>
 
+</details>
+
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 13. background-origin - 3 images (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2664,11 +2668,9 @@ property has no effect.</p>
 <p>More:</p>
 
 <p><a href="https://www.w3.org/TR/css3-background/#the-background-origin" 
-target="_blank" rel="noopener noreferrer">
-https://www.w3.org/TR/css3-background/#the-background-origin</a></p>
+target="_blank" rel="noopener noreferrer">W3C background origin</a>.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin" 
-target="_blank" rel="noopener noreferrer">
-https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin</a></p>
+target="_blank" rel="noopener noreferrer">Mozilla background origin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-8">Section 5.8: Multiple Background Image</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2803,6 +2805,9 @@ painting area of the background.</p>
   <li>inherit applies the setting of the parent to the selected element.</li>
 </ul>
 
+<details>
+  <summary>CSS &amp; HTML</summary>
+
 <h4>CSS:</h4>
 
 <pre><code>.example {
@@ -2846,6 +2851,8 @@ painting area of the background.</p>
   <b>&lt;p&gt;</b>And more goes here, as well. It beats Latin. I don't know Latin so better 
   for me the end.<b>&lt;/p&gt; 
 &lt;/div&gt;</b></code></pre>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-11">Section 5.11: Background Repeat</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2865,7 +2872,7 @@ horizontally.</p>
 <p align="left" width="100%">
 <img src="./images/image014.jpg"
   class="lazyload"
-  style="width:75%"
+  style="width:50%"
   title="Cat repeat 7x repeat-y furthest left column"
   alt="Cat repeat 7x repeat-y furthest left column." />
 </p>
@@ -2878,14 +2885,15 @@ horizontally.</p>
   <b>background-size</b>:100&percnt;;
   <b>background-repeat</b>:no-repeat;
   <b>background-image</b>:linear-gradient (to right, black 0&percnt; ,white 100&percnt;),
-url(&apos;https://static.pexels.com/photos/54624/strawberry-fruit-red-sweet-54624-medium.jpeg&apos;);
+    url(&apos;https://static.pexels.com/photos/54624/strawberry-fruit-red-sweet-54624-medium.jpeg&apos;);
   <b>background-blend-mode</b>:saturation;
 }
 <b>&lt;div</b> class=&quot;my-div&quot;<b>&gt;Lorem ipsum&lt;/div&gt;</b></code></pre>
+
 <p>See result here:
 <a href="https://jsfiddle.net/MadalinaTn/y69d28Lb/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
-<p>CSS Syntax: background-blend-mode: normal | multiply | screen | overlay
+<p><b>CSS Syntax</b>: background-blend-mode: normal | multiply | screen | overlay
 | darken | lighten | color-dodge | saturation | color | luminosity;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-13">Section 5.13: Background Color with Opacity</h3>
@@ -2970,7 +2978,7 @@ target="_blank" rel="noopener noreferrer">Autoprefixer</a>, a third-party tool.<
 target="_blank" rel="noopener noreferrer">Polyfill</a> is available.</p>
 <p>For a more detailed look at flexbox browser support, see
 <a href="http://stackoverflow.com/a/35137869/3597276" 
-target="_blank" rel="noopener noreferrer">this answer.</p>
+target="_blank" rel="noopener noreferrer">this answer</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2">Section 6.2: Using CSS transform</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2989,9 +2997,9 @@ for a workaround.</p>
 <pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;element&quot;<b>&gt;&lt;/div&gt;</b>
 <b>&lt;/div&gt;</b></code></pre>
-<h4>
-CSS:
-</h4>
+
+<h4>CSS:</h4>
+
 <pre><code>.container {
   <b>position</b>: relative;
 }
@@ -3044,6 +3052,9 @@ target="_blank" rel="noopener noreferrer">canIuse</a>.</p>
 <p>Objects can be centered by using if they are block elements and have a
 defined width.</p>
 
+<details>
+  <summary>HTML &amp; CSS</summary>
+
 <h4>HTML:</h4>
 
 <pre><code><b>&lt;div</b> class=&quot;containerDiv&quot;<b>&gt;</b>
@@ -3081,6 +3092,8 @@ defined width.</p>
   <b>width</b>: 200px;
   <b>margin</b>: 0 auto;
 }</code></pre>
+
+</details>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3221,6 +3234,9 @@ HTML:
 <p>We will see how to center content based on the height of a near element.</p>
 <p>Compatibility: IE8+, all other modern browsers.</p>
 
+<details>
+  <summary>HTML &amp; CSS</summary>
+  
 <h4>HTML:</h4>
 
 <pre><code><b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b>
@@ -3260,9 +3276,11 @@ HTML:
   <b>width</b>: 100&percnt;;
 }</code></pre>
 
+</details>
+
 <p><a href="https://jsfiddle.net/gasp10/6bv92mko/4/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
-<p>The main points are the 3 .thumb, .details and .position-container
+<p>The main points are the 3; <b>.thumb, .details</b> and <b..position-container</b> 
 containers:</p>
 
 <ul>
@@ -3281,6 +3299,9 @@ containers:</p>
 <p>Set up a "ghost" element inside the container to be centered that is
 100% height, then use <b>vertical-align</b>: middle on both that and the
 element to be centered.</p>
+
+<details>
+  <summary>CSS &amp; HTML</summary>
 
 <h4>CSS:</h4>
 
@@ -3318,15 +3339,16 @@ or by zeroing font-size in .parent and resetting it back
 <pre><code><b>&lt;div</b> class=&quot;block&quot;<b>&gt;</b>
   <b>div</b> class=&quot;centered&quot;<b>&gt;&lt;/div&gt;</b>
 <b>&lt;/div&gt;</b></code></pre>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="6-11">Section 6.11: Centering vertically and horizontally without worrying
 about height or width</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The following technique allows you to add your content to an HTML
+<p>The following technique allows you to add your content to an HTML
 element and center it both horizontally and vertically <b>without
-worrying about its height or width</b>.
-</p>
+worrying about its height or width</b>.</p>
+
 <h4>The outer container</h4>
 
 <ul>
@@ -9028,87 +9050,86 @@ target="_blank" rel="noopener noreferrer">MDN</a>:</p>
 <h2 id="ch23">Chapter 23: Layout Control</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table border="1" style="border-collapse: collapse;">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 76%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;"><b>Value</b></th>
-<th><b>Effect</b></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">none</td>
-<td>Hide the element and prevent it from occupying space.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">block</td>
-<td>Block element, occupy 100% of the available width, break after
-element.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">inline</td>
-<td>Inline element, occupy no width, no break after element.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">inline-block</td>
-<td>Taking special properties from both inline and block elements, no
-break, but can have width.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">inline-flex</td>
-<td>Displays an element as an inline-level flex container.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">inline-table</td>
-<td>The element is displayed as an inline-level table.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">grid</td>
-<td>Behaves like a block element and lays out its content according to
-the grid model.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">flex</td>
-<td>Behaves like a block element and lays out its content according to
-the flexbox model.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">inherit</td>
-<td>Inherit the value from the parent element.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">initial</td>
-<td>Reset the value to the default value taken from behaviors described
-in the HTML specifications or</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;"></td>
-<td>from the browser/user default stylesheet.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">table</td>
-<td>Behaves like the HTML table element.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">table-cell</td>
-<td>Let the element behave like a <b>&lt;td&gt;</b> element.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">table-column</td>
-<td>Let the element behave like a <b>&lt;col&gt;</b> element.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">table-row</td>
-<td>Let the element behave like a <b>&lt;tr&gt;</b> element.</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">list-item</td>
-<td>Let the element behave like a <b>&lt;li&gt;</b> element.</td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 23%" />
+    <col style="width: 76%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th style="text-align: right;"><b>Value</b></th>
+      <th><b>Effect</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td style="text-align: right;">none</td>
+      <td>Hide the element and prevent it from occupying space.</td>
+      </tr>
+    <tr class="even">
+      <td style="text-align: right;">block</td>
+      <td>Block element, occupy 100% of the available width, break after element.</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;">inline</td>
+      <td>Inline element, occupy no width, no break after element.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">inline-block</td>
+      <td>Taking special properties from both inline and block elements, no
+	    break, but can have width.</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;">inline-flex</td>
+      <td>Displays an element as an inline-level flex container.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">inline-table</td>
+      <td>The element is displayed as an inline-level table.</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;">grid</td>
+      <td>Behaves like a block element and lays out its content according to 
+	    the grid model.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">flex</td>
+      <td>Behaves like a block element and lays out its content according to 
+	    the flexbox model.</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;">inherit</td>
+      <td>Inherit the value from the parent element.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">initial</td>
+      <td>Reset the value to the default value taken from behaviors described 
+	    in the HTML specifications or</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;"></td>
+      <td>from the browser/user default stylesheet.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">table</td>
+      <td>Behaves like the HTML table element.</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;">table-cell</td>
+      <td>Let the element behave like a <b>&lt;td&gt;</b> element.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">table-column</td>
+      <td>Let the element behave like a <b>&lt;col&gt;</b> element.</td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right;">table-row</td>
+      <td>Let the element behave like a <b>&lt;tr&gt;</b> element.</td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: right;">list-item</td>
+      <td>Let the element behave like a <b>&lt;li&gt;</b> element.</td>
+    </tr>
+  </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch23-1">Section 23.1: The display property</h3>
@@ -13648,11 +13669,11 @@ breaks onto a new line, you will have two very tall lines of text.</p>
 <pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;img</b> 
   src=&quot;http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a&quot;<b>&gt;</b>
-<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
 
 <h4>CSS:</h4>
 
-.wrapper {
+<pre><code>.wrapper {
   <b>position</b>: relative;
   <b>height</b>: 600px;
 }
@@ -13673,11 +13694,15 @@ width to that element.</p>
 <details>
   <summary>HTML &amp; CSS:</summary>
 
+<h4>HTML:</h4>
+
 <pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;child&quot;<b>&gt;</b>
     make me center
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
+
+<h4>CSS:</h4>
 
 .wrapper {
   <b>position</b>: relative;
@@ -13707,11 +13732,11 @@ width to that element.</p>
 <pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
 
 <h4>CSS:</h4>
 
-.wrapper {
+<pre><code>.wrapper {
   <b>min-height</b>: 600px;
 }
 .wrapper:before {
