@@ -112,7 +112,7 @@ Please send feedback and corrections to
 documents by placing a <b>&lt;link&gt;</b> element in each HTML
 document.</p>
 <p>The attribute rel of the <b>&lt;link&gt;</b> tag has to be set to "
-<span class="math inline">$\color{red}{stylesheet}$</span> ", and the
+<span class="color: red">stylesheet</span> ", and the
 href attribute to the relative or absolute path to the stylesheet. While
 using relative URL paths is generally considered good practice, absolute
 paths can be used, too. In HTML5 the type attribute
@@ -131,8 +131,8 @@ users will see a flash of unstyled content</a>.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;meta charset="utf-8"/&gt;
-    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+    &lt;meta charset=<span class="color: red">"utf-8" </span>/&gt;
+    &lt;link rel=<span class="color: red">"stylesheet"</span> type=<span class="color: red">"text/css"</span> href=<span class="color: red">"style.css"</span>&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello world!&lt;/h1&gt;
@@ -144,22 +144,23 @@ users will see a flash of unstyled content</a>.</p>
 style.css
 </h4>
 <pre><code>h1 {
-  color: green;
-  text-decoration: underline;
+  color: <span class="color: red">green</span>;
+  text-decoration: <span class="color: red">underline</span>;
 }
 
 p {
-  font-size: 25px;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-size: <span class="color: red">25px</span>;
+  font-family: <span class="color: red">'Trebuchet MS', sans-serif</span>;
 }
 </code></pre>
 <p>Make sure you include the correct path to your CSS file in the href. If
 the CSS file is in the same folder as your HTML file then no path is
 required (like the example above) but if it’s saved in a folder, then
 specify it like this;<br>
-href="foldername/style.css"</p>
+href=<span class="color: red">"foldername/style.css"</span></p>
 
-<pre><code>&lt;link rel="stylesheet" type="text/css" href="foldername/style.css"&gt;</code></pre>
+<pre><code>&lt;link rel=<span class="color: red">"stylesheet"</span> 
+type=<span class="color: red">"text/css"</span> href=<span class="color: red">"foldername/style.css"</span>&gt;</code></pre>
 
 <p>External stylesheets are considered the best way to handle your CSS.
 There's a very simple reason for this: when you're managing a site of,
@@ -174,8 +175,12 @@ your website, you only need to update this one file.</p>
 
 <p>You can load as many CSS files in your HTML page as needed.</p>
 
-<pre><code>&lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
-&lt;link rel="stylesheet" type="text/css" href="override.css"&gt;</code></pre>
+<pre><code>
+&lt;link rel=<span class="color: red">"stylesheet"</span> 
+type=<span class="color: red">"text/css"</span> href=<span class="color: red">"main.css"</span>&gt;
+&lt;link rel=<span class="color: red">"stylesheet"</span> 
+type=<span class="color: red">"text/css"</span> href=<span class="color: red">"override.css"</span>&gt;
+</code></pre>
 
 <p>CSS rules are applied with some basic rules, and order does matter. For
 example, if you have a main.css file with some code in it:</p>
@@ -255,7 +260,7 @@ target="_blank" rel="noopener noreferrer">@import</a>.</p>
 <p>The following line imports a CSS file named additional-styles.css in the
 root directory into the CSS file in which it appears:</p>
 
-<pre><code>@import '/additional-styles.css';</code></pre>
+<pre><code>@import <span class="color: red">'/additional-styles.css'</span>;</code></pre>
 
 </li>
 
@@ -263,12 +268,13 @@ root directory into the CSS file in which it appears:</p>
 
 <p>Importing external CSS is also possible. A common use case are font files:</p>
 
-<pre><code>@import 'https://fonts.googleapis.com/css?family=Lato';</code></pre>
+<pre><code>@import <span class="color: red">'https://fonts.googleapis.com/css?family=Lato';</span></code></pre>
 
 <p>An optional second argument to @import rule is a list of media queries:</p>
 
-<pre><code>@import '/print-styles.css' print;
-@import url('landscape.css') screen and (orientation: landscape);</code></pre>
+<pre><code>@import <span class="color: red">'/print-styles.css'</span> print;
+<span class="color: blue">@import</span> url(<span class="color: red">'landscape.css'</span>) screen and 
+(orientation: <span class="color: violet">landscape</span>);</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-4">Section 1.4: Inline Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -282,8 +288,8 @@ more often than not reduces a project's maintainability.</p>
 <p>The styles in the following example apply directly to the elements to
 which they are attached.</p>
 
-<pre><code>&lt;h1 style="color: green; text-decoration: underline;"&gt;Hello world!&lt;/h1&gt;
-&lt;p style="font-size: 25px; font-family: 'Trebuchet MS';"&gt;I ♥ CSS&lt;/p&gt;</code></pre>
+<pre><code>&lt;h1 style=<span class="color: red">"color: green; text-decoration: underline;"</span>&gt;Hello world!&lt;/h1&gt;
+&lt;p style=<span class="color: red">"font-size: 25px; font-family: 'Trebuchet MS';"</span>&gt;I ♥ CSS&lt;/p&gt;</code></pre>
 
 <p>Inline styles are generally the safest way to ensure rendering
 compatibility across various email clients, programs and devices, but
@@ -298,7 +304,7 @@ JavaScript through an element's style property.</p>
 <!-- page 5 -->
 
 <pre><code>var el = document.getElementById("element");
-el.style.opacity = 0.5;
+el.style.opacity = <span class="color: red">0.5</span>;
 el.style.fontFamily = 'sans-serif';</code></pre>
 
 <p>Note that style properties are named in lower camel case style. In the
@@ -313,23 +319,23 @@ document.</p>
 
 <p>Modifying CSS properties with jQuery is even simpler.</p>
 
-<pre><code>$('#element').css('margin', '5px');</code></pre>
+<pre><code>$(<span class="color: red">'#element'</span>).css(<span class="color: red">'margin', '5px'</span>);</code></pre>
 
 <h4>If you need to change more than one style rule:</h4>
 
-<pre><code>$('#element').css({
-  margin:"5px",
-  padding:"10px",
-  color:"black"
+<pre><code>$(<span class="color: red">'#element'</span>).css({
+  margin:<span class="color: red">"5px"</span>,
+  padding:<span class="color: red">"10px"</span>,
+  color:<span class="color: red">"black"</span>
 });</code></pre>
 
 <p>jQuery includes two ways to change css rules that have hyphens in them
 (i.e. font-size). You can put them in quotes or camel-case the style
 rule name.</p>
 
-<pre><code>$('.example-class').css({
-  "background-color": "blue", 
-  fontSize: "10px" 
+<pre><code>$(<span class="color: red">'.example-class'</span>).css({
+  <span class="color: red">"background-color": "blue"</span>, 
+  fontSize: <span class="color: red">"10px"</span> 
 });</code></pre>
 
 <h4>See also;</h4>
@@ -377,7 +383,7 @@ icon is set with an image, and accepts a value of none or a URL that
 points to an image.</p>
 
 <pre><code>li {
-  list-style-image: url (images/bullet.png);
+  list-style-image: url (<span class="color: red">images/bullet.png</span>);
 }</code></pre>
 
 <p>The <b>list-style-position</b> property defines where to position the
@@ -398,14 +404,14 @@ list-item marker, and it accepts one of two values: "inside" or
 
 <pre><code>/* Two values in this property list */
 span {
-  text-shadow: yellow 0 0 3px, green 4px 4px 10px;
+  text-shadow: <span class="color: red">yellow</span> 0 0 3px, <span class="color: red">green</span> 4px 4px 10px;
 }
 
 /* Alternate Formatting */
 span {
   text-shadow:
-    yellow 0 0 3px,
-    green 4px 4px 10px;
+    <span class="color: red">yellow</span> 0 0 3px,
+    <span class="color: red">green</span> 4px 4px 10px;
 }</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2">Section 2.2: Multiple Selectors</h3>
@@ -414,20 +420,20 @@ span {
 different elements without repeating the styles in your style sheet. Use
 a comma to separate multiple grouped selectors.</p>
 
-<pre><code>div, p {color: blue }</code></pre>
+<pre><code>div, p {color: <span class="color: red">blue</span> }</code></pre>
 
 <p>So the blue color applies to all <b>&lt;div&gt;</b> elements and all
 <b>&lt;p&gt;</b> elements. Without the comma only <b>&lt;p&gt;</b>
 elements that are a child of a <b>&lt;div&gt;</b> would be red.</p>
 <p>This also applies to all types of selectors.</p>
 
-<pre><code>p, .blue, #first, div span{ color : blue }</code></pre>
+<pre><code>p, .blue, #first, div span{ color : <span class="color: red">blue</span> }</code></pre>
 
 <h4>This rule applies to:</h4>
 
 <ul>
   <li><b>&lt;p&gt;</b></li>
-  <li>elements of the blue class</li>
+  <li>elements of the <span class="color: red">blue</span> class</li>
   <li>element with the ID first</li>
   <li>every <b>&lt;span&gt;</b> inside of a <b>&lt;div&gt;</b></li>
 </ul>
@@ -446,7 +452,7 @@ elements that are a child of a <b>&lt;div&gt;</b> would be red.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>/* This is a CSS comment */
 div {
-  color: red; /* This is a 2nd CSS comment */
+  color: <span style='color: red;'>red;</span> /* This is a 2nd CSS comment */
 }</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2">Section 3.2: Multiple Line</h3>
@@ -638,7 +644,7 @@ the presence of a given attribute or attribute value.</p>
 <p>Selects elements with the given attribute.</p>
 
 <pre><code>div&lbrack;data-color&rbrack; {
-  <b>color</b>: red;
+  <b>color</b>: <span style='color: red;'>red;</span>
 }
 
 <b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
@@ -691,7 +697,8 @@ value appears in a whitespace-separated list.</p>
 }
 
 <b>&lt;div class="color-red foo-bar the-div"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div class="color-blue" foo-bar the-div"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div class="color-blue" foo-bar the-div"&gt;</b>
+This will NOT be red<b>&lt;/div&gt;</b></code></pre>
 
 <!-- page 11 -->
 <p><a href="http://jsbin.com/posuhim/1/edit?html,css,output" 
