@@ -112,8 +112,8 @@ Please send feedback and corrections to
 <p>An external CSS stylesheet can be applied to any number of HTML
 documents by placing a <b>&lt;link&gt;</b> element in each HTML
 document.</p>
-<p>The attribute rel of the <b>&lt;link&gt;</b> tag has to be set to "
-<span class="color: red">stylesheet</span> ", and the
+<p>The attribute rel of the <b>&lt;link&gt;</b> tag has to be set to 
+"<span class='color: red;'>stylesheet</span>", and the
 href attribute to the relative or absolute path to the stylesheet. While
 using relative URL paths is generally considered good practice, absolute
 paths can be used, too. In HTML5 the type attribute
@@ -132,8 +132,8 @@ users will see a flash of unstyled content</a>.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;meta charset=<span class='color: red'>"utf-8" </span>/&gt;
-    &lt;link rel=<span class='color: red'>"stylesheet"</span> type=<span class='color: red'>"text/css"</span> href=<span class='color: red'>"style.css"</span>&gt;
+    &lt;meta charset=<span class='color: red;'>"utf-8" </span>/&gt;
+    &lt;link rel=<span class='color: red;'>"stylesheet"</span> type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"style.css"</span>&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello world!&lt;/h1&gt;
@@ -145,23 +145,23 @@ users will see a flash of unstyled content</a>.</p>
 style.css
 </h4>
 <pre><code>h1 {
-  color: <span class='color: red'>green</span>;
-  text-decoration: <span class='color: red'>underline</span>;
+  color: <span class='color: red;'>green</span>;
+  text-decoration: <span class='color: red;'>underline</span>;
 }
 
 p {
-  font-size: <span class='color: red'>25px</span>;
-  font-family: <span class='color: red'>'Trebuchet MS', sans-serif</span>;
+  font-size: <span class='color: red;'>25px</span>;
+  font-family: <span class='color: red;'>'Trebuchet MS', sans-serif</span>;
 }
 </code></pre>
 <p>Make sure you include the correct path to your CSS file in the href. If
 the CSS file is in the same folder as your HTML file then no path is
 required (like the example above) but if it’s saved in a folder, then
 specify it like this;<br>
-href=<span class='color: red'>"foldername/style.css"</span></p>
+href=<span class='color: red;'>"foldername/style.css"</span></p>
 
-<pre><code>&lt;link rel=<span class='color: red'>"stylesheet"</span> 
-type=<span class='color: red'>"text/css"</span> href=<span class='color: red'>"foldername/style.css"</span>&gt;</code></pre>
+<pre><code>&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
+type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"foldername/style.css"</span>&gt;</code></pre>
 
 <p>External stylesheets are considered the best way to handle your CSS.
 There's a very simple reason for this: when you're managing a site of,
@@ -177,10 +177,10 @@ your website, you only need to update this one file.</p>
 <p>You can load as many CSS files in your HTML page as needed.</p>
 
 <pre><code>
-&lt;link rel=<span class='color: red'>"stylesheet"</span> 
-type=<span class='color: red'>"text/css"</span> href=<span class='color: red'>"main.css"</span>&gt;
-&lt;link rel=<span class='color: red'>"stylesheet"</span> 
-type=<span class='color: red'>"text/css"</span> href=<span class='color: red'>"override.css"</span>&gt;
+&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
+type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"main.css"</span>&gt;
+&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
+type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"override.css"</span>&gt;
 </code></pre>
 
 <p>CSS rules are applied with some basic rules, and order does matter. For
@@ -261,7 +261,7 @@ target="_blank" rel="noopener noreferrer">@import</a>.</p>
 <p>The following line imports a CSS file named additional-styles.css in the
 root directory into the CSS file in which it appears:</p>
 
-<pre><code>@import <span class='color: red'>'/additional-styles.css'</span>;</code></pre>
+<pre><code>@import <span class='color: red;'>'/additional-styles.css'</span>;</code></pre>
 
 </li>
 
@@ -269,13 +269,13 @@ root directory into the CSS file in which it appears:</p>
 
 <p>Importing external CSS is also possible. A common use case are font files:</p>
 
-<pre><code>@import <span class="color: red">'https://fonts.googleapis.com/css?family=Lato';</span></code></pre>
+<pre><code>@import <span class='color: red;'>'https://fonts.googleapis.com/css?family=Lato';</span></code></pre>
 
 <p>An optional second argument to @import rule is a list of media queries:</p>
 
-<pre><code>@import <span class="color: red">'/print-styles.css'</span> print;
-<span class="color: blue">@import</span> url(<span class="color: red">'landscape.css'</span>) screen and 
-(orientation: <span class="color: violet">landscape</span>);</code></pre>
+<pre><code>@import <span class='color: red;'>'/print-styles.css'</span> print;
+<span class="color: blue">@import</span> url(<span class='color: red;'>'landscape.css'</span>) screen and 
+(orientation: <span class='color: violet;'>landscape</span>);</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-4">Section 1.4: Inline Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -289,8 +289,8 @@ more often than not reduces a project's maintainability.</p>
 <p>The styles in the following example apply directly to the elements to
 which they are attached.</p>
 
-<pre><code>&lt;h1 style=<span class="color: red">"color: green; text-decoration: underline;"</span>&gt;Hello world!&lt;/h1&gt;
-&lt;p style=<span class="color: red">"font-size: 25px; font-family: 'Trebuchet MS';"</span>&gt;I ♥ CSS&lt;/p&gt;</code></pre>
+<pre><code>&lt;h1 style=<span class='color: red;'>"color: green; text-decoration: underline;"</span>&gt;Hello world!&lt;/h1&gt;
+&lt;p style=<span class='color: red;'>"font-size: 25px; font-family: 'Trebuchet MS';"</span>&gt;I ♥ CSS&lt;/p&gt;</code></pre>
 
 <p>Inline styles are generally the safest way to ensure rendering
 compatibility across various email clients, programs and devices, but
@@ -305,7 +305,7 @@ JavaScript through an element's style property.</p>
 <!-- page 5 -->
 
 <pre><code>var el = document.getElementById("element");
-el.style.opacity = <span class="color: red">0.5</span>;
+el.style.opacity = <span class='color: red;'>0.5</span>;
 el.style.fontFamily = 'sans-serif';</code></pre>
 
 <p>Note that style properties are named in lower camel case style. In the
@@ -320,23 +320,23 @@ document.</p>
 
 <p>Modifying CSS properties with jQuery is even simpler.</p>
 
-<pre><code>$(<span class="color: red">'#element'</span>).css(<span class="color: red">'margin', '5px'</span>);</code></pre>
+<pre><code>$(<span class='color: red;'>'#element'</span>).css(<span class='color: red;'>'margin', '5px'</span>);</code></pre>
 
 <h4>If you need to change more than one style rule:</h4>
 
-<pre><code>$(<span class="color: red">'#element'</span>).css({
-  margin:<span class="color: red">"5px"</span>,
-  padding:<span class="color: red">"10px"</span>,
-  color:<span class="color: red">"black"</span>
+<pre><code>$(<span class='color: red;'>'#element'</span>).css({
+  margin:<span class='color: red;'>"5px"</span>,
+  padding:<span class='color: red;'>"10px"</span>,
+  color:<span class='color: red;'>"black"</span>
 });</code></pre>
 
 <p>jQuery includes two ways to change css rules that have hyphens in them
 (i.e. font-size). You can put them in quotes or camel-case the style
 rule name.</p>
 
-<pre><code>$(<span class="color: red">'.example-class'</span>).css({
-  <span class="color: red">"background-color": "blue"</span>, 
-  fontSize: <span class="color: red">"10px"</span> 
+<pre><code>$(<span class='color: red;'>'.example-class'</span>).css({
+  <span class='color: red;'>"background-color": "blue"</span>, 
+  fontSize: <span class='color: red;'>"10px"</span> 
 });</code></pre>
 
 <h4>See also;</h4>
@@ -384,7 +384,7 @@ icon is set with an image, and accepts a value of none or a URL that
 points to an image.</p>
 
 <pre><code>li {
-  list-style-image: url (<span class="color: red">images/bullet.png</span>);
+  list-style-image: url (<span class='color: red;'>images/bullet.png</span>);
 }</code></pre>
 
 <p>The <b>list-style-position</b> property defines where to position the
@@ -405,14 +405,14 @@ list-item marker, and it accepts one of two values: "inside" or
 
 <pre><code>/* Two values in this property list */
 span {
-  text-shadow: <span class="color: red">yellow</span> 0 0 3px, <span class="color: red">green</span> 4px 4px 10px;
+  text-shadow: <span class='color: red;'>yellow</span> 0 0 3px, <span class='color: red;'>green</span> 4px 4px 10px;
 }
 
 /* Alternate Formatting */
 span {
   text-shadow:
-    <span class="color: red">yellow</span> 0 0 3px,
-    <span class="color: red">green</span> 4px 4px 10px;
+    <span class='color: red;'>yellow</span> 0 0 3px,
+    <span class='color: red;'>green</span> 4px 4px 10px;
 }</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2">Section 2.2: Multiple Selectors</h3>
@@ -421,20 +421,20 @@ span {
 different elements without repeating the styles in your style sheet. Use
 a comma to separate multiple grouped selectors.</p>
 
-<pre><code>div, p {color: <span class="color: red">blue</span> }</code></pre>
+<pre><code>div, p {color: <span class='color: red;'>blue</span> }</code></pre>
 
 <p>So the blue color applies to all <b>&lt;div&gt;</b> elements and all
 <b>&lt;p&gt;</b> elements. Without the comma only <b>&lt;p&gt;</b>
 elements that are a child of a <b>&lt;div&gt;</b> would be red.</p>
 <p>This also applies to all types of selectors.</p>
 
-<pre><code>p, .blue, #first, div span{ color : <span class="color: red">blue</span> }</code></pre>
+<pre><code>p, .blue, #first, div span{ color : <span class='color: red;'>blue</span> }</code></pre>
 
 <h4>This rule applies to:</h4>
 
 <ul>
   <li><b>&lt;p&gt;</b></li>
-  <li>elements of the <span class="color: red">blue</span> class</li>
+  <li>elements of the <span class='color: red;'>blue</span> class</li>
   <li>element with the ID first</li>
   <li>every <b>&lt;span&gt;</b> inside of a <b>&lt;div&gt;</b></li>
 </ul>
@@ -4215,7 +4215,7 @@ padding-left etc) can you write it as a shorthand, as below:</p>
     padding: 25px; /* top/right/bottom/left */
 }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style='color:red;'>&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21d. padding: 25, 25, 25, 25px (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -4247,7 +4247,7 @@ border. Negative values are not allowed.</p>
     padding-top: 5px;
 }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myClass&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style='color:red;'>&quot;myClass&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch10">Chapter 10: Border</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4285,7 +4285,7 @@ vertical radius of every corner to the same value:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&apos;box&apos;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><code><b>&lt;div</b> class=<span style='color:red;'>&apos;box&apos;</span><b>&gt;&lt;/div&gt;</b></code></pre>
 
 <h4>CSS:</h4>
 
@@ -4485,7 +4485,7 @@ be transparent.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&apos;bordered&apos;</span><b>&gt;</b>Border on all sides<b>&lt;/div&gt;</b></code></pre>
+<pre><code><b>&lt;div</b> class=<span style='color:red;'>&apos;bordered&apos;</span><b>&gt;</b>Border on all sides<b>&lt;/div&gt;</b></code></pre>
 
 <p>The above example would produce a border that comprises of 5 different
 colors. The colors are defined through a linear-gradient (you can find
@@ -4916,7 +4916,7 @@ div {
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=<span style="color:red">&quot;http://placehold.it/100x100&quot;</span><b>&gt;</b>
+<pre><code><b>&lt;img</b> src=<span style='color:red;'>&quot;http://placehold.it/100x100&quot;</span><b>&gt;</b>
 <b>&lt;div&gt;</b>
   <b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, cum no paulo mollis pertinacia.<b>&lt;/p&gt;</b>
   <b>&lt;p&gt;</b>Ad case omnis nam, mutat deseruisse persequeris eos ad, in tollit debitis sea.<b>&lt;/p&gt;</b>
@@ -5114,31 +5114,31 @@ features</b> such as the availability of color or viewport dimensions.</p>
 
 <h4>General Structure of a Media Query</h4>
 
-<pre><code><b><span style="color: blue;">&commat;media</span></b> &lbrack;&period;..&rbrack; {
+<pre><code><b><span style='color: blue;'>&commat;media</span></b> &lbrack;&period;..&rbrack; {
   /* One or more CSS rules to apply when the query is satisfied */
 }</code></pre>
 
 <h4>A Media Query containing a Media Type</h4>
 
-<pre><code><b><span style="color: blue;">&commat;media</span></b> print {
+<pre><code><b><span style='color: blue;'>&commat;media</span></b> print {
   /* One or more CSS rules to apply when the query is satisfied */
 }</code></pre>
 
 <h4>A Media Query containing a Media Type and a Media Feature</h4>
 
-<pre><code><b><span style="color: blue;">&commat;media</span></b> screen and (<b>max-width</b>: 600px) {
+<pre><code><b><span style='color: blue;'>&commat;media</span></b> screen and (<b>max-width</b>: 600px) {
   /*  One or more CSS rules to apply when the query is satisfied */
 }</code></pre>
 
 <h4>A Media Query containing a Media Feature (and an implicit Media Type of "all")</h4>
 
-<pre><code><b><span style="color: blue;">&commat;media</span></b> (orientation: portrait) {
+<pre><code><b><span style='color: blue;'>&commat;media</span></b> (orientation: portrait) {
   /* One or more CSS rules to apply when the query is satisfied */
 }</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch13-2">Section 13.2: Basic Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b><span style="color: blue;">&commat;media</span></b> screen and (<b>min-width</b>: 720px) {
+<pre><code><b><span style='color: blue;'>&commat;media</span></b> screen and (<b>min-width</b>: 720px) {
   body {
     <b>background-color</b>: skyblue;
   }
@@ -5168,10 +5168,10 @@ port to less than 720 pixels in width.</p>
 <h3 id="ch13-3">Section 13.3: mediatype</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Media queries have an optional mediatype parameter. This parameter is
-placed directly after the @media declaration(<span style="color: blue;">
+placed directly after the @media declaration(<span style='color: blue;'>
 @media</span> mediatype mediatype), for example:</p>
 
-<pre><code><span style="color: blue;">&commat;media</span> print {
+<pre><code><span style='color: blue;'>&commat;media</span> print {
   html {
     <b>background-color</b>: white;
   }
@@ -5185,7 +5185,7 @@ apply the styles to everything except the specified mediatype
 the following code example will apply the style to every media type
 except print.</p>
 
-<pre><code><span style="color: blue;">&commat;media</span> not print {
+<pre><code><span style='color: blue;'>&commat;media</span> not print {
   html {
     <b>background-color</b>: green;
   }
@@ -5194,7 +5194,7 @@ except print.</p>
 <p>And the same way, for just showing it only on the screen, this can be
 used:</p>
 
-<pre><code><span style="color: blue;">&commat;media</span> only screen {
+<pre><code><span style='color: blue;'>&commat;media</span> only screen {
   .fadeInEffects {
     <b>display</b>: block;
   }
@@ -5262,13 +5262,13 @@ used:</p>
 <p>Although this works only for WebKit based browsers, this is helpful:</p>
 
 <pre><code>/*----------- Non-Retina Screens -----------*/
-<span style="color: blue;">&commat;media</span> screen
+<span style='color: blue;'>&commat;media</span> screen
   and (<b>min-width</b>: 1200px)
   and (<b>max-width</b>: 1600px)
   and (&minus;webkit-min-device-pixel-ratio: 1) {
 }
 /*----------- Retina Screens -----------*/
-<span style="color: blue;">&commat;media</span> screen
+<span style='color: blue;'>&commat;media</span> screen
   and (<b>min-width</b>: 1200px)
   and (<b>max-width</b>: 1600px)
   and (&minus;webkit-min-device-pixel-ratio: 2)
@@ -5332,21 +5332,21 @@ useful for responsive web design because you can use media queries to
 specify different CSS styles for the mobile version of your website
 versus the desktop version.</p>
 
-<pre><code><span style="color:blue">&commat;media</span> only screen and (<b>min-width</b>: 300px) and (<b>max-width</b>: 767px) {
+<pre><code><span style='color:blue;'>&commat;media</span> only screen and (<b>min-width</b>: 300px) and (<b>max-width</b>: 767px) {
   .site-title {
     <b>font-size</b>: 80&percnt;;
   }
 /* Styles in this block are only applied if the screen size is at least 300px wide, 
 but no more than 767px */
 }
-<span style="color:blue">&commat;media</span> only screen and (<b>min-width</b>: 768px) and (<b>max-width</b>:1023px) {
+<span style='color:blue;'>&commat;media</span> only screen and (<b>min-width</b>: 768px) and (<b>max-width</b>:1023px) {
   .site-title {
     <b>font-size</b>: 90&percnt;;
   }
 /* Styles in this block are only applied if the screen size is at least 768px wide, but no more 
 than 1023px */
 }
-<span style="color:blue">&commat;media</span> only screen and (<b>min-width</b>: 1024px) {
+<span style='color:blue;'>&commat;media</span> only screen and (<b>min-width</b>: 1024px) {
   .site-title {
     <b>font-size</b>: 120&percnt;;
   }
@@ -5426,7 +5426,7 @@ Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
 nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
 Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
 massa. Vestibulum lacinia arcu eget nulla. <b>&lt;/p&gt;</b>
-<b>&lt;img</b> src=<span style="color:blue">&quot;http://lorempixel.com/200/100/&quot;</span> <b>/&gt;</b>
+<b>&lt;img</b> src=<span style='color:blue;'>&quot;http://lorempixel.com/200/100/&quot;</span> <b>/&gt;</b>
 
 <b>&lt;p&gt;</b>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque 
@@ -9878,7 +9878,7 @@ block | Any amount of CSS attributes for the keyframe. |</div>
 <h3 id="ch27-1">Section 27.1: Animations with keyframes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>For multi-stage CSS animations, you can create CSS <span
-style="color:blue">@keyframes</span>. Keyframes allow you to define
+style='color:blue;'>@keyframes</span>. Keyframes allow you to define
 multiple animation points, called a keyframe, to define more complex
 animations.</p>
 
@@ -9909,9 +9909,9 @@ between all colors.</p>
 <p><a href="https://jsfiddle.net/s9m3od3p/6/" 
 target="_blank" rel="noopener noreferrer">View Result (jsFiddle)</a>.</p>
 <p>There's a few different things to note here. First, the actual <span
-style="color:blue">@</span>keyframes syntax.</p>
+style='color:blue;'>@</span>keyframes syntax.</p>
 
-<pre><code><span style="color:blue">&commat;</span>keyframes rainbow-background{</code></pre>
+<pre><code><span style='color:blue;'>&commat;</span>keyframes rainbow-background{</code></pre>
 
 <p>This sets the name of the animation to rainbow-background.</p>
 
@@ -14121,7 +14121,7 @@ properties with *:</p>
 <h3 id="ch55-4">Section 55.4: Internet Explorer 8 only</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To target Internet Explorer 8, wrap your selectors inside: <span
-class="citation" data-cites="media">@media</span> \0.
+class='citation' data-cites='media'>@media</span> \0.
 </p>
 <p>It’s microsoft, so it really isn’t worth spending more time learning.</p>
 <p>So pathetic. The only good MS code was stolen from Universities, Digital
