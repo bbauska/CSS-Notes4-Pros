@@ -75,7 +75,7 @@ the late 70's without retirement. So, would greatly appreciate any donations to 
 <img src="./images/image002.jpg"
   style="width:20%"
   title="CSS logo"
-  alt=" logo." />
+  alt="CSS logo." />
 </p>
 <h2 id="about">About</h2>
 <p align="center">
@@ -505,7 +505,7 @@ and patterns.</p>
     </tr>
     <tr class="even">
       <td>.blue.red</td>
-      <td>All elements with class blue and red (a type of Compound selector)</td>
+      <td>All elements with class <span style='color: red;'>blue</span> <b>and</b> <span style='color: red;'>red</span> (a type of Compound selector)</td>
     </tr>
     <tr class="odd">
       <td><span style='color: indigo;'>#headline</span></td>
@@ -521,7 +521,7 @@ and patterns.</p>
     </tr>
     <tr class="even">
       <td><span style='color: pink;'>:lang</span>(en)</td>
-      <td>Element that matches :lang declaration, for example <b>&lt;span lang=“en”&gt;</b></td>
+      <td>Element that matches :lang declaration, for example <b>&lt;span lang=<span style='color: red;'>"en"</span>&gt;</b></td>
     </tr>
     <tr class="odd">
       <td>div &gt; p</td>
@@ -569,13 +569,13 @@ the presence of a given attribute or attribute value.</p>
       <td>With attribute attr</td>
     </tr>
     <tr class="even">
-      <td style="text-align: right;">[attr=‘val’]</td>
-      <td>&lt;div attr=“val”&gt;</td>
+      <td style="text-align: right;">[attr=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"val"</span>&gt;</td>
       <td>Where attribute attr has value val</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: right;">[attr~=‘val’]</td>
-      <td>&lt;div attr=“val val2 val3”&gt;</td>
+      <td style="text-align: right;">[attr~=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"val val2 val3"</span>&gt;</td>
       <td>Where val appears in the</td>
     </tr>
     <tr class="even">
@@ -584,23 +584,23 @@ the presence of a given attribute or attribute value.</p>
       <td>whitespace-separated list of attr</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: right;">[attr^=‘val’]</td>
-      <td>&lt;div attr=“val1 val2”&gt;</td>
+      <td style="text-align: right;">[attr^=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"val1 val2"</span>&gt;</td>
       <td>Where attr’s value begins with val</td>
     </tr>
     <tr class="even">
-      <td style="text-align: right;">[attr$=‘val’]</td>
-      <td>&lt;div attr=“sth aval”&gt;</td>
+      <td style="text-align: right;">[attr$=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"sth aval"</span>&gt;</td>
       <td>Where attr’s value ends with val</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: right;">[attr*=‘val’]</td>
-      <td>&lt;div attr=“somevalhere”&gt;</td>
+      <td style="text-align: right;">[attr*=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"somevalhere"</span>&gt;</td>
       <td>Where attr contains val anywhere</td>
     </tr>
     <tr class="even">
-      <td style="text-align: right;">[attr|=‘val’]</td>
-      <td>&lt;div attr=“val-sth etc”&gt;</td>
+      <td style="text-align: right;">[attr|=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"val-sth etc"</span>&gt;</td>
       <td>Where attr’s value is exactly val,</td>
     </tr>
     <tr class="odd">
@@ -614,8 +614,9 @@ the presence of a given attribute or attribute value.</p>
       <td>followed by - (U+002D)</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: right;">[attr|=‘val’ i]</td>
-      <td>&lt;div attr=“val”&gt;</td>
+      <td style="text-align: right;">[attr|=<span style='color: red;'>
+	    <span style='color: red;'>'val'</span> i</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"val"</span>&gt;</td>
       <td>Where attr has val,</td>
     </tr>
     <tr class="even">
@@ -647,14 +648,14 @@ the presence of a given attribute or attribute value.</p>
   <b>color</b>: <span style='color: red;'>red;</span>
 }
 
-<b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div data-color="green"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div data-background="red"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div data-color=<span style='color: red;'>"red"</span>&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div data-color=<span style='color: red;'>"green"</span>&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div data-background=<span style='color: red;'>"red"</span>&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
 
 <p><a href="http://jsbin.com/cezale/1/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
-<pre><code>&lbrack;<b>attribute="value"</b>&rbrack;</code></pre>
+<pre><code>&lbrack;<b>attribute</b>=<span style='color: red;'>"value"</span>&rbrack;</code></pre>
 
 <p>Selects elements with the given attribute and value.</p>
 
