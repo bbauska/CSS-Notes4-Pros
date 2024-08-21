@@ -1,4 +1,15 @@
 /* css/styles.css for CSS-Notes4Pros */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 3px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #ffff11;}
+/* tr:hover {background-color: coral;} */
 
 table.greenTbl {
   font-family: Arial, Helvetica, sans-serif;
@@ -84,6 +95,9 @@ a[href]:hover {
   background-color: #ffff00;  /* pure (or mostly pure) yellow */
   text-decoration: underline; 
 }
+a.three:link {color:#ffff00;}
+a.three:visited {color:#000;}
+a.three:hover {background:#ee7;}
 
 div {
   float: left; }
