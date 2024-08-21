@@ -521,7 +521,7 @@ and patterns.</p>
       <td>Element that matches pseudo-element</td>
     </tr>
     <tr>
-      <td><span style='color: pink;'>:lang</span>(en)</td>
+      <td><b><span style='color: pink;'>:lang</span></b>(en)</td>
       <td>Element that matches :lang declaration, for example <b>&lt;span lang=<span style='color: red;'>"en"</span>&gt;</b></td>
     </tr>
     <tr>
@@ -615,8 +615,7 @@ the presence of a given attribute or attribute value.</p>
       <td>followed by - (U+002D)</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: right;">[attr|=<span style='color: red;'>
-        <span style='color: red;'>'val'</span> i</span>]</td>
+      <td style="text-align: right;">[attr=<span style='color: red;'>'val'</span> i]</td>
       <td>&lt;div attr=<span style='color: red;'>"val"</span>&gt;</td>
       <td>Where attr has val,</td>
     </tr>
@@ -656,22 +655,22 @@ the presence of a given attribute or attribute value.</p>
 <p><a href="http://jsbin.com/cezale/1/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
-<pre><code>&lbrack;<b>attribute</b>=<span style='color: red;'>"value"</span>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute</b>=<b><span style='color: red;'>"value"</span></b>&rbrack;</pre>
 
 <p>Selects elements with the given attribute and value.</p>
 
-<pre><code>div&lbrack;data-color="red"&rbrack; {
-  <b>color</b>: red;
+<pre>div&lbrack;data-color=<span style='color: red;'>"red"</span>&rbrack; {
+  <b>color</b>: <span style='color: red;'>red</span>;
   }
 
-<b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div data-color="green"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div data-background="blue"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> data-color=<span style='color: red;'>"red"</span>&gt;This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div</b> data-color=<span style='color: red;'>"green"</span>&gt;This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div</b> data-background=<span style='color: red;'>"red"</span>&gt;This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <p><a href="http://jsbin.com/waxoked/1/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
-<pre><code>&lbrack;<b>attribute*="value"</b>&rbrack;</code></pre>
+<pre><code>&lbrack;<b>attribute=<span style='color: red;'>"value"</span></b>&rbrack;</code></pre>
 
 <p>Selects elements with the given attribute and value where the given
 attribute contains the given value anywhere (as a substring).</p>
