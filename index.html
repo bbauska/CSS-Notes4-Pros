@@ -58,7 +58,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 align="center">Advanced CSS Notes for Professionals</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h6 align="center">(by web@petercs.com, lecturer - PDF <span class="citation"
+<h6 align="center">(by web@petercs.com, lecturer - PDF <span class='citation'
 data-cites="https://goalkicker.com">@https://goalkicker.com</span>)</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>CSS Notes For Professionals - intermediate level CSS learning course.<br />
@@ -334,9 +334,9 @@ document.</p>
 (i.e. font-size). You can put them in quotes or camel-case the style
 rule name.</p>
 
-<pre><code>$(<span class='color: red;'>'.example-class'</span>).css({
-  <span class='color: red;'>"background-color": "blue"</span>, 
-  fontSize: <span class='color: red;'>"10px"</span> 
+<pre><code>$(<b><span class='color: red;'>'.example-class'</span></b>).css({
+  <b><span class='color: red;'>"background-color": "blue"</span></b>, 
+  fontSize: <b><span class='color: red;'>"10px"</span></b>
 });</code></pre>
 
 <h4>See also;</h4>
@@ -480,7 +480,7 @@ and patterns.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-1">Section 4.1: Basic selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table border="1" style="border-collapse: collapse;">
+<table>
   <colgroup>
     <col style="width: 25%" />
     <col style="width: 74%" />
@@ -492,39 +492,39 @@ and patterns.</p>
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>*</td>
       <td>Universal selector (all elements)</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>div</td>
       <td>Tag selector (all <b>&lt;div&gt;</b> elements)</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><span style='color: blue;'>.blue</span></td>
       <td>Class selector (all elements with class blue)</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>.blue.red</td>
       <td>All elements with class <span style='color: red;'>blue</span> <b>and</b> <span style='color: red;'>red</span> (a type of Compound selector)</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><span style='color: indigo;'>#headline</span></td>
       <td>ID selector (the element with “id” attribute set to headline)</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>:pseudo-class</td>
       <td>All Elements with pseudo-class</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>::pseudo-element</td>
       <td>Element that matches pseudo-element</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td><span style='color: pink;'>:lang</span>(en)</td>
       <td>Element that matches :lang declaration, for example <b>&lt;span lang=<span style='color: red;'>"en"</span>&gt;</b></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>div &gt; p</td>
       <td>child selector</td>
     </tr>
@@ -4566,51 +4566,52 @@ element, you could do:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch11">Chapter 11: Outlines</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table border="1" style="border-collapse: collapse;">
+<!-- page 69 -->
+<table>
   <thead>
-    <tr class="header">
+    <tr>
       <th><b>Parameter</b></th>
       <th><b>Details</b></th>
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>dotted</td>
       <td>dotted outline</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>dashed</td>
       <td>dashed outline</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>solid</td>
       <td>solid outline</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>double</td>
       <td>double outline</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>groove</td>
       <td>3D grooved outline, depends on the outline-color value</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>ridge</td>
       <td>3D ridged outline, depends on the outline-color value</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>inset</td>
       <td>3D inset outline, depends on the outline-color value</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>outset</td>
       <td>3D outset outline, depends on the outline-color value</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>none</td>
       <td>no outline</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>hidden</td>
       <td>hidden outline</td>
     </tr>
