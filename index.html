@@ -26,7 +26,7 @@
 </head>
 <body>
   <script src="./js/lazysizes.min.js" async=""></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+<!--  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -54,7 +54,7 @@
   }
 </script>
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 align="center">Advanced CSS Notes for Professionals</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1170,7 +1170,7 @@ whether or not a link has been followed (:visited), the mouse is over an element
     </tr>
     <tr class="odd">
       <td><a href="https://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited" 
-        target="_blank" rel="noopener noreferrer":link</td>
+        target="_blank" rel="noopener noreferrer">:link</td>
       <td>Applies to any links which haven't been visited by the user.</td>
     </tr>
     <tr class="even">
@@ -2575,8 +2575,8 @@ background-position-y. These allow you to control the x or y positions
 separately.</p>
 
 <blockquote>
-  <b>NOTE:</b> This is supported in all browsers except Firefox (versions 31-48)
-  [2]<a href="http://caniuse.com/#search=background-position-x"></a>.
+  <b>NOTE:</b> This is supported in all browsers except 
+  <a href="http://caniuse.com/#search=background-position-x">Firefox (versions 31-48)[2]</a>.
   Firefox 49, to be released September 2016, <i>will</i> support these
   properties. Until then,
   <a href="http://stackoverflow.com/questions/14844407/background-position-y-doesnt-work-in-firefox-via-css/29282573#29282573" 
@@ -3527,9 +3527,9 @@ height of the content:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-container&quot;</span><b>&gt;</b>
-  <b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-helper&quot;</span><b>&gt;</b>
-    <b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-content&quot;</span><b>&gt;</b>
+<pre><code><b>&lt;div</b> class=<span style='color:red;'>&quot;vcenter&minus;-container&quot;</span><b>&gt;</b>
+  <b>&lt;div</b> class=<span style='color:red;'>&quot;vcenter&minus;-helper&quot;</span><b>&gt;</b>
+    <b>&lt;div</b> class=<span style='color:red;'>&quot;vcenter&minus;-content&quot;</span><b>&gt;</b>
       &lt;!-- stuff --&gt;
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
@@ -3571,9 +3571,9 @@ target="_blank" rel="noopener noreferrer">original question</a>.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&quot;wrapper&quot;</span><b>&gt;</b>
-  <b>&lt;div</b> class=<span style="color:red;">&quot;parent&quot;</span><b>&gt;</b>
-    <b>&lt;div</b> class=<span style="color:red;">&quot;child&quot;</span><b>&gt;&lt;/div&gt;</b>
+<pre><code><b>&lt;div</b> class=<span style='color:red;'>&quot;wrapper&quot;</span><b>&gt;</b>
+  <b>&lt;div</b> class=<span style='color:red;'>&quot;parent&quot;</span><b>&gt;</b>
+    <b>&lt;div</b> class=<span style='color:red;'>&quot;child&quot;</span><b>&gt;&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
 <b>&lt;/div&gt;</b></code></pre>
 
@@ -3910,13 +3910,13 @@ between the elements.</p>
 .inner-bottom {
   <b>margin</b>: 25px;
 }
-<b>&lt;div</b> class =<span style="color:red;">&quot;outer-top&quot;</span><b>&gt;</b>
-    <b>&lt;div</b> class=<span style="color:red;">&quot;inner-top&quot;</span><b>&gt;</b>
+<b>&lt;div</b> class =<span style='color:red;'>&quot;outer-top&quot;</span><b>&gt;</b>
+    <b>&lt;div</b> class=<span style='color:red;'>&quot;inner-top&quot;</span><b>&gt;</b>
       some content
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-  <b>&lt;div</b> class=<span style="color:red;">&quot;outer-bottom&quot;</span><b>&gt;</b>
-    <b>&lt;div</b> class=<span style="color:red;">&quot;inner-bottom&quot;</span><b>&gt;</b>
+  <b>&lt;div</b> class=<span style='color:red;'>&quot;outer-bottom&quot;</span><b>&gt;</b>
+    <b>&lt;div</b> class=<span style='color:red;'>&quot;inner-bottom&quot;</span><b>&gt;</b>
       some more content
   <b>&lt;/div&gt;</b>
 <b>&lt;/div&gt;</b></code></pre>
@@ -4160,7 +4160,7 @@ padding-left etc) can you write it as a shorthand, as below:</p>
     padding: 25px 50px 75px 100px; /* top right bottom left; */
   }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style='color:red;'>&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 21a. padding: 25, 50, 75 100px (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -4178,7 +4178,7 @@ padding-left etc) can you write it as a shorthand, as below:</p>
     padding: 25px 50px 75px; /* top left/right bottom */
   }
   <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style='color:red;'>&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21b. padding: 25, 50, 75, 50px (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -4196,7 +4196,7 @@ padding-left etc) can you write it as a shorthand, as below:</p>
     padding: 25px 50px; /* top/bottom left/right */
   }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style='color:red;'>&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21c. padding: 25, 50, 25, 50px (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
