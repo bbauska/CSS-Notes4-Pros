@@ -61,7 +61,7 @@
 <h6 align="center">(by web@petercs.com, lecturer - PDF <span class='citation'
 data-cites="https://goalkicker.com">@https://goalkicker.com</span>)</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>CSS Notes For Professionals - intermediate level CSS learning course.<br />
+<p>CSS Notes For Professionals - intermediate level CSS learning course.<br/>
 All on-line. No money, unless you’d like to donate. I’m an old programmer from 
 the late 70's without retirement. So, would greatly appreciate any donations to paypal 
 @brianbauska@gmail.com or @Brian-Bauska with Venmo.</p>
@@ -78,47 +78,48 @@ the late 70's without retirement. So, would greatly appreciate any donations to 
   title="CSS logo"
   alt="CSS logo." />
 </p>
+
 <h2 id="about">About</h2>
-<p align="center">
-Please feel free to share this Advanced CSS website with anyone, latest
-version of this book can be downloaded from:<br>
-<a href="https://goalkicker.com/CSSBook">Advanced CSS Book</a>.</p>
-<p align="center">
-This <i>CSS Notes for Professionals</i> website is compiled from
-<a href="https://archive.org/details/documentation-dump.7z">Stack
-Overflow Documentation</a>, the content is written by the beautiful
+
+<p align="center">Please feel free to share this Advanced CSS website with anyone, latest
+version of this book can be downloaded from:<br/>
+<a href="https://goalkicker.com/CSSBook" 
+target="_blank" rel="noopener noreferrer">Advanced CSS Book</a>.</p>
+
+<p align="center">This <i>CSS Notes for Professionals</i> website is compiled from
+<a href="https://archive.org/details/documentation-dump.7z" target="_blank" rel="noopener noreferrer">
+Stack Overflow Documentation</a>, the content is written by the beautiful
 people at Stack Overflow.<br/> Text content is released under Creative
 Commons BY-SA, see credits at the end of this book whom contributed to
 the various chapters. Images may be copyright of their respective owners
 unless otherwise specified.</p>
-<p align="center">
-This is an unofficial free website created for educational purposes and is
+
+<p align="center">This is an unofficial free website created for educational purposes and is
 not affiliated with official CSS group(s) or company(s) nor Stack
 Overflow. All trademarks and registered trademarks are the property of
 their respective company owners.</p>
-<p align="center">
-The information presented in this website is not guaranteed to be correct
+
+<p align="center">The information presented in this website is not guaranteed to be correct
 nor accurate, use at your own risk.</p>
-<p align="center">
-Please send feedback and corrections to
-<a href="brianbauska@gmail.com">brianbauska@gmail.com</a>
-</p>
+
+<p align="center">Please send feedback and corrections to
+<a href="brianbauska@gmail.com">brianbauska@gmail.com</a></p>
 <!-- page 2 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1">Chapter 1: Getting started with CSS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1">Section 1.1: External Stylesheet</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>An external CSS stylesheet can be applied to any number of HTML
-documents by placing a <b>&lt;link&gt;</b> element in each HTML
-document.</p>
+<p>An external CSS stylesheet can be applied to any number of HTML documents by 
+placing a <b>&lt;link&gt;</b> element in each HTML document.</p>
+
 <p>The attribute rel of the <b>&lt;link&gt;</b> tag has to be set to 
-"<span class='color: red;'>stylesheet</span>", and the
-href attribute to the relative or absolute path to the stylesheet. While
-using relative URL paths is generally considered good practice, absolute
-paths can be used, too. In HTML5 the type attribute
+"<span class='color: red;'>stylesheet</span>", and the href attribute to the relative 
+or absolute path to the stylesheet. While using relative URL paths is generally considered 
+good practice, absolute paths can be used, too. In HTML5 the type attribute
 <a href="https://html.spec.whatwg.org/multipage/semantics.html#the-link-element" 
 target="_blank" rel="noopener noreferrer">can be omitted</a>.</p>
+
 <p>It is recommended that the <b>&lt;link&gt;</b> tag be placed in the HTML
 file’s <b>&lt;head&gt;</b> tag so that the styles are loaded before the
 elements they style. Otherwise, 
@@ -141,9 +142,9 @@ users will see a flash of unstyled content</a>.</p>
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h4>
-style.css
-</h4>
+
+<h4>style.css</h4>
+
 <pre><code>h1 {
   color: <span class='color: red;'>green</span>;
   text-decoration: <span class='color: red;'>underline</span>;
@@ -154,14 +155,16 @@ p {
   font-family: <span class='color: red;'>'Trebuchet MS', sans-serif</span>;
 }
 </code></pre>
+
 <p>Make sure you include the correct path to your CSS file in the href. If
 the CSS file is in the same folder as your HTML file then no path is
 required (like the example above) but if it’s saved in a folder, then
-specify it like this;<br>
+specify it like this;<br/>
 href=<span class='color: red;'>"foldername/style.css"</span></p>
 
 <pre><code>&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
-type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"foldername/style.css"</span>&gt;</code></pre>
+type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>
+"foldername/style.css"</span>&gt;</code></pre>
 
 <p>External stylesheets are considered the best way to handle your CSS.
 There's a very simple reason for this: when you're managing a site of,
@@ -185,7 +188,9 @@ type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>
 
 <p>CSS rules are applied with some basic rules, and order does matter. For
 example, if you have a main.css file with some code in it:</p>
+
 <pre><code>p.green { color: #00ff00; }</code></pre>
+
 <p>All your paragraphs with the 'green' class will be written in light
 green, but you can override this with another .css file just by
 including it <em>after</em> main.css. You can have override.css with the
@@ -195,8 +200,9 @@ following code follow main.css, for example:</p>
 
 <p>Now all your paragraphs with the 'green' class will be written in darker
 green rather than light green.</p>
-<p>Other principles apply, such as the '!important' rule, specificity, and
-inheritance.</p>
+
+<p>Other principles apply, such as the '!important' rule, specificity, and inheritance.</p>
+
 <p>When someone first visits your website, their browser downloads the HTML
 of the current page plus the linked CSS file. Then when they navigate to
 another page, their browser only needs to download the HTML of that
@@ -213,6 +219,7 @@ therefore can only be applied to the document in which it lives. Note
 that this element <i>must</i> be inside the <b>&lt;head&gt;</b> element
 for HTML validation (though it will work in all current &lt;head&gt;
 browsers if placed in body).</p>
+
 <pre><code>&lt;head&gt;
   &lt;style&gt;
     h1 {
@@ -283,9 +290,11 @@ root directory into the CSS file in which it appears:</p>
 is <b><i>not</i></b> optimal. Placing style rules in a
 <b>&lt;style&gt;</b> tag or external CSS file is encouraged in order to
 maintain a distinction between content and presentation.</p>
+
 <p>Inline styles override any CSS in a <b>&lt;style&gt;</b> tag or external
 style sheet. While this can be useful in some circumstances, this fact
 more often than not reduces a project's maintainability.</p>
+
 <p>The styles in the following example apply directly to the elements to
 which they are attached.</p>
 
@@ -311,6 +320,7 @@ el.style.fontFamily = 'sans-serif';</code></pre>
 <p>Note that style properties are named in lower camel case style. In the
 example you see that the css property fontfamily becomes fontFamily in
 javascript.</p>
+
 <p>As an alternative to working directly on elements, you can create a
 <b>&lt;style&gt;</b> or <b>&lt;link&gt;</b> element in JavaScript and
 append it to the <b>&lt;body&gt;</b> or <b>&lt;head&gt;</b> of the HTML
@@ -353,8 +363,10 @@ list-style-type, list-style-image, and list-style position, which should
 be declared in that order. The default values are disc, outside, and
 none, respectively. Each property can be declared separately, or using
 the list-style shorthand property.</p>
+
 <p><b>list-style-type</b> defines the shape or type of bullet point used
 for each list-item.</p>
+
 <p>Some of the acceptable values for list-style-type:</p>
 
 <ul>
@@ -426,6 +438,7 @@ a comma to separate multiple grouped selectors.</p>
 <p>So the blue color applies to all <b>&lt;div&gt;</b> elements and all
 <b>&lt;p&gt;</b> elements. Without the comma only <b>&lt;p&gt;</b>
 elements that are a child of a <b>&lt;div&gt;</b> would be red.</p>
+
 <p>This also applies to all types of selectors.</p>
 
 <pre><code>p, .blue, #first, div span{ color : <span class='color: red;'>blue</span> }</code></pre>
@@ -639,7 +652,7 @@ the presence of a given attribute or attribute value.</p>
     target="_blank" rel="noopener noreferrer">See browser support</a>.</li>
 </ol>
 
-<h4>Details<br> 
+<h4>Details<br/> 
   [<b>attribute</b>]</h4>
 
 <p>Selects elements with the given attribute.</p>
@@ -770,7 +783,7 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a>
 <!-- page 12 -->
 
 <h4>Specificity of attribute selectors
-<br> 0-1-0</h4>
+<br/> 0-1-0</h4>
 
 <p>Same as class selector and pseudoclass.</p>
 
@@ -780,11 +793,12 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a>
 element by its ID at a lower level of specificity than if it was
 selected with an ID selector: [id=<b>“my-ID”</b>] targets the same
 element as <b>#my-ID</b> but with lower specificity.</p>
+
 <p>See the Syntax Section for more details.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3">Section 4.3: Combinators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Overview</b> <b>Selector Description</b></p>
+<h4>Overview Selector Description</h4>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
@@ -822,12 +836,12 @@ element as <b>#my-ID</b> but with lower specificity.</p>
 </table>
 
 <blockquote>
-  <p><b>Note:</b> Sibling selectors target elements that come after them
+  <b>Note:</b> Sibling selectors target elements that come after them
   in the source document. CSS, by its nature (it cascades), cannot target
   <i>previous</i> or <i>parent</i> elements. However, using the flex order
   property, a <a href="http://stackoverflow.com/a/36118012/3597276" 
   target="_blank" rel="noopener noreferrer">previous sibling selector can be 
-  simulated on visual media</a>.</p>
+  simulated on visual media</a>.
 </blockquote>
 
 <h4>Descendant Combinator: selector selector</h4>
@@ -852,6 +866,7 @@ elements on down).</p>
 
 <p><a href="http://jsbin.com/xonafuz/2/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
+
 <p>In the above example, the first two <b>&lt;p&gt;</b> elements are
 selected since they are both descendants of the <b>&lt;div&gt;</b>.</p>
 
@@ -873,8 +888,10 @@ selected since they are both descendants of the <b>&lt;div&gt;</b>.</p>
 
 <p><a href="http://jsbin.com/xonafuz/3/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
+
 <p>The above CSS selects only the first <b>&lt;p&gt;</b> element, as it is
 the only paragraph directly descended from a <b>&lt;div&gt;</b>.</p>
+
 <p>The second <b>&lt;p&gt;</b> element is not selected because it is not a
 direct child of the <b>&lt;div&gt;</b>.</p>
 
@@ -895,6 +912,7 @@ immediate follows a specified element.</p>
 
 <p><a href="http://jsbin.com/xonafuz/4/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
+
 <p>The above example selects only those <b>&lt;p&gt;</b> elements which are
 <i>directly preceded</i> by another <b>&lt;p&gt;</b> element.</p>
 
@@ -915,6 +933,7 @@ follow the specified element.</p>
 
 <p><a href="http://jsbin.com/xonafuz/5/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
+
 <p>The above example selects all <b>&lt;p&gt;</b> elements that are
 <i>preceded</i> by another <b>&lt;p&gt;</b> element, whether or not they
 are immediately adjacent.</p>
@@ -1330,10 +1349,10 @@ whether or not a link has been followed (:visited), the mouse is over an element
 </table>
 
 <blockquote>
-  <p>The :visited pseudo-class can’t be used for most styling in a lot of
+  The <b>:visited pseudo-class</b> can’t be used for most styling in a lot of
   modern browsers anymore because it’s a security hole. See this
   <a href="https://hacks.mozilla.org/2010/03/privacy-related-changes-coming-to-css-visited/" 
-  target="_blank" rel="noopener noreferrer">link</a> for reference.</p>
+  target="_blank" rel="noopener noreferrer">link</a> for reference.
 </blockquote>
 
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown" 
@@ -1440,11 +1459,13 @@ selection.</p>
 text color, elements with the .important class with have an orange text
 color, and all elements that have <i>both</i> the .important and
 .warning class name will have a red text color.</p>
+
 <p>Notice that within the CSS, the .warning.important declaration did not
 have any spaces between the two class names. This means it will only
 find elements which contain both class names warning and important in
 their class attribute. Those class names could be in any order on the
 element.</p>
+
 <p>If a space was included between the two classes in the CSS declaration,
 it would only select elements that have parent elements with a .warning
 class names and child elements with .important class names.</p>
@@ -1542,17 +1563,16 @@ Selectors Level 4:</p>
 <p><a href="http://jsbin.com/japere/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
-<p>See background syntax here.</p>
+<p>See background syntax here:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 02. input focused, background blue (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div style="load: right">
-  <p><img src="./images/image002.png"
-  class="lazyload"
+  <img src="./images/image002.png"
+    class="lazyload"
     align="left"
     width="50%"
     title="Input focused, background blue"
     alt="Input focused, background blue." />
-  </p>
 </div>
 
 <h4>B. The :focus-within CSS pseudo-class</h4>
@@ -1655,6 +1675,7 @@ this Fiddle for an implementation of these global booleans</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>ID selectors select DOM elements with the targeted ID. To select an
 element by a specific ID in CSS, the # prefix is used.</p>
+
 <p>For example, the following HTML div element…</p>
 
 <pre><code>&lt;div id="exampleID"&gt;
@@ -1751,6 +1772,7 @@ only child of its parent.</p>
 
 <p>The above example selects the &lt;p&gt; element that is the unique child
 from its parent, in this case a &lt;div&gt;.</p>
+
 <p><a href="https://jsbin.com/dizosi/edit?html,css" target="_blank" rel="noopener noreferrer">
 Live Demo (jsBin)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1759,6 +1781,7 @@ Live Demo (jsBin)</a>.</p>
 <!-- page 22 -->
 <p>With CSS you can set colors, gradients, and images as the background of
 an element.</p>
+
 <p>It is possible to specify various combinations of images, colors, and
 gradients, and adjust the size, positioning, and repetition (among
 others) of these.</p>
@@ -1778,6 +1801,7 @@ initial.</p>
 
 <p>This can be applied to all elements, and ::first-letter/::first-line
 pseudo-elements.</p>
+
 <p>Colors in CSS can be specified by different methods.</p>
 
 <h4>Color names:</h4>
@@ -1803,11 +1827,12 @@ pseudo-elements.</p>
 hexadecimal notation. #ff0000, for example, is bright red, where the red
 component of the color is 256 bits (ff) and the corresponding green and
 blue portions of the color is 0 (00).</p>
+
 <p>If both values in each of the three RGB pairings (R, G, and B) are the
 same, then the color code can be shortened into three characters (the
 first digit of each pairing). #ff0000 can be shortened to #f00, and
-#ffffff can be shortened to #fff.
-</p>
+#ffffff can be shortened to #fff.</p>
+
 <p>Hex notation is case-insensitive.</p>
 
 <pre><code>body {
@@ -1884,6 +1909,7 @@ body {
 <p>They will all lead to the red color being shown underneath the image,
 where the parts of the image are transparent, or the image is not
 showing (perhaps as a result of background-repeat).</p>
+
 <p>Note that the following is not equivalent:</p>
 
 <pre><code>body {
@@ -1892,12 +1918,14 @@ showing (perhaps as a result of background-repeat).</p>
 }</code></pre>
 
 <p>Here, the value of background overrides your background-image.</p>
+
 <p>For more info on the background property, see Background Shorthand.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2">Section 5.2: Background Gradients</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Gradients are new image types, added in CSS3. As an image, gradients are
 set with the background-image property, or the background shorthand.</p>
+
 <p>There are two types of gradient functions, linear and radial. Each type
 has a non-repeating variant and a repeating variant:</p>
 
@@ -1911,6 +1939,7 @@ has a non-repeating variant and a repeating variant:</p>
 <h4>linear-gradient()</h4>
 
 <p>A linear-gradient has the following syntax:</p>
+
 <p><b>background</b>: linear-gradient( &lt;direction&gt;?,
 &lt;color-stop-1&gt;, &lt;color-stop-2&gt;, …);</p>
 
@@ -2099,8 +2128,7 @@ cover the entire element, excluding margin.</p>
 }</code></pre>
 
 <!-- page 26 -->
-<p>To use multiple images as background-image, define comma separated
-url().</p>
+<p>To use multiple images as background-image, define comma separated url().</p>
 
 <pre><code>.myClass {
   <b>background-image</b>: url (&apos;/path/to/image.jpg&apos;), 
@@ -2234,11 +2262,12 @@ related properties:</p>
 <h4>Syntax:</h4>
 
 <p>The syntax of the background shorthand declaration is:</p>
+
 <p><b>background</b>: [&lt;background-image&gt;]
 [&lt;background-color&gt;]
-[&lt;background-position&gt;]/[&lt;background-size&gt;]<br>
+[&lt;background-position&gt;]/[&lt;background-size&gt;]<br/>
 [&lt;background-repeat&gt;] [&lt;background-origin&gt;]
-[&lt;background-clip&gt;] [&lt;background-attachment&gt;]<br>
+[&lt;background-clip&gt;] [&lt;background-attachment&gt;]<br/>
 [&lt;initial|inherit&gt;];</p>
 
 <h4>Examples</h4>
@@ -2289,7 +2318,7 @@ feature image that can fade into a solid colour;</p>
 target="_blank" rel="noopener noreferrer">Demo (background-size)</a> property enables 
 one to control the scaling of the background-image. It takes up to two values, which 
 determine the scale/size of the resulting image in vertical and and horizontal direction. 
-If the property is missing, its deemed auto in both width and height.<br><br> auto will 
+If the property is missing, its deemed auto in both width and height.<br/><br/> auto will 
 keep the image's aspect ratio, if it can be determined. The height is optional and can 
 be considered auto. Therefore, on a 256 px × 256 px image, all the following 
 background-size settings would yield an image with height and width of 50 px:</p>
@@ -2356,6 +2385,7 @@ target="_blank" rel="noopener noreferrer">Demo (background-origin)</a>.</p>
 <p>The last example in the previos section lost its original aspect ratio.
 The circle got into an ellipse, the square into a rectangle, the
 triangle into another triangle.</p>
+
 <p>The length or percentage approach isn't flexible enough to keep the
 aspect ratio at all times. auto doesn't help, since you might not know
 which dimension of your element will be larger. However, to cover
@@ -2392,7 +2422,7 @@ width and/or height of body.</p>
 <h4>contain</h4>
 
 <blockquote>
-  <b>contain</b>
+  <b>contain</b> 
   Scale the image, while preserving its intrinsic aspect ratio (if any),
   to the largest size such that both its width and its height can fit
   inside the background positioning area.
@@ -2576,7 +2606,8 @@ separately.</p>
 
 <blockquote>
   <b>NOTE:</b> This is supported in all browsers except 
-  <a href="http://caniuse.com/#search=background-position-x">Firefox (versions 31-48)[2]</a>.
+  <a href="http://caniuse.com/#search=background-position-x" 
+  target="_blank" rel="noopener noreferrer">Firefox (versions 31-48)[2]</a>.
   Firefox 49, to be released September 2016, <i>will</i> support these
   properties. Until then,
   <a href="http://stackoverflow.com/questions/14844407/background-position-y-doesnt-work-in-firefox-via-css/29282573#29282573" 
@@ -2587,10 +2618,12 @@ separately.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The background-origin property specifies where the background image is
 positioned.</p>
+
 <p>Note: If the background-attachment property is set to fixed, this
 property has no effect.</p>
 
 <h4>Default value: padding-box</h4>
+
 <p>Possible values:</p>
 
 <ul>
@@ -2666,6 +2699,7 @@ property has no effect.</p>
 
 <p><a href="https://www.w3.org/TR/css3-background/#the-background-origin" 
 target="_blank" rel="noopener noreferrer">W3C background origin</a>.</p>
+
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin" 
 target="_blank" rel="noopener noreferrer">Mozilla background origin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2688,6 +2722,7 @@ target="_blank" rel="noopener noreferrer">Mozilla background origin</a>.</p>
 <p>Images will be stacked atop one another with the first background on top
 and the last background in the back. img_1 will be on top, the img_2 and
 img_3 is on bottom.</p>
+
 <p>We can also use background shorthand property for this:</p>
 
 <pre><code>#mydiv {
@@ -2789,6 +2824,7 @@ is scrolled.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Definition and Usage: The background-clip property specifies the
 painting area of the background.</p>
+
 <p>Default value: border-box</p>
 
 <h4>Values</h4>
@@ -2855,6 +2891,7 @@ painting area of the background.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The background-repeat property sets if/how a background image will be
 repeated.</p>
+
 <p>By default, a background-image is repeated both vertically and
 horizontally.</p>
 
@@ -2890,6 +2927,7 @@ horizontally.</p>
 <p>See result here:
 <a href="https://jsfiddle.net/MadalinaTn/y69d28Lb/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
+
 <p><b>CSS Syntax</b>: background-blend-mode: normal | multiply | screen | overlay
 | darken | lighten | color-dodge | saturation | color | luminosity;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2956,6 +2994,7 @@ body {
 
 <p><a href="https://jsfiddle.net/ttp0bzfm/1/" 
 target="_blank" rel="noopener noreferrer">Demo (View Result)</a>.</p>
+
 <p>See Dynamic Vertical and Horizontal Centering under the Flexbox
 documentation for more details on flexbox and what the styles mean.</p>
 
@@ -2964,15 +3003,19 @@ documentation for more details on flexbox and what the styles mean.</p>
 <p>Flexbox is supported by all major browsers, 
 <a href="http://caniuse.com/#search=flex" 
 target="_blank" rel="noopener noreferrer">except IE versions before 10</a>.</p>
+
 <p>Some recent browser versions, such as Safari 8 and IE10, require
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" 
 target="_blank" rel="noopener noreferrer">vendor prefixes</a>.</p>
+
 <p>For a quick way to generate prefixes there is
 <a href="https://autoprefixer.github.io/" 
 target="_blank" rel="noopener noreferrer">Autoprefixer</a>, a third-party tool.</p>
+
 <p>For older shitty browsers (like IE 8 &amp; 9) a
 <a href="https://github.com/jonathantneal/flexibility" 
 target="_blank" rel="noopener noreferrer">Polyfill</a> is available.</p>
+
 <p>For a more detailed look at flexbox browser support, see
 <a href="http://stackoverflow.com/a/35137869/3597276" 
 target="_blank" rel="noopener noreferrer">this answer</a>.</p>
@@ -2983,6 +3026,7 @@ target="_blank" rel="noopener noreferrer">this answer</a>.</p>
 know how tall or wide your element is, you can position it absolutely
 50% from the top and left of a relative container and translate it by
 50% left and upwards to center it vertically and horizontally.</p>
+
 <p>Keep in mind that with this technique, the element could end up being
 rendered at a non-integer pixel boundary, making it look blurry. See 
 <a href="http://stackoverflow.com/a/32329785/1385678" 
@@ -3016,6 +3060,7 @@ target="_blank" rel="noopener noreferrer">View example (jsFiddle)</a>.</p>
 Prefixes are needed for Chrome&lt;=35, Safari&lt;=8, Opera&lt;=22,
 Android Browser&lt;=4.4.4, and IE9. CSS transforms are not supported by
 IE8 and older versions.</p>
+
 <p>Here is a common transform declaration for the previous example:</p>
 
 <pre><code>-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera, Android */
@@ -3126,6 +3171,7 @@ purpose:</p>
 <p><i>This does not work for centering entire block elements</i>.
 text-align controls only alignment of inline content like text in its
 parent block element.</p>
+
 <p>See more about text-align in Typography section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-5">Section 6.5: Using position: absolute</h3>
@@ -3134,6 +3180,7 @@ parent block element.</p>
 <p>Automatic margins, paired with values of zero for the left and right or
 top and bottom offsets, will center an absolutely positioned elements
 within its parent.</p>
+
 <p><a href="https://jsfiddle.net/stuttufu/sj2m0oo2/1/" 
 target="_blank" rel="noopener noreferrer">Demo (View Result)</a>.</p>
 
@@ -3160,6 +3207,7 @@ target="_blank" rel="noopener noreferrer">Demo (View Result)</a>.</p>
 
 <p>Elements that don't have their own implicit width and height like images
 do, will need those values defined.</p>
+
 <p>Other resources:
 <a href="http://codepen.io/shshaw/details/gEiDt" 
 target="_blank" rel="noopener noreferrer">Absolute Centering in CSS (CodePen)</a>.</p>
@@ -3206,11 +3254,12 @@ lines, the resulting output won't be centered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-8">Section 6.8: Vertical align anything with 3 lines of code</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-<a href="http://caniuse.com/#search=transform" 
+<p><a href="http://caniuse.com/#search=transform" 
 target="_blank" rel="noopener noreferrer">Supported by IE11+</a>.</p>
+
 <p><a href="https://jsfiddle.net/bnqrLgk9/1/" 
 target="_blank" rel="noopener noreferrer">View Result (jsFiddle)</a>.</p>
+
 <p>Use these 3 lines to vertical align practically everything. Just make
 sure the div/image you apply the code to has a parent with a height.</p>
 
@@ -3229,6 +3278,7 @@ HTML:
 <h3 id="ch6-9">Section 6.9: Centering in relation to another item</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We will see how to center content based on the height of a near element.</p>
+
 <p>Compatibility: IE8+, all other modern browsers.</p>
 
 <details>
@@ -3277,7 +3327,8 @@ HTML:
 
 <p><a href="https://jsfiddle.net/gasp10/6bv92mko/4/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
-<p>The main points are the 3; <b>.thumb, .details</b> and <b..position-container</b> 
+
+<p>The main points are the 3; <b>.thumb, .details</b> and <b>.position-container</b> 
 containers:</p>
 
 <ul>
@@ -3293,6 +3344,7 @@ containers:</p>
 <h3 id="ch6-10">Section 6.10: Ghost element technique (Michał Czernow's hack)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This technique works even when the container's dimensions are unknown.</p>
+
 <p>Set up a "ghost" element inside the container to be centered that is
 100% height, then use <b>vertical-align</b>: middle on both that and the
 element to be centered.</p>
@@ -3658,6 +3710,7 @@ the content to create this rectangle.</p>
 <p>Diagram from
 <a href="https://www.w3.org/TR/CSS22/box.html#mpb-examples" 
 target="_blank" rel="noopener noreferrer">CSS2.2 Working Draft Demo</a>.</p>
+
 <p>The perimeter of each of the four areas is called an <i>edge</i>. Each
 edge defines a <i>box</i>.</p>
 
@@ -3728,6 +3781,7 @@ the previous element's content the new element should be positioned:</p>
 
 <p>The content of each of element is separated by a 150px gap, but the two
 elements' boxes touch each other.</p>
+
 <p>If we then modify our first element to have no right margin, the right
 margin edge would be in the same position as the right border edge, and
 our two elements would now look like this:</p>
@@ -3747,6 +3801,7 @@ our two elements would now look like this:</p>
 width / height for an element will not represent its actual width or
 height on screen as soon as you start adding padding and border styles
 to the element.</p>
+
 <p>The following example demonstrates this potential issue with
 content-box:</p>
 
@@ -3760,6 +3815,7 @@ textarea {
 
 <p>Since the padding will be added to the width of the textarea, the
 resulting element is a textarea that is wider than 100%.</p>
+
 <p>Fortunately, CSS allows us to change the box model with the box-sizing
 property for an element. There are three different values for the
 property available:</p>
@@ -4078,6 +4134,7 @@ target="_blank" rel="noopener noreferrer"><i>View Result</i></a>.</p>
 <p>As long as the element is a <b>block</b>, and it has an <b>explicitly
 set width value</b>, margins can be used to center block elements on a
 page horizontally.</p>
+
 <p>We add a width value that is lower than the width of the window and the
 auto property of margin then distributes the remaining space to the left
 and the right:</p>
@@ -4091,6 +4148,7 @@ and the right:</p>
 set 0 to the top and bottom margin values (although this could be any
 value) and then we use auto to let the browser allocate the space
 automatically to the left and right margin values.</p>
+
 <p>In the example above, the #myDiv element is set to 80% width which
 leaves use 20% leftover. The browser distributes this value to the
 remaining sides so:</p>
@@ -4115,6 +4173,7 @@ margin-left and margin-right would be relative to its parent element.</p>
 <p>But that is not the case, when comes to margin-top and margin-bottom.
 Both these properties, in percentages, aren't relative to the height of
 the parent container but to the <b>width</b> of the parent container.</p>
+
 <p>So,</p>
 
 <pre><code>.parent {
@@ -4230,6 +4289,7 @@ padding-left etc) can you write it as a shorthand, as below:</p>
 <p>The padding property sets the padding space on all sides of an element.
 The padding area is the space between the content of the element and its
 border. Negative values are not allowed.</p>
+
 <p>You can specify a side individually:</p>
 
 <ul>
@@ -4254,6 +4314,7 @@ border. Negative values are not allowed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The border-radius property allows you to change the shape of the basic
 box model.</p>
+
 <p>Every corner of an element can have up to two values, for the vertical
 and horizontal radius of that corner (for a maximum of 8 values).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4277,6 +4338,7 @@ and horizontal radius.</p>
 the 5% is the horizontal radius of the topright-and-bottom-left. The
 other four values after '/' are the vertical radii for top-left,
 top-right, bottom-right and bottom-left.</p>
+
 <p>As with many CSS properties, shorthands can be used for any or all
 possible values. You can therefore specify anything from one to eight
 values. The following shorthand allows you to set the horizontal and
@@ -4316,6 +4378,7 @@ avoid manually calculating the borderradius value:</p>
 
 <p>If the width and height properties are not equal, the resulting shape
 will be an oval rather than a circle.</p>
+
 <p>Browser specific border-radius example:</p>
 
 <pre><code>-webkit-border-top-right-radius: 4px;
@@ -4511,6 +4574,7 @@ border image property works. It is as though the gradient is applied to
 the entire box and then the colors are masked from the padding and
 content areas, thus making it look as though only the border has the
 gradient.</p>
+
 <p>Which border(s) have a single color is dependant on the gradient
 definition. If the gradient is a gradient, the left border would be the
 start color of the gradient and right border would be the end color. If
@@ -4556,6 +4620,7 @@ the below statement in the spec:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The border-[left|right|top|bottom] property is used to add a border to a
 specific side of an element.</p>
+
 <p>For example if you wanted to add a border to the left side of an
 element, you could do:</p>
 
@@ -4623,19 +4688,22 @@ element, you could do:</p>
 In contrast to border, outlines do not take any space in the box model.
 So adding an outline to an element does not affect the position of the
 element or other elements.</p>
+
 <p>In addition, outlines can be non-rectangular in some browsers. This can
 happen if outline is applied on a span element that has text with
 different font-size properties inside it. Unlike borders, outlines
 <i>cannot</i> have rounded corners.</p>
+
 <p>The essential parts of outline are outline-color, outline-style and
 outline-width.</p>
+
 <p>The definition of an outline is equivalent to the definition of a
 border:</p>
 
 <blockquote>
-An outline is a line around an element. It is displayed around the
-margin of the element. However, it is different from the border
-property.
+  An outline is a line around an element. It is displayed around the
+  margin of the element. However, it is different from the border
+  property.
 </blockquote>
 
 <pre><code><b>outline</b>: 1px solid black;</code></pre>
@@ -4863,6 +4931,7 @@ axis.</p>
 
 <p>The content above is clipped in a 100px by 100px box, with scrolling
 available to view overflowing content.</p>
+
 <p>Most desktop browsers will display both horizontal and vertical
 scrollbars, whether or not any content is clipped. This can avoid
 problems with scrollbars appearing and disappearing in a dynamic
@@ -5155,11 +5224,13 @@ features</b> such as the availability of color or viewport dimensions.</p>
 
 <p>If these conditions are met, the styles inside the media query will be
 active, and the background color of the page will be sky blue.</p>
+
 <p>Media queries are applied dynamically. If on page load the conditions
 specified in the media query are met, the CSS will be applied, but will
 be immediately disabled should the conditions cease to be met.
 Conversely, if the conditions are initially not met, the CSS will not be
 applied until the specified conditions are met.</p>
+
 <p>In our example, if the user's view port width is initially greater than
 720 pixels, but the user shrinks the browser's width, the background
 color will cease to be sky blue as soon as the user has resized the view
@@ -5179,6 +5250,7 @@ placed directly after the @media declaration(<span style='color: blue;'>
 
 <p>The above CSS code will give the DOM HTML element a white background
 color when being printed.</p>
+
 <p>The mediatype parameter has an optional not or only prefix that will
 apply the styles to everything except the specified mediatype
 <em>or</em> only the specified media type, respectively. For example,
@@ -5285,6 +5357,7 @@ higher quality pixels. The device pixel ratio is the ratio between
 physical pixels and logical pixels. For instance, the MacBook Pro
 Retina, iPhone 4 and above report a device pixel ratio of 2, because the
 physical linear resolution is double the logical resolution.</p>
+
 <p>The reason why this works only with WebKit based browsers is because of:</p>
 
 <ul>
@@ -5534,6 +5607,7 @@ target="_blank" rel="noopener noreferrer">Demo (CodePen)</a>.</p>
 <i>contain floats</i>, you've to add .cf or .clearfix class on the
 container (<b>the parent</b>) and style this class with a few rules
 described below.</p>
+
 <p>3 versions with slightly different effects (sources:
 
 <a href="http://nicolasgallagher.com/micro-clearfix-hack/" 
@@ -5598,6 +5672,7 @@ target="_blank" rel="noopener noreferrer">clearfix reloaded</a> by T.J. Koblentx
 
 <p><a href="http://codepen.io/PhilippeVay/pen/OXEqgW?editors=0100" 
 target="_blank" rel="noopener noreferrer">Codepen showing ClearFix effect</a></p>
+
 <p>Other resource:
 <a href="http://www.cssmojo.com/clearfix_block-formatting-context_and_hasLayout/" 
 target="_blank" rel="noopener noreferrer">
@@ -5680,6 +5755,7 @@ target="_blank" rel="noopener noreferrer">Link (Codepen) div1 and div2</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Setting overflow value to hidden,auto or scroll to an element, will
 clear all the floats within that element.</p>
+
 <p><b>Note:</b> using <b>overflow</b>:scroll will always show the scrollbox.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch14-6">Section 14.6: Simple Two Fixed-Width Column Layout</h3>
@@ -5900,6 +5976,7 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle) class='sidebar'</a>.</
 <p>You can have all your font-related styles in one declaration with the
 font shorthand. Simply use the font property, and put your values in the
 correct order.</p>
+
 <p>For example, to make all p elements bold with a font size of 20px and
 using Arial as the font family typically you would code it as follows:</p>
 
@@ -5921,6 +5998,7 @@ It is important to note that using the shortcut <b>resets</b> the other
 attributes not given. Another important point is that the two necessary
 attributes for the font shortcut to work are font-size and fontfamily.
 If they are not both included the shortcut is ignored.</p>
+
 <p>Initial value for each of the properties:</p>
 
 <ul>
@@ -5983,12 +6061,14 @@ marks of the <b>&gt;</b> tag.</p>
 
 <p>The direction property is used to change the horizontal text direction
 of an element.</p>
-<p><b>Syntax;direction</b>: ltr | rtl | initial | inherit;</p>
+
+<h4>Syntax;direction: ltr | rtl | initial | inherit;</h4>
+
 <p>The writing-mode property changes the alignment of text so it can be
 read from top-to-bottom or from left-to-right, depending on the
 language.</p>
 
-<p><b>Syntax: direction</b>: horizontal-tb | vertical-rl | vertical-lr;</p>
+<h4>Syntax: direction: horizontal-tb | vertical-rl | vertical-lr;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-5">Section 15.5: Font Stacks</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6039,7 +6119,7 @@ achieved with non-standard webkit-only implementation of flexboxes.</p>
   <b>max-height</b>: X&ast;N; /* fallback */
 }</code></pre>
 
-<p>Example (open in Chrome or Safari):<br>
+<p>Example (open in Chrome or Safari):<br/>
 <a href="http://jsfiddle.net/csYjC/1131/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle) Text Overflow</a>.</p>
 
@@ -6061,7 +6141,7 @@ follows:</p>
 
 <h4>Shadow with blur radius</h4>
 
-<p>This creates a blue shadow effect around a heading.<br>
+<p>This creates a blue shadow effect around a heading.<br/>
 To add a blur effect, add an option blur radius argument.</p>
 
 <pre><code>h1 {
@@ -6142,8 +6222,10 @@ an element.</p>
 <ul>
   <li><a href="http://stackoverflow.com/questions/5856952/indenting-only-the-first-line-of-text-in-a-paragraph" 
     target="_blank" rel="noopener noreferrer">Indenting only the first line of text in a paragraph?</a></li>
-  <li><a href="https://www.w3.org/TR/CSS21/text.html#propdef-text-indent">Text Indent</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent">Mozilla Text Indent</a></li>
+  <li><a href="https://www.w3.org/TR/CSS21/text.html#propdef-text-indent" 
+    target="_blank" rel="noopener noreferrer">Text Indent</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent" 
+    target="_blank" rel="noopener noreferrer">Mozilla Text Indent</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-11">Section 15.11: Text Decoration</h3>
@@ -6210,7 +6292,7 @@ and words.</p>
 
 <h4>Online-Demo</h4>
 
-<p><a href="https://jsfiddle.net/91742Lxt/">Try it yourself</a></p>
+<p><a href="https://jsfiddle.net/91742Lxt/" target="_blank" rel="noopener noreferrer">Try it yourself</a></p>
 
 <h4>Further reading:</h4>
 
@@ -6225,9 +6307,12 @@ and words.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attributes:</h4>
 
-<p><b><i>normal</i></b></p>
+<h4><i>normal</i></h4>
+
 <p>Default attribute of fonts.</p>
-<p><b><i>small-caps</i></b></p>
+
+<h4><i>small-caps</i></h4>
+
 <p>Sets every letter to uppercase, <b>but</b> makes the lowercase
 letters(from original text) smaller in size than the letters that
 originally uppercase.</p>
@@ -6273,7 +6358,7 @@ shrinks them to prevent overflow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch16-1">Section 16.1: Dynamic Vertical and Horizontal Centering (alignitems, justify-content)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Simple Example (centering a single element)</b></p>
+<h4>Simple Example (centering a single element)</h4>
 
 <h4>HTML:</h4>
 
@@ -6358,7 +6443,8 @@ target="_blank" rel="noopener noreferrer">demo (CodePen)</a>.</p>
 
 <h4>Example: justify-content: center on a horizontal flexbox</h4>
 
-<p><b>CSS:</b></p>
+<h4>CSS:</h4>
+
 <pre><code>div#container {
   <b>display</b>: flex;
   <b>flex-direction</b>: row;
@@ -6431,6 +6517,7 @@ target="_blank" rel="noopener noreferrer">demo jsFiddle</a>.</p>
 <h4>align-content: center</h4>
 
 <h4>Example: align-content: cener on a vertical flexbox</h4>
+
 <h4>CSS:</h4>
 
 <pre><code>div#container {
@@ -6506,7 +6593,8 @@ end of the viewport, the footer sticks to the bottom of the viewport.
 When the content extends past the bottom of the viewport, the footer is
 also pushed out of the viewport.</p>
 
-<h4><a href="https://jsfiddle.net/0t1f84tL/">View Result (jsFiddle)</a>.</h4>
+<h4><a href="https://jsfiddle.net/0t1f84tL/" target="_blank" rel="noopener noreferrer">
+View Result (jsFiddle)</a>.</h4>
 
 <h4>HTML:</h4>
 
@@ -6551,6 +6639,7 @@ body {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One of the nicest features of flexbox is to allow optimally fitting
 containers to their parent element.</p>
+
 <p><a href="https://jsfiddle.net/6gfogoqk/" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsFiddle)</a>.</p>
 
@@ -6761,6 +6850,7 @@ height. This is done by assuring that all nested elements are the same
 height as the containing parent div.
 <a href="https://jsfiddle.net/3wwh7ewp/" 
 target="_blank" rel="noopener noreferrer">See working example:</a></p>
+
 <p>This effect is achieved due to the property align-items being set to
 stretch by default.</p>
 
@@ -6851,6 +6941,7 @@ highest overall specificity.</p>
 
 <p>Group <i>A</i> is the most specific, followed by Group <i>B</i>, then
 finally Group <i>C</i>.</p>
+
 <p>The universal selector (*) and combinators (like &gt; and ~) have no
 specificity.</p>
 
@@ -6886,6 +6977,7 @@ div {}                   /* a=0, b=0, c=1 */<br/>
 <p>Here we have an ID selector which declares color as <i>blue</i>, and a
 class selector which declares color as <i>red</i> and background as
 <i>black</i>.</p>
+
 <p>An element with an ID of #foo and a class of .bar will be selected by
 both declarations. ID selectors have a Group <i>A</i> specificity and
 class selectors have a Group <i>B</i> specificity. An ID selector
@@ -6907,6 +6999,7 @@ selector's color declaration.</p>
 <p>Here we have two class selectors; one of which declares color as
 <i>red</i> and background as <i>black</i>, and the other declares
 background as <i>white</i>.</p>
+
 <p>An element with both the .bar and .baz classes will be affected by both
 of these declarations, however the problem we have now is that both .bar
 and .baz have an identical Group <i>B</i> specificity. The cascading
@@ -6954,11 +7047,13 @@ unless you have more than one declaration that contains an !important
 flag for the same property that apply to the same element. Then, normal
 specificity rules will apply to those properties in reference to each
 other.</p>
+
 <p>Because they completely override specificity, the use of !important is
 frowned upon in most use cases. One should use it as little as possible.
 To keep CSS code efficient and maintainable in the long run, it's almost
 always better to increase the specificity of the surrounding selector
 than to use !important.</p>
+
 <p>One of those rare exceptions where !important is not frowned upon, is
 when implementing generic helper classes like a .hidden or
 .background-yellow class that are supposed to always override one or
@@ -6975,6 +7070,7 @@ maintainable CSS, is to have !important flags throughout your CSS.</p>
 a single Group <i>A</i> or <i>B</i> selector respectively. The three
 groups should be regarded as individual levels of specificity.
 Specificity cannot be represented by a single value.</p>
+
 <p>When creating your CSS style sheet, you should maintain the lowest
 specificity as possible. If you need to make the specificity a little
 higher to overwrite another method, make it higher but as low as
@@ -6984,6 +7080,7 @@ this:</p>
 <pre><code>body.page header.container nav div#main-nav li a {}</code></pre>
 
 <p>This makes future changes harder and pollutes that css page.</p>
+
 <p>You can <a href="http://specificity.keegan.st/" 
 target="_blank" rel="noopener noreferrer">
 calculate the specificity of your selector here</a>.</p>
@@ -7010,6 +7107,7 @@ rules which can bring uncertainty in your style sheet. Also it is
 important to note that when multiple !important declarations are applied
 to the same rule on a certain element, the one with the higher
 specificity will be the ona applied.</p>
+
 <p>Here are some examples where using !important declaration can be
 justified:</p>
 
@@ -7057,6 +7155,7 @@ element.</p>
 
 <p>When only one CSS rule set is trying to set a style for an element, then
 there is no conflict, and that rule set is used.</p>
+
 <p>When multiple rule sets are found with conflicting settings, first the
 Specificty rules, and then the Cascading rules are used to determine
 what style to use.</p>
@@ -7209,6 +7308,7 @@ red:</p>
 redundant because omitting it should produce identical results. Only use
 currentColor inside the border property within the same element if it
 would be overwritten otherwise due to a more specific selector.</p>
+
 <p>Since it's the computed color, the border will be green in the following
 example due to the second rule overriding the first:</p>
 
@@ -8016,8 +8116,9 @@ in #0000FF.</p>
       <td>#9ACD32</td>
       <td>rgb(154,205,50)</td>
     </tr>
-</tbody>
+  </tbody>
 </table>
+
 <p>In addition to the named colors, there is also the keyword transparent,
 which represents a fully-transparent black: rgba(0,0,0,0).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8032,6 +8133,7 @@ decimal notation. Uppercase and/or lowercase Hexadecimal values may be
 used (i.e. #3fc = #3FC = #33ffCC). The browser interprets #369 as
 #336699. If that is not what you intended but rather wanted #306090, you
 need to specify that explicitly.</p>
+
 <p>The total number of colors that can be represented with hex notation is
 256 ^ 3 or 16,777,216.</p>
 
@@ -8079,10 +8181,13 @@ notation</a> is used to specify color values in the RGB color format,
 per the <a href="https://www.w3.org/TR/css3-color/#numerical" 
 target="_blank" rel="noopener noreferrer">W3C's
 'Numerical color values'.</a></p>
+
 <p>There are a lot of tools available on the Internet for looking up
 hexadecimal (or simply hex) color values.</p>
+
 <p>Search for "<b>hex color palette</b>" or "</b>hex color picker" with
 your favorite web browser to find a bunch of options!</p>
+
 <p>Hex values always start with a pound sign (#), are up to six "digits"
 long, and are case-insensitive: that is, they don't care about
 capitalization. #FFC125 and #ffc125 are the same color.</p>
@@ -8187,6 +8292,7 @@ number ranges from 00-FF which is equivalent to 0-255 in decimal and
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HSL stands for <b>hue</b> ("which color"), <b>saturation</b> ("how much 
 color") and <b>lightness</b> ("how much white").</p>
+
 <p>Hue is represented as an angle from 0° to 360° (without units), while
 saturation and lightness are represented as percentages.</p>
 
@@ -8453,6 +8559,7 @@ can be anywhere from 0.0 (transparent) to 1.0 (opaque).</p>
 
 <p>A CSS distance measurement is a number immediately followed by a length
 unit (px, em, pc, in, …)</p>
+
 <p>CSS supports a number of length measurements units. They are absolute or
 relative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8506,6 +8613,7 @@ input&lbrack;type=text&rbrack; {
 <a href="https://www.w3.org/TR/css-values/#font-relative-lengths" 
 target="_blank" rel="noopener noreferrer">rem</a>
 unit, which stands for "root em". Let's look at how rem works.</p>
+
 <p>First, let's look at the differences between em and rem.</p>
 
 <ul>
@@ -8558,7 +8666,9 @@ li {
 
 <p>In other words, 1 vmin is equal to the smaller of <i>1 vh</i> and <i>1
 vw</i></p>
+
 <p>1 vmax is equal to the larger of <i>1 vh</i> and <i>1 vw</i></p>
+
 <p><b>Note</b>: 
 <a href="http://caniuse.com/#feat=viewport-units" 
 target="_blank" rel="noopener noreferrer">vmax is not supported</a> in:</p>
@@ -8592,8 +8702,10 @@ viewport.</p>
 <h3 id="ch20-5">Section 20.5: using percent %</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One of the useful unit when creating a responsive application.</p>
+
 <p>Its size depends on its parent container.</p>
-<p><b>Equation:</b></p>
+
+<h4>Equation:</h4>
 
 <blockquote>
   ( Parent Container's width ) * ( Percentage(%) ) = Output
@@ -8603,6 +8715,7 @@ viewport.</p>
 
 <p><i>Parent</i> has <b>100px</b> width while the <i>Child</i> has
 <b>50%</b>.</p>
+
 <p><b>On the output</b>, the <em>Child</em>'s width will be half(50%) of
 the <i>Parent</i>'s, which is <b>50px</b>.</p>
 
@@ -8630,7 +8743,8 @@ the <i>Parent</i>'s, which is <b>50px</b>.</p>
   width: 50%;
 }
 <b>&lt;/style&gt;</b></code></pre>
-<b>OUTPUT</b>
+
+<h4>OUTPUT</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 191. parent, child, div.child (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -8717,6 +8831,7 @@ the <i>Parent</i>'s, which is <b>50px</b>.</p>
 <p>Pseudo-elements, just like pseudo-classes, are added to a CSS selectors
 but instead of describing a special state, they allow you to scope and
 style certain parts of an html element.</p>
+
 <p>For example, the ::first-letter pseudo-element targets only the first
 letter of a block element specified by the selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8724,6 +8839,7 @@ letter of a block element specified by the selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Pseudo-elements are added to selectors but instead of describing a
 special state, they allow you to style certain parts of a document.</p>
+
 <p>The content attribute is required for pseudo-elements to render;
 however, the attribute can have an empty value (e.g.content: "").</p>
 
@@ -8756,6 +8872,7 @@ div::before {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Pseudo-elements are often used to change the look of lists (mostly for
 unordered lists, ul).</p>
+
 <p>The first step is to remove the default list bullets:</p>
 
 <pre><code>ul {
@@ -8848,7 +8965,8 @@ gradient boxes for bullets.</p>
     </tr>
     <tr class="odd">
       <td>unset</td>
-      <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/unset" target="_blank" rel="noopener noreferrer">Combination of initial and inherit. More info here</a>.</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/unset" 
+	    target="_blank" rel="noopener noreferrer">Combination of initial and inherit. More info here</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -8859,9 +8977,12 @@ gradient boxes for bullets.</p>
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" 
 target="_blank" rel="noopener noreferrer">stack order</a> positioned elements (position property set to relative,
 absolute or fixed), use the z-index property.</p>
+
 <p>The higher the z-index, the higher up in the stacking context (on the
 z-axis) it is placed.</p>
-<p><b>Example</b></p>
+
+<h4>Example</h4>
+
 <p>In the example below, a z-index value of 3 puts green on top, a
 z-index of 2 puts red just under it, and a z-index of 1 puts blue under
 that.</p>
@@ -8911,7 +9032,8 @@ div #div3 {
 
 <p>See a working example at <a href="https://jsfiddle.net/esnc10tq/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
-<p><b>Syntax</b></p>
+
+<h4>Syntax</h4>
 
 <pre><code><b>z-index</b>: &lbrack; number &rbrack; &vert; auto;</code></pre>
 
@@ -8952,6 +9074,7 @@ elements: (see:
 target="_blank" rel="noopener noreferrer">
 Why does z-index need a defined position to work?</a>). The only value
 where it is ignored is the default value, static.</p>
+
 <p>Read about the z-index property and Stacking Contexts in the
 <a href="https://drafts.csswg.org/css-position/#layered-presentation" 
 target="_blank" rel="noopener noreferrer">CSS
@@ -9174,12 +9297,13 @@ it does not restrict the type of elements it may contain.</p>
 block elements are vertically stacked and, unlike the inline elements,
 the flow of the text breaks.</p>
 
-<p><b>Inline Block</b></p>
+<h4>Inline Block</h4>
 
 <p>The inline-block value gives us the best of both worlds: it blends the
 element in with the flow of the text while allowing us to use padding,
 margin, height and similar properties which have no visible effect on
 inline elements.</p>
+
 <p>Elements with this display value act as if they were regular text and as
 a result are affected by rules controlling the flow of text such as
 text-align. By default they are also shrunk to the the smallest size
@@ -9269,6 +9393,7 @@ li {
 
 <p>An element that is given the none value to its display property will not
 be displayed at all.</p>
+
 <p>For example let's create a div-element that has an id of myDiv:</p>
 
 <pre><code><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
@@ -9283,11 +9408,13 @@ be displayed at all.</p>
 ignores every other layout property for that specific element (both
 position and float). No box will be rendered for that element and its
 existence in html does not affect the position of following elements.</p>
+
 <p>Note that this is different from setting the visibility property to
 hidden. Setting <b>visibility</b>: hidden; for an element would not
 display the element on the page but the element would still take up the
 space in the rendering process as if it would be visible. This will
 therefore affect how following elements are displayed on the page.</p>
+
 <p>The none value for the display property is commonly used along with
 JavaScript to show or hide elements at will, eliminating the need to
 actually delete and re-create them.</p>
@@ -9342,8 +9469,10 @@ divide a web page content into rows and columns in an easy way.</p>
 <h4>Property Possible Values</h4>
 
 <p>display grid / inline-grid</p>
+
 <p>The CSS Grid is defined as a display property. It applies to a parent
 element and its immediate children only.</p>
+
 <p>Consider the following markup:</p>
 
 <pre><code><b>&lt;</b><b>section</b> class=&quot;container&quot;<b>&gt;</b>
@@ -9364,6 +9493,7 @@ simply set its display property to grid:</p>
 collapse on top of one another. This is because the children do not
 currently know how to position themselves within the grid. But we can
 explicitly tell them.</p>
+
 <p>First we need to tell the grid element .container how many rows and
 columns will make up its structure and we can do this using the
 grid-columns and grid-rows properties (note the pluralisation):</p>
@@ -9397,6 +9527,7 @@ and grid-column values which will tell it where it sits in the grid:</p>
 
 <p>By giving each item a column and row value it identifies the items order
 within the container.</p>
+
 <p>View a working example on
 <a href="https://jsfiddle.net/fexfwkkv/3/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>. You'll
@@ -9413,6 +9544,7 @@ with them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The table-layout property changes the algorithm that is used for the
 layout of a table.</p>
+
 <p>Below an example of two tables both set to: <b>width</b> 150px:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 200. two tables, both set to width: 150px (143) ~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9468,10 +9600,9 @@ overflow or not.</p>
 <h3 id="ch25-2">Section 25.2: empty-cells</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The empty-cells property determines if cells with no content should be
-displayed or not. This has no effect unless border-collapse is set to
-separate.</p>
-<p>Below an example with two tables with different values set to the
-empty-cells property:</p>
+displayed or not. This has no effect unless border-collapse is set to separate.</p>
+
+<p>Below an example with two tables with different values set to the empty-cells property:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ 201. two tables with different values set to empty-cells property (143) ~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -9526,6 +9657,7 @@ cells whereas the latter does not.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The border-collapse property determines if a tables' borders should be
 separated or merged.</p>
+
 <p>Below an example of two tables with different values to the
 border-collapse property:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9539,7 +9671,7 @@ border-collapse property:</p>
 </p>
 
 <p>The table on the left has <b>border-collapse</b>: separate while the
-one on the right has<br>
+one on the right has<br/>
 <b>border-collapse</b>: collapse.</p>
 
 <table border="1" style="border-collapse: collapse;">
@@ -9569,6 +9701,7 @@ one on the right has<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The border-spacing property determines the spacing between cells. This
 has no effect unless border-collapse is set to separate.</p>
+
 <p>Below an example of two tables with different values to the
 border-spacing property:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9612,6 +9745,7 @@ the one on the right has <b>border-spacing</b>: 8px.</p>
 <p>The caption-side property determines the vertical positioning of the
 <b>&lt;caption&gt;</b> element within a table. This has no effect if
 such element does not exist.</p>
+
 <p>Below an example with two tables with different values set to the
 caption-side property:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9670,7 +9804,8 @@ right has <b>caption-side</b>: bottom.</p>
     </tr>
     <tr class="even">
       <td></td>
-      <td><a href="https://www.w3.org/TR/css3-transitions/" target="_blank" rel="noopener noreferrer">transitionable properties</a> need to be transitioned.</td>
+      <td><a href="https://www.w3.org/TR/css3-transitions/" target="_blank" rel="noopener noreferrer">
+	    transitionable properties</a> need to be transitioned.</td>
     </tr>
     <tr class="odd">
       <td>transition-duration</td>
@@ -9694,7 +9829,8 @@ right has <b>caption-side</b>: bottom.</p>
     </tr>
     <tr class="even">
       <td></td>
-      <td>found in the <a href="https://www.w3.org/TR/css3-transitions/#transition-timing-function" target="_blank" rel="noopener noreferrer">W3C specs</a>.</td>
+      <td>found in the <a href="https://www.w3.org/TR/css3-transitions/#transition-timing-function" 
+	    target="_blank" rel="noopener noreferrer">W3C specs</a>.</td>
     </tr>
     <tr class="odd">
       <td>transition-delary</td>
@@ -9732,8 +9868,11 @@ the background-color change will last 1 second.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The cubic-bezier function is a transition timing function which is often
 used for custom and smooth transitions.</p>
-<p><b>transition-timing-function</b>: cubic-bezier(0.1, 0.7, 1.0, 0.1);</p>
+
+<h4>transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);</h4>
+
 <p>The function takes four parameters:</p>
+
 <p>cubic-bezier(P1_x, P1_y, P2_x, P2_y)</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 205. cubic-bezier (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9761,8 +9900,10 @@ target="_blank" rel="noopener noreferrer">Bézier curve</a>:</p>
 <p>For CSS Bézier Curves, P0 and P3 are always in the same spot. P0 is at
 (0,0) and P3 is at (1,1), which menas that the parameters passed to the
 cubic-bezier function can only be between 0 and 1.</p>
+
 <p>If you pass parameters which aren't in this interval the function will
 default to a linear transition.</p>
+
 <p>Since cubic-bezier is the most flexible transition in CSS, you can
 translate all other transition timing function to cubic-bezier
 functions:</p>
@@ -9795,7 +9936,7 @@ div: hover {
 
 <h4>HTML:</h4>
 
-<p><b>&lt;div&gt;&lt;/div&gt;</b></p>
+<h4>&lt;div&gt;&lt;/div&gt;</h4>
 
 <ul>
   <li><b>transition-property</b>: Specifies the CSS properties the transition
@@ -9868,9 +10009,9 @@ div: hover {
 
 <div class="line-block">[ from | to | <b>&lt;percentage&gt;</b> ] | You
 can either specify a set time with a percentage value, or two percentage
-values, IE |<br />
+values, IE |<br/>
                                                       | 10%, 20%, for a
-period of time where the keyframe’s set attributes are set. |<br />
+period of time where the keyframe’s set attributes are set. |<br/>
 block | Any amount of CSS attributes for the keyframe. |</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch27-1">Section 27.1: Animations with keyframes</h3>
@@ -9906,6 +10047,7 @@ between all colors.</p>
 
 <p><a href="https://jsfiddle.net/s9m3od3p/6/" 
 target="_blank" rel="noopener noreferrer">View Result (jsFiddle)</a>.</p>
+
 <p>There's a few different things to note here. First, the actual <span
 style='color:blue;'>@</span>keyframes syntax.</p>
 
@@ -9919,6 +10061,7 @@ style='color:blue;'>@</span>keyframes syntax.</p>
 part, the 0% in the case, defines where the keyframe is during the
 animation. The 0% implies it is 0% of the total animation time from the
 beginning.</p>
+
 <p>The animation will automatically transition between keyframes. So, by
 setting the next background color at 8.333%, the animation will smoothly
 take 8.333% of the time to transition between those keyframes.</p>
@@ -9929,6 +10072,7 @@ take 8.333% of the time to transition between those keyframes.</p>
 
 <p>This code attaches our animation to all elements which have the
 .RainbowBackground class.</p>
+
 <p>The actual animation property takes the following arguments;</p>
 
 <ul>
@@ -9968,7 +10112,9 @@ both the @keyframes declaration and the animation property, like so:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Useful for simple animations, the CSS transition property allows
 number-based CSS properties to animate between states.</p>
-<p><b>Example</b></p>
+
+<h4>Example</h4>
+
 <pre><code>.Example {
   <b>height</b>: 100px;
   <b>background</b>: #fff;
@@ -9977,12 +10123,14 @@ number-based CSS properties to animate between states.</p>
   <b>height</b>: 120px;
   <b>background</b>: #ff0000;
 }</code></pre>
+
 <p><a href="https://jsfiddle.net/0kcm6rwo/" 
 target="_blank" rel="noopener noreferrer"><i>View Result (jsFiddle)</i>.</a></p>
 
 <p>By default, hovering over an element with the .Example class would
 immediately cause the element's height to jump to 120px and its
 background color to red (#ff0000).</p>
+
 <p>By adding the transition property, we can cause these changes to occur
 over time:</p>
 
@@ -9993,11 +10141,14 @@ over time:</p>
 
 <p><a href="https://jsfiddle.net/v2j4ggue/1/" 
 target="_blank" rel="noopener noreferrer">View Result (jsFiddle)</a>.</p>
+
 <p>The all value applies the transition to all compatible (numbers-based)
 properties. Any compatible property name (such as height or top) can be
 substituted for this keyword.</p>
+
 <p>400ms specifies the amount of time the transition takes. In this case,
 the element's change in height will take 400 milliseconds to complete.</p>
+
 <p>Finally, the value ease is the animation function, which determines how
 the animation is played. ease means start slow, speed up, then end slow
 again. Other values are linear, ease-out, and ease-in.</p>
@@ -10048,6 +10199,7 @@ animation-name and animation-duration must be declared:</p>
 <p>It's also worth mentioning that when using the animation shorthand the
 order of the properties makes a difference. Obviously the browser may
 confuse your duration with your delay.</p>
+
 <p>If brevity isn't your thing, you can also skip the shorthand property
 and write out each property individually:</p>
 
@@ -10064,12 +10216,14 @@ and write out each property individually:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When creating animations and other GPU-heavy actions, it's important to
 understand the will-change attribute.</p>
+
 <p>Both CSS keyframes and the transition property use GPU acceleration.
 Performance is increased by offloading calculations to the device's GPU.
 This is done by creating paint layers (parts of the page that are
 individually rendered) that are offloaded to the GPU to be calculated.
 The will-change property tells the browser what will animate, allowing
 the browser to create smaller paint areas, thus increasing performance.</p>
+
 <p>The will-change property accepts a comma-separated list of properties to
 be animated. For example, if you plan on transforming an object and
 changing its opacity, you would specify:</p>
@@ -10239,6 +10393,7 @@ right side end.</p>
 
 <p>This example will scale the div to 100px * 0.5 = 50px on the X axis and
 to 100px * 1.3 = 130px on the Y axis.</p>
+
 <p>The center of the transform is in the center of the div, 50% from left
 and 50% from top.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10260,6 +10415,7 @@ and 50% from top.</p>
 <p>This example will skew the div by 20 degrees on the X axis and by − 30
 degrees on the Y axis. The center of the transform is in the center of
 the div, 50% from left and 50% from top.</p>
+
 <p><a href="https://jsfiddle.net/MadalinaTn/gtt4osms/1/" 
 target="_blank" rel="noopener noreferrer">See the result (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10272,6 +10428,7 @@ this:</p>
 
 <p>This will rotate the element 15 degrees clockwise and then translate it
 200px to the right.</p>
+
 <p>In chained transforms, <b>the coordinate system moves with the
 element</b>. This means that the translation won't be horizontal but on
 an axis rotate 15 degrees clockwise as shown in the following image:</p>
@@ -10322,7 +10479,9 @@ example will be different to</p>
 
 <p>This example will move the div by 200px on the X axis and by 100px * 50%
 = 50px on the Y axis.</p>
+
 <p>You can also specify translations on a single axis.</p>
+
 <p>On the X axis:</p>
 
 <pre><code>.translate {
@@ -10339,7 +10498,9 @@ example will be different to</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Transformations are done with respect to a point which is defined by the
 transform-origin property.</p>
+
 <p>The property takes 2 values: transform-origin: X Y;</p>
+
 <p>In the following example the first div (.tl) is rotate around the top
 left corner with <b>transform-origin</b>: 0 0; and the second (.tr) is
 transformed around it's top right corner with <b>transform-origin</b>:
@@ -10399,10 +10560,12 @@ up with diamond shapes only. But when a rotateY transform is added on
 top of it, the element gets squeezed in the Y-axis and thus ends up
 looking like a needle. The more the rotation of the Y-axis the more
 squeezed the element looks.</p>
+
 <p>The output of the above example would be a needle resting on its tip.
 For creating a needle that is resting on its base, the rotation should
 be along the X-axis instead of along Y-axis. So the transform property's
 value would have to be something like rotate(85deg) rotateZ(45deg);.</p>
+
 <p><a href="http://codepen.io/hari_shanx/pen/YXzoBo" 
 target="_blank" rel="noopener noreferrer">This CodePen</a> uses a
 similar approach to create something that resembles the Safari logo or a
@@ -10504,19 +10667,24 @@ additional hover effect (CodePen)</a>.</p>
 
 <p>In this example, the text is transformed to make it look like it is
 going into the screen away from the user.</p>
+
 <p>The shadow is transformed accordingly so it follows the text. As it is
 made with a pseudo element and the data attribute, it inherits the
 transforms form it's parent (the H1 tag).</p>
+
 <p>The white "light" is made with a pseudo element on the #title element.
 It is skewed and uses border-radius for the rounded corner.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch29-3">Section 29.3: backface-visibility</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The backface-visibility property relates to 3D transforms.</p>
+
 <p>With 3D transforms and the backface-visibility property, you're able to
 rotate an element such that the original front of an element no longer
 faces the screen.</p>
+
 <p>For example, this would flip an element away from the screen:</p>
+
 <p><a href="https://jsfiddle.net/3z3z843c/" 
 target="_blank" rel="noopener noreferrer">Demo (jsFIDDLE)</a>.</p>
 
@@ -10539,6 +10707,7 @@ target="_blank" rel="noopener noreferrer">Demo (jsFIDDLE)</a>.</p>
 <p>Firefox 10+ and IE 10+ support backface-visibility without a prefix.
 Opera, Chrome, Safari, iOS, and Android all need
 -webkit-backface-visibility.</p>
+
 <p>It has 4 values:</p>
 
 <ol>
@@ -10616,7 +10785,7 @@ CSS cube example:</p>
 }</code></pre>
 
 <p><a href="http://codepen.io/web-tiki/pen/NNwqBa" 
-target="_blank" rel="noopener noreferrer">View this example (CodePen)</a>.<br> 
+target="_blank" rel="noopener noreferrer">View this example (CodePen)</a>.<br/> 
 Additional styling is added in the demo and a transform
 is applied on hover to view the 6 faces of the cube.</p>
 
@@ -10698,7 +10867,9 @@ is applied on hover to view the 6 faces of the cube.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch30-1">Section 30.1: Blur</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML:</h4><pre><code><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></code></pre>
+<h4>HTML:</h4>
+
+<pre><code><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></code></pre>
 
 <h4>CSS:</h4>
 
@@ -10827,7 +10998,7 @@ is applied on hover to view the 6 faces of the cube.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch31-1">Section 31.1: Changing cursor type</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>cursor</b>: value;</p>
+<h4>cursor: value;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 219. cursor styling images (164) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -10883,14 +11054,15 @@ respond to mouse/touch events.</p>
 <pre><code>.disabled {
   <b>pointer-events</b>: none;
 }</code></pre>
-<p>In this example,</p>
+
+<h4>In this example,</h4>
 
 <blockquote>
   'none' prevents all click, state and cursor options on the specified
   HTML element.
 </blockquote>
 
-<p>Other valid values for HTML elements are:</p>
+<h4>Other valid values for HTML elements are:</h4>
 
 <ul>
   <li>auto;</li>
@@ -10902,7 +11074,7 @@ respond to mouse/touch events.</p>
     target="_blank" rel="noopener noreferrer">CSS Tricks Pointer Events</a></li>
 </ol>
 
-<p>Other resources:</p>
+<h4>Other resources:</h4>
 
 <ul>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" 
@@ -11197,9 +11369,11 @@ flow around the circle on either side. It will flow around the
 containing box of the image only. With shape-outside the float area is
 re-defined as a <i>circle</i> and the content is made to flow around
 this <i>imaginary circle</i> that is created using shape-outside.</p>
+
 <p>The <i>imaginary circle</i> that is used to re-define the float area is
 a circle with radius of 80px drawn from the center-mid point of the
 image's reference box.</p>
+
 <p>Below are a couple of screenshots to illustrate how the content would be
 wrapped around when shape-outside is used and when it is not used.</p>
 
@@ -11317,6 +11491,7 @@ exact position of the list item content in the document. The default
 values for the margin and padding may be different for each browser. In
 order to get the same layout cross- browser, these need to be set
 specifically.</p>
+
 <p>Each list item gets a 'marker box', which contains the bullet marker.
 This box can either be placed inside or outside of the list item box.</p>
 
@@ -11330,6 +11505,7 @@ content to the right as needed.</p>
 <p>places the bullet left of the <b>&lt;li&gt;</b> element. If there is not
 enough space in the padding of the containing element, the marker box
 will extend to the left even if it would fall off the page.</p>
+
 <p>Showing the result of inside and outside positioning: 
 <a href="https://jsfiddle.net/pqh3cxdp/" target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11355,7 +11531,7 @@ li {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch34-3">Section 34.3: Type of Bullet or Numbering</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><p>Specific for <b>&lt;li&gt;</b> tags within an unordered list
+<p>Specific for <b>&lt;li&gt;</b> tags within an unordered list
 (<b>&lt;ul&gt;</b>);</p>
 
 <pre><code><b>list-style</b>: disc; /* A filled circle (default) */
@@ -11534,7 +11710,8 @@ explicitly specified the counter's style.</p>
 <p>The above example numbers every "item" in the page and adds the item's
 number before its header (using content property of .item-header
 element's pseudo). A 
-<a href="https://jsfiddle.net/a7rmje3r/" target="_blank" rel="noopener noreferrer">live demo of this code (jsFiddle)</a>.</p>
+<a href="https://jsfiddle.net/a7rmje3r/" target="_blank" rel="noopener noreferrer">
+live demo of this code (jsFiddle)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch35-3">Section 35.3: Implementing multi-level numbering using CSS counters</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11585,6 +11762,7 @@ of the existing counter. Here, the second level ul already inherits the
 list-item-number counter from its parent but then has to create its own
 list-item-number (for its children li) and so creates (counter for first
 level). Thus it achieves the multi-level numbering.</p>
+
 <p>The output is printed using the counters() function instead of the
 counter() function because the counters() function is designed to prefix
 the value of all higher level counters (parent) when printing the output.</p>
@@ -11594,11 +11772,14 @@ the value of all higher level counters (parent) when printing the output.</p>
 <h3 id="ch36-1">Section 36.1: calc() function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Accepts a mathematical expression and returns a numerical value.</p>
+
 <p>It is especially useful when working with different types of units
 (e.g. subtracting a px value from a percentage) to calculate the value
 of an attribute.</p>
+
 <p>+, -, /, and * operators can all be used, and parentheses can be added
 to specify the order of operations if necessary.</p>
+
 <p>Use calc() to calculate the width of a div element:</p>
 
 <pre><code>#div1 {
@@ -11616,11 +11797,13 @@ to specify the order of operations if necessary.</p>
 <pre><code><b>background-position</b>: calc (50&percnt;&plus; 17px) calc (50&percnt;&plus; 10px), 50&percnt; 50&percnt;;</code></pre>
 
 <p>Use calc() to determine the height of an element:</p>
-<p><b>height</b>: calc(100% - 20px);</p>
+
+<h4>height: calc(100% - 20px);</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch36-2">Section 36.2: attr() function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Returns the value of an attribute of the selected element.</p>
+
 <p>Below is a blockquote element which contains a character inside a data-*
 attribute which CSS can use (e.g. inside the ::before and ::after
 pseudo-element) using this function.</p>
@@ -11673,6 +11856,7 @@ at red, then yellow at 50%, and finishing in blue.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>CSS Variables allow authors to create reusable values which can be used
 throughout a CSS document.</p>
+
 <p>For example, it's common in CSS to reuse a single color throughout a
 document. Prior to CSS Variables this would mean reusing the same color
 value many times throughout a document. With CSS Variables the color
@@ -11709,6 +11893,7 @@ traditional CSS values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>CSS variables cascade in much the same way as other properties, and can
 be restated safely.</p>
+
 <p>You can define variables multiple times and only the definition with the
 highest specificity will apply to the element selected.</p>
 <p>Assuming this HTML:</p>
@@ -11810,6 +11995,7 @@ but it should start with double dashes (−-)</p>
 <p>You can re-set variables within media queries and have those new values
 cascade wherever they are used, something that isn't possible with
 pre-processor variables.</p>
+
 <p>Here, a media query changes the variables used to set up a very simple
 grid:</p>
 
@@ -11862,6 +12048,7 @@ div {
 <p>You can try resizing the window in this
 <a href="https://codepen.io/mkumaran/pen/BZaXvz" target="_blank" rel="noopener noreferrer">Demo (CodePen)</a>.
 </p>
+
 <p>Here's an animated screenshot of the resizing in action:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 227. animated screenshot of resizing in action (183) ~~~~~~~~~~~~~~~~~~~~-->
@@ -12160,18 +12347,17 @@ width and height.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch38-4">Section 38.4: Bursts</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A burst is similar to a star but with the points extending less distance
-from the body. Think of a burst shape as a square with additional,
-slightly rotated, squares layered on top.</p>
-<p>The additional squares are created using the ::before and ::after
-psuedo-elements.</p>
+<p>A burst is similar to a star but with the points extending less distance from the 
+body. Think of a burst shape as a square with additional, slightly rotated, squares 
+layered on top.</p>
+
+<p>The additional squares are created using the ::before and ::after psuedo-elements.</p>
 
 <h4>8 Point Burst</h4>
 
-<p>An 8 point burst are 2 layered squares. The bottom square is the element
-itself, the additional square is created using the :before
-pseudo-element. The bottom is rotated 20°, the top square is rotated
-135°.</p>
+<p>An 8 point burst are 2 layered squares. The bottom square is the element itself, the 
+additional square is created using the :before pseudo-element. The bottom is rotated 20°, 
+the top square is rotated 135°.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 241. 8 point burst (188) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -12206,10 +12392,9 @@ pseudo-element. The bottom is rotated 20°, the top square is rotated
 
 <h4>12 Point Burst</h4>
 
-<p>An 12 point burst are 3 layered squares. The bottom square is the
-element itself, the additional squares are created using the :
-pseudo-elements. The bottom is rotated 0°, the next square is rotated
-30°, and the top is rotated 60°.</p>
+<p>An 12 point burst are 3 layered squares. The bottom square is the element itself, 
+the additional squares are created using the :pseudo-elements. The bottom is rotated 0°, 
+the next square is rotated 30°, and the top is rotated 60°.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 242. 12 point burst (188) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -12437,8 +12622,8 @@ culpa qui officia deserunt mollit anim id est laborum
 <h2 id="ch40">Chapter 40: Multiple columns</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <blockquote>
-  <p>CSS allows to define that element contents wrap into multiple columns
-  with gaps and rules between them.</p>
+  CSS allows to define that element contents wrap into multiple columns
+  with gaps and rules between them.
 </blockquote>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch40-1">Section 40.1: Create Multiple Columns</h3>
@@ -12537,7 +12722,7 @@ li {
   <b>display</b>: inline-block;
 }</code></pre>
 
-<p><b>Notes:</b></p>
+<h4>Notes:</h4>
 
 <ul>
   <li>The nav, ul and li tags were chosen for their semantic meaning of 'a
@@ -12560,9 +12745,11 @@ values of some properties of an element are applied to its' children.
 This is particularly useful when you want to set a global style to your
 elements rather than having to set said properties to each and every
 element in your markup.</p>
+
 <p>Common properties that are automatically inherited are: font, color,
 text-align, line-height.</p>
-<p>Assume the following stylesheet:</p>
+
+<h4>Assume the following stylesheet:</h4>
 
 <pre><code>#myContainer {
   <b>color</b>: red;
@@ -12586,11 +12773,13 @@ its' children. This is because those properties are typically desired to
 be unique to the element (or selection of elements) to which the
 property is applied to. Common such properties are margin, padding,
 background, display, etc.</p>
+
 <p>However, sometimes inheritance is desired anyway. To achieve this, we
 can apply the inherit value to the property that should be inherited.
 The inherit value can be appied to <i>any</i> CSS property and
-<i>any</i> HTML</p> element.</p>
-<p>Assume the following stylesheet:</p>
+<i>any</i> HTML element.</p>
+
+<h4>Assume the following stylesheet:</h4>
 
 <pre><code>#myContainer {
   <b>color</b>: red;
@@ -12635,6 +12824,7 @@ that can be extracted from it.</p>
 a sprite within the sprite sheet. These sprite sheets are useful because
 they improve performance by reducing the number of HTTP requests a
 browser might have to make.</p>
+
 <p>So how do you implement one? Here's some example code.</p>
 
 <h4>HTML:</h4>
@@ -12864,9 +13054,11 @@ positioned at the center of the element and has a radius of 100px.</p>
 <p>Masks are similar to Clips, but instead of defining a path you define a
 mask what layers over the element. You can imagine this mask as an image
 what consist of mainly two colors: black and white.</p>
+
 <p><b>Luminance Mask</b>: Black means the region is opaque, and white that
 it's transparent, but there is also a grey area which is
 semi-transparent, so you are able to make smooth transitions.</p>
+
 <p><b>Alpha Mask</b>: Only on the transparent areas of the mask the element
 will be opaque.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12882,6 +13074,7 @@ will be opaque.</p>
 <p>This image for example can be used as a luminance mask to make for an
 element a very smooth transition from right to left and from opaque to
 transparent.</p>
+
 <p>The mask property let you specify the the mask type and an image to be
 used as layer.</p>
 
@@ -12910,6 +13103,7 @@ used as layer.</p>
 <p>In the above example there is an element with an image as its
 background. The mask that is applied on the image (using CSS) makes it
 look as though it is fading out from left to right.</p>
+
 <p>The masking is achieved by using a linear-gradient that goes from
 white (on the left) to transparent (on the right) as the mask. As it is
 an alpha mask, image becomes transparent where the mask is
@@ -12962,6 +13156,7 @@ reference box with its center point at the center of the reference box.
 Here since no &lt;clipgeometry-box&gt; (in other words, reference box)
 is provided, the border-box of the element will be used as the reference
 box.</p>
+
 <p>The circle shape needs to have a radius and a center with (x,y)
 coordinates:</p>
 
@@ -13004,7 +13199,9 @@ which is botom-left cornder of the box and then finally to 100% 50%
 which is nothing but the right-middle point of the box. These paths are
 self closing (that is, the starting point will be the ending point) and
 so the final shape is that of a triangle.</p>
+
 <p>This can also be used on an element with an image or a gradient as background.</p>
+
 <p><a href="https://jsfiddle.net/eoa4a94k/" target="_blank" rel="noopener noreferrer">
 View Demo (jsFiddle)</a>.</p>
 
@@ -13198,6 +13395,7 @@ url(&apos;http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico&apos;);}&qu
 nodes which are linked into a tree structure. The entire map of all the
 nodes with their associated styles of a page would be the CSS Object
 Model.</p>
+
 <p>To display the webpage, a web browser takes following steps.</p>
 
 <ol>
@@ -13270,6 +13468,7 @@ Model.</p>
 <p>In terms of syntax, @supports is very similar to @media, but instead of
 detecting screen size and orientation, @supports will detect whether the
 browser can handle a given CSS rule.</p>
+
 <p>Rather than doing something like @supports (flex), notice that the rule
 is @supports (<b>display</b>: flex).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13481,10 +13680,9 @@ target="_blank" rel="noopener noreferrer">Demo (Understanding z-index)</a>.</p>
   title="Example; Using th overflow property with a value different to visible"
   alt="Example; Using th overflow property with a value different to visible." />
 </p>
-<p>
-<a href="https://jsfiddle.net/MadalinaTn/qkwwmu6m/2/" target="_blank" rel="noopener noreferrer">Demo
-(jsFiddle)</a>.
-</p>
+
+<p><a href="https://jsfiddle.net/MadalinaTn/qkwwmu6m/2/" target="_blank" rel="noopener noreferrer">Demo
+(jsFiddle)</a>.</p>
 
 <blockquote>
   Using the overflow property with a value different to visible (its
@@ -13499,6 +13697,7 @@ target="_blank" rel="noopener noreferrer">Demo (Understanding z-index)</a>.</p>
 floated image is similar to 
 <a href="https://css-tricks.com/almanac/properties/o/overflow/" 
 target="_blank" rel="noopener noreferrer">CSS Tricks example</a> on CSS-tricks.com.</p>
+
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" 
 target="_blank" rel="noopener noreferrer">MDN CSS Overflow</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13707,7 +13906,8 @@ expand when .content's height exceed .wrapper's min-height.</p>
 a box with an established height and width. Usually applied to an image
 or video, Object-fit accepts the following five values:</p>
 
-<p><b>FILL</b></p>
+<h4>FILL</h4>
+
 <pre><code><b>object-fit</b>: fill;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 263. original and object-fit: fill (217) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13718,6 +13918,7 @@ or video, Object-fit accepts the following five values:</p>
   title="Original image and object-fit: fill"
   alt="Original image and object-fit: fill." />
 </p>
+
 <p>Fill stretches the image to fit the content box without regard to the
 image's original aspect ratio.</p>
 
@@ -13748,9 +13949,12 @@ the image's aspect ratio.</p>
 
 <p>Cover fills the entire box with the image. The image aspect ratio is
 preserved, but the image is cropped to the dimensions of the box.</p>
-<p><b>NONE</b></p>
-<p><b>object-fit</b></p>
-<p>:none;</p>
+
+<h4>NONE</h4>
+
+<h4>object-fit</h4>
+
+<h4>:none;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 267. original image and object-fit: none (218) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -13794,22 +13998,23 @@ target="_blank" rel="noopener noreferrer">OOCSS</a> and
 <h3 id="ch52-1">Section 52.1: BEM</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="http://getbem.com/introduction/" target="_blank" rel="noopener noreferrer">
-BEM</a> stands for Blocks, Elements, and Modifiers.<br />
+BEM</a> stands for Blocks, Elements, and Modifiers.<br/>
 It's a methodology initially conceived by a Russian tech company
 <a href="https://en.wikipedia.org/wiki/Yandex" target="_blank" rel="noopener noreferrer">
 Yandex</a>, But which gained quite some traction among American &amp; Western-European 
 web developers as well.</p>
+
 <p>As the name implies, BEM metholology is all about componentization of
 your HTML and CSS code into three types of components:</p>
 
 <ul>
-  <li><b>Blocks:</b> standalone entities that are meaningful on their own.<br><br> 
+  <li><b>Blocks:</b> standalone entities that are meaningful on their own.<br/><br/> 
     Examples are header, container, menu, checkbox &amp; textbox.</li>
   <li><b>Elements:</b> Part of blocks that have no standalone meaning and are
-    semantically tied to their blocks.<br><br> Examples are menu item, list item, 
+    semantically tied to their blocks.<br/><br/> Examples are menu item, list item, 
     checkbox caption &amp; header title.</li>
   <li><b>Modifiers:</b> Flags on a block or element, used to change appearance
-    or behavior.<br><br> Examples are disabled, highlighted, checked, fixed, size 
+    or behavior.<br/><br/> Examples are disabled, highlighted, checked, fixed, size 
     big &amp; color yellow.</li>
 </ul>
 
@@ -13839,16 +14044,16 @@ something like this:</p>
 .form__submit { } // Block &gt; element
 .form__submit−-disabled { } // Block &gt; element + modifier</code></pre>
 
-<p>The corresponding HTML should look something like this:</p>
+<h4>The corresponding HTML should look something like this:</h4>
 
-<pre><code><b>&lt;</b><b>form</b> class=&quot;form form&minus;-theme-xmas form&minus;-simple&quot;<b>&gt;</b>
-  <b>&lt;</b><b>input</b> class=&quot;form&lowbar;&lowbar;input&quot; type=&quot;text&quot;<b>/&gt;</b>
-  <b>&lt;</b><b>input</b> class=&quot;form&lowbar;&lowbar;submit form&lowbar;&lowbar;submit&minus;-disabled&quot; type=&quot;submit&quot;<b>/&gt;</b>
-<b>&lt;</b><b>/form</b><b>&gt;</b></code></pre>
+<pre><code><b>&lt;form</b> class=&quot;form form&minus;-theme-xmas form&minus;-simple&quot;<b>&gt;</b>
+  <b>&lt;input</b> class=&quot;form&lowbar;&lowbar;input&quot; type=&quot;text&quot;<b>/&gt;</b>
+  <b>&lt;input</b> class=&quot;form&lowbar;&lowbar;submit form&lowbar;&lowbar;submit&minus;-disabled&quot; type=&quot;submit&quot;<b>/&gt;</b>
+<b>&lt;/form&gt;</b></code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch53">Chapter 53: Browser Support &amp; Prefixes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Prefix Browser(s)</b></p>
+<h4>Prefix Browser(s)</h4>
 
 <table border="1" style="border-collapse: collapse;">
   <thead>
@@ -13920,19 +14125,20 @@ across as many browsers as possible.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch54-1">Section 54.1: normalize.css</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Browsers have a default set of CSS styles they use for rendering
-elements. Some of these styles can even be customised using the
-browser's settings to change default font face and size definitions, for
-example. The styles contain the definition of which elements are
-supposed to be block-level or inline, among other things.</p>
-<p>Because these default styles are given some leeway by the language
-specifications and because browsers may not follow the specs properly
-they can differ from browser to browser.</p>
+<p>Browsers have a default set of CSS styles they use for rendering elements. Some of 
+these styles can even be customised using the browser's settings to change default font 
+face and size definitions, for example. The styles contain the definition of which 
+elements are supposed to be block-level or inline, among other things.</p>
+
+<p>Because these default styles are given some leeway by the language specifications 
+and because browsers may not follow the specs properly they can differ from browser 
+to browser.</p>
+
 <p>This is where <a href="http://necolas.github.io/normalize.css/" target="_blank" 
 rel="noopener noreferrer">normalize.css</a> comes into play. It overrides the 
 most common inconsistencies and fixes known bugs.</p>
 
-<p><b>What does it do?</b></p>
+<h4>What does it do?</h4>
 
 <ul>
   <li>Preserves useful defaults, unlike many CSS resets.</li>
@@ -13942,26 +14148,26 @@ most common inconsistencies and fixes known bugs.</p>
   <li>Explains what code does using detailed comments.</li>
 </ul>
 
-<p>So, by including normalize.css in your project your design will look
-more alike and consistent across different browsers.</p>
-<p><b>Difference to reset.css</b></p>
-<p>You may have heard of reset.css. What's the difference between the
-two?</p>
-<p>While normalize.css provides consistency by setting different
-properties to unified defaults, reset.css achieves consistency by
-<b>removing</b> all basic styling that a browser may apply. While this
-might sound like a good idea at first, this actually means you have to
-write <b>all</b> rules yourself, which goes against having a solid
-standard.</p>
+<p>So, by including normalize.css in your project your design will look more alike and 
+consistent across different browsers.</p>
+
+<h4>Difference to reset.css</h4>
+
+<p>You may have heard of reset.css. What's the difference between the two?</p>
+
+<p>While normalize.css provides consistency by setting different properties to 
+unified defaults, reset.css achieves consistency by <b>removing</b> all basic 
+styling that a browser may apply. While this might sound like a good idea at 
+first, this actually means you have to write <b>all</b> rules yourself, which 
+goes against having a solid standard.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch54-2">Section 54.2: Approaches and Examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <blockquote>
-  <p>CSS resets take separate approaches to browser defaults. Eric Meyer’s
+  CSS resets take separate approaches to browser defaults. Eric Meyer’s
   Reset CSS has been around for a while. His approach nullifies many of
   the browser elements that have been known to cause problems right off
-  the back. The following is from his version (v2.0 | 20110126) CSS
-  Reset.</p>
+  the back. The following is from his version (v2.0 | 20110126) CSS Reset.
 </blockquote>
 
 <details>
@@ -13994,8 +14200,8 @@ time, mark, audio, video <b>{</b>
 target="_blank" rel="noopener noreferrer">Eric Meyer's Reset CSS</a>.</p>
 
 <blockquote>
-  <p>Normalize CSS on the other and deals with many of these separately.
-  The following is a sample from the version (v4.2.0) of the code.</p>
+  Normalize CSS on the other and deals with many of these separately.
+  The following is a sample from the version (v4.2.0) of the code.
 </blockquote>
 
 <pre><code>/&ast;&ast;
@@ -14048,8 +14254,7 @@ h1 {
   <b>margin</b>: 0.67em 0;
 }</code></pre>
 
-<p><a href="http://normalize.css/" 
-target="_blank" rel="noopener noreferrer">Normalize CSS</a>.</p>
+<p><a href="http://normalize.css/" target="_blank" rel="noopener noreferrer">Normalize CSS</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch55">Chapter 55: Internet Explorer Hacks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14070,13 +14275,12 @@ browsers will simply ignore the rule.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch55-2">Section 55.2: High Contrast Mode in Internet Explorer 10 and greater</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In Internet Explorer 10+ and Edge, Microsoft provides the
--ms-high-contrast media selector to expose the "High Contrast" setting
-from the browser, which allows the programmer to adjust their site's
-styles accordingly.</p>
-<p>The -ms-high-contrast selector has 3 states: active, black-on-white, and
-white-on-black. In IE10+ it also had a none state, but that is no longer
-supported in Edge going forward.</p>
+<p>In Internet Explorer 10+ and Edge, Microsoft provides the -ms-high-contrast media 
+selector to expose the "High Contrast" setting from the browser, which allows the 
+programmer to adjust their site's styles accordingly.</p>
+
+<p>The -ms-high-contrast selector has 3 states: active, black-on-white, and white-on-black. 
+In IE10+ it also had a none state, but that is no longer supported in Edge going forward.</p>
 
 <h4>Examples</h4>
 
@@ -14087,9 +14291,8 @@ supported in Edge going forward.</p>
   }
 }</code></pre>
 
-<p>This will change the header background to white and the text color to
-black when high contrast mode is active <em>and</em> it is in
-black-on-white mode.</p>
+<p>This will change the header background to white and the text color to black when high 
+contrast mode is active <em>and</em> it is in black-on-white mode.</p>
 
 <pre><code><b>&commat;media</b> screen and (&minus;ms-high-contrast: white-on-black){
   .header {
@@ -14098,32 +14301,32 @@ black-on-white mode.</p>
   }
 }</code></pre>
 
-<p>Similar to the first example, but this specifically selects the
-white-on-black state only, and inverts the header colors to a black
-background with white text.</p>
+<p>Similar to the first example, but this specifically selects the white-on-black state 
+only, and inverts the header colors to a black background with white text.</p>
 
 <h4>More Information:</h4>
 
-<p><a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465764.aspx">Microsoft
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465764.aspx" 
+target="_blank" rel="noopener noreferrer">Microsoft
 Documentation</a> on -ms-high-contrast. Not worth your time to read.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch55-3">Section 55.3: Internet Explorer 6 &amp; Internet Explorer 7 only</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>To target Internet Explorer 6 and Internet Explorer 7, start your
-properties with *:</p>
+<p>To target Internet Explorer 6 and Internet Explorer 7, start your properties with *:</p>
 
 <pre><code>.hide-on-ie6-and-ie7 {
-&ast;<b>display</b>: none; // This line is processed only on IE6 and IE7
+  &ast;<b>display</b>: none; // This line is processed only on IE6 and IE7
 }</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch55-4">Section 55.4: Internet Explorer 8 only</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To target Internet Explorer 8, wrap your selectors inside: <span
-class='citation' data-cites='media'>@media</span> \0.
-</p>
+class='citation' data-cites='media'>@media</span> \0.</p>
+
 <p>It’s microsoft, so it really isn’t worth spending more time learning.</p>
-<p>So pathetic. The only good MS code was stolen from Universities, Digital
-Equipment Corporation, Linux, Unix, everywhere.</p>
+
+<p>So pathetic. The only good MS code was stolen from Universities, Digital Equipment 
+Corporation, Linux, Unix, everywhere.</p>
 
 <pre><code><b>&commat;media</b>&bsol;&bsol; 0 screen {
   .hide-on-ie8 {
@@ -14137,10 +14340,11 @@ Equipment Corporation, Linux, Unix, everywhere.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch56-1">Section 56.1: Use transform and opacity to avoid trigger layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Changing some CSS attribute will trigger the browser to synchronously
-calculate the style and layout, which is a bad thing when you need to
-animate at 60fps.</p>
-<p><b>DON'T</b></p>
+<p>Changing some CSS attribute will trigger the browser to synchronously calculate the style 
+and layout, which is a bad thing when you need to animate at 60fps.</p>
+
+<h4>DON'T</h4>
+
 <p>Animate with left and top trigger layout.</p>
 
 <pre><code>#box {
@@ -14157,8 +14361,9 @@ animate at 60fps.</p>
   <b>top</b>: 100px;
 }</code></pre>
 
-<p><a href="https://jsfiddle.net/trungdq88/gmpzxLyq/">Demo (jsFiddle)</a> took 11.7ms
-for rendering 9.8ms for painting.</p>
+<p><a href="https://jsfiddle.net/trungdq88/gmpzxLyq/" 
+target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a> took 11.7ms for rendering 9.8ms 
+for painting.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 267. test took 11.7ms to render (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -14197,7 +14402,8 @@ for rendering 9.8ms for painting.</p>
   alt="Same demo but this one took 1.3ms to render and 2.0ms to paint." />
 </p>
 
-<p><a href="https://jsfiddle.net/trungdq88/Logdo0rn/">Demo (jsFiddle)</a>
+<p><a href="https://jsfiddle.net/trungdq88/Logdo0rn/" 
+target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>
 same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
 
 <!--  <script src="./js/scripts.js"></script>  -->
@@ -14219,3 +14425,4 @@ same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
 <!-- 8/18/2024 Sun 2:14pm -->
 <!-- 8/19/2024 Mon 2:16pm -->
 <!-- 8/20/2024 Tue 4:10pm -->
+<!-- 8/23/2024 Fri 7:16pm -->
