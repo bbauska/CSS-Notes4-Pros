@@ -88,8 +88,7 @@ users will see a flash of unstyled content</a>.</p>
     &lt;h1&gt;Hello world!&lt;/h1&gt;
     &lt;p&gt;I ♥ CSS&lt;/p&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 
 <h4>style.css</h4>
 
@@ -101,8 +100,7 @@ users will see a flash of unstyled content</a>.</p>
 p {
   font-size: 25px;
   font-family: 'Trebuchet MS', sans-serif;
-}
-</code></pre>
+}</code></pre>
 
 <p>Make sure you include the correct path to your CSS file in the href.
 If the CSS file is in the same folder as your HTML file then no path
@@ -176,8 +174,7 @@ will work in all current &lt;head&gt; browsers if placed in body).</p>
 &lt;body&gt;
   &lt;h1&gt;Hello world!&lt;/h1&gt;
   &lt;p&gt;I ♥ CSS&lt;/p&gt;
-&lt;/body&gt;
-</code></pre>
+&lt;/body&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3">Section 1.3: CSS &commat;import rule (one of CSS at-rule)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1148,8 +1145,7 @@ child of its parent.</p>
 &lt;div&gt;
   &lt;p&gt;This paragraph is one of the two children of the div&lt;/p&gt;
   &lt;p&gt;This paragraph is one of the two children of its parent&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 
 <h4>CSS:</h4>
 
@@ -1875,7 +1871,6 @@ img_2 and img_3 is on bottom.</p>
   <b>background</b>: url(image.png) right bottom no-repeat,
               linear-gradient (to bottom, #fff 0&percnt;, #000 100&percnt;);
 }</code></pre>
-
 
 <ul>
   <li><a href="https://jsfiddle.net/z30up2un/">Demo (jsFiddle)</a></li>
@@ -2822,8 +2817,7 @@ textarea {
   <b>width</b>: 100&percnt;;
   <b>padding</b>: 3px;
   <b>box-sizing</b>: content-box; /* default value */
-}
-</code></pre>
+}</code></pre>
 
 <p>Since the padding will be added to the width of the textarea, the
 resulting element is a textarea that is wider than 100%.</p>
@@ -7419,18 +7413,14 @@ element&apos;s height from 100px to auto.</p>
 <p>Our first syntax example shows the animation shorthand property using
 all of the available properties/parameters:</p>
 
-<pre><code>
-<b>animation</b>:      3s        ease-in              1s     2             reverse     both     paused slidein;
+<pre><code><b>animation</b>:      3s        ease-in              1s     2             reverse     both     paused slidein;
 /*              duration &vert; timing-function &vert; delay &vert; iteration-count &vert; direction &vert; fill-mode &vert; play-
-state &vert; name */
-</code></pre>
+state &vert; name */</code></pre>
 
 <p>Our second example is a little more simple, and shows that some properties can be omitted:</p>
 
-<pre><code>
-<b>animation</b>:      3s        linear               1s       slidein; 
-/*                duration &vert; timing-function &vert; delay &vert; name */
-</code></pre>
+<pre><code><b>animation</b>:      3s        linear               1s       slidein; 
+/*                duration &vert; timing-function &vert; delay &vert; name */</code></pre>
 
 <p>Our third example shows the most minimal declaration. Note that the
 animation-name and animation-duration must be declared:</p>
@@ -11004,3 +10994,4 @@ same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
 <!-- 7/8/2024 Mon 8:50am -->
 <!-- 7/9/2024 Tue 5:11am -->
 <!-- 7/10/2024 Thu 1:18pm -->
+<!-- 8/23/2024 Fri 7:04pm -->
