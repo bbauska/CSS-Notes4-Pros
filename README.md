@@ -7116,18 +7116,12 @@ caption-side property:</p>
 <h2 id="ch26">Chapter 26: Transitions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-| <b>Parameter</b> | <b>Details</b> |
-|-----------------|---------------------------------------|
-| transition-property | The specific CSS property whose value change needs to be transitioned (or) all, if all the |
-|                     | <a href="https://www.w3.org/TR/css3-transitions/">transitionable properties</a> need to be transitioned. |
-| transition-duration | The duration (or period) in secdons (s) or milliseconds (ms) over which the transition |
-|                     | must take place. |
-| transition-timing-function | A function that describes how the intermediate values during the transition are |
-|                    | calculated. Commonly used values are ease, ease-in, ease-out, ease-in-out, linear, |
-|                    | cubic-bezier(), steps(). More information about the various timing functions can be |
-|                    | found in the <a href="https://www.w3.org/TR/css3-transitions/#transition-timing-function">W3C specs</a>. |
-| transition-delary  | The amount of time that must have elapsed before the transition can start. Can be |
-|                    | specified in seconds (s) or milliseconds (ms). |
+| <b>Parameter</b>           | <b>Details</b> |
+| -------------------------- | --------------------------------------- |
+| transition-property        | The specific CSS property whose value change needs to be transitioned (or) all, if all the <a href="https://www.w3.org/TR/css3-transitions/">transitionable properties</a> need to be transitioned. |
+| transition-duration        | The duration (or period) in secdons (s) or milliseconds (ms) over which the transition must take place. |
+| transition-timing-function | A function that describes how the intermediate values during the transition are calculated. Commonly used values are ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier(), steps(). More information about the various timing functions can be | found in the <a href="https://www.w3.org/TR/css3-transitions/#transition-timing-function">W3C specs</a>. |
+| transition-delary          | The amount of time that must have elapsed before the transition can start. Can be specified in seconds (s) or milliseconds (ms). |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch26-1">Section 26.1: Transition shorthand</h3>
@@ -7182,15 +7176,15 @@ often used for custom and smooth transitions.</p>
   alt="Bézier curve." />
 </p>
 
-<p>For CSS Bézier Curves, P0 and P3 are always in the same spot. P0 is at
-(0,0) and P3 is at (1,1), which menas that the parameters passed to
-the cubic-bezier function can only be between 0 and 1.</p>
+<p>For CSS Bézier Curves, P0 and P3 are always in the same spot. P0 is at (0,0) and P3 
+is at (1,1), which menas that the parameters passed to the cubic-bezier function can 
+only be between 0 and 1.</p>
 
-<p>If you pass parameters which aren&apos;t in this interval the function
-will default to a linear transition.</p>
+<p>If you pass parameters which aren&apos;t in this interval the function will default 
+to a linear transition.</p>
 
-<p>Since cubic-bezier is the most flexible transition in CSS, you can
-translate all other transition timing function to cubic-bezier functions:</p>
+<p>Since cubic-bezier is the most flexible transition in CSS, you can translate all 
+other transition timing function to cubic-bezier functions:</p>
 
 <pre><code>linear:cubic-bezier(0,0,1,1)
 
@@ -7241,14 +7235,12 @@ div: hover {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Transition</h4>
 
-| Parameter     | Details                                            |
+| Parameter     | Details                                              |
 |---------------|------------------------------------------------------|
-| property      | Either the CSS property to transition on, or all, which specifies all transition-able |
-|               | properties.    |
+| property      | Either the CSS property to transition on, or all, which specifies all transition-able properties. |
 | duration      | Transition time, either in seconds or milliseconds. |
 | timing-function | Specifies a function to define how intermediate  values for properties are computed. |
-|               | Common values are ease, linear, and step-end. Check out the <a href="http://easings.net/">easing function cheat- |
-|               | sheet</a> for more. |
+|               | Common values are ease, linear, and step-end. Check out the <a href="http://easings.net/">easing function cheat-sheet</a> for more. |
 | delay         | Amount of time, in seconds or milliseconds, to wait before playing the animation. |
 
 <h4>@keyframes</h4>
