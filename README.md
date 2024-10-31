@@ -78,7 +78,7 @@ users will see a flash of unstyled content</a>.</p>
 <h4>Example</h4>
 <h4>hello-world.html</h4>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"/&gt;
@@ -88,11 +88,11 @@ users will see a flash of unstyled content</a>.</p>
     &lt;h1&gt;Hello world!&lt;/h1&gt;
     &lt;p&gt;I ♥ CSS&lt;/p&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;</pre>
 
 <h4>style.css</h4>
 
-<pre><code>h1 {
+<pre>h1 {
   color: green;
   text-decoration: underline;
 }
@@ -100,7 +100,7 @@ users will see a flash of unstyled content</a>.</p>
 p {
   font-size: 25px;
   font-family: 'Trebuchet MS', sans-serif;
-}</code></pre>
+}</pre>
 
 <p>Make sure you include the correct path to your CSS file in the href.
 If the CSS file is in the same folder as your HTML file then no path
@@ -108,7 +108,7 @@ is required (like the example above) but if it's saved in a folder,
 then specify it like this;<br>
 href="foldername/style.css"</p>
 
-<pre><code>&lt;link rel="stylesheet" type="text/css" href="foldername/style.css"&gt;</code></pre>
+<pre>&lt;link rel="stylesheet" type="text/css" href="foldername/style.css"&gt;</pre>
 
 <p>External stylesheets are considered the best way to handle your CSS.
 There&apos;s a very simple reason for this: when you&apos;re managing a site
@@ -122,20 +122,20 @@ file.</p>
 <!-- 6 lines up at 'colors from blue to green' - begin pg 3 -->
 <p>You can load as many CSS files in your HTML page as needed.</p>
 
-<pre><code>&lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
-&lt;link rel="stylesheet" type="text/css" href="override.css"&gt;</code></pre>
+<pre>&lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="override.css"&gt;</pre>
 
 <p>CSS rules are applied with some basic rules, and order does matter.
 For example, if you have a main.css file with some code in it:</p>
 
-<pre><code>p.green { color: #00ff00; }</code></pre>
+<pre>p.green { color: #00ff00; }</pre>
 
 <p>All your paragraphs with the &apos;green&apos; class will be written in light
 green, but you can override this with another .css file just by
 including it *after* main.css. You can have override.css with the
 following code follow main.css, for example:</p>
 
-<pre><code>p.green { color: #006600; }</code></pre>
+<pre>p.green { color: #006600; }</pre>
 
 <p>Now all your paragraphs with the &apos;green&apos; class will be written in
 darker green rather than light green.</p>
@@ -159,7 +159,7 @@ document in which it lives. Note that this element <i>must</i> be inside the
 <b>&lt;head&gt;</b> element for HTML validation (though it
 will work in all current &lt;head&gt; browsers if placed in body).</p>
 
-<pre><code>&lt;head&gt;
+<pre>&lt;head&gt;
   &lt;style&gt;
     h1 {
       color: green;
@@ -174,7 +174,7 @@ will work in all current &lt;head&gt; browsers if placed in body).</p>
 &lt;body&gt;
   &lt;h1&gt;Hello world!&lt;/h1&gt;
   &lt;p&gt;I ♥ CSS&lt;/p&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3">Section 1.3: CSS &commat;import rule (one of CSS at-rule)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -190,27 +190,27 @@ conditional group at-rules <a href="https://developer.mozilla.org/en/docs/Web/CS
 
 A.  <b>With internal style tag</b>
 
-<pre><code>  <style>
+<pre>  <style>
     @import url('/css/styles.css');
-  </style></code></pre>
+  </style></pre>
 
 B.  <b>With external stylesheet</b>
 
 <p>The following line imports a CSS file named additional-styles.css in
 the root directory into the CSS file in which it appears:</p>
 
-<pre><code>@import '/additional-styles.css';</code></pre>
+<pre>@import '/additional-styles.css';</pre>
 
 <p>Importing external CSS is also possible. A common use case are font
 files.</p>
 
-<pre><code>@import 'https://fonts.googleapis.com/css?family=Lato';</code></pre>
+<pre>@import 'https://fonts.googleapis.com/css?family=Lato';</pre>
 
 <p>An optional second argument to &commat;import rule is a list of media
 queries:</p>
 
-<pre><code>@import '/print-styles.css' print;
-@import url('landscape.css') screen and (orientation: landscape);</code></pre>
+<pre>@import '/print-styles.css' print;
+@import url('landscape.css') screen and (orientation: landscape);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-4">Section 1.4: Inline Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -226,8 +226,8 @@ often than not reduces a project&apos;s maintainability.</p>
 <p>The styles in the following example apply directly to the elements to
 which they are attached.</p>
 
-<pre><code>&lt;h1 style="color: green; text-decoration: underline;"&gt;Hello world!&lt;/h1&gt;
-&lt;p style="font-size: 25px; font-family: 'Trebuchet MS';"&gt;I ♥ CSS&lt;/p&gt;</code></pre>
+<pre>&lt;h1 style="color: green; text-decoration: underline;"&gt;Hello world!&lt;/h1&gt;
+&lt;p style="font-size: 25px; font-family: 'Trebuchet MS';"&gt;I ♥ CSS&lt;/p&gt;</pre>
 
 <p>Inline styles are generally the safest way to ensure rendering
 compatibility across various email clients, programs and devices, but
@@ -240,9 +240,9 @@ can be time-consuming to write and a bit challenging to manage.</p>
 <p>It&apos;s possible to add, remove or change CSS property values with JavaScript 
 through an element&apos;s style property.</p>
 <!-- page 5 -->
-<pre><code>var el = document.getElementById("element");
+<pre>var el = document.getElementById("element");
 el.style.opacity = 0.5;
-el.style.fontFamily = 'sans-serif';</code></pre>
+el.style.fontFamily = 'sans-serif';</pre>
 
 <p>Note that style properties are named in lower camel case style. In the
 example you see that the css property fontfamily becomes fontFamily in
@@ -256,24 +256,24 @@ to the <b>&lt;body&gt;</b> or <b>&lt;head&gt;</b> of the HTML document.</p>
 
 <p>Modifying CSS properties with jQuery is even simpler.</p>
 
-<pre><code>$('#element').css('margin', '5px');</code></pre>
+<pre>$('#element').css('margin', '5px');</pre>
 
 <p>If you need to change more than one style rule:</p>
 
-<pre><code>$('#element').css({
+<pre>$('#element').css({
   margin:"5px",
   padding:"10px",
   color:"black"
-});</code></pre>
+});</pre>
 
 <p>jQuery includes two ways to change css rules that have hyphens in them
 (i.e. font-size). You can put them in quotes or camel-case the style
 rule name.</p>
 
-<pre><code>$('.example-class').css({
+<pre>$('.example-class').css({
   "background-color": "blue", 
   fontSize: "10px" 
-});</code></pre>
+});</pre>
 
 <h4>See also;</h4>
 
@@ -309,24 +309,24 @@ separately, or using the list-style shorthand property.</p>
 <p>To use square bullet points for each list-item, for example, you would use 
 the following property-value pair:</p>
 
-<pre><code>li {
+<pre>li {
   list-style-type: square;
-}</code></pre>
+}</pre>
 
 <p>The <b>list-style-image</b> property determines whether the list-item
 icon is set with an image, and accepts a value of none or a URL that
 points to an image.</p>
 
-<pre><code>li {
+<pre>li {
   list-style-image: url (images/bullet.png);
-}</code></pre>
+}</pre>
 
 <p>The <b>list-style-position</b> property defines where to position the
 list-item marker, and it accepts one of two values: &quot;inside&quot; or
 &quot;outside&quot;.</p>
 
-<pre><code>li {list-style-position: inside;
-}</code></pre>
+<pre>li {list-style-position: inside;
+}</pre>
 <!-- page 7 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2">Chapter 2: Structure and Formatting of a CSS Rule</h2>
@@ -336,7 +336,7 @@ list-item marker, and it accepts one of two values: &quot;inside&quot; or
 <p>Some properties can take multiple values, collectively known as a
 <b>property list</b>.
 
-<pre><code>/* Two values in this property list */
+<pre>/* Two values in this property list */
 span {
   text-shadow: yellow 0 0 3px, green 4px 4px 10px;
 }
@@ -346,7 +346,7 @@ span {
   text-shadow:
     yellow 0 0 3px,
     green 4px 4px 10px;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2">Section 2.2: Multiple Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -354,7 +354,7 @@ span {
 different elements without repeating the styles in your style sheet.
 Use a comma to separate multiple grouped selectors.</p>
 
-<pre><code>div, p {color: blue }</code></pre>
+<pre>div, p {color: blue }</pre>
 
 <p>So the blue color applies to all <b>&lt;div&gt;</b> elements and all <b>&lt;p&gt;</b>
 elements.  Without the comma only <b>&lt;p&gt;</b> elements that are a child of 
@@ -362,7 +362,7 @@ a <b>&lt;div&gt;</b> would be red.</p>
 
 <p>This also applies to all types of selectors.</p>
 
-<pre><code>p, .blue, #first, div span{ color : blue }</code></pre>
+<pre>p, .blue, #first, div span{ color : blue }</pre>
 
 <p>This rule applies to:</p>
 
@@ -377,21 +377,21 @@ a <b>&lt;div&gt;</b> would be red.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A CSS <b>rule</b> consists of a <b>selector</b> (e.g. h1) and <b>declaration block</b> ({}).
 
-<pre><code>h1 {}</code></pre>
+<pre>h1 {}</pre>
 <!-- page 8 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3">Chapter 3: Comments</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1">Section 3.1: Single Line</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>/* This is a CSS comment */
+<pre>/* This is a CSS comment */
 div {
   color: red; /* This is a CSS comment */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2">Section 3.2: Multiple Line</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>/*
+<pre>/*
   This
   is
   a
@@ -400,7 +400,7 @@ div {
 */
 div {
   color: red;
-}</code></pre>
+}</pre>
 <!-- page 9 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4">Chapter 4: Selectors</h2>
@@ -489,36 +489,36 @@ using the presence of a given attribute or attribute value.</p>
 
 <p>Selects elements with the given attribute.</p>
 
-<pre><code>div&lbrack;data-color&rbrack; {
+<pre>div&lbrack;data-color&rbrack; {
   <b>color</b>: red;
 }
 
 <b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div data-color="green"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div data-background="red"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div data-background="red"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/cezale/1/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute="value"</b>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute="value"</b>&rbrack;</pre>
 
 <p>Selects elements with the given attribute and value.</p>
 
-<pre><code>div&lbrack;data-color="red"&rbrack; {
+<pre>div&lbrack;data-color="red"&rbrack; {
   <b>color</b>: red;
   }
 
 <b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div data-color="green"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div data-background="blue"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div data-background="blue"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/waxoked/1/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute*="value"</b>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute*="value"</b>&rbrack;</pre>
 
 <p>Selects elements with the given attribute and value where the given
 attribute contains the given value anywhere (as a substring).</p>
 
-<pre><code>&lbrack;class*= "foo"&rbrack; {
+<pre>&lbrack;class*= "foo"&rbrack; {
   <b>color</b>: red;
 }
 
@@ -526,80 +526,80 @@ attribute contains the given value anywhere (as a substring).</p>
 <b>&lt;div class="foo123"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div class="bar123foo"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div class="barfooo123"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div class="barfo0"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div class="barfo0"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/dazige/1/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute~="value"</b>&rbrack;</pre></code>
+<pre>&lbrack;<b>attribute~="value"</b>&rbrack;</pre></code>
 
 <p>Selects elements with the given attribute and value where the given
 value appears in a whitespace-separated list.</p>
 
-<pre><code>&lbrack;class~="color-red"&rbrack; {
+<pre>&lbrack;class~="color-red"&rbrack; {
   <b>color</b>: red;
 }
 
 <b>&lt;div class="color-red foo-bar the-div"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div class="color-blue" foo-bar the-div"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div class="color-blue" foo-bar the-div"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 <!-- page 11 -->
 <a href="http://jsbin.com/posuhim/1/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute^="value"</b>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute^="value"</b>&rbrack;</pre>
 
 <p>Selects elements with the given attribute and value where the given
 attribute begins with the value.</p>
 
-<pre><code>&lbrack;class^="foo-"&rbrack; {
+<pre>&lbrack;class^="foo-"&rbrack; {
   <b>color</b>: red;
 }
 
 <b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div class="foobar-input"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div class="foobar-input"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/yowihi/1/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute$="value"</b>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute$="value"</b>&rbrack;</pre>
 
 <p>Selects elements with the given attribute and value where the given
 attribute ends with the given value.</p>
 
-<pre><code>&lbrack;class$="file"&rbrack; {
+<pre>&lbrack;class$="file"&rbrack; {
   <b>color</b>: red;
 }
 <b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div class="foobar-input"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div class="foobar-input"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/yowihi/2/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute&vert;="value"</b>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute&vert;="value"</b>&rbrack;</pre>
 
 <p>Selects elements with a given attribute and value where the
 attribute&apos;s value can be represented as Value, VALUE, vAlUe 
 or any other case-sensitive possibility.</p>
 
-<pre><code>&lbrack;lang&vert;="<b>EN</b>" i&rbrack; {
+<pre>&lbrack;lang&vert;="<b>EN</b>" i&rbrack; {
   <b>color</b>: red;
   }
 <b>&lt;div lang="EN-us"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div lang="EN-gb"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div lang="PT-pt"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div lang="PT-pt"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/yowihi/3/edit?html,css,output">Live Demo on JSBin</a>
 
-<pre><code>&lbrack;<b>attribute</b>=<b>"value" i</b>&rbrack;</code></pre>
+<pre>&lbrack;<b>attribute</b>=<b>"value" i</b>&rbrack;</pre>
 
 <p>Selects elements with a given attribute and value where the
 attribute&apos;s value can be represented as Value, VALUE, vAlUe or any
 other case-insensitive possibility.</p>
 
-<pre><code>&lbrack;lang|=<b>"EN"</b>&rbrack; {
+<pre>&lbrack;lang|=<b>"EN"</b>&rbrack; {
   <b>color</b>: red;
 }
 <b>&lt;div lang="EN-us"&gt;</b>This will be red<b>&lt;/div&gt;</b>
 <b>&lt;div lang="EN-gb"&gt;</b>This will be red<b>&lt;/div&gt;</b>
-<b>&lt;div lang="PT-pt"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div lang="PT-pt"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/yowihi/4/edit?html,css,output">Live Demo on JSBin</a>
 <!-- page 12 -->
@@ -608,7 +608,7 @@ other case-insensitive possibility.</p>
 
 <p>Same as class selector and pseudoclass.</p>
 
-<pre><code>*&lbrack;type=checkbox&rbrack; // 0-1-0</code></pre>
+<pre>*&lbrack;type=checkbox&rbrack; // 0-1-0</pre>
 
 <p>Note that this means an attribute selector can be used to select an
 element by its ID at a lower level of specificity than if it was
@@ -642,7 +642,7 @@ but with lower specificity.</p>
 This combinator selects <b>all</b> descendants of the element (from child
 elements on down).</p>
 
-<pre><code>div p {
+<pre>div p {
   <b>color</b>: red;
 }
 
@@ -653,7 +653,7 @@ elements on down).</p>
   <b>&lt;/section&gt;</b>
 <b>&lt;/div&gt;</b>
 
-<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b></pre>
 
 <a href="http://jsbin.com/xonafuz/2/edit?html,css,output">Live Demo on JSBin</a>
 
@@ -665,7 +665,7 @@ both descendants of the <b>&lt;div&gt;</b>.</p>
 <p>The child (&gt;) combinator is used to select elements that are
 <b>children</b>, or <b>direct descendants</b>, of the specified element.</p>
 <!-- page 13 -->
-<pre><code>div &gt; p {
+<pre>div &gt; p {
   <b>color</b>: <span style='color: red;'>red</span>;
 }
 <b>&lt;div&gt;</b>
@@ -673,7 +673,7 @@ both descendants of the <b>&lt;div&gt;</b>.</p>
   <b>&lt;section&gt;</b>
     <b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b>
   <b>&lt;/section&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <a href="http://jsbin.com/xonafuz/3/edit?html,css,output">Live Demo on JSBin</a>
 
@@ -684,7 +684,7 @@ both descendants of the <b>&lt;div&gt;</b>.</p>
 
 <p>The adjacent sibling (+) combinator selects a sibling element that immediate follows a specified element.</p>
 
-<pre><code>p &plus; p {
+<pre>p &plus; p {
   <b>color: #ff0000; /* red */</b>
 }
 
@@ -692,7 +692,7 @@ both descendants of the <b>&lt;div&gt;</b>.</p>
 <b>&lt;p&gt;</b>My text is red<b>&lt;/p&gt;</b>
 <b>&lt;p&gt;</b>My text is red<b>&lt;/p&gt;</b>
 <b>&lt;hr&gt;</b>
-<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b></pre>
 
 <a href="http://jsbin.com/xonafuz/4/edit?html,css,output">Live Demo on JSBin</a>
 
@@ -702,7 +702,7 @@ both descendants of the <b>&lt;div&gt;</b>.</p>
 
 <p>The general sibling (&#126;) combinator selects <i>all</i> siblings that follow the specified element.</p>
 
-<pre><code>p &#126; p
+<pre>p &#126; p
   <b>color</b>: <span style='color: #ff0000;'>red</span>;
 }
 
@@ -710,7 +710,7 @@ both descendants of the <b>&lt;div&gt;</b>.</p>
 <b>&lt;p&gt;</b>My text is <span style='color: #ff0000;'>red</span>&lt;/p&gt;
 <b>&lt;hr&gt;</b>
 <b>&lt;h1&gt;</b>And now a title&lt;/h1&gt;
-<b>&lt;p&gt;</b><span style='color: #ff0000;'>My text is red</span><b>&lt;/p&gt;</b></code></pre>
+<b>&lt;p&gt;</b><span style='color: #ff0000;'>My text is red</span><b>&lt;/p&gt;</b></pre>
 
 <a href="http://jsbin.com/xonafuz/5/edit?html,css,output">Live Demo on JSBin</a>
 
@@ -735,9 +735,9 @@ the mouse is over an element (:hover), a checkbox is checked (:checked), etc.</p
 
 <h4>Syntax:</h4>
 
-<pre><code>selector:pseudo-class {
+<pre>selector:pseudo-class {
   property: <b>VALUE</b>;
-}</code></pre>
+}</pre>
 
 <b>List of pseudo-classes:</b>
 
@@ -851,9 +851,9 @@ The class name selector select all elements with the targeted class
 name. For example, the class name .warning would select the following
 <b>&lt;div&gt;</b> element:
 
-<pre><code>&lt;div class="warning"&gt;
+<pre>&lt;div class="warning"&gt;
   &lt;p&gt;This would be some warning copy.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</pre>
 
 <p>You can also combine class names to target elements more specifically.
 Let&apos;s build on the example above to showcase a more complicated class
@@ -861,7 +861,7 @@ selection.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>.important {
+<pre>.important {
   color: orange;
 }
 .warning {
@@ -869,17 +869,17 @@ selection.</p>
 }
 .warning .important {
   color: #de1205; /* red */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div class="warning"&gt;</b>
+<pre><b>&lt;div class="warning"&gt;</b>
   <b>&lt;p&gt;</b>This would be some warning copy.<b>&lt;/p&gt;</b>
 <b>&lt;/div&gt;</b>
 
 <b>&lt;div class="important warning"&gt;</b>
   <b>&lt;p class="important"&gt;</b>This is some really important warning copy.<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>In this example, all elements with the .warning class will have a blue
 text color, elements with the .important class with have an orange
@@ -903,12 +903,12 @@ attribute selector to avoid the high specificity of the ID selector.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div id="element"&gt;</b>. . .<b>&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div id="element"&gt;</b>. . .<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>#element { . . . } /* High specificity will override many selectors */
-&lbrack;id="element"&rbrack; { . . .} /* Low specificity, can be overridden easily */</code></pre>
+<pre>#element { . . . } /* High specificity will override many selectors */
+&lbrack;id="element"&rbrack; { . . .} /* Low specificity, can be overridden easily */</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-8">Section 4.8: The :last-of-type selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -916,7 +916,7 @@ attribute selector to avoid the high specificity of the ID selector.</p>
 of its parent. In the example below, the css selects the last
 paragraph and the last heading h1.</p>
 
-<pre><code>p: last-of-type {
+<pre>p: last-of-type {
   <b>background: #C5CAE9;</b>
 }
 
@@ -930,7 +930,7 @@ h1: last-of-type {
   <b>&lt;h1&gt;</b>Heading 1<b>&lt;/h1&gt;</b>
   <b>&lt;h2&gt;</b>First Heading 2<b>&lt;/h2&gt;</b>
   <b>&lt;h2&gt;</b>Last heading 2<b>&lt;/h2&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <image left justified>
 
@@ -938,14 +938,14 @@ h1: last-of-type {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-9">Section 4.9: CSS3 :in-range selector example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
 input:in-range {
   border: 1px solid blue;
 }
 <b>&lt;/style&gt;</b>
 
 <b>&lt;input</b> type="number" min="10" max="20" value="15"&gt;
-<b>&lt;p&gt;</b>The border for this value will be blue<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;p&gt;</b>The border for this value will be blue<b>&lt;/p&gt;</b></pre>
 
 <!-- page 18 -->
 <p>The :in-range CSS pseudo-class matches when an element has its value attribute
@@ -962,26 +962,26 @@ that are not disabled and don&apos;t have the class .example:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;form&gt;</b>
+<pre><b>&lt;form&gt;</b>
   Phone: <b>&lt;input</b> type="tel" class="example"&gt;
   E-mail: <b>&lt;input</b> type="email" disabled="disabled"&gt;
   Password: <b>&lt;input</b> type="password"&gt;
-<b>&lt;/form&gt;</b></code></pre>
+<b>&lt;/form&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>input:not(&lbrack;disabled&rbrack;):not(.example){
+<pre>input:not(&lbrack;disabled&rbrack;):not(.example){
   <b>background-color</b>: #ccc;
-}</code></pre>
+}</pre>
 
 <p>The :not() pseudo-class will also support comma-separated selectors in
 Selectors Level 4:</p>
 
 <h4>CSS:</h4>
 
-<pre><code>input:not(&lbrack;disabled&rbrack;):not(.example){
+<pre>input:not(&lbrack;disabled&rbrack;):not(.example){
   <b>background-color</b>: #ccc;
-}</code></pre>
+}</pre>
 
 <a href="http://jsbin.com/japere/edit?html,css,output">Live Demo on JSBin</a>
 
@@ -991,10 +991,10 @@ Selectors Level 4:</p>
 
 <h4>HTML:</h4>
 
-<pre><code>  <b>&lt;h3&gt;</b>Background is blue if the input is focused.<b>&lt;/p&gt;</b>
+<pre>  <b>&lt;h3&gt;</b>Background is blue if the input is focused.<b>&lt;/p&gt;</b>
   <b>&lt;div&gt;</b>
     <b>&lt;input</b> type="text"&gt;
-  <b>&lt;/div&gt;</b></code></pre>
+  <b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1007,7 +1007,7 @@ Selectors Level 4:</p>
     alt="Input focused, background blue." />
 </div>
 <p>
-  <pre><code>div {
+  <pre>div {
     <b>height</b>: 80px;
   }
   input {
@@ -1015,7 +1015,7 @@ Selectors Level 4:</p>
   }
   div:focus-within {
     <b>background-color</b>: #1565C0;
-  }</code></pre>
+  }</pre>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 03. :focus-within css pseudo-class (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1037,7 +1037,7 @@ boolean without using JavaScript.</p>
 <p>To the very beginning of your document, add as much booleans as you
 want with a unique id and the hidden attribute set:</p>
 
-<pre><code>&lt;input type="checkbox" dis="sidebarShown" hidden /&gt;
+<pre>&lt;input type="checkbox" dis="sidebarShown" hidden /&gt;
 &lt;input type="checkbox" dis="darkThemeUsed" hidden /&gt;
 
 &lt;!-- here begins actual content, for example: --&gt;
@@ -1050,13 +1050,13 @@ want with a unique id and the hidden attribute set:</p>
  
  &lt;div id="footer"&gt;
    &lt;!-- ... --&gt;
- &lt;/div&gt;</code></pre>
+ &lt;/div&gt;</pre>
 
 <h4>Change the boolean&apos;s value</h4>
 <!-- page 20 -->
 <p>You can toggle the boolean by adding a label with the for attribute set:</p>
 
-<pre><code><b>&lt;label</b> for=&quot;sidebarShown&quot;&gt;Show/Hide the sidebar!<b>&lt;/label&gt;</b></code></pre>
+<pre><b>&lt;label</b> for=&quot;sidebarShown&quot;&gt;Show/Hide the sidebar!<b>&lt;/label&gt;</b></pre>
 
 <h4>Accessing boolean value with CSS;</h4>
 
@@ -1064,25 +1064,25 @@ want with a unique id and the hidden attribute set:</p>
 properties. They can be overridden by following true / false
 selectors:</p>
 
-<pre><code>/* true: */
+<pre>/* true: */
 &lt;checkbox&gt;:checked &bsim; &lbrack;sibling of checkbox & parent of target&rbrack; &lt;target&gt;
 
 /* false: */
-&lt;checkbox&gt;:not(:checked) ~ &lbrack;sibling of checkbox & parent of target&rbrack; &lt;target&gt;</code></pre>
+&lt;checkbox&gt;:not(:checked) ~ &lbrack;sibling of checkbox & parent of target&rbrack; &lt;target&gt;</pre>
 
 Note that &lt;checkbox&gt;, &lbrack;sibling ...&rbrack; and &lt;target&gt; should be replaced by the proper selectors. &lbrack;sibling ...&rbrack;
 can be a specific selector, (often if you're lazy) simply * or nothing if the target is already a sibling of the checkbox.
 
 Examples for the above HTML structure would be:
 
-<pre><code>#sidebarShown:checked ~ #container #sidebar {
+<pre>#sidebarShown:checked ~ #container #sidebar {
   margin-left: 300px;
 }
 
 #darkThemeUsed:checked ~ #container,
 #darkThemeUsed:checked ~ #footer {
   background: #333;
-}</code></pre>
+}</pre>
 
 <h4>In action:</h4>
 
@@ -1096,15 +1096,15 @@ element by a specific ID in CSS, the &num; prefix is used.</p>
 
 <p>For example, the following HTML div element...</p>
 
-<pre><code>&lt;div id="exampleID"&gt;
+<pre>&lt;div id="exampleID"&gt;
   &lt;p&gt;Example&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</pre>
 
 <p>...can be selected by #exampleID in CSS as shown below:</p>
 
-<pre><code>#exampleID {
+<pre>#exampleID {
   width: 20px;
-}</code></pre>
+}</pre>
 
 <blockquote>
   <b>Note</b>: The HTML specs do not allow multiple elements with the same ID.
@@ -1116,7 +1116,7 @@ element by a specific ID in CSS, the &num; prefix is used.</p>
 <!-- page 21 -->
 <h4>HTML:</h4>
 
-<pre><code>&lt;input type="range"&gt;&lt;/input&gt;</code></pre>
+<pre>&lt;input type="range"&gt;&lt;/input&gt;</pre>
 
 <h4>CSS:</h4>
 
@@ -1138,20 +1138,20 @@ child of its parent.</p>
 
 <h4>HTML:</h4>
 
-<pre><code>&lt;div&gt;
+<pre>&lt;div&gt;
   &lt;p>This paragraph is the only child of the div, it will have the color blue&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
   &lt;p&gt;This paragraph is one of the two children of the div&lt;/p&gt;
   &lt;p&gt;This paragraph is one of the two children of its parent&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</pre>
 
 <h4>CSS:</h4>
 
-<pre><code>p:only-child {
+<pre>p:only-child {
   color: blue;
-}</code></pre>
+}</pre>
 
 <p>The above example selects the &lt;p&gt; element that is the unique child from its 
 parent, in this case a &lt;div&gt;.</p>
@@ -1189,13 +1189,13 @@ or initial.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>background-color</b>: #de1205; /* red */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code>&lt;div&gt;This will have a red background&lt;/div&gt;</code></pre>
+<pre>&lt;div&gt;This will have a red background&lt;/div&gt;</pre>
 
 <ul>
   <li>The example used above is one of several ways that CSS has to represent
@@ -1214,13 +1214,13 @@ first digit of each pairing). &num;ff0000 can be shortened to &num;f00, and
 &num;ffffff can be shortened to &num;fff.</p>
 <p>Hex notation is case-insensitive.</p>
 
-<pre><code>body {
+<pre>body {
   background-color: #de1205; /* red */
 }
 
 .main {
   background-color: #00f; /* blue */
-}</code></pre>
+}</pre>
 
 <h4>RGB / RGBa:</h4>
 
@@ -1233,12 +1233,12 @@ the decimal color values for respectively red, green and blue.</p>
 <p>RGBa allows you to add an additional alpha parameter between 0.0 and
 1.0 to define opacity.</p>
 
-<pre><code>header {
+<pre>header {
   <b>background-color</b>: rgb(0, 0, 0); /* black */
 }
 footer {
   <b>background-color</b>: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
-}</code></pre>
+}</pre>
 
 <h4>HSL / HSLa:</h4>
 
@@ -1257,18 +1257,18 @@ called HLS:</p>
 <p>HSLa allows you to add an additional alpha parameter between 0.0 and
 1.0 to define opacity.</p>
 
-<pre><code>li a {
+<pre>li a {
 <b>background-color</b>: hsl(120, 100&percnt;, 50&percnt;); /* green */
 }
 #p1 {
 <b>background-color</b>: hsla(120, 100&percnt;, 50&percnt;, .3); /* green with 30% opacity */
-}</code></pre>
+}</pre>
 
 <h4>Interaction with background-image</h4>
 
 <p>The following statements are all equivalent:</p>
 
-<pre><code>body {
+<pre>body {
   <b>background:</b> red;
   <b>background-image:</b> url (partiallytransparentimage.png);
 }
@@ -1282,7 +1282,7 @@ body {
 }
 body {
   <b>background:</b> red url (partiallytransparentimage.png);
-}</code></pre>
+}</pre>
 
 <!-- page 24 -->
 <p>They will all lead to the red color being shown underneath the image,
@@ -1291,10 +1291,10 @@ showing (perhaps as a result of background-repeat).</p>
 
 <p>Note that the following is not equivalent:</p>
 
-<pre><code>body {
+<pre>body {
   <b>background-image</b>: url(partiallytransparentimage.png);
   <b>background</b>: #ff0000;  /* red */
-}</code></pre>
+}</pre>
 
 <p>Here, the value of background overrides your background-image.</p>
 
@@ -1341,32 +1341,32 @@ type has a non-repeating variant and a repeating variant:</p>
 
 <p>For example, this creates a linear gradient that starts from the right and transitions from red to blue.</p>
 
-<pre><code>.linear-gradient {
+<pre>.linear-gradient {
   <b>background</b>: linear-gradient (to left, red, blue); /* you can also use 270deg */
-}</code></pre>
+}</pre>
 
 <p>You can create a diagonal gradient by declaring both a horizontal and vertical starting position.</p>
 
-<pre><code>.diagonal-linear-gradient {
+<pre>.diagonal-linear-gradient {
   <b>background</b>: linear-gradient (to left top, red, yellow 10&percnt;);
-}</code></pre>
+}</pre>
 <!-- page 25 -->
 <p>It is possible to specify any number of color stops in a gradient by
 separating them with commas. The following examples will create a
 gradient with 8 color stops;</p>
 
-<pre><code>.linear-gradient-rainbow {
+<pre>.linear-gradient-rainbow {
   <b>background</b>: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
-}</code></pre>
+}</pre>
 
 <h4>radial-gradient()</h4>
 
-<pre><code>.radial-gradient-simple {
+<pre>.radial-gradient-simple {
   <b>background</b>: radial-gradient(red, blue);
 }
 .radial-gradient {
   <b>background</b>: radial-gradient(circle farthest-corner at top left, red, blue);
-}</code></pre>
+}</pre>
 
 | Value    | Meaning   |
 |----------|----------------------------------------------------------------------|
@@ -1381,7 +1381,7 @@ gradient with 8 color stops;</p>
 <p>Repeating gradient functions take the same arguments as the above
 examples, but tile the gradient across the background of the element.</p>
 
-<pre><code>.bullseye {
+<pre>.bullseye {
   <b>background</b>: repeating-radial-gradient(red, red 10&percnt;, white 10&percnt;, white 20&percnt;);
 }
 .warning {
@@ -1407,17 +1407,17 @@ and a simplified version is shown here. For a full explanation and specs, see th
 be applied to all matched elements. By default, this image is tiled to
 cover the entire element, excluding margin.</p>
 
-<pre><code>.myClass {
+<pre>.myClass {
   <b>background-image</b>: url (&apos;/path/to/image.jpg&apos;);
-}</code></pre>
+}</pre>
 
 <!-- page 26 -->
 <p>To use multiple images as background-image, define comma separated url().</p>
 
-<pre><code>.myClass {
+<pre>.myClass {
   <b>background-image</b>: url (&apos;/path/to/image.jpg&apos;), 
                     url (&apos;/path/to/image2.jpg&apos;);
-}</code></pre>
+}</pre>
 
 <p>The images will stack according to their order with the first declared
 image on top of the others and so on.</p>
@@ -1475,20 +1475,20 @@ image on top of the others and so on.</p>
 
 <p>Examples</p>
 
-<pre><code><b>background</b>: #ff0000;</code></pre>
+<pre><b>background</b>: #ff0000;</pre>
 
 <p>Simply setting a background-color with the red value.</p>
 
-<pre><code><b>background</b>: border-box red;</code></pre>
+<pre><b>background</b>: border-box red;</pre>
 
 <p>Setting a background-clip to border-box and a background-color to red.</p>
 
-<pre><code><b>background</b>: no-repeat center url(&quot;somepng.jpg&quot;);</code></pre>
+<pre><b>background</b>: no-repeat center url(&quot;somepng.jpg&quot;);</pre>
 
 <p>Sets a background-repeat to no-repeat, background-origin to center and
 a background-image to an image.</p>
 
-<pre><code><b>background</b>: url(&apos;pattern.png&apos;) green;</code></pre>
+<pre><b>background</b>: url(&apos;pattern.png&apos;) green;</pre>
 
 <p>In this example, the background-color of the element would be set to
 green with pattern.png, if it is available, overlayed on the colour,
@@ -1496,7 +1496,7 @@ repeating as often as necessary to fill the element. If pattern.png
 includes any transparency then the green colour will be visible behind
 it;</p>
 
-<pre><code><b>background</b>: #000000 url(&quot;picture.png&quot;) top left / 600px auto no-repeat;</code></pre>
+<pre><b>background</b>: #000000 url(&quot;picture.png&quot;) top left / 600px auto no-repeat;</pre>
 
 <p>In this example we have a black background with an image
 &apos;picture.png&apos; on top, the image does not repeat in either axis and
@@ -1526,10 +1526,10 @@ height is optional and can be considered auto. Therefore, on a 256 px
 × 256 px image, all the following background-size settings would yield
 an image with height and width of 50 px:</p>
 
-<pre><code><b>background-size</b>: 50px;
+<pre><b>background-size</b>: 50px;
 <b>background-size</b>: 50px auto; /* same as above */
 <b>background-size</b>: auto 50px;
-<b>background-size</b>: 50px 50px;</code></pre>
+<b>background-size</b>: 50px 50px;</pre>
 
 <p>So if we started with the following picture (which has the mentioned
 size of 256 px × 256 px),</p>
@@ -1556,7 +1556,7 @@ the background of our element:</p>
 the element. The following example would yield a 200 px × 133 px drawn
 image:</p>
 
-<pre><code>#withbackground {
+<pre>#withbackground {
   <b>background-image</b>: url(to/some/background.png);
   <b>background-size</b>: 100&percnt; 66&percnt;;
   
@@ -1565,7 +1565,7 @@ image:</p>
   
   <b>padding</b>: 0;
   <b>margin</b>: 0; 
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 06. 200x200, circle, triangle and square (28) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -1656,7 +1656,7 @@ screen&apos;s ratio a great part of your image could be cut off:</p>
 
 <h4>Demonstration with actual code</h4>
 
-<pre><code>div &gt; div {
+<pre>div &gt; div {
   <b>background-image</b>: url(http://i.stack.imgur.com/r5CAq.jpg);
   <b>background-repeat</b>: no-repeat;
   <b>background-position</b>: center center;
@@ -1707,7 +1707,7 @@ div &gt; div::after {
     cut, as well as a part of the sky. You don&apos;t see the complete 
     image anymore, but neither do you see any background color;
     the image<b>&lt;em&gt;</b>covers<b>&lt;/em&gt;</b> all of the <b>&lt;code&gt;</b>&lt;div&gt;<b>&lt;/code&gt;</b>.<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. example, contain & cover images (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -1722,10 +1722,10 @@ div &gt; div::after {
 <p>The <a href="https://drafts.csswg.org/css-backgrounds-3/#background-position">background-position</a> 
 property is used to specify the starting position for a background image or gradient.</p>
 
-<pre><code>.myClass {
+<pre>.myClass {
   <b>background-image</b>: url(&apos;path/to/image.jpg&apos;);
   <b>background-position</b>: 50&percnt; 50&percnt;;
-}</code></pre>
+}</pre>
 
 <p>The position is set using an <b>X</b> and <b>Y</b> co-ordinate and be set
 using any of the units used within CSS.</p>
@@ -1779,7 +1779,7 @@ property has no effect.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>.example {
+<pre>.example {
   <b>width</b>: 300px;
   <b>border</b>: 20px solid black;
   <b>padding</b>: 50px;
@@ -1789,11 +1789,11 @@ property has no effect.</p>
 
 .example1 {}
 .example2 { <b>background-origin</b>: border-box; }
-.example3 { <b>background-origin</b>: content-box;}</code></pre>
+.example3 { <b>background-origin</b>: content-box;}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p&gt;</b>No background-origin (padding-box is default):<b>&lt;/p&gt;</b>
+<pre><b>&lt;p&gt;</b>No background-origin (padding-box is default):<b>&lt;/p&gt;</b>
 <b>&lt;div</b> class=&quot;example example1&quot;<b>&gt;&lt;h2&gt;</b>
   <b>&lt;h2&gt;</b>Lorem Ipsum Dolor<b>&lt;/h2&gt;&lt;p&gt;</b>
   <b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -1818,7 +1818,7 @@ property has no effect.</p>
   tincidunt ut laoreet dolore magna aliquam erat volutpat.<b>&lt;/p&gt;</b>
   <b>&lt;p&gt;</b>Ut wisi enim ad minim veniam, quis nostrud exerci tation
   ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1841,7 +1841,7 @@ property has no effect.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p> In CSS3, we can stack multiple background in the same element.</p>
 
-<pre><code>#mydiv {
+<pre>#mydiv {
   <b>background-image</b>: url(img_1.png),   /* top image */
                      url (img_2.png), /* middle image */
                      url (img_3.png); /* bottom image */
@@ -1851,7 +1851,7 @@ property has no effect.</p>
   <b>background-repeat</b>: no-repeat, 
                      repeat, 
                      no-repeat;
-}</code></pre>
+}</pre>
 
 <p>Images will be stacked atop one another with the first background on
 top and the last background in the back. img_1 will be on top, the
@@ -1859,18 +1859,18 @@ img_2 and img_3 is on bottom.</p>
 
 <p>We can also use background shorthand property for this:</p>
 
-<pre><code>#mydiv {
+<pre>#mydiv {
   <b>background</b>: url(img_1.png) right bottom no-repeat,
               url(img_2.png) left top repeat,
               url(img_3.png) right top no-repeat;
-}</code></pre>
+}</pre>
 
 <p>We can also stack images and gradients:</p>
 
-<pre><code>#mydiv {
+<pre>#mydiv {
   <b>background</b>: url(image.png) right bottom no-repeat,
               linear-gradient (to bottom, #fff 0&percnt;, #000 100&percnt;);
-}</code></pre>
+}</pre>
 
 <ul>
   <li><a href="https://jsfiddle.net/z30up2un/">Demo (jsFiddle)</a></li>
@@ -1881,10 +1881,10 @@ img_2 and img_3 is on bottom.</p>
 <p>The background-attachment property sets whether a background image is
 fixed or scrolls with the rest of the page.</p>
 
-<pre><code>body {
+<pre>body {
   <b>background-image</b>: url(&apos;img.jpg&apos;);
   <b>background-attachment</b>: fixed;
-}</code></pre>
+}</pre>
 
 | Value | Description |
 |------------|---------------------------------------------------|
@@ -1900,29 +1900,29 @@ fixed or scrolls with the rest of the page.</p>
 
 <p>The default behaviour, when the body is scrolled the background scrolls with it:</p>
 
-<pre><code>body {
+<pre>body {
   <b>background-image</b>: url(&apos;image.jpg&apos;);
   <b>background-attachment</b>: scroll;
-}</code></pre>
+}</pre>
 
 <h4><i>background-attachment: fixed</i></h4>
 
 <p>The background image will be fixed and will not move when the body is scrolled:</p>
 
-<pre><code>body {
+<pre>body {
   <b>background-image</b>: url(&apos;image.jpg&apos;);
   <b>background-attachment</b>: fixed;
-}</code></pre>
+}</pre>
 
 <h4><i>background-attachment: local</i></h4>
 
 <p>The background image of the div will scroll when the contents of the
 div is scrolled.</p>
 
-<pre><code>div {
+<pre>div {
   <b>background-image</b>: url(&apos;image.jpg&apos;);
   <b>background-attachment</b>: local;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-10">Section 5.10: Background Clip</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1943,7 +1943,7 @@ div is scrolled.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>.example {
+<pre>.example {
   <b>width</b>:300px;
   <b>border</b>:20px solid black;
   <b>padding</b>:50px;
@@ -1952,11 +1952,11 @@ div is scrolled.</p>
 }
 .example1 {}
 .example2 { <b>background-origin</b>: border-box; }
-.example3 { <b>background-origin</b>: content-box; }</code></pre>
+.example3 { <b>background-origin</b>: content-box; }</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p&gt;</b>No background-origin (padding-box is default):<b>&lt;/p&gt;</b>
+<pre><b>&lt;p&gt;</b>No background-origin (padding-box is default):<b>&lt;/p&gt;</b>
 
 <b>&lt;div</b> class=&quot;example example1&quot;<b>&gt;</b>
   <b>&lt;h2&gt;</b>Lorem Ipsum Dolor<b>&lt;/h2&gt;</b>
@@ -1983,7 +1983,7 @@ div is scrolled.</p>
   And lightning struck out of his ass.<b>&lt;/p&gt;</b> 
   <b>&lt;p&gt;</b>And more goes here, as well. It beats Latin. I don't know Latin so better 
   for me the end.<b>&lt;/p&gt; 
-&lt;/div&gt;</b></code></pre>
+&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-11">Section 5.11: Background Repeat</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1991,10 +1991,10 @@ div is scrolled.</p>
 
 <p>By default, a background-image is repeated both vertically and horizontally.</p>
 
-<pre><code>div {
+<pre>div {
   <b>background-image</b>: url (&quot;img.jpg&quot;);
   <b>background-repeat</b>: repeat-y;
-}</code></pre>
+}</pre>
 
 <p>Here's how a <b>background-repeat</b>: repeat-y looks like:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2008,7 +2008,7 @@ div is scrolled.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-12">Section 5.12: background-blend-mode Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>.my-div {
+<pre>.my-div {
   <b>width</b>:300px;
   <b>height</b>:200px;
   <b>background-size</b>:100&percnt;;
@@ -2017,7 +2017,7 @@ div is scrolled.</p>
 url(&apos;https://static.pexels.com/photos/54624/strawberry-fruit-red-sweet-54624-medium.jpeg&apos;);
   <b>background-blend-mode</b>:saturation;
 }
-<b>&lt;div</b> class=&quot;my-div&quot;<b>&gt;Lorem ipsum&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=&quot;my-div&quot;<b>&gt;Lorem ipsum&lt;/div&gt;</b></pre>
 
 <p>See result here: <a href="https://jsfiddle.net/MadalinaTn/y69d28Lb/">Demo (jsFiddle)</a>.</p>
 
@@ -2031,7 +2031,7 @@ luminosity;</p>
 set an opacity just on the background of an element you will have to use RGBA 
 colors. Following example will have a black background with 0.6 opacity.</p>
 
-<pre><code>/* Fallback for web browsers that don&apos;t support RGBa */
+<pre>/* Fallback for web browsers that don&apos;t support RGBa */
 <b>background-color</b>:rgb (0, 0, 0);
 
 /* RGBa with 0.6 opacity */
@@ -2042,7 +2042,7 @@ colors. Following example will have a black background with 0.6 opacity.</p>
 
 /* For IE 8 */
 &minus;ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,
-endColorstr=#99000000)&quot;;</code></pre>
+endColorstr=#99000000)&quot;;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6">Chapter 6: Centering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2050,13 +2050,13 @@ endColorstr=#99000000)&quot;;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;img</b> src=&quot;http://lorempixel.com/400/200&quot; <b>/&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>html, body, .container {
+<pre>html, body, .container {
   <b>height</b>:100&percnt;;
 }
 .container {
@@ -2065,24 +2065,24 @@ endColorstr=#99000000)&quot;;</code></pre>
 }
 img {
   <b>align-self</b>:center;  /* vertical center */
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/aLu05kjy/1/">Demo (View result-jsFiddle)</a>.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src = &quot;http://lorempixel.com/400/200&quot; <b>/&gt;</b></code></pre>
+<pre><b>&lt;img</b> src = &quot;http://lorempixel.com/400/200&quot; <b>/&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>html, body {
+<pre>html, body {
   <b>height</b>:100&percnt;;
 }
 body {
   <b>display</b>:flex;
   <b>justify-content</b>:center;  /* horizontal center */
   <b>align-items</b>:center;      /* vertical center */
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/ttp0bzfm/1/">Demo (View Result)</a>.</p>
 
@@ -2120,13 +2120,13 @@ this answer in Stack Overflow </a>for a workaround.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;element&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.container {
+<pre>.container {
   <b>position</b>: relative;
 }
 .element {
@@ -2134,7 +2134,7 @@ this answer in Stack Overflow </a>for a workaround.</p>
   <b>top</b>: 50&percnt;;
   <b>left</b>: 50&percnt;;
   <b>transform</b>: translate(-50&percnt;, -50&percnt);
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/webtiki/rz3p3ufs/">View example in jsFiddle</a>.</p>
 
@@ -2147,9 +2147,9 @@ IE8 and older versions.</p>
 
 <p>Here is a common transform declaration for the previous example:</p>
 
-<pre><code>-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera, Android */
+<pre>-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera, Android */
     -ms-transform: translate(-50%, -50%); /* IE 9 */
-     <b>transform</b>: translate(-50%, -50%);</code></pre>
+     <b>transform</b>: translate(-50%, -50%);</pre>
 
 <p>For more information see <a href="http://caniuse.com/#feat=transforms2d">canIuse</a>.</p>
 
@@ -2174,7 +2174,7 @@ IE8 and older versions.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;containerDiv&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;containerDiv&quot;<b>&gt;</b>
   <b>&lt;div</b> id=&quot;centeredDiv&quot;<b>&gt;&lt;/div&gt;</b>
 <b>&lt;/div&gt;</b>
 
@@ -2185,11 +2185,11 @@ IE8 and older versions.</p>
 <b>&lt;div</b> class=&quot;containerDiv&quot;<b>&gt;</b>
   <b>&lt;img</b> id=&quot;centeredImage&quot;
     src=&quot;https://i.kinja-img.com/gawker-media/image/upload/s--c7Q9b4Eh&minus;-/c_scale,fl_progressive,q_80,w_800/qqyvc3bkpyl3mfhr8all.jpg&quot; <b>/&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.containerDiv {
+<pre>.containerDiv {
   <b>width</b>: 100&percnt;;
   <b>height</b>: 100px;
   <b>padding-bottom</b>: 40px;
@@ -2208,7 +2208,7 @@ IE8 and older versions.</p>
   <b>display</b>: block;
   <b>width</b>: 200px;
   <b>margin</b>: 0 auto;
-}</code></pre>
+}</pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2230,13 +2230,13 @@ in an element. CSS has the rule <b>text-align</b>: center for this purpose:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p&gt;</b>Lorem ipsum<b>&lt;/p&gt;</b></code></pre>
+<pre><b>&lt;p&gt;</b>Lorem ipsum<b>&lt;/p&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>p {
+<pre>p {
   <b>text-align</b>: center;
-}</code></pre>
+}</pre>
 
 <p><i>This does not work for centering entire block elements</i>. text-align
 controls only alignment of inline content like text in its parent block element.</p>
@@ -2255,13 +2255,13 @@ elements within its parent.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;parent&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;parent&quot;<b>&gt;</b>
   <b>&lt;img</b> class=&quot;center&quot; src=&quot;http://lorempixel.com/400/200/&quot;<b>/&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.parent {
+<pre>.parent {
   <b>position</b>: relative;
   <b>height</b>: 500px;
 }
@@ -2272,7 +2272,7 @@ elements within its parent.</p>
   <b>right</b>: 0;
   <b>bottom</b>: 0;
   <b>left</b>: 0;
-}</code></pre>
+}</pre>
 
 <p>Elements that don&apos;t have their own implicit width and height like
 images do, will need those values defined.</p>
@@ -2288,18 +2288,18 @@ function, always take care of the space between two values calc(100% - 80px).</p
 
 <h4>CSS:</h4>
 
-<pre><code>.center {
+<pre>.center {
   <b>position</b>: absolute;
   <b>height</b>: 50px;
   <b>width</b>: 50px;
   <b>background</b>: #ff0000; /* red */
   <b>top</b>: calc (50&percnt; &minus; 50px/2); /* height divided by 2 */
   <b>left</b>: calc (50&percnt; &minus; 50px / 2); /* width divided by 2 */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;center&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;center&quot;<b>&gt;&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-7">Section 6.7: Using line-height</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2308,10 +2308,10 @@ text inside a container:</p>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>height</b>: 200px;
   <b>line-height</b>: 200px;
-}</code></pre>
+}</pre>
 
 <p>That&apos;s quite ugly, but can be useful inside an <b>&lt;input</b> <b>/&gt;</b> 
 element. The line-height property works only when the text to be centered spans a 
@@ -2329,15 +2329,15 @@ sure the div/image you apply the code to has a parent with a height.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>div .vertical {
+<pre>div .vertical {
   <b>position</b>: relative;
   <b>top</b>: 50&percnt;;
   <b>transform</b>: translateY(-50&percnt;);
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;vertical&quot;<b>&gt;</b>Vertical aligned text!<b>&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;vertical&quot;<b>&gt;</b>Vertical aligned text!<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-9">Section 6.9: Centering in relation to another item</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2347,7 +2347,7 @@ sure the div/image you apply the code to has a parent with a height.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;position-container&quot;<b>&gt;</b>
     <b>&lt;div</b> class=&quot;thumb&quot;<b>&gt;</b>
       <b>&lt;img</b> src=&quot;http://lorempixel.com/400/200/&quot;<b>&gt;</b>
@@ -2359,11 +2359,11 @@ sure the div/image you apply the code to has a parent with a height.</p>
       <b>&lt;button</b> class=&quot;btn&quot;<b>&gt;</b>button<b>&lt;/button&gt;</b>
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.content &ast; {
+<pre>.content &ast; {
   <b>box-sizing</b>: border-box;
 }
 .content .position-container {
@@ -2382,7 +2382,7 @@ sure the div/image you apply the code to has a parent with a height.</p>
 }
 .content .thumb img {
   <b>width</b>: 100&percnt;;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/gasp10/6bv92mko/4/">Demo (jsFiddle)</a>.</p>
 
@@ -2407,7 +2407,7 @@ sure the div/image you apply the code to has a parent with a height.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>/* This parent can be any width and height */
+<pre>/* This parent can be any width and height */
 .block {
   <b>text-align</b>: center;
 /* May want to do this if there is risk the container may be 
@@ -2434,13 +2434,13 @@ or by zeroing font-size in .parent and resetting it back
   <b>vertical-align</b>: middle;
   <b>width</b>: 300px;
   <b>white-space</b>: normal; /* Resetting inherited nowrap behavior */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;block&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;block&quot;<b>&gt;</b>
   <b>div</b> class=&quot;centered&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="6-11">Section 6.11: Centering vertically and horizontally without worrying about height or width</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2472,17 +2472,17 @@ worrying about its height or width</b>.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;outer-container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;outer-container&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;inner-container&quot;<b>&gt;</b>
     <b>&lt;div</b> class=&quot;centered-content&quot;<b>&gt;</b>
       You can put anything here!
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>body {
+<pre>body {
   <b>margin</b>: 0;
 }
 .outer-container {
@@ -2503,7 +2503,7 @@ worrying about its height or width</b>.</p>
   <b>background</b>: #fff;
   <b>padding</b>: 20px;
   <b>border</b>: 1px solid #000;
-}</code></pre>
+}</pre>
 
 <p>See also <a href="http://jsfiddle.net/WXLsY/621/">this jsFiddle!</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2511,13 +2511,13 @@ worrying about its height or width</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrap&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrap&quot;<b>&gt;</b>
   <b>&lt;img</b> src=&quot;http://lorempixel.com/400/200/&quot;<b>/&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.wrap {
+<pre>.wrap {
   <b>height</b>: 50px; /* max image height */
   <b>width</b>: 100px;
   <b>border</b>: 1px solid blue;
@@ -2533,7 +2533,7 @@ worrying about its height or width</b>.</p>
 
 img {
   <b>vertical-align</b>: middle;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-13">Section 6.13: Centering with fixed size</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2542,13 +2542,13 @@ with margin that reduces half of your content&apos;s width and height:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;center&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;center&quot;<b>&gt;</b>
   Center vertically and horizontally
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.center {
+<pre>.center {
   <b>position</b>: absolute;
   <b>background</b>: #ccc;
 
@@ -2559,7 +2559,7 @@ with margin that reduces half of your content&apos;s width and height:</p>
   <b>top</b>: 50&percnt;;
   <b>height</b>: 200px;
   <b>margin-top</b>: -100px;  /* height &ast; -0.5 */
-}</code></pre>
+}</pre>
 
 <h4>Horizontal centering with only fixed width</h4>
 
@@ -2568,20 +2568,20 @@ of the content:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;center&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;center&quot;<b>&gt;</b>
   Center only horizontally
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.center {
+<pre>.center {
   <b>position</b>: absolute;
   <b>background</b>: #ccc;
   
   <b>left</b>: 50&percnt;;
   <b>width</b>: 150px;
   <b>margin-left</b>: -75px;  /* width &ast; -0.5 */
-}</code></pre>
+}</pre>
 
 <h4>Vertical centering with fixed height</h4>
 
@@ -2589,20 +2589,20 @@ of the content:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;center&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;center&quot;<b>&gt;</b>
   Center only vertically
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.center {
+<pre>.center {
   <b>position</b>: absolute;
   <b>background</b>: #ccc;
   
   <b>top</b>:50&percnt;;
   <b>height</b>: 200px;
   <b>margin-top</b>: -100px;  /* width &ast; -0.5 */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-14">Section 6.14: Vertically align dynamic height elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2621,13 +2621,13 @@ of the content:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-container&quot;</span><b>&gt;</b>
+<pre><b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-container&quot;</span><b>&gt;</b>
   <b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-helper&quot;</span><b>&gt;</b>
     <b>&lt;div</b> class=<span style="color:red;">&quot;vcenter&minus;-content&quot;</span><b>&gt;</b>
       &lt;!-- stuff --&gt;
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
@@ -2664,15 +2664,15 @@ of the content:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&quot;wrapper&quot;</span><b>&gt;</b>
+<pre><b>&lt;div</b> class=<span style="color:red;">&quot;wrapper&quot;</span><b>&gt;</b>
   <b>&lt;div</b> class=<span style="color:red;">&quot;parent&quot;</span><b>&gt;</b>
     <b>&lt;div</b> class=<span style="color:red;">&quot;child&quot;</span><b>&gt;&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>display</b>: table;
   <b>vertical-align</b>: center;
   <b>width</b>: 200px;
@@ -2691,7 +2691,7 @@ of the content:</p>
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background-color</b>: teal;
-}</code></pre>
+}</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch7">Chapter 7: The Box Model</h2>
@@ -2742,11 +2742,11 @@ to the content to create this rectangle.</p>
 
 <h4>Example:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>border</b>: 5px solid #ff0000;
   <b>margin</b>: 50px;
   <b>padding</b>: 20px;
-}</code></pre>
+}</pre>
 
 <p>This CSS styles all div elements to have a top, right, bottom and left
 border of 5px in width; a top, right, bottom and left margin of 50px;
@@ -2812,12 +2812,12 @@ styles to the element.</p>
 <p>The following example demonstrates this potential issue with
 content-box:</p>
 
-<pre><code>
+<pre>
 textarea {
   <b>width</b>: 100&percnt;;
   <b>padding</b>: 3px;
   <b>box-sizing</b>: content-box; /* default value */
-}</code></pre>
+}</pre>
 
 <p>Since the padding will be added to the width of the textarea, the
 resulting element is a textarea that is wider than 100%.</p>
@@ -2847,22 +2847,22 @@ property available:</p>
 box-sizing property to padding-box or borderbox. border-box is most
 commonly used.</p>
 
-<pre><code>textarea {
+<pre>textarea {
   <b>width</b>: 100&percnt;;
   <b>padding</b>: 3px;
   <b>box-sizing</b>: border-box;
-}</code></pre>
+}</pre>
 
 <p>To apply a specific box model to every element on the page, use the following 
 snippet:</p>
 
-<pre><code>html {
+<pre>html {
   <b>box-sizing</b>: border-box;
 }
 
 &ast;, &ast;:before, &ast;:after {
   <b>box-sizing</b>: inherit;
-}</code></pre>
+}</pre>
 
 <p>In this coding <b>box-sizing</b>: border-box; is not directly applied to &ast;, so you can easily
 overwrite this property on individual elements.</p>
@@ -2888,7 +2888,7 @@ collapsed. When two margins touch horizontally, they do not collapse.</p>
 
 <p>Consider the following styles and markup:</p>
 
-<pre><code>div {
+<pre>div {
   <b>margin</b>: 10px;
 }
 <b>&lt;div&gt;</b>
@@ -2896,7 +2896,7 @@ collapsed. When two margins touch horizontally, they do not collapse.</p>
 <b>&lt;/div&gt;</b>
 <b>&lt;div&gt;</b>
   some more content
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>They will be 10px apart since vertical margins collapse over one and
 other. (The spacing will not be the sum of two margins.)</p>
@@ -2905,17 +2905,17 @@ other. (The spacing will not be the sum of two margins.)</p>
 
 <p>Consider the following styles and markup:</p>
 
-<pre><code>span {
+<pre>span {
   <b>margin</b>: 10px;
 }
-<b>&lt;span&gt;</b>some<b>&lt;/span&gt;&lt;span&gt;</b>content<b>&lt;/span&gt;</b></code></pre>
+<b>&lt;span&gt;</b>some<b>&lt;/span&gt;&lt;span&gt;</b>content<b>&lt;/span&gt;</b></pre>
 
 <p>They will be 20px apart since horizontal margins don&apos;t collapse over
 one and other. (The spacing will be the sum of two margins.)</p>
 
 <h4>Overlapping with different sizes</h4>
 
-<pre><code>.top {
+<pre>.top {
   <b>margin</b>: 10px;
 }
 .bottom {
@@ -2926,7 +2926,7 @@ one and other. (The spacing will be the sum of two margins.)</p>
 <b>&lt;/div&gt;</b>
 <b>&lt;div</b> class = &quot;bottom&quot;<b>&gt;</b>
   some more content
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>These elements will be spaced 15px apart vertically. The margins
 overlap as much as they can, but the larger margin will determine the
@@ -2934,7 +2934,7 @@ spacing between the elements.</p>
 
 <h4>Overlapping margin gotcha</h4>
 
-<pre><code>.outer-top {
+<pre>.outer-top {
   <b>margin</b>: 10px;
 }
 .inner-top {
@@ -2955,7 +2955,7 @@ spacing between the elements.</p>
     <b>&lt;div</b> class=<span style="color:red;">&quot;inner-bottom&quot;</span><b>&gt;</b>
       some more content
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>What will be the spacing between the two texts? (hover to see answer)</p>
 
@@ -2966,9 +2966,9 @@ spacing between the elements.</p>
 
 <p>Now, what about if we add some borders to the markup above.</p>
 
-<pre><code>div {
+<pre>div {
   <b>border</b>: 1px solid #ff0000;
-}</code></pre>
+}</pre>
 
 <p>What will be the spacing between the two texts? (hover to see answer)</p>
 
@@ -2984,14 +2984,14 @@ spacing between the elements.</p>
 
 <h4>HTML::</h4>
 
-<pre><code><b>&lt;h1&gt;</b>Title<b>&lt;/h1&gt;</b>
+<pre><b>&lt;h1&gt;</b>Title<b>&lt;/h1&gt;</b>
 <b>&lt;div&gt;</b>
   <b>&lt;p&gt;</b>Paragraph<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>h1 {
+<pre>h1 {
   <b>margin</b>: 0;
   <b>background</b>: #cff;
 }
@@ -3002,7 +3002,7 @@ div {
 p {
   <b>margin</b>: 25px 0 0 0;
   <b>background</b>: #cf9;
-}</code></pre>
+}</pre>
 
 <p>In the example above, only the largest margin applies. You may have
 expected that the paragraph would be located 60px from the h1 (since
@@ -3029,16 +3029,16 @@ of the selected div. <a href="https://jsfiddle.net/wm0100x9/1/">View Result</a>.
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>#myDiv {
+<pre>#myDiv {
   <b>margin-left</b>: 30px;
   <b>height</b>: 40px;
   <b>width</b>: 40px;
   <b>background-color</b>: #ff0000;
-}</code></pre>
+}</pre>
 
 | <b>Parameter</b> | <b>Details</b> |
 |------------------|-------------------------------------------------|
@@ -3051,7 +3051,7 @@ of the selected div. <a href="https://jsfiddle.net/wm0100x9/1/">View Result</a>.
 widths to each side of the selected elements. The syntax for doing
 this is as follows:</p>
 
-<pre><code><b>margin</b>: &lt;top&gt; &lt;right&gt; &lt;bottom&gt; &lt;left&gt;;</code></pre>
+<pre><b>margin</b>: &lt;top&gt; &lt;right&gt; &lt;bottom&gt; &lt;left&gt;;</pre>
 
 <p>The following example applies a zero-width margin to the top of the
 div, a 10px margin to the right side, a 50px margin to the left side,
@@ -3060,20 +3060,20 @@ Result</i>.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>#myDiv {
+<pre>#myDiv {
   <b>margin</b>: 0 10px 50px 100px;
   <b>height</b>: 40px;
   <b>width</b>: 40px;
   <b>background-color</b>: #ff0000;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-3">Section 8.3: Margin property simplification</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>p {
+<pre>p {
   <b>margin</b>: 1px; /* 1px margin in all directions */
   /* equal to: */
   <b>margin</b>: 1px 1px;
@@ -3081,18 +3081,18 @@ Result</i>.</p>
   <b>margin</b>: 1px 1px 1px;
   /* equal to: */
   <b>margin</b>: 1px 1px 1px 1px;
-}</code></pre>
+}</pre>
 
 <p>Another exapmle:</p>
 
-<pre><code>p {
+<pre>p {
   <b>margin</b>: 10px 15px; /* 10px margin-top & bottom And 15px margin-right & left */
   /* equal to: */
   <b>margin</b>: 10px 15px 10px 15px;
   /* equal to: */
   <b>margin</b>: 10px 15px 10px;
   /* margin left will be calculated from the margin right value (=15px) */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-4">Section 8.4: Horizontally center elements on a page using margin</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3104,10 +3104,10 @@ horizontally.</p>
 the auto property of margin then distributes the remaining space to
 the left and the right:</p>
 
-<pre><code>#myDiv {
+<pre>#myDiv {
   <b>width</b>:80&percnt;;
   <b>margin</b>:0 auto;
-}</code></pre>
+}</pre>
 
 <p>In the example above we use the shorthand margin declaration to first
 set 0 to the top and bottom margin values (although this could be any
@@ -3118,14 +3118,14 @@ automatically to the left and right margin values.</p>
 leaves use 20% leftover. The browser distributes this value to the
 remaining sides so:</p>
 
-<pre><code>(100% - 80%) / 2 = 10%</code></pre>
+<pre>(100% - 80%) / 2 = 10%</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-5">Section 8.5: Example 1:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is obvious to assume that the percentage value of margin to
 margin-left and margin-right would be relative to its parent element.</p>
 
-<pre><code>.parent {
+<pre>.parent {
   <b>width</b> : 500px;
   <b>height</b>: 300px;
 }
@@ -3133,7 +3133,7 @@ margin-left and margin-right would be relative to its parent element.</p>
   <b>width</b> : 100px;
   <b>height</b>: 100px;
   <b>margin-left</b>: 10&percnt;; /* (parentWidth &ast; 10/100) =&gt; 50px */
-}</code></pre>
+}</pre>
 
 <p>But that is not the case, when comes to margin-top and margin-bottom.
 Both these properties, in percentages, aren&apos;t relative to the height
@@ -3141,7 +3141,7 @@ of the parent container but to the <b>width</b> of the parent container.</p>
 
 <p>So,</p>
 
-<pre><code>.parent {
+<pre>.parent {
   <b>width</b> : 500px;
   <b>height</b>: 300px;
 }
@@ -3150,7 +3150,7 @@ of the parent container but to the <b>width</b> of the parent container.</p>
   <b>height</b>: 100px;
   <b>margin-left</b>: 10&percnt;;  /* (parentWidth &ast; 10/100) =&gt; 50px */
   <b>margin-top</b>: 20&percnt;;   /* (parentWidth &ast; 20/100) =&gt; 100px */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-6">Section 8.6: Negative margins</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3158,14 +3158,14 @@ of the parent container but to the <b>width</b> of the parent container.</p>
 values. This property can be used to <b>overlap elements without
 absolute positioning</b>.</p>
 
-<pre><code>div {
+<pre>div {
   <b>display</b>: inline;
 }
 #over {
   <b>margin-left</b>: -20px;
 }
 &lt;div&gt;Base div&lt;/div&gt;
-&lt;div id=&quot;over&quot;&gt;Overlapping div&lt;/div&gt;</code></pre>
+&lt;div id=&quot;over&quot;&gt;Overlapping div&lt;/div&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch9">Chapter 9: Padding</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3180,12 +3180,12 @@ padding-left etc) can you write it as a shorthand, as below:</p>
 
 <h4><b>Four values:</b></h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
   .myDiv {
     padding: 25px 50px 75px 100px; /* top right bottom left; */
   }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 21a. padding: 25, 50, 75 100px (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3197,12 +3197,12 @@ padding-left etc) can you write it as a shorthand, as below:</p>
 
 <h4><b>Three values:</b></h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
   .myDiv {
     padding: 25px 50px 75px; /* top left/right bottom */
   }
   <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21b. padding: 25, 50, 75, 50px (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3214,12 +3214,12 @@ padding-left etc) can you write it as a shorthand, as below:</p>
 
 </h4><b>Two values:</b></h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
   .myDiv {
     padding: 25px 50px; /* top/bottom left/right */
   }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21c. padding: 25, 50, 25, 50px (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3231,12 +3231,12 @@ padding-left etc) can you write it as a shorthand, as below:</p>
 
 <h4><b>One value:</b></h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
   .myDiv {
     padding: 25px; /* top/right/bottom/left */
 }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style="color:red;">&quot;myDiv&quot;</span><b>&gt;&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21d. padding: 25, 25, 25, 25px (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3264,12 +3264,12 @@ element and its border. Negative values are not allowed.</p>
 
 <p>The following code would add a padding of 5px to the top of the div:</p>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
   .myClass {
     padding-top: 5px;
 }
 <b>&lt;/style&gt;</b>
-<b>&lt;div</b> class=<span style="color:red;">&quot;myClass&quot;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=<span style="color:red;">&quot;myClass&quot;</span><b>&gt;&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch10">Chapter 10: Border</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3295,7 +3295,7 @@ second set of values, preceded by a '/' , defines the vertical radius.
 If only one set of values is supplied, it is used for both the
 vertical and horizontal radius.</p>
 
-<pre><code><b>border-radius</b>: 10px 5&percnt; / 20px 25em 30px 35em;</code></pre>
+<pre><b>border-radius</b>: 10px 5&percnt; / 20px 25em 30px 35em;</pre>
 
 <p>The 10px is the horizontal radius of the top-left-and-bottom-right.
 And the 5% is the horizontal radius of the topright-and-bottom-left.
@@ -3309,42 +3309,42 @@ vertical radius of every corner to the same value:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&apos;box&apos;</span><b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=<span style="color:red;">&apos;box&apos;</span><b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.box {
+<pre>.box {
   <b>width</b>: 250px;
   <b>height</b>: 250px;
   <b>background-color</b>: black;
   <b>border-radius</b>: 10px;
-}</code></pre>
+}</pre>
 
 <p>Border-radius is most commonly used to convert box elements into
 circles. By setting the border-radius to half of the length of a
 square element, a circular element is created:</p>
 
-<pre><code>.circle {
+<pre>.circle {
   <b>width</b>: 200px;
   <b>height</b>: 200px;
   <b>border-radius</b>: 100px;
-}</code></pre>
+}</pre>
 
 <p>Because border-radius accepts percentages, it is common to use 50% to
 avoid manually calculating the borderradius value:</p>
 
-<pre><code>.circle {
+<pre>.circle {
   <b>width</b>: 150px;
   <b>height</b>: 150px;
   <b>border-radius</b>: 50&percnt;;
-}</code></pre>
+}</pre>
 
 <p>If the width and height properties are not equal, the resulting shape
 will be an oval rather than a circle.</p>
 
 <p>Browser specific border-radius example:</p>
 
-<pre><code>-webkit-border-top-right-radius: 4px;
+<pre>-webkit-border-top-right-radius: 4px;
 -webkit-border-bottom-right-radius: 4px;
 -webkit-border-bottom-left-radius: 0;
 -webkit-border-top-left-radius: 0;
@@ -3355,7 +3355,7 @@ will be an oval rather than a circle.</p>
 <b>border-top-right-radius</b>: 4px;
 <b>border-bottom-right-radius</b>: 4px;
 <b>border-bottom-left-radius</b>: 0;
-<b>border-top-left-radius</b>: 0;</code></pre>
+<b>border-top-left-radius</b>: 0;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch10-2">Section 10.2: border-style</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3365,8 +3365,8 @@ element one value.)</p>
 
 <h4>Examples:</h4>
 
-<pre><code><b>border-style</b>: dotted;
-<b>border-style</b>: dotted solid double dashed;</code></pre>
+<pre><b>border-style</b>: dotted;
+<b>border-style</b>: dotted solid double dashed;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ 26. border-style property sets the style of an element's border (64) ~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3386,27 +3386,27 @@ highest priority (meaning in a conflict, the border would not show).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Using outline:</p>
 
-<pre><code>.div1 {
+<pre>.div1 {
   <b>border</b>: 3px solid black;
   <b>outline</b>: 6px solid blue;
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>margin</b>: 20px;
-}</code></pre>
+}</pre>
 
 <p>Using box-shadow:</p>
 
-<pre><code>.div2 {
+<pre>.div2 {
   <b>border</b>: 5px solid green;
   <b>box-shadow</b>: 0px 0px 0px 4px #000;
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>margin</b>: 20px;
-}</code></pre>
+}</pre>
 
 <p>Using a pseudo element:</p>
 
-<pre><code>.div3 {
+<pre>.div3 {
   <b>position</b>: relative;
   <b>border</b>: 5px solid #000;
   <b>width</b>: 100px;
@@ -3422,7 +3422,7 @@ highest priority (meaning in a conflict, the border would not show).</p>
   <b>left</b>: 5px;
   <b>right</b>: 5px;
   <b>bottom</b>: 5px;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. 3 div border examples (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3443,19 +3443,19 @@ element.</p>
 
 <p>Instead of writing:</p>
 
-<pre><code><b>border-width</b>: 1px;
+<pre><b>border-width</b>: 1px;
 <b>border-style</b>: solid;
-<b>border-color</b>: #000;</code></pre>
+<b>border-color</b>: #000;</pre>
 
 <p>You can simply write:</p>
 
-<pre><code><b>border</b>: 1px solid #000;</code></pre>
+<pre><b>border</b>: 1px solid #000;</pre>
 
 <p>These shorthands are also available for every side of an element:
 border-top, border-left, border-right and border-bottom. So you can
 do:</p>
 
-<pre><code><b>border-top</b>: 2px double #aaaaaa;</code></pre>
+<pre><b>border-top</b>: 2px double #aaaaaa;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch10-5">Section 10.5: border-collapse</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3463,10 +3463,10 @@ do:</p>
 displayed as or inlinetable) and sets whether the table borders are
 collapsed into a single border or detached as in standard HTML.</p>
 
-<pre><code>table {
+<pre>table {
   <b>border-collapse</b>: separate; /* default */
   <b>border-spacing</b>: 2px; /* Only works if border-collapse is separate */
-}</code></pre>
+}</pre>
 
 <p>Also see Tables - border-collapse documentation entry</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3488,7 +3488,7 @@ image to be used instead of normal border styles.</p>
 
 <p>Consider the following example wheras border.png is a image of 90x90 pixels:</p>
 
-<pre><code><b>border-image</b>: url(&quot;border.png&quot;) 30 stretch;</code></pre>
+<pre><b>border-image</b>: url(&quot;border.png&quot;) 30 stretch;</pre>
 
 <p>The image will be split into nine regions with 30x30 pixels. The edges
 will be used as the corners of the border while the side will be used
@@ -3500,15 +3500,15 @@ to be transparent.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS:</h4>
 
-<pre><code>.bordered {
+<pre>.bordered {
   <b>border-image</b>: linear-gradient(to right, red 20&percnt;, green 20&percnt;, green 40&percnt;, blue 40&percnt;, blue 60&percnt;, maroon 
   60&percnt;, maroon 80&percnt;, chocolate 80&percnt;); /* gradient with required colors */
   <b>border-image-slice</b>: 1;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=<span style="color:red;">&apos;bordered&apos;</span><b>&gt;</b>Border on all sides<b>&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=<span style="color:red;">&apos;bordered&apos;</span><b>&gt;</b>Border on all sides<b>&lt;/div&gt;</b></pre>
 
 <p>The above example would produce a border that comprises of 5 different
 colors. The colors are defined through a linear-gradient (you can find
@@ -3556,7 +3556,7 @@ the border-width property can be used just like with any other normal
 border. For example, adding the below code would produce a border only
 on the top of the element.</p>
 
-<pre><code><b>border-width</b>: 5px 0px 0px 0px;</code></pre>
+<pre><b>border-width</b>: 5px 0px 0px 0px;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 30. border-width: 5px 0px 0px 0px (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3581,9 +3581,9 @@ property is used to add a border to a specific side of an element.</p>
 
 <p>For example if you wanted to add a border to the left side of an element, you could do:</p>
 
-<pre><code>&num;element {
+<pre>&num;element {
   <b>border-left</b>: 1px solid black;
-}</code></pre>
+}</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch11">Chapter 11: Outlines</h2>
@@ -3626,14 +3626,14 @@ border:</p>
   margin of the element. However, it is different from the border property.
 </blockquote>
 
-<pre><code><b>outline</b>: 1px solid black;</code></pre>
+<pre><b>outline</b>: 1px solid black;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch11-2">Section 11.2: outline-style</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The outline-style property is used to set the style of the outline of
 an element.</p>
 
-<pre><code>p {
+<pre>p {
   <b>border</b>: 1px solid black;
   <b>outline-color</b>: blue;
   <b>line-height</b>: 30px;
@@ -3661,18 +3661,18 @@ an element.</p>
 }
 .p8 {
   <b>outline-style</b>: outset;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p</b> class=&quot;p1&quot;<b>&gt;</b>A dotted outline<b>&lt;/p&gt;</b>
+<pre><b>&lt;p</b> class=&quot;p1&quot;<b>&gt;</b>A dotted outline<b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;p2&quot;<b>&gt;</b>A dashed outline<b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;p3&quot;<b>&gt;</b>A solid outline<b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;p4&quot;<b>&gt;</b>A double outline<b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;p5&quot;<b>&gt;</b>A groove outline<b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;p6&quot;<b>&gt;</b>A ridge outline<b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;p7&quot;<b>&gt;</b> An inset outline<b>&lt;/p&gt;</b>
-<b>&lt;p</b> class=&quot;p8&quot;<b>&gt;</b> An outset outline<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;p</b> class=&quot;p8&quot;<b>&gt;</b> An outset outline<b>&lt;/p&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31. outline-style's 8 options (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3703,7 +3703,7 @@ problems due to overflowing it&apos;s container.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 100px;
   <b>outline</b>: 1px dashed #bbb;
 }
@@ -3712,11 +3712,11 @@ problems due to overflowing it&apos;s container.</p>
 }
 #div2 {
   <b>overflow-wrap</b>:break-word;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;div1&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;div1&quot;<b>&gt;</b>
   <b>&lt;strong&gt;</b>#div1<b>&lt;/strong&gt;</b>: Small words are displayed normally, but a long word like <b>&lt;span</b> 
      style=&quot;red;&quot;<b>&gt;</b>supercalifragilisticexpialidocious<b>&lt;/span&gt;</b> is too long so it will overflow past the
      edge of the line-break
@@ -3726,7 +3726,7 @@ problems due to overflowing it&apos;s container.</p>
   <b>&lt;strong&gt;</b>#div2<b>&lt;/strong</b>: Small words are displayed normally, but a long word like <b>&lt;span</b>
     style=&quot;red;&quot;<b>&gt;</b>supercalifragilisticexpialidocious<b>&lt;/span&gt;</b> will be split at the line break and continue
     on the next line.
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32. div, overflow-wrap (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -3753,7 +3753,7 @@ top-to-bottom axis.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;div-x&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;div-x&quot;<b>&gt;</b>
   If this div is too small to display its contents,
   the content to the left and right will be clipped.
 <b>&lt;/div&gt;</b>
@@ -3761,11 +3761,11 @@ top-to-bottom axis.</p>
 <b>&lt;div</b> id=&quot;div-y&quot;<b>&gt;</b>
   If this div is too small to display its contents,
   the content to the top and bottom will be clipped.
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 200px;
   <b>height</b>: 200px;
 }
@@ -3774,23 +3774,23 @@ top-to-bottom axis.</p>
 }
 #div-y {
   <b>overflow-y</b>: hidden;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch12-3">Section 12.3: overflow: scroll</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;</b>
+<pre><b>&lt;div&gt;</b>
   This div is too small to display its contents to display the effects of the overflow property.
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>overflow</b>: scroll;
-}</code></pre>
+}</pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3815,17 +3815,17 @@ environment. Printers may print overflowing content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;</b>
+<pre><b>&lt;div&gt;</b>
   Even if this div is too small to display its contents, the content is not clipped.
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 50px;
   <b>height</b>: 50px;
   <b>overflow</b>: visible;
-}</code></pre>
+}</pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3849,21 +3849,21 @@ a block element next to a floated element.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>img {
+<pre>img {
   <b>float</b>: left;
   <b>margin-right</b>: 10px;
 }
 div {
   <b>overflow</b>: hidden; /* creates block formatting context */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=<span style="color:red">&quot;http://placehold.it/100x100&quot;</span><b>&gt;</b>
+<pre><b>&lt;img</b> src=<span style="color:red">&quot;http://placehold.it/100x100&quot;</span><b>&gt;</b>
 <b>&lt;div&gt;</b>
   <b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, cum no paulo mollis pertinacia.<b>&lt;/p&gt;</b>
   <b>&lt;p&gt;</b>Ad case omnis nam, mutat deseruisse persequeris eos ad, in tollit debitis sea.<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3930,32 +3930,32 @@ additional aspects of the device are described with <b>media features</b>
 such as the availability of color or viewport dimensions.</p>
 
 <h4>General Structure of a Media Query</h4>
-<pre><code><b><span style="color: blue;">&commat;media</span></b> &lbrack;&period;..&rbrack; {
+<pre><b><span style="color: blue;">&commat;media</span></b> &lbrack;&period;..&rbrack; {
   /* One or more CSS rules to apply when the query is satisfied */
-}</code></pre>
+}</pre>
 
 <h4>A Media Query containing a Media Type</h4>
-<pre><code><b><span style="color: blue;">&commat;media</span></b> print {
+<pre><b><span style="color: blue;">&commat;media</span></b> print {
   /* One or more CSS rules to apply when the query is satisfied */
-}</code></pre>
+}</pre>
 
 <h4>A Media Query containing a Media Type and a Media Feature</h4>
-<pre><code><b><span style="color: blue;">&commat;media</span></b> screen and (<b>max-width</b>: 600px) {
+<pre><b><span style="color: blue;">&commat;media</span></b> screen and (<b>max-width</b>: 600px) {
   /*  One or more CSS rules to apply when the query is satisfied */
-}</code></pre>
+}</pre>
 
 <h4>A Media Query containing a Media Feature (and an implicit Media Type of &quot;all&quot;)</h4>
-<pre><code><b><span style="color: blue;">&commat;media</span></b> (orientation: portrait) {
+<pre><b><span style="color: blue;">&commat;media</span></b> (orientation: portrait) {
   /* One or more CSS rules to apply when the query is satisfied */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch13-2">Section 13.2: Basic Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b><span style="color: blue;">&commat;media</span></b> screen and (<b>min-width</b>: 720px) {
+<pre><b><span style="color: blue;">&commat;media</span></b> screen and (<b>min-width</b>: 720px) {
   body {
     <b>background-color</b>: skyblue;
   }
-}</code></pre>
+}</pre>
 
 <p>The above media query specifies two conditions:</p>
 
@@ -3985,11 +3985,11 @@ resized the view port to less than 720 pixels in width.</p>
 placed directly after the &commat;media declaration(<span style="color: blue;">
 &commat;media</span> mediatype mediatype), for example:</p>
 
-<pre><code><span style="color: blue;">&commat;media</span> print {
+<pre><span style="color: blue;">&commat;media</span> print {
   html {
     <b>background-color</b>: white;
   }
-}</code></pre>
+}</pre>
 
 <p>The above CSS code will give the DOM HTML element a white background
 color when being printed.</p>
@@ -4000,19 +4000,19 @@ only the specified media type, respectively. For example, the
 following code example will apply the style to every media type except
 print.</p>
 
-<pre><code><span style="color: blue;">&commat;media</span> not print {
+<pre><span style="color: blue;">&commat;media</span> not print {
   html {
     <b>background-color</b>: green;
   }
-}</code></pre>
+}</pre>
 
 <p>And the same way, for just showing it only on the screen, this can be used:</p>
 
-<pre><code><span style="color: blue;">&commat;media</span> only screen {
+<pre><span style="color: blue;">&commat;media</span> only screen {
   .fadeInEffects {
     <b>display</b>: block;
   }
-}</code></pre>
+}</pre>
 
 <p>The list of mediatype can be understood better with the following table:</p>
 
@@ -4034,7 +4034,7 @@ print.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Although this works only for WebKit based browsers, this is helpful:</p>
 
-<pre><code>/*----------- Non-Retina Screens -----------*/
+<pre>/*----------- Non-Retina Screens -----------*/
 <span style="color: blue;">&commat;media</span> screen
   and (<b>min-width</b>: 1200px)
   and (<b>max-width</b>: 1600px)
@@ -4046,7 +4046,7 @@ print.</p>
   and (<b>max-width</b>: 1600px)
   and (&minus;webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-}</code></pre>
+}</pre>
 
 <h4>Background Information</h4>
 
@@ -4073,7 +4073,7 @@ resolution.</p>
 the meta tag correctly. Basic meta tag looks like this and it needs to be put 
 inside the <b>&lt;head&gt;</b> tag.</p>
 
-<pre><code><b>&lt;meta</b> name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;<b>&gt;</b></code></pre>
+<pre><b>&lt;meta</b> name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;<b>&gt;</b></pre>
 
 <h4>Why this is important?</h4>
 
@@ -4107,7 +4107,7 @@ useful for responsive web design because you can use media queries to
 specify different CSS styles for the mobile version of your website
 versus the desktop version.</p>
 
-<pre><code><span style="color:blue">&commat;media</span> only screen and (<b>min-width</b>: 300px) and (<b>max-width</b>: 767px) {
+<pre><span style="color:blue">&commat;media</span> only screen and (<b>min-width</b>: 300px) and (<b>max-width</b>: 767px) {
   .site-title {
     <b>font-size</b>: 80&percnt;;
   }
@@ -4126,11 +4126,11 @@ than 1023px */
     <b>font-size</b>: 120&percnt;;
   }
 /* Styles in this block are only applied if the screen size is over 1024px wide. */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch13-7">Section 13.7: Use on link tag</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>&lt;link</b> rel=&quot;stylesheet&quot; media=&quot;min-width: 600px&quot; href=&quot;example.css&quot; <b>/&gt;</b></code></pre>
+<pre><b>&lt;link</b> rel=&quot;stylesheet&quot; media=&quot;min-width: 600px&quot; href=&quot;example.css&quot; <b>/&gt;</b></pre>
 
 <p>This stylesheet is still downloaded but is applied only on devices
 with screen width larger than 600px.</p>
@@ -4146,21 +4146,21 @@ Media queries</a> are not supported at all in IE8 and below (MS managment sucks)
 example, <a href="https://github.com/scottjehl/Respond">Respond</a> can be added to add media query support for IE8 only With
 the following code:</p>
 
-<pre><code>&lt;!&minus;-&lbrack;if lt IE 9&rbrack;<b>&gt;</b>
+<pre>&lt;!&minus;-&lbrack;if lt IE 9&rbrack;<b>&gt;</b>
 <b>&lt;script</b>
   src=&quot;respond.min.js&quot;<b>&gt;</b>
 <b>&lt;/script&gt;</b>
-&lt;!&lbrack;endif&rbrack;&minus;-<b>&gt;</b></code></pre>
+&lt;!&lbrack;endif&rbrack;&minus;-<b>&gt;</b></pre>
 
 <p><a href="https://code.google.com/p/css3-mediaqueries-js/">CSS Mediaqueries</a>
 is another library that does the same thing. The code for adding that
 library to your HTML would be identical:</p>
 
-<pre><code>&lt;!&minus;-&lbrack;if lt IE 9&rbrack;<b>&gt;</b>
+<pre>&lt;!&minus;-&lbrack;if lt IE 9&rbrack;<b>&gt;</b>
 <b>&lt;script</b>
   src=&quot;css3-mediaqueries.js&quot;<b>&gt;</b>
 <b>&lt;/script&gt;</b>
-&lt;!&lbrack;endif&rbrack;&minus;-<b>&gt;</b></code></pre>
+&lt;!&lbrack;endif&rbrack;&minus;-<b>&gt;</b></pre>
 
 <h4>The alternative</h4>
 
@@ -4168,9 +4168,9 @@ library to your HTML would be identical:</p>
 adding an IE&lt;9 only stylesheet where you adjust your styling specific
 to IE&lt;9. For that, you should add the following HTML to your code:</p>
 
-<pre><code>&lt;!&minus;-&lbrack;if lt IE 9&rbrack;<b>&gt;</b>
+<pre>&lt;!&minus;-&lbrack;if lt IE 9&rbrack;<b>&gt;</b>
 <b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;style-ielt9.css&quot;<b>/&gt;</b>
-&lt;!&lbrack;endif&rbrack;&minus;-<b>&gt;</b></code></pre>
+&lt;!&lbrack;endif&rbrack;&minus;-<b>&gt;</b></pre>
 
 <h4>Note:</h4>
 
@@ -4191,7 +4191,7 @@ paragraph flowing around the image. Notice that it is always content
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<pre><b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
 nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
 Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
@@ -4202,14 +4202,14 @@ massa. Vestibulum lacinia arcu eget nulla. <b>&lt;/p&gt;</b>
 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque 
 nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin 
 ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, 
-massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b></code></pre>
+massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>img {
+<pre>img {
   <b>float</b>: left;
   <b>margin-right</b>: 1rem;
-}</code></pre>
+}</pre>
 
 <h4>This will be the output;<h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4239,7 +4239,7 @@ massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b></code></pr
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;html&gt;</b>
+<pre><b>&lt;html&gt;</b>
 <b>&lt;head&gt;</b>
 <b>&lt;style&gt;</b>
 img {
@@ -4259,7 +4259,7 @@ ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum <b>&lt;/p&gt;</b>
 Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum <b>&lt;/p&gt;</b>
 
 <b>&lt;/body&gt;</b>
-<b>&lt;/html&gt;</b></code></pre>
+<b>&lt;/html&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch14-3">Section 14.3: Clearfix</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4277,17 +4277,17 @@ clearfix reloaded</a> by T.J. Koblentx);</p>
 
 <h4>Clearfix (with top margin collapsing of contained floats still occurring)</h4>
 
-<pre><code>.cf: after {
+<pre>.cf: after {
   <b>content</b>: &quot;&quot;;
   <b>display</b>: table;
 }
 .cf: after {
   <b>clear</b>: both;
-}</code></pre>
+}</pre>
 
 <h4>Clearfix also preventing top margin collapsing of contained floats</h4>
 
-<pre><code>/&ast;&ast;
+<pre>/&ast;&ast;
  &ast; For modern browsers
  &ast; 1. The space content is one way to avoid an Opera bug when the
  &ast; contenteditable attribute is included anywhere else in the document.
@@ -4303,11 +4303,11 @@ clearfix reloaded</a> by T.J. Koblentx);</p>
 }
 # .cf:after {
   <b>clear</b>: both;
-}</code></pre>
+}</pre>
 
 <h4>Clearfix with support of outdated browsers IE6 and IE7</h4>
 
-<pre><code>.cf:before,
+<pre>.cf:before,
 .cf:after {
   <b>content</b>: &quot; &quot;;
   <b>display</b>: table;
@@ -4321,7 +4321,7 @@ clearfix reloaded</a> by T.J. Koblentx);</p>
 *&ast;/
 .cf {
   &ast;zoom: 1;
-}</code></pre>
+}</pre>
 
 <p><a href="http://codepen.io/PhilippeVay/pen/OXEqgW?editors=0100">Codepen showing ClearFix effect</a></p>
 
@@ -4335,13 +4335,13 @@ has Layout relates to outdated browsers IE6 maybe 7)</p>
 page width and the siblings are place one below the other irrespective
 of their width.</p>
 
-<pre><code><b>&lt;div&gt;</b>
+<pre><b>&lt;div&gt;</b>
   <b>&lt;p&gt;</b>This is DIV 1<b>&lt;/p&gt;</b>
 <b>&lt;/div&gt;</b>
 
 <b>&lt;div&gt;</b>
   <b>&lt;p&gt;</b>This is DIV 2<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>The output of the following code will be;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4358,18 +4358,18 @@ of their width.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;outer-div&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;outer-div&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;inner-div1&quot;<b>&gt;</b>
     <b>&lt;p&gt;</b>This is DIV 1<b>&lt;/p&gt;</b>
   <b>&lt;/div&gt;</b>
   <b>&lt;div</b> class=&quot;inner-div2&quot;<b>&gt;
     <p>&lt;p&gt;</b>This is DIV 2<b>&lt;/p&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.inner-div1 {
+<pre>.inner-div1 {
   <b>width</b>: 50&percnt;;
   <b>margin-right</b>: 0px;
   <b>float</b>: left;
@@ -4385,7 +4385,7 @@ of their width.</p>
 }
 p {
   <b>text-align</b>: center;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 38. this is div 1 left blue and div 2 right red (86) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -4415,7 +4415,7 @@ multiple columns appear to be the same height.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;sidebar&quot;<b>&gt;</b>
     <b>&lt;h2&gt;</b>Sidebar<b>&lt;/h2&gt;</b>
     
@@ -4431,11 +4431,11 @@ nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis t
 ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, 
 massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b>
 <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>width</b>: 600px;
   <b>padding</b>: 20px;
   <b>background-color</b>: pink;
@@ -4453,13 +4453,13 @@ massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b>
   <b>width</b>: 450px;
   <b>float</b>: right;
   <b>background-color</b>: yellow;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch14-7">Section 14.7: Simple Three Fixed-Width Column Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;left-sidebar&quot;<b>&gt;</b>
     <b>&lt;h1&gt;</b>Left Sidebar<b>&lt;/h1&gt;</b>
     <b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>&lt;/p&gt;</b>
@@ -4476,11 +4476,11 @@ massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b>
     <b>&lt;h1&gt;</b>Right Sidebar<b>&lt;/h1</b>
     <b>&lt;p&gt;</b>Fusce ac turpis quis ligula lacinia aliquet.<b>&lt;/p&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>width</b>: 600px;
   <b>background-color</b>: pink;
   <b>padding</b>: 20px;
@@ -4503,7 +4503,7 @@ massa. Fusce ac turpis quis ligula lacinia aliquet. <b>&lt;/p&gt;</b>
   <b>width</b>: 150px;
   <b>background-color</b>: green;
   <b>float</b>: right;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch14-8">Section 14.8: Two-Column Lazy/Greedy Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4515,7 +4515,7 @@ column is &quot;greedy,&quot; in that it takes up all the remaining space.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;sidebar&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;sidebar&quot;<b>&gt;</b>
 <b>&lt;h1&gt;</b>Sidebar<b>&lt;/h1&gt;</b>
 <b>&lt;img</b> src=&quot;http://lorempixel.com/150/200/&quot; <b>/&gt;</b>
 <b>&lt;/div&gt;</b>
@@ -4532,7 +4532,7 @@ nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis t
 ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, 
 massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper 
 vel, tincidunt sed, euismod in, nibh. <b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 .sidebar {
@@ -4545,7 +4545,7 @@ vel, tincidunt sed, euismod in, nibh. <b>&lt;/p&gt;</b>
   /* &apos;overflow:hidden;&apos; prevents &apos;.content&apos; from flowing under &apos;.sidebar&apos; */
   <b>overflow</b>: hidden;
   <b>background-color</b>: yellow;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/ooprqsL0/">Demo Fiddle</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4572,9 +4572,9 @@ vel, tincidunt sed, euismod in, nibh. <b>&lt;/p&gt;</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>With the syntax:</p>
 
-<pre><code>element {
+<pre>element {
   <b>font</b>: &lbrack;font-style&rbrack; &lbrack;font-variant&rbrack; &lbrack;font-weight&rbrack; &lbrack;font-size/line-height&rbrack; &lbrack;font-family&rbrack;;
-}</code></pre>
+}</pre>
 
 <p>You can have all your font-related styles in one declaration with the
 font shorthand. Simply use the font property, and put your values in
@@ -4583,17 +4583,17 @@ the correct order.</p>
 <p>For example, to make all p elements bold with a font size of 20px and
 using Arial as the font family typically you would code it as follows:</p>
 
-<pre><code>p {
+<pre>p {
   <b>font-weight</b>: bold;
   <b>font-size</b>: 20px;
   <b>font-family</b>: Arial, sans-serif;
-}</code></pre>
+}</pre>
 
 <p>However with the font shorthand it can be condensed as follows:</p>
 
-<pre><code>p {
+<pre>p {
   <b>font</b>: bold 20px Arial, sans-serif;
-}</code></pre>
+}</pre>
 
 <p><b>Note</b>: that since font-style, font-variant, font-weight and
 line-height are optional, the three of them are skipped in this
@@ -4619,31 +4619,31 @@ and fontfamily. If they are not both included the shortcut is ignored.</p>
 <p>The quotes property is used to customize the opening and closing quotation 
 marks of the <b>&gt;</b> tag.</p>
 
-<pre><code>q {
+<pre>q {
   <b>quotes</b>: &quot;«&quot; &quot;»&quot;;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-3">Section 15.3: Font Size</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;element-one&quot;<b>&gt;</b>Hello I am some text.<b>&lt;/div&gt;</b>
-<b>&lt;div</b> id=&quot;element-two&quot;<b>&gt;</b>Hello I am some smaller text.<b>&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> id=&quot;element-one&quot;<b>&gt;</b>Hello I am some text.<b>&lt;/div&gt;</b>
+<b>&lt;div</b> id=&quot;element-two&quot;<b>&gt;</b>Hello I am some smaller text.<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>#element-one {
+<pre>#element-one {
   <b>font-size</b>: 30px;
 }
 #element-two {
   <b>font-size</b>: 10px;
-}</code></pre>
+}</pre>
 
 <p>The text inside #element-one will be 30px in size, while the text in #element-two will be 10px in size.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-4">Section 15.4: Text Direction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>div {
+<pre>div {
   <b>direction</b>: ltr; /* Default, text read read from left-to-right */
 }
 .ex {
@@ -4657,7 +4657,7 @@ marks of the <b>&gt;</b> tag.</p>
 }
 .vertical-ltr {
   <b>writing-mode</b>: vertical-rl;  /* text read from left-to-right and top to bottom */
-}</code></pre>
+}</pre>
 
 <p>The direction property is used to change the horizontal text direction of an 
 element.</p>
@@ -4672,7 +4672,7 @@ language.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-5">Section 15.5: Font Stacks</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>font-family</b>: &apos;Segoe UI&apos;, Tahoma, sans-serif;</code></pre>
+<pre><b>font-family</b>: &apos;Segoe UI&apos;, Tahoma, sans-serif;</pre>
 
 <p>The browser will attempt to apply the font face &quot;Segoe UI&quot; to the
 characters within the elements targeted by the above property. If this
@@ -4682,7 +4682,7 @@ necessary, any sans-serif font on the user&apos;s computer. Note that any
 font names with more than one word such as &quot;Segoe UI&quot; need to have
 single or double quotes around them.</p>
 
-<pre><code><b>font-family</b>: Consolas, &apos;Courier New&apos;, monospace;</code></pre>
+<pre><b>font-family</b>: Consolas, &apos;Courier New&apos;, monospace;</pre>
 
 <p>The browser will attempt to apply the font face &quot;Consolas&quot; to the
 characters within the elements targeted by the above property. If this
@@ -4695,16 +4695,16 @@ and, if necessary, any monospace font on the user&apos;s computer.</p>
 <p>The text-overflow property deals with how overflowed content should be signaled 
 to users. In this example, the ellipsis represents clipped text.</p>
 
-<pre><code>.text {
+<pre>.text {
   <b>overflow</b>: hidden;
   <b>text-overflow</b>: ellipsis;
-}</code></pre>
+}</pre>
 
 <p>Unfortunately, only works on a single line of text. There is no way to
 support ellipsis on the last line in standard CSS, but it can be
 achieved with non-standard webkit-only implementation of flexboxes.</p>
 
-<pre><code>.giveMeEllipsis {
+<pre>.giveMeEllipsis {
   <b>overflow</b>: hidden;
   <b>text-overflow</b>: ellipsis;
   <b>display</b>: -webkit-box;
@@ -4712,7 +4712,7 @@ achieved with non-standard webkit-only implementation of flexboxes.</p>
   -webkit-line-clamp: N;  /* number of lines to show */
   <b>line-height</b>: X;  /* fallback */
   <b>max-height</b>: X&ast;N; /* fallback */
-}</code></pre>
+}</pre>
 
 <p>Example (open in Chrome or Safari):</p>
 <p><a href="http://jsfiddle.net/csYjC/1131/">jsFiddle</a>.</p>
@@ -4725,7 +4725,7 @@ achieved with non-standard webkit-only implementation of flexboxes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To add shadows to text, use the text-shadow property. The syntax is as follows:</p>
 
-<pre><code><b>text-shadow</b>: horizontal-offset vertical-offset blur color;</code></pre>
+<pre><b>text-shadow</b>: horizontal-offset vertical-offset blur color;</pre>
 
 <h4>Shadow without blur radius</h4>
 
@@ -4736,17 +4736,17 @@ achieved with non-standard webkit-only implementation of flexboxes.</p>
 <p>This creates a blue shadow effect around a heading</p>
 To add a blur effect, add an option blur radius argument
 
-<pre><code>h1 {
+<pre>h1 {
   <b>text-shadow</b>: 2px 2px 10px #0000FF;
-}</code></pre>
+}</pre>
 
 <h4>Multiple Shadows</h4>
 
 <p>To give an element multiple shadows, separate them with commas</p>
 
-<pre><code>h1 {
+<pre>h1 {
   <b>text-shadow</b>: 0 0 3px #FF0000, 0 0 5px #0000FF;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-8">Section 15.8: Text Transform</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4755,7 +4755,7 @@ Valid values are: uppercase, capitalize, lowercase, initial, inherit, and none.<
 
 <h4>CSS:</h4>
 
-<pre><code>.example1 {
+<pre>.example1 {
   <b>text-transform</b>: uppercase;
 }
 .example2 {
@@ -4763,11 +4763,11 @@ Valid values are: uppercase, capitalize, lowercase, initial, inherit, and none.<
 }
 .example3 {
   <b>text-transform</b>: lowercase;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p</b> class=&quot;example1&quot;<b>&gt;</b>
+<pre><b>&lt;p</b> class=&quot;example1&quot;<b>&gt;</b>
   all letters in uppercase&lt;!&minus;-&quot;ALL LETTERS IN UPPERCASE&quot;&minus;-&gt;
 <b>&lt;/p&gt;</b>
 <b>&lt;p</b>class =&quot;example2&quot;<b>&gt;</b>
@@ -4775,32 +4775,32 @@ Valid values are: uppercase, capitalize, lowercase, initial, inherit, and none.<
 <b>&lt;/p&gt;</b>
 <b>&lt;p</b> class=&quot;example3&quot;<b>&gt;</b>
   all letters in lowercase&lt;!&minus;-&quot;all letters in lowercase&quot;&minus;-&gt;
-<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;/p&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-9">Section 15.9: Letter Spacing</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>h2 {
+<pre>h2 {
   /* adds a 1px space horizontally between each letter;
   also known as tracking */
   <b>letter-spacing</b>: 1px;
-}</code></pre>
+}</pre>
 
 <p>The letter-spacing property is used to specify the space between the characters 
 in a text.</p>
 
 <p>!letter-spacing also supports negative values:</p>
 
-<pre><code>p {
+<pre>p {
   <b>letter-spacing</b>: -1px;
-}</code></pre>
+}</pre>
 
 <p>Resources: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing">Letter Spacing</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15-10">Section 15.10: Text Indent</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>p {
+<pre>p {
   <b>text-indent</b>: 50px;
-}</code></pre>
+}</pre>
 
 <p>The text-indent property specifies how much horizontal space text
 should be moved before the beginning of the first line of the text
@@ -4818,24 +4818,24 @@ content of an element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The text-decoration property is used to set or remove decorations from text.</p>
 
-<pre><code>h1 { <b>text-decoration</b>: none; }
+<pre>h1 { <b>text-decoration</b>: none; }
 h2 { <b>text-decoration</b>: overline; }
 h3 { <b>text-decoration</b>: line-through; }
-h4 { <b>text-decoration</b>: underline; }</code></pre>
+h4 { <b>text-decoration</b>: underline; }</pre>
 
 <p>text-decoration can be used in combination with text-decoration-style
 and text-decoration-color as a shorthand property:</p>
 
-<pre><code>.title { <b>text-decoration</b>: underline dotted blue; }</code></pre>
+<pre>.title { <b>text-decoration</b>: underline dotted blue; }</pre>
 
 <p>This is a shorthand version of</p>
 
-<pre><code>.title
+<pre>.title
 {
   <b>text-decoration-style</b>: dotted;
   <b>text-decoration-line</b>: underline;
   <b>text-decoration-color</b>: blue;
-}</code></pre>
+}</pre>
 
 <p>It should be noted that the following properties are only supported in Firefox</p>
 
@@ -4861,17 +4861,17 @@ words.</p>
 
 <h4>CSS</h4>
 
-<pre><code>.normal    { <b>word-spacing</b>: normal; }
+<pre>.normal    { <b>word-spacing</b>: normal; }
 .narrow    { <b>word-spacing</b>: -3px; }
-.extensive {<b>word-spacing</b>: 10px; }</code></pre>
+.extensive {<b>word-spacing</b>: 10px; }</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p&gt;</b>
+<pre><b>&lt;p&gt;</b>
   <b>&lt;span</b> class=&quot;normal&quot;<b>&gt;</b>This is an example, showing the effect of &quot;word-spacing&quot;.<b>&lt;/span&gt;&lt;br&gt;</b>
   <b>&lt;span</b> class=&quot;narrow&quot;<b>&gt;</b>This is an example, showing the effect of &quot;word-spacing&quot;.<b>&lt;/span&gt;&lt;br&gt;</b> 
   <b>&lt;span</b> class=&quot;extensive&quot;<b>&gt;</b>This is an example, showing the effect of &quot;word-spacing&quot;.<b>&lt;/span&gt;&lt;br&gt;</b>
-<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;/p&gt;</b></pre>
 
 <h4>Online-Demo</h4>
 
@@ -4900,18 +4900,18 @@ original text) smaller in size than the letters that originally uppercase.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>.smallcaps {
+<pre>.smallcaps {
   <b>font-variant</b>: small-caps;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code>
+<pre>
 <b>&lt;p</b> class=&quot;smallcaps&quot;<b>&gt;</b>
   Documentation about CSS Fonts
   <b>&lt;br&gt;</b>
   aNd ExAmpLe
-<b>&lt;/p&gt;</b></code></pre>
+<b>&lt;/p&gt;</b></pre>
 
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4943,20 +4943,20 @@ and shrinks them to prevent overflow.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;aligner&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;aligner&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;aligner-item&quot;<b>&gt;</b>...<b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.aligner {
+<pre>.aligner {
   <b>display</b>: flex;
   <b>align-items</b>: center;
   <b>justify-content</b>: center;
 }
 .aligner-item {
   <b>max-width</b>: 50&percnt;; /* for demo. Use actual width instead. */
-}</code></pre>
+}</pre>
 
 <p>Here is a <a href="http://codepen.io/asim-coder/pen/ZOobqz">demo (CodePen)</a>.</p>
 
@@ -4975,11 +4975,11 @@ and shrinks them to prevent overflow.</p>
 
 <p>All of the below styles are applied onto this simple layout:</p>
 
-<pre><code><b>&lt;div</b> id=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;container&quot;<b>&gt;</b>
   <b>&lt;div&gt;&lt;/div&gt;</b>
   <b>&lt;div&gt;&lt;/div&gt;</b>
   <b>&lt;div&gt;&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>where #container is the flex-box.</p>
 
@@ -4987,11 +4987,11 @@ and shrinks them to prevent overflow.</p>
 
 <b>CSS:</b>
 
-<pre><code>div#container {
+<pre>div#container {
   <b>display</b>: flex;
   <b>flex-direction</b>: row;
   <b>justify-content</b>: center;
-}</code></pre>
+}</pre>
 
 <b>Outcome:</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5010,11 +5010,11 @@ Here is the <a href="https://jsfiddle.net/d6pc5bmd/">demo jsFiddle</a>.
 
 <b>CSS:</b>
 
-<pre><code>div#container {
+<pre>div#container {
   <b>display</b>: flex;
   <b>flex-direction</b>: column;
   <b>justify-content</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>Outcome:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5033,11 +5033,11 @@ Here is the <a href="https://jsfiddle.net/d6pc5bmd/">demo jsFiddle</a>.
 
 <h4>CSS:</h4>
 
-<pre><code>div#container {
+<pre>div#container {
   <b>display</b>: flex;
   <b>flex-direction</b>: row;
   <b>align-items</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>Outcome:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5058,11 +5058,11 @@ Here is the <a href="https://jsfiddle.net/d6pc5bmd/">demo jsFiddle</a>.
 
 <h4>CSS:</h4>
 
-<pre><code>div#container {
+<pre>div#container {
   <b>display</b>: flex;
   <b>flex-direction</b>: column;
   <b>align-items</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>Outcome:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5079,12 +5079,12 @@ Here is the <a href="https://jsfiddle.net/d6pc5bmd/">demo jsFiddle</a>.
 
 <h4>Example: Combination for centering both on horizontal flexbox</h4>
 
-<pre><code>div #container {
+<pre>div #container {
   <b>display</b>: flex;
   <b>flex-direction</b>: row;
   <b>justify-content</b>: center;
   <b>align-items</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>Outcome:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5101,12 +5101,12 @@ Here is the <a href="https://jsfiddle.net/d6pc5bmd/">demo jsFiddle</a>.
 
 <h4>Example: Combination for centering both on vertical flexbox</h4>
 
-<pre><code>div #container {
+<pre>div #container {
   <b>display</b>: flex;
   <b>flex-direction</b>: column;
   <b>justify-content</b>: center;
   <b>align-items</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>Outcome:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5132,7 +5132,7 @@ is also pushed out of the viewport.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;header&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;header&quot;<b>&gt;</b>
   <b>&lt;h2&gt;</b>Header<b>&lt;/h2&gt;</b>
 <b>&lt;/div&gt;</b>
 
@@ -5148,11 +5148,11 @@ is also pushed out of the viewport.</p>
 
 <b>&lt;div</b> class=&quot;footer&quot;<b>&gt;</b>
   <b>&lt;h4&gt;</b>Footer<b>&lt;/h4&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 </h4>CSS:</h4>
 
-<pre><code>html, body {
+<pre>html, body {
   <b>height</b>: 100&percnt;;
 }
 body {
@@ -5167,7 +5167,7 @@ body {
   <b>background-color</b>: grey;
   <b>color</b>: white;
   <b>flex</b>: none;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch16-3">Section 16.3: Optimally fit elements to their container</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5178,17 +5178,17 @@ containers to their parent element.</p>
 
 <h4>HTML:</h4>
 
-<pre><code>&lt;div class = &quot;flex-container&quot;&gt;
+<pre>&lt;div class = &quot;flex-container&quot;&gt;
 &lt;div class = &quot;flex-item&quot;&gt;1 &lt;/div&gt;
 &lt;div class = &quot;flex-item&quot;&gt;2 &lt;/div&gt;
 &lt;div class = &quot;flex-item&quot;&gt;3 &lt;/div&gt;
 &lt;div class = &quot;flex-item&quot;&gt;4 &lt;/div&gt;
 &lt;div class = &quot;flex-item&quot;&gt;5 &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.flex-container {
+<pre>.flex-container {
   <b>background-color</b>:#000;
   <b>height</b>:100&percnt;; display: flex; flex-direction: row;
   <b>flex-wrap</b>: wrap; justify-content: flex-start; align-content: stretch;
@@ -5199,7 +5199,7 @@ containers to their parent element.</p>
   <b>margin</b>:0.1em; <b>flex-grow</b>: 1;
   <b>flex-shrink</b>:0;
   <b>flex-basis</b>:200px; /* or % could be used to ensure a specific layout */
-}</code></pre>
+}</pre>
 
 <h4>Outcome:</h4>
 
@@ -5224,7 +5224,7 @@ achieve this with a very simple markup:</p>
 
 <h4>HTML Markup:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;header</b> class=&quot;header&quot;<b>&gt;</b>Header<b>&lt;/header&gt;</b>
   <b>&lt;div</b> class=&quot;content-body&quot;<b>&gt;</b>
     <b>&lt;main</b> class=&quot;content&quot;<b>&gt;</b>Content<b>&lt;/main&gt;</b>
@@ -5232,11 +5232,11 @@ achieve this with a very simple markup:</p>
     <b>&lt;aside</b> class=&quot;ads&quot;<b>&gt;</b>Ads<b>&lt;/aside&gt;</b>
   <b>&lt;/div&gt;</b>
   <b>&lt;footer</b> class=&quot;footer&quot;<b>&gt;</b>Footer<b>&lt;/footer&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>body {
+<pre>body {
   <b>margin</b>: 0; 
   <b>padding</b>: 0;
 }
@@ -5269,7 +5269,7 @@ achieve this with a very simple markup:</p>
 }
 .footer {
   <b>flex</b>: 0 0 50px;
-}</code></pre>
+}</pre>
 
 <a href="https://jsfiddle.net/adityarb88/hek6ms0x/">Demo (jsFiddle)</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5291,7 +5291,7 @@ achieve this with a very simple markup:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;cards&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;cards&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;card&quot;<b>&gt;</b>
     <b>&lt;p&gt;</b>Lorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim 
       mollit labore dolore voluptate ullamco et ut sed qui minim.<b>&lt;/p&gt;</b>
@@ -5308,14 +5308,14 @@ achieve this with a very simple markup:</p>
       mollit labore dolore voluptate ullamco et ut sed qui minim.<b>&lt;/p&gt;</b>
     <b>&lt;p&gt;&lt;button&gt;</b>Action<b>&lt;/button&gt;&lt;/p&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>First of all, we use CSS to apply <b>display</b>: flex; to the container. This 
 will create 2 columns equal in height with the content flowing naturally inside it.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>.cards {
+<pre>.cards {
   <b>display</b>: flex;
 }
 .card {
@@ -5331,7 +5331,7 @@ button {
 }
 p: last-child {
   <b>text-align</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>The layout will change and become like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5352,7 +5352,7 @@ the required result.</p>
 
 <h4>Final CSS:</h4>
 
-<pre><code>.cards {
+<pre>.cards {
   <b>display</b>: flex;
 }
 .card {
@@ -5370,7 +5370,7 @@ button {
 p: last-child {
   <b>text-align</b>: center;
   <b>margin-top</b>: auto;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch16-6">Section 16.6: Same height on nested containers</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5383,7 +5383,7 @@ See working example:</a></p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;div</b> style=&quot;background-color: red&quot;<b>&gt;</b>
     Some <b>&lt;br/&gt;</b>
     data <b>&lt;br /&gt;</b>
@@ -5394,15 +5394,15 @@ See working example:</a></p>
     Fewer <b>&lt;br /&gt;</b>
     lines <b>&lt;br /&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.container {
+<pre>.container {
   <b>display</b>: flex;
   <b>align-items</b>: stretch; // Default value
 }
-</code></pre>
+</pre>
 
 <p>Note: <a href="http://caniuse.com/#search=flexbox">Does not work on IE versions under 10</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5431,7 +5431,7 @@ styles applied by the sequence with the highest overall specificity.</p>
 
 <h4>Example 1: Specificity of various selector sequences</h4>
 
-<pre><code>#foo #baz {}             /* a=2, b=0, c=0 */<br/>
+<pre>#foo #baz {}             /* a=2, b=0, c=0 */<br/>
 #foo .bar {}             /* a=1, b=1, c=0 */<br/>
 #foo {}                  /* a=1, b=0, c=0 */<br/>
 .bar: hover {}           /* a=0, b=2, c=0 */<br/>
@@ -5444,19 +5444,19 @@ p::after {}              /* a=0, b=0, c=2 */<br/>
 &ast;::before {}             /* a=0, b=0, c=1 */<br/>
 ::before {}              /* a=0, b=0, c=1 */<br/>
 div {}                   /* a=0, b=0, c=1 */<br/>
-&ast; {}                     /* a=0, b=0, c=0 */</code></pre>
+&ast; {}                     /* a=0, b=0, c=0 */</pre>
 
 <h4>Example 2: How specificity is used by the browser</h4>
 
 <p>Imagine the following CSS implementation:</p>
 
-<pre><code>#foo {
+<pre>#foo {
   <b>color</b>: blue;
 }
 .bar {
   <b>color</b>: red;
   <b>background</b>: black;
-}</code></pre>
+}</pre>
 
 <p>Here we have an ID selector which declares color as <i>blue</i>, and a
 class selector which declares color as <i>red</i> and background as
@@ -5471,13 +5471,13 @@ cause the browser to ignore the .bar selector&apos;s color declaration.</p>
 
 <h4>Now imagine a different CSS implementation:</h4>
 
-<pre><code>.bar {
+<pre>.bar {
   <b>color</b>: red;
   <b>background</b>: black;
 }
 .baz {
   <b>background</b>: white;
-}</code></pre>
+}</pre>
 
 <p>Here we have two class selectors; one of which declares color as <i>red</i>
 and background as <i>black</i>, and the other declares background as <i>white</i>.</p>
@@ -5494,8 +5494,8 @@ this for us: as .baz is defined <i>after</i> .bar, our element ends up with the
 .bar class selector&apos;s color declaration is used instead of that of
 the .baz class selector.</p>
 
-<pre><code>.bar {}     /* a=0, b=1, c=0 */
-.baz {}     /* a=0, b=1, c=0 */</code></pre>
+<pre>.bar {}     /* a=0, b=1, c=0 */
+.baz {}     /* a=0, b=1, c=0 */</pre>
 
 <p>The most common way to achieve this would be to find out what other
 selectors can be applied to the .bar selector sequence. For example,
@@ -5504,8 +5504,8 @@ modify the .bar selector to span.bar. This would give it a new Group
 <i>C</i> specificity, which would override the .baz selector&apos;s lack
 thereof:</p>
 
-<pre><code>span .bar {}  /* a=0, b=1, c=1 */
-.baz {}       /* a=0, b=1, c=0 */</code></pre>
+<pre>span .bar {}  /* a=0, b=1, c=1 */
+.baz {}       /* a=0, b=1, c=0 */</pre>
 
 <p>However it may not always possible to find another common selector
 which is shared between any element which uses the .bar class. Because
@@ -5515,8 +5515,8 @@ Instead of just .bar, we can use instead (See
 Selectors, W3C Recommendation</a>). This still selects any element with a 
 class of .bar, but now has double the Group <i>B</i> specificity:</p>
 
-<pre><code>.bar.bar {}  /* a=0, b=2, c=0 */
-.baz {}      /* a=0, b=1, c=0 */</code></pre>
+<pre>.bar.bar {}  /* a=0, b=2, c=0 */
+.baz {}      /* a=0, b=1, c=0 */</pre>
 
 <h4>!important and inline style declarations</h4>
 
@@ -5558,7 +5558,7 @@ higher to overwrite another method, make it higher but as low as
 possible to make it higher. You shouldn&apos;t need to have a selector
 like this:</p>
 
-<pre><code>body.page header.container nav div#main-nav li a {}</code></pre>
+<pre>body.page header.container nav div#main-nav li a {}</pre>
 
 <p>This makes future changes harder and pollutes that css page.</p>
 
@@ -5569,7 +5569,7 @@ like this:</p>
 <p>The !important declaration is used to override the usual specificity in a style 
 sheet by giving a higher priority to a rule. Its usage is: property : value !important;</p>
 
-<pre><code>#mydiv {
+<pre>#mydiv {
   <b>font-weight</b>: bold !important; /* This property won&apos;t be overridden
                                  by the rule below */
 }
@@ -5577,7 +5577,7 @@ sheet by giving a higher priority to a rule. Its usage is: property : value !imp
   <b>font-weight</b>: normal;         /* #mydiv font-weight won&apos;t be set to normal
                                  even if it has a higher specificity because
                                  of the !important declaration above */
-}</code></pre>
+}</pre>
 
 <p>Avoiding the usage of !important is strongly recommended (unless
 absolutely necessary), because it will disturb the natural flow of css
@@ -5635,9 +5635,9 @@ what style to use.</p>
 
 <h4>Example 1 - Specificity rules</h4>
 
-<pre><code>.mystyle { <b>color</b>: blue; } /* specificity: 0, 0, 1, 0 */
+<pre>.mystyle { <b>color</b>: blue; } /* specificity: 0, 0, 1, 0 */
 div { <b>color</b>: red; }       /* specificity: 0, 0, 0, 1 */
-<b>&lt;div</b> class=&quot;mystyle&quot;<b>&gt;</b>Hello World<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=&quot;mystyle&quot;<b>&gt;</b>Hello World<b>&lt;/div&gt;</b></pre>
 
 <p>What color will the text be? (hover to see the answer)</p>
 
@@ -5652,28 +5652,28 @@ specificity &quot;wins&quot;.</p>
 
 <h4><i>External css file</i></h4>
 
-<pre><code>.class {
+<pre>.class {
   <b>background</b>: #FFF;
-}</code></pre>
+}</pre>
 
 <h4><i>Internal css (in HTML file)</i></h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
 .class {
   background: #000;
 }
-<b>&lt;style&gt;</b></code></pre>
+<b>&lt;style&gt;</b></pre>
 
 <p>In this case, where you have identical selectors, the cascade kicks
 in, and determines that the last one loaded &quot;wins&quot;.</p>
 
 <h4>Example 3 - Cascade rules after Specificity rules</h4>
 
-<pre><code>body &gt; .mystyle { <b>background-color</b>: blue; }  /* specificity: 0, 0, 1, 1 */
+<pre>body &gt; .mystyle { <b>background-color</b>: blue; }  /* specificity: 0, 0, 1, 1 */
 .otherstyle &gt; div { <b>background-color</b>: red; } /* specificity: 0, 0, 1, 1 */
 <b>&lt;body</b> class=&quot;otherstyle&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;mystyle&quot;<b>&gt;</b>Hello World<b>&lt;/div&gt;</b>
-<b>&lt;/body&gt;</b></code></pre>
+<b>&lt;/body&gt;</b></pre>
 
 <p>What color will the background be?</p>
 
@@ -5697,7 +5697,7 @@ the rule &quot;wins&quot;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch17-4">Section 17.4: More complex specificity example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>div {
+<pre>div {
   <b>font-size</b>: 7px;
   <b>border</b>: 3px dotted pink;
   <b>background-color</b>: yellow;
@@ -5720,7 +5720,7 @@ body.mystyle &gt; div.myotherstyle {
   <b>&lt;div</b> id=&quot;elmnt1&quot; class=&quot;myotherstyle&quot;<b>&gt;</b>
     Hello, world!
   <b>&lt;/div&gt;</b>
-<b>&lt;/body&gt;</b></code></pre>
+<b>&lt;/body&gt;</b></pre>
 
 <p>What borders, colors, and font-sizes will the text be? font-size:</p>
 
@@ -5760,11 +5760,11 @@ body.mystyle &gt; div.myotherstyle {
 
 <p>Here currentColor evaluates to red since the color property is set to red:</p>
 
-<pre><code>div {
+<pre>div {
   <b>color</b>: red;
   <b>border</b>: 5px solid currentColor;
   <b>box-shadow</b>: 0 0 5px currentColor;
-}</code></pre>
+}</pre>
 
 <p>In this case, specifying currentColor for the border is most likely
 redundant because omitting it should produce identical results. Only
@@ -5774,34 +5774,34 @@ it would be overwritten otherwise due to a more specific selector.</p>
 <p>Since it&apos;s the computed color, the border will be green in the
 following example due to the second rule overriding the first:</p>
 
-<pre><code>div {
+<pre>div {
   <b>color</b>: blue;
   <b>border</b>: 3px solid currentColor;
   <b>color</b>: green;
-}</code></pre>
+}</pre>
 
 <h4>Inherited from parent element</h4>
 
 <p>The parent&apos;s color is inherited, here currentColor evaluates to
 &apos;blue&apos;, making the child element&apos;s border-color blue.</p>
 
-<pre><code>.parent-class {
+<pre>.parent-class {
   <b>color</b>: blue;
 }
 .parent-class .child-class {
   <b>border-color</b>: currentColor;
-}</code></pre>
+}</pre>
 
 <p>currentColor can also be used by other rules which normally would not inherit 
 from the color property, such as background-color. The example below shows the 
 children using the color set in the parent as its background:</p>
 
-<pre><code>.parent-class {
+<pre>.parent-class {
   <b>color</b>: blue;
 }
 .parent-class .child-class {
   <b>background-color</b>: currentColor;
-}</code></pre>
+}</pre>
 
 <h4>Possible Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5819,9 +5819,9 @@ children using the color set in the parent as its background:</p>
 <p>Most browsers support using color keywords to specify a color. For
 example, to set the color of an element to blue, use the blue keyword:</p>
 
-<pre><code>.some-class {
+<pre>.some-class {
   <b>color</b>: blue;
-}</code></pre>
+}</pre>
 
 <p>CSS keywords are not case sensitive---blue, Blue and BLUE will all
 result in #0000FF.</p>
@@ -6010,7 +6010,7 @@ is 256 &Hat; 3 or 16,777,216.</p>
 | gg           | 00-FF for the amount of green. |
 | bb           | 00-FF for the amount of blue. |
 
-<pre><code>.some-class {
+<pre>.some-class {
   /* This is equivalent to using the color keyword &apos;blue&apos; */
   <b>color</b>: #0000FF;
 }
@@ -6018,7 +6018,7 @@ is 256 &Hat; 3 or 16,777,216.</p>
   /* If you want to specify each range value with a single number, you can!
      This is equivalent to &apos;#0000FF&apos; (and &apos;blue&apos;) */
   <b>color</b>: #00F;
-}</code></pre>
+}</pre>
 
 <p><a href="https://en.wikipedia.org/wiki/Hexadecimal">Hexadecimal notation</a> is 
 used to specify color values in the RGB color format, per the 
@@ -6043,18 +6043,18 @@ decimal equivalent of the Hexadecimal Notation. In Hexadecimal each
 number ranges from 00-FF which is equivalent to 0-255 in decimal and
 0%-100% in percentages.</p>
 
-<pre><code>.some-class {
+<pre>.some-class {
   /* Scalar RGB, equivalent to &apos;blue&apos; */
   <b>color</b>: rgb (0,0,255);
 }
 .also-blue {
   /* Percentile RGB values */
   <b>color</b>: rgb(0&percnt;, 0&percnt;, 100&percnt;);
-}</code></pre>
+}</pre>
 
 <h4><b>Syntax</b></h4>
 
-<pre><code>rgb(&lt;red&gt;, &lt;green&gt;, &lt;blue&gt;)</code></pre>
+<pre>rgb(&lt;red&gt;, &lt;green&gt;, &lt;blue&gt;)</pre>
 
 
 |<b>Value</b> | <b>Description</b> |
@@ -6068,18 +6068,18 @@ number ranges from 00-FF which is equivalent to 0-255 in decimal and
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Similar to rgb() notation, but with an additional alpha (opacity) value.</p>
 
-<pre><code>.red {
+<pre>.red {
   /* Opaque red */
   <b>color</b>: rgba (255, 0, 0, 1);
 }
 .red-50p {
   /* Half-translucent red. */
   <b>color</b>: rgba(255, 0, 0, .5);
-}</code></pre>
+}</pre>
 
 <h4>Syntax</h4>
 
-<pre><code>rgba(&lt;red&gt;, &lt;green&gt;, &lt;blue&gt;, &lt;alpha&gt;);</code></pre>
+<pre>rgba(&lt;red&gt;, &lt;green&gt;, &lt;blue&gt;, &lt;alpha&gt;);</pre>
 
 | <b>Value</b> | <b>Description</b>
 |--------------|--------------------------------|
@@ -6097,9 +6097,9 @@ color&quot;) and <b>lightness</b> (&quot;how much white&quot;).</p>
 <p>Hue is represented as an angle from 0° to 360° (without units), while
 saturation and lightness are represented as percentages.</p>
 
-<pre><code>p {
+<pre>p {
   <b>color</b>: hsl(240, 100&percnt;, 50&percnt;); /* Blue */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 189. saturation and hue (124) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -6113,7 +6113,7 @@ saturation and lightness are represented as percentages.</p>
 
 <h4>Syntax</h4>
 
-<pre><code><b>color</b>: hsl(&lt;hue&gt;, &lt;saturation&gt;&percnt;, &lt;lightness&gt;&percnt;);</code></pre>
+<pre><b>color</b>: hsl(&lt;hue&gt;, &lt;saturation&gt;&percnt;, &lt;lightness&gt;&percnt;);</pre>
 
 | <b>Value</b> | <b>Description</b> |
 |----------------|-------------------------------------------|
@@ -6135,13 +6135,13 @@ saturation and lightness are represented as percentages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Similar to hsl() notation, but with an added alpha (opacity) value.</p>
 
-<pre><code>hsla(240, 100%, 50%, 0)   /* transparent */
+<pre>hsla(240, 100%, 50%, 0)   /* transparent */
 hsla(240, 100%, 50%, 0.5) /* half-translucent blue */
-hsla(240, 100%, 50%, 1)   /* fully opaque blue */</code></pre>
+hsla(240, 100%, 50%, 1)   /* fully opaque blue */</pre>
 
 <h4>Syntax</h4>
 
-<pre><code>hsla(&lt;hue&gt;, &lt;saturation&gt;&percnt;, &lt;lightness&gt;&percnt;, &lt;alpha&gt;);</code></pre>
+<pre>hsla(&lt;hue&gt;, &lt;saturation&gt;&percnt;, &lt;lightness&gt;&percnt;, &lt;alpha&gt;);</pre>
 
 | <b>Value</b> | <b>Description</b> |
 |--------------|-------------------------------------------------|
@@ -6160,9 +6160,9 @@ hsla(240, 100%, 50%, 1)   /* fully opaque blue */</code></pre>
 can be anywhere from 0.0 (transparent) to 1.0 (opaque).
 
 <h4>Example Usage</h4>
-<pre><code><b>&lt;div</b> style=&quot;opacity:0.8;&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> style=&quot;opacity:0.8;&quot;<b>&gt;</b>
   This is a partially transparent element
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 | <b>Property Value</b> | <b>Transparency</b> |
 |-----------------------|----------------------|
@@ -6176,14 +6176,14 @@ can be anywhere from 0.0 (transparent) to 1.0 (opaque).
 <h3 id="ch19-2">Section 19.2: IE Compatibility for &apos;opacity&apos;</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To use opacity in all versions of IE, the order is:</p>
-<pre><code>.transparent-element {
+<pre>.transparent-element {
   /* for IE 8 & 9 */
   -ms-filter: &quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=60)&quot;; // IE8
   /* works in IE 8 & 9 too, but also 5, 6, 7 */
   <b>filter</b>: alpha(opacity=60);  // IE 5&minus;7
   /* Modern Browsers */
   <b>opacity</b>: 0.6;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch20">Chapter 20: Length Units</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6226,13 +6226,13 @@ font-size.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;input</b> type=&quot;button&quot; value=&quot;Button&quot;<b>&gt;</b>
+<pre><b>&lt;input</b> type=&quot;button&quot; value=&quot;Button&quot;<b>&gt;</b>
 <b>&lt;input</b> type=&quot;range&quot;<b>&gt;</b>
-<b>&lt;input</b> type=&quot;text&quot; value=&quot;Text&quot;<b>&gt;</b></code></pre>
+<b>&lt;input</b> type=&quot;text&quot; value=&quot;Text&quot;<b>&gt;</b></pre>
 
 <h4>Relevant CSS:</h4>
 
-<pre><code>html {
+<pre>html {
   <b>font-size</b>: 16px;
 }
 input&lbrack;type=&quot;button&quot;&rbrack; {
@@ -6247,7 +6247,7 @@ input&lbrack;type=&quot;range&quot;&rbrack; {
 input&lbrack;type=text&rbrack; {
   <b>font-size</b>: 1rem;
   <b>padding</b>: 0.5em;
-}</code></pre>
+}</pre>
 
 <h4>Possible Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6297,7 +6297,7 @@ sizes expressed in rem units, assuming that the base size is 16px:</p>
 
 <p>Version ≥ 3</p>
 
-<pre><code>html {
+<pre>html {
   <b>font-size</b>: 16px;
 }
 h1 {
@@ -6308,7 +6308,7 @@ p {
 }
 li {
   <b>font-size</b>: 1.5em; /* 24px */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch20-3">Section 20.3: vmin and vmax</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6339,10 +6339,10 @@ li {
 
 <h4>Version ≥ 3</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 20vw;
   <b>height</b>: 20vh;
-}</code></pre>
+}</pre>
 
 <p>Above, the size for the div takes up 20% of the width and height of
 the viewport.</p>
@@ -6368,16 +6368,16 @@ the viewport.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;parent&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;parent&quot;<b>&gt;</b>
   PARENT
   <b>&lt;div</b> class=&quot;child&quot;<b>&gt;</b>
     CHILD
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
 &ast;{
   color: #CCC;
 }
@@ -6389,7 +6389,7 @@ the viewport.</p>
   background-color: green;
   width: 50%;
 }
-<b>&lt;/style&gt;</b></code></pre>
+<b>&lt;/style&gt;</b></pre>
 
 <b>OUTPUT</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6437,7 +6437,7 @@ special state, they allow you to style certain parts of a document.</p>
 <p>The content attribute is required for pseudo-elements to render;
 however, the attribute can have an empty value (e.g.content: &quot;&quot;).</p>
 
-<pre><code>div::after {
+<pre>div::after {
   <b>content</b>: &apos;after&apos;;
   <b>color</b>: red;
   <b>border</b>: 1px solid red;
@@ -6451,7 +6451,7 @@ div::before {
   <b>content</b>: &apos;before&apos;;
   <b>color</b>: green;
   <b>border</b>: 1px solid green;
-}</code></pre>
+}</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ section 21-1. before, div element, after (131) ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6469,28 +6469,28 @@ unordered lists, ul).</p>
 
 <p>The first step is to remove the default list bullets:</p>
 
-<pre><code>ul {
+<pre>ul {
   <b>list-style-type</b>: none;
-}</code></pre>
+}</pre>
 
 <p>Then you add the custom styling. In this example, we will create
 gradient boxes for bullets.</p>
 
-<pre><code>li:before {
+<pre>li:before {
   <b>content</b>: &quot;&quot;;
   <b>display</b>: inline-block;
   <b>margin-right</b>: 10px;
   <b>height</b>: 10px;
   <b>width</b>: 10px;
   <b>background</b>: linear-gradient (red, blue);
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;ul&gt;</b>
+<pre><b>&lt;ul&gt;</b>
   <b>&lt;li&gt;</b>Test I<b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Test II<b>&lt;/li&gt;</b>
-<b>&lt;/ul&gt;</b></code></pre>
+<b>&lt;/ul&gt;</b></pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6536,13 +6536,13 @@ under that.
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;div1&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> id=&quot;div1&quot;<b>&gt;&lt;/div&gt;</b>
 <b>&lt;div</b> id=&quot;div2&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;div</b> id=&quot;div3&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> id=&quot;div3&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>div {
+<pre>div {
   <b>position</b>: absolute;
   <b>height</b>: 200px;
   <b>width</b>: 200px;
@@ -6564,7 +6564,7 @@ div #div3 {
   <b>left</b>: 50px;
   <b>top</b>: 150px;
   <b>background-color</b>: red;
-}</code></pre>
+}</pre>
 
 <h4>This creates the following effect:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6581,7 +6581,7 @@ div #div3 {
 
 <b>Syntax</b>
 
-<pre><code><b>z-index</b>: &lbrack; number &rbrack; &vert; auto;</code></pre>
+<pre><b>z-index</b>: &lbrack; number &rbrack; &vert; auto;</pre>
 
 | <b>Parameter</b> | <b>Details</b> |
 |--------------|---------------------------------------------|
@@ -6615,11 +6615,11 @@ on the page. Offset properties:</p>
 
 <p>specify the element should appear in relation to its next non-static containing element.</p>
 
-<pre><code>.abspos {
+<pre>.abspos {
   <b>position</b>: absolute;
   <b>top</b>: 0px;
   <b>left</b>: 500px;
-}</code></pre>
+}</pre>
 
 <p>This code will move the box containing element with attribute down 0px
 and right 500px relative to its containing element.</p>
@@ -6631,12 +6631,12 @@ flow and set its position relatively to the browser window. One
 obvious use is when we want something to be visible when we scroll to
 the bottom of a long page.</p>
 
-<pre><code>
+<pre>
 #stickyDiv {
   <b>position</b>: fixed;
   <b>top</b>: 10px;
   <b>left</b>: 10px;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch22-4">Section 22.4: Relative Position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6650,11 +6650,11 @@ in <i>normal flow</i> .Offset properties:</p>
 
 <p>are used to indicate how far to move the element from where it would have been in normal flow.</p>
 
-<pre><code>.relpos {
+<pre>.relpos {
   <b>position</b>: relative;
   <b>top</b>: 20px;
   <b>left</b>: 30px;
-}</code></pre>
+}</pre>
 
 <p>This code will move the box containing element with attribute class=&quot;relpos&quot; 
 20px down and 30px to the right from where it would have been in normal flow.</p>
@@ -6670,9 +6670,9 @@ MDN</a>:</p>
   flow. The top, right, bottom, left and z-index properties do not apply.
 </blockquote>
 
-<pre><code>.element {
+<pre>.element {
   <b>position</b>: static;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch23">Chapter 23: Layout Control</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6728,7 +6728,7 @@ the name) and do not break the flow of the text.</p>
 element. It starts with a new line and, in contrast to inline
 elements, it does not restrict the type of elements it may contain.</p>
 
-<pre><code><b>&lt;div&gt;</b>Hello world!<b>&lt;/div&gt;&lt;div&gt;</b>This is an example!<b>&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;</b>Hello world!<b>&lt;/div&gt;&lt;div&gt;</b>This is an example!<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 23-1-b.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -6754,7 +6754,7 @@ as a result are affected by rules controlling the flow of text such as
 text-align. By default they are also shrunk to the the smallest size
 possible to accommodate their content.</p>
 
-<pre><code>&lt;!&minus;-Inline: unordered list&minus;-&gt;
+<pre>&lt;!&minus;-Inline: unordered list&minus;-&gt;
 <b>&lt;style&gt;</b>
 li {
   display : inline;
@@ -6770,9 +6770,9 @@ li {
   <b>&lt;li&gt;</b>First Element <b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Second Element <b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Third Element <b>&lt;/li&gt;</b>
-<b>&lt;/ul&gt;</b></code></pre>
+<b>&lt;/ul&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 23-1-c.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ section 23-1-c. 3 horizontal rectangles (xxx) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/section-23-1-c.png"
   style="width:40%"
@@ -6780,7 +6780,7 @@ li {
   alt="3 horizontal rectangles; First Element, Second Element, Third Element." />
 </p>
 
-<pre><code>&lt;!&minus;-block: unordered list&minus;-&gt;
+<pre>&lt;!&minus;-block: unordered list&minus;-&gt;
 <b>&gt;&lt;style&gt;</b>
 li {
   display : block;
@@ -6796,9 +6796,9 @@ li {
   <b>&lt;li&gt;</b>First Element<b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Second Element<b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Third Element<b>&lt;/li&gt;</b>
-<b>&lt;/ul&gt;</b></code></pre>
+<b>&lt;/ul&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 23-1-d.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ section 23-1-d. 3 vertical rectangles (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/section-23-1-d.png"
   style="width:60%"
@@ -6806,7 +6806,7 @@ li {
   alt="3 vertical rectangles; First Element, Second Element, Third Element." />
 </p>
 
-<pre><code>&lt;!&minus;-Inline-block: unordered list&minus;-&gt;
+<pre>&lt;!&minus;-Inline-block: unordered list&minus;-&gt;
 <b>&lt;style&gt;</b>
 li {
   display : inline-block;
@@ -6821,9 +6821,9 @@ li {
   <b>&lt;li&gt;</b>First Element <b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Second Element <b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Third Element <b>&lt;/li&gt;</b>
-<b>&lt;/ul&gt;</b></code></pre>
+<b>&lt;/ul&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 23-1-e.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ section 23-1-e. 3 horizontal rectangles (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/section-23-1-e.png"
   style="width:40%"
@@ -6838,13 +6838,13 @@ not be displayed at all.</p>
 
 <p>For example let&apos;s create a div-element that has an id of myDiv:</p>
 
-<pre><code><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> id=&quot;myDiv&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <p>This can now be marked as not being displayed by the following CSS rule:</p>
 
-<pre><code>#myDiv {
+<pre>#myDiv {
   <b>display</b>: none;
-}</code></pre>
+}</pre>
 
 <p>When an element has been set to be <b>display</b>:none; the browser ignores every other
 layout property for that specific element (both position and float). No box will 
@@ -6865,7 +6865,7 @@ actually delete and re-create them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>This is the normal HTML table structure</h4>
 
-<pre><code><b>&lt;style&gt;</b>
+<pre><b>&lt;style&gt;</b>
   table {
     width: 100&percnt;;
   }
@@ -6876,11 +6876,11 @@ actually delete and re-create them.</p>
         I&apos;m a table
       <b>&lt;/td&gt;</b>
     <b>&lt;/tr&gt;</b>
-  <b>&lt;/table&gt;</b></code></pre>
+  <b>&lt;/table&gt;</b></pre>
 
 <p>You can do same implementation like this;</p>
 
-<pre><code>
+<pre>
 <b>&lt;style&gt;</b>
   .table-div {
     display: table;
@@ -6899,7 +6899,7 @@ actually delete and re-create them.</p>
       I behave like a table now
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch24">Chapter 24: Grid</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6914,19 +6914,19 @@ divide a web page content into rows and columns in an easy way.</p>
 <p>The CSS Grid is defined as a display property. It applies to a parent element and its immediate children only.</p>
 <p>Consider the following markup:</p>
 
-<pre><code><b>&lt;section</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;section</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;item1&quot;<b>&gt;</b>item1<b>&lt;/div&gt;</b>
   <b>&lt;div</b> class=&quot;item2&quot;<b>&gt;</b>item2<b>&lt;/div&gt;</b>
   <b>&lt;div</b> class=&quot;item3&quot;<b>&gt;</b>item3<b>&lt;/div&gt;</b>
   <b>&lt;div</b> class=&quot;item4&quot;<b>&gt;</b>item4<b>&lt;/div&gt;</b>
-<b>&lt;/section&gt;</b></code></pre>
+<b>&lt;/section&gt;</b></pre>
 
 <p>The easiest way to define the markup structure above as a grid is to
 simply set its display property to grid:</p>
 
-<pre><code>.container {
+<pre>.container {
   <b>display</b>: grid;
-}</code></pre>
+}</pre>
 
 <p>However, doing this will invariably cause all the child elements to
 collapse on top of one another. This is because the children do not
@@ -6937,17 +6937,17 @@ explicitly tell them.</p>
 columns will make up its structure and we can do this using the
 grid-columns and grid-rows properties (note the pluralisation):</p>
 
-<pre><code>.container {
+<pre>.container {
   <b>display</b>: grid;
   <b>grid-columns</b>: 50px 50px 50px;
   <b>grid-rows</b>: 50px 50px;
-}</code></pre>
+}</pre>
 
 <p>However, that still doesn&apos;t help us much because we need to give an
 order to each child element. We can do this by specifying the grid-row
 and grid-column values which will tell it where it sits in the grid:</p>
 
-<pre><code>.container .item1 {
+<pre>.container .item1 {
   <b>grid-column</b>: 1;
   <b>grid-row</b>: 1;
 }
@@ -6962,7 +6962,7 @@ and grid-column values which will tell it where it sits in the grid:</p>
 .container .item4 {
   <b>grid-column</b>: 2;
   <b>grid-row</b>: 2;
-}</code></pre>
+}</pre>
 
 <p>By giving each item a column and row value it identifies the items
 order within the container.</p>
@@ -7128,7 +7128,7 @@ caption-side property:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 150px;
   <b>height</b>: 150px;
   <b>background-color</b>: red;
@@ -7136,11 +7136,11 @@ caption-side property:</p>
 }
 div:hover {
   <b>background-color</b>: green;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <p>This example will change the background color when the div is hovered
 the background-color change will last 1 second.</p>
@@ -7186,19 +7186,19 @@ to a linear transition.</p>
 <p>Since cubic-bezier is the most flexible transition in CSS, you can translate all 
 other transition timing function to cubic-bezier functions:</p>
 
-<pre><code>linear:cubic-bezier(0,0,1,1)
+<pre>linear:cubic-bezier(0,0,1,1)
 
 ease-in: cubic-bezier(0.42, 0.0, 1.0, 1.0)
 
 ease-out: cubic-bezier(0.0, 0.0, 0.58, 1.0)
 
-ease-in-out: cubic-bezier(0.42, 0.0, 0.58, 1.0)</code></pre>
+ease-in-out: cubic-bezier(0.42, 0.0, 0.58, 1.0)</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch26-3">Section 26.3: Transition (longhand)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 
-<pre><code>div {
+<pre>div {
   <b>height</b>: 100px;
   <b>width</b>: 100px;
   <b>border</b>: 1px solid;
@@ -7210,7 +7210,7 @@ ease-in-out: cubic-bezier(0.42, 0.0, 0.58, 1.0)</code></pre>
 div: hover {
   <b>height</b>: 200px;
   <b>width</b>: 200px;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
@@ -7245,10 +7245,10 @@ div: hover {
 
 <h4>@keyframes</h4>
 
-<pre><code>|               
+<pre>|               
 | &lbrack; from | to | <b>&lt;percentage&gt;</b> &rbrack; | You can either specify a set time with a percentage value, or two percentage values, IE |
 |                             | 10&percnt;, 20&percnt;, for a period of time where the keyframe's set attributes are set. |
-| block                       | Any amount of CSS attributes for the keyframe. |</code></pre>
+| block                       | Any amount of CSS attributes for the keyframe. |</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch27-1">Section 27.1: Animations with keyframes</h3>
@@ -7262,7 +7262,7 @@ keyframe, to define more complex animations.</p>
 <p>In this example, we&apos;ll make a basic background animation that cycles
 between all colors.</p>
 
-<pre><code><span style="color:blue">&commat;keyframes</span> rainbow-background {
+<pre><span style="color:blue">&commat;keyframes</span> rainbow-background {
  0&percnt;       { <b>background-color</b>: #ff0000; } 
  8.333&percnt;   { <b>background-color</b>: #ff8000; } 
  16.667&percnt;  { <b>background-color</b>: #ffff00; } 
@@ -7279,18 +7279,18 @@ between all colors.</p>
 }
 .RainbowBackground {
   <b>animation</b>: rainbow-background 5s infinite;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/s9m3od3p/6/">View Result</a>.</p>
 
 <p>There&apos;s a few different things to note here. First, the actual
 <span style="color:blue">&commat;</span>keyframes syntax.</p>
 
-<pre><code><span style="color:blue">&commat;</span>keyframes rainbow-background{</code></pre>
+<pre><span style="color:blue">&commat;</span>keyframes rainbow-background{</pre>
 
 <p>This sets the name of the animation to rainbow-background.</p>
 
-<pre><code>0&percnt;    { <b>background-color</b>: #ff0000; }</code>></pre> 
+<pre>0&percnt;    { <b>background-color</b>: #ff0000; }</code>></pre> 
 
 <p>This is the definition for a keyframe within the animation. The first
 part, the 0&percnt; in the case, defines where the keyframe is during the
@@ -7302,9 +7302,9 @@ setting the next background color at 8.333&percnt;, the animation will
 smoothly take 8.333&percnt; of the time to transition between those
 keyframes.</p>
 
-<pre><code>.RainbowBackground {
+<pre>.RainbowBackground {
   <b>animation</b>: rainbow-background 5s infinite;
-}</code></pre>
+}</pre>
 
 <p>This code attaches our animation to all elements which have the .RainbowBackground class.</p>
 
@@ -7326,7 +7326,7 @@ keyframes.</p>
 statement. In this case, the two 0&percnt; and 100&percnt; lines could be replaced
 with this single line:</p>
 
-<pre><code>0&percnt;, 100&percnt; { <b>background-color</b>: #ff0000;}</code></pre>
+<pre>0&percnt;, 100&percnt; { <b>background-color</b>: #ff0000;}</pre>
 
 <h4>Cross-browser compatibility</h4>
 
@@ -7334,9 +7334,9 @@ with this single line:</p>
 on both the &commat;keyframes declaration and the animation property, like
 so:</p>
 
-<pre><code><b>@-webkit-keyframes</b>{}
+<pre><b>@-webkit-keyframes</b>{}
 
-&minus;webkit-animation: &period;..</code></pre>
+&minus;webkit-animation: &period;..</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch27-2">Section 27.2: Animations with the transition property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7345,14 +7345,14 @@ number-based CSS properties to animate between states.</p>
 
 <b>Example</b>
 
-<pre><code>.Example {
+<pre>.Example {
   <b>height</b>: 100px;
   <b>background</b>: #fff;
 }
 .Example: hover {
   <b>height</b>: 120px;
   <b>background</b>: #ff0000;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/0kcm6rwo/"><i>View Result</i></a></p>
 
@@ -7363,10 +7363,10 @@ background color to red (#ff0000).</p>
 <p>By adding the transition property, we can cause these changes to occur
 over time:</p>
 
-<pre><code>.Example {
+<pre>.Example {
   &period;..
   <b>transition</b>: all 400ms ease;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/v2j4ggue/1/">View Result</a></p>
 
@@ -7388,11 +7388,11 @@ slow again. Other values are linear, ease-out, and ease-in.</p>
 browsers, excepting IE 9. For earlier versions of Firefox and
 Webkit-based browsers, use vendor prefixes like so:</p>
 
-<pre><code>.Example {
+<pre>.Example {
   <b>transition</b>: all 400ms ease;
   -moz-transition: all 400ms ease;
   -webkit-transition: all 400ms ease;
-}</code></pre>
+}</pre>
 
 <p><i>Note:</i> The transition property can animate changes between any two
 numerical values, regardless of unit. It can also transition between
@@ -7405,20 +7405,20 @@ element&apos;s height from 100px to auto.</p>
 <p>Our first syntax example shows the animation shorthand property using
 all of the available properties/parameters:</p>
 
-<pre><code><b>animation</b>:      3s        ease-in              1s     2             reverse     both     paused slidein;
+<pre><b>animation</b>:      3s        ease-in              1s     2             reverse     both     paused slidein;
 /*              duration &vert; timing-function &vert; delay &vert; iteration-count &vert; direction &vert; fill-mode &vert; play-
-state &vert; name */</code></pre>
+state &vert; name */</pre>
 
 <p>Our second example is a little more simple, and shows that some properties can be omitted:</p>
 
-<pre><code><b>animation</b>:      3s        linear               1s       slidein; 
-/*                duration &vert; timing-function &vert; delay &vert; name */</code></pre>
+<pre><b>animation</b>:      3s        linear               1s       slidein; 
+/*                duration &vert; timing-function &vert; delay &vert; name */</pre>
 
 <p>Our third example shows the most minimal declaration. Note that the
 animation-name and animation-duration must be declared:</p>
 
-<pre><code><b>animation</b>: 3s         slidein;
-/*        duration &vert; name */</code></pre>
+<pre><b>animation</b>: 3s         slidein;
+/*        duration &vert; name */</pre>
 
 <p>It&apos;s also worth mentioning that when using the animation shorthand
 the order of the properties makes a difference. Obviously the browser
@@ -7427,14 +7427,14 @@ may confuse your duration with your delay.</p>
 <p>If brevity isn&apos;t your thing, you can also skip the shorthand property
 and write out each property individually:</p>
 
-<pre><code>  <b>animation-duration</b>: 3s;
+<pre>  <b>animation-duration</b>: 3s;
   <b>animation-timing-function</b>: ease-in;
   <b>animation-delay</b>: 1s;
   <b>animation-iteration-count</b>: 2;
   <b>animation-direction</b>: reverse;
   <b>animation-fill-mode</b>: both;
   <b>animation-play-state</b>: paused;
-  <b>animation-name</b>: slidein;</code></pre>
+  <b>animation-name</b>: slidein;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch27-4">Section 27.4: Increasing Animation Performance Using the &apos;will-change&apos; Attribute</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7453,10 +7453,10 @@ performance.</p>
 to be animated. For example, if you plan on transforming an object and
 changing its opacity, you would specify:</p>
 
-<pre><code>.Example {
+<pre>.Example {
   &period;..
   <b>will-change</b>: transform, opacity;
-}</code></pre>
+}</pre>
 
 <p><b>Note:</b> Use will-change sparingly. Setting will-change for every
 element on a page can cause performance problems, as the browser may
@@ -7498,23 +7498,23 @@ increasing the amount of processing done by the GPU.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;rotate&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;rotate&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.rotate {
+<pre>.rotate {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background</b>: teal;
   <b>transform</b>: rotate (45deg);
-}</code></pre>
+}</pre>
 
 <p>This example will rotate the div by 45 degrees clockwise. The center
 of rotation is in the center of the div, 50&percnt; from left and 50&percnt; from
 top. You can change the center of rotation by setting the
 transform-origin property.</p>
 
-<pre><code><b>transform-origin</b>: 100&percnt; 50&percnt;;</code></pre>
+<pre><b>transform-origin</b>: 100&percnt; 50&percnt;;</pre>
 
 <p>The above example will set the center of rotation to the middle of the right side end.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7522,16 +7522,16 @@ transform-origin property.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;scale&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;scale&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.scale {
+<pre>.scale {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background</b>: teal;
   <b>transform</b>: scale (0.5, 1.3);
-}</code></pre>
+}</pre>
 
 <p>This example will scale the div to 100px &ast; 0.5 = 50px on the X axis and to 100px &ast; 1.3 = 130px on the Y axis.</p>
 <p>The center of the transform is in the center of the div, 50&percnt; from left and 50&percnt; from top.</p>
@@ -7540,16 +7540,16 @@ transform-origin property.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;skew&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;skew&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.skew {
+<pre>.skew {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background</b>: teal;
   <b>transform</b>: skew (20deg, -30deg);
-}</code></pre>
+}</pre>
 
 <p>This example will skew the div by 20 degrees on the X axis and by &minus; 30 degrees on the Y axis.
 The center of the transform is in the center of the div, 50&percnt; from left and 50&percnt; from top.</p>
@@ -7560,7 +7560,7 @@ The center of the transform is in the center of the div, 50&percnt; from left an
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Multiple transforms can be applied to an element in one property like this:</p>
 
-<pre><code><b>transform</b>: rotate(15deg) translateX(200px);</code></pre>
+<pre><b>transform</b>: rotate(15deg) translateX(200px);</pre>
 
 <p>This will rotate the element 15 degrees clockwise and then translate
 it 200px to the right.</p>
@@ -7579,11 +7579,11 @@ an axis rotate 15 degrees clockwise as shown in the following image:</p>
 
 <p>Changing the order of the transforms will change the output. The first example will be different to</p>
 
-<pre><code><b>transform</b>: translateX(200px) rotate(15deg);
+<pre><b>transform</b>: translateX(200px) rotate(15deg);
 <b>&lt;div</b> class=&quot;transform&quot;<b>&gt;&lt;/div&gt;</b>
 .transform {
   <b>transform</b>: rotate(15deg) translateX(200px);
-}</code></pre>
+}</pre>
 
 <p>As shown in this image:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7599,16 +7599,16 @@ an axis rotate 15 degrees clockwise as shown in the following image:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;translate&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;translate&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.translate {
+<pre>.translate {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background</b>: teal;
   <b>transform</b>: translate (200px, 50&percnt;);
-}</code></pre>
+}</pre>
 
 <p>This example will move the div by 200px on the X axis and by 100px &ast; 50&percnt; = 50px on the Y axis.</p>
 
@@ -7616,15 +7616,15 @@ an axis rotate 15 degrees clockwise as shown in the following image:</p>
 
 <p>On the X axis:</p>
 
-<pre><code>.translate {
+<pre>.translate {
   <b>transform</b>: translateX(200px);
-}</code></pre>
+}</pre>
 
 <p>On the Y axis:</p>
 
-<pre><code>.translate {
+<pre>.translate {
   <b>transform</b>: translateY(50&percnt;);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch28-6">Section 28.6: Transform Origin</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7639,12 +7639,12 @@ it&apos;s top right corner with <b>transform-origin</b>: 100&percnt; 0. The rota
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;transform originl&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;div</b> class=&quot;transform origin2&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;transform originl&quot;<b>&gt;&lt;/div&gt;</b>
+<b>&lt;div</b> class=&quot;transform origin2&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.transform {
+<pre>.transform {
   <b>display</b>: inline-block;
   <b>width</b>: 200px;
   <b>height</b>: 100px;
@@ -7659,7 +7659,7 @@ it&apos;s top right corner with <b>transform-origin</b>: 100&percnt; 0. The rota
 }
 .transform: hover {
   <b>transform</b>: rotate(30deg);
-}</code></pre>
+}</pre>
 
 <p>The default value for the transform-origin property is 50&percnt; 50&percnt; which is the
 center of the element.</p>
@@ -7670,7 +7670,7 @@ center of the element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 
-<pre><code>div.needle {
+<pre>div.needle {
   <b>margin</b>:100px;
   <b>height</b>:150px;
   <b>width</b>:150px;
@@ -7678,11 +7678,11 @@ center of the element.</p>
   /* presentational */
   <b>background-image</b>: linear-gradient(to top left, #555 0&percnt;, #555 40&percnt;, #444 50&percnt;, #333 97&percnt;);
   <b>box-shadow</b>:inset 6px 6px 22px 8px #272727;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&apos;needle&apos;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&apos;needle&apos;<b>&gt;&lt;/div&gt;</b></pre>
 
 <p>In the above example, a needle or compass pointer shape is created
 using 3D transforms. Generally when we apply the rotate transform on
@@ -7734,13 +7734,13 @@ create something that resembles the Safari logo or a compass dial.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;title&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;title&quot;<b>&gt;</b>
   <b>&lt;h1</b> data-content=&quot;HOVER&quot;<b>&gt;</b>HOVER<b>&lt;/h1&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>&ast;{<b>margin</b>:0;<b>padding</b>:0;}
+<pre>&ast;{<b>margin</b>:0;<b>padding</b>:0;}
 html,body{<b>height</b>:100&percnt;;<b>width</b>:100&percnt;;<b>overflow</b>:hidden;<b>background</b>:#0099CC;}
 #title {
   <b>position</b>: absolute;
@@ -7776,7 +7776,7 @@ h1:after {
   <b>transform-origin</b>:0 100&percnt;;
   <b>transform</b>:translatez(-200px) rotate(40deg) skewX(35deg);
   <b>border-radius</b>:0 0 100&percnt; 0;
-}</code></pre>
+}</pre>
 
 <p><a href="http://codepen.io/web-tiki/pen/azeKNy">View example with additional hover effect</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7810,7 +7810,7 @@ longer faces the screen.</p>
 
 <p><a href="https://jsfiddle.net/3z3z843c/">Demo (jsFIDDLE)</a></p>
 
-<pre><code><b>&lt;div</b> class=&quot;flip&quot;<b>&gt;</b>Loren ipsum<b>&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;flip&quot;<b>&gt;</b>Loren ipsum<b>&lt;/div&gt;</b>
 <b>&lt;div</b> class=&quot;flip back&quot;<b>&gt;</b>Lorem ipsum<b>&lt;/div&gt;</b>
 .flip {
   -webkit-transform: rotateY(180deg);
@@ -7824,7 +7824,7 @@ longer faces the screen.</p>
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
-}</code></pre>
+}</pre>
 
 <p>Firefox 10+ and IE 10+ support backface-visibility without a prefix. Opera, Chrome, Safari, iOS, 
 and Android all need -webkit-backface-visibility.</p>
@@ -7844,14 +7844,14 @@ and Android all need -webkit-backface-visibility.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;cube&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;cube&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;cubeFace&quot;<b>&gt;&lt;/div&gt;</b>
   <b>&lt;div</b> class=&quot;cubeFace face2&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>body {
+<pre>body {
   <b>perspective-origin</b>: 50&percnt; 100&percnt;;
   <b>perspective</b>: 1500px;
   <b>overflow</b>: hidden;
@@ -7900,7 +7900,7 @@ and Android all need -webkit-backface-visibility.</p>
   <b>top</b>: 0;
   <b>left</b>: 100&percnt;;
   <b>transform</b>: rotateY&lpar;90deg&rpar;;
-}</code></pre>
+}</pre>
 
 <p><a href="http://codepen.io/web-tiki/pen/NNwqBa">View this example</a><br>
 Additional styling is added in the demo and a transform is applied on hover to view the 6 faces of the cube.</p>
@@ -7918,17 +7918,14 @@ Additional styling is added in the demo and a transform is applied on hover to v
 | <b>Value</b> | <b>Description</b> |
 |--------------|-------------------------------------------------------------|
 | blur&lpar;x&rpar; | Blurs the image by x pixels. |
-| brightness&lpar;x&rpar; | Brightens the image at any value above 1.0 or 100&percnt;. Below that, the image will be |
-|                         | darkened. |
-| contrast&lpar;x&rpar; | Provides more contrast to the image at any value above 1.0 or 100&percnt;. Below that, the | 
-|                       | image will get less saturated. |
+| brightness&lpar;x&rpar; | Brightens the image at any value above 1.0 or 100&percnt;. Below that, the image will be darkened. |
+| contrast&lpar;x&rpar; | Provides more contrast to the image at any value above 1.0 or 100&percnt;. Below that, the image will get less saturated. |
 | drop-shadow&lpar;h,v,x,y,z&rpar; | Gives the image a drop-shadow. h and v can have negative values. x, y, and z are optional. |
 | greyscale&lpar;x&rpar;  | Shows the image in greyscale, with a maximum value of 1.0 or 100&percnt;. |
 | hue-rotate&lpar;x&rpar; | Applies a hue-rotation to the image. |
 | invert&lpar;x&rpar;     | Inverts the color of the image with a maximum value of 1.0 or 100&percnt;. |
 | opacity&lpar;x&rpar;    | Sets how opaque/transparent the image is with a maximum value of 1.0 or 100&percnt;. |
-| saturate&lpar;x&rpar;   | Saturates the image at any value above 1.0 or 100%. Below that, the image will start to |
-|                         | de-saturate. |
+| saturate&lpar;x&rpar;   | Saturates the image at any value above 1.0 or 100%. Below that, the image will start to de-saturate. |
 | sepia&lpar;x&rpar;      | Converts the image to sepia with a maximum value of 1.0 or 100&percnt;. |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7936,14 +7933,14 @@ Additional styling is added in the demo and a transform is applied on hover to v
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></code></pre>
+<pre><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos;<b>/&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>img {
+<pre>img {
   -webkit-filter: blur(1px);
   <b>filter</b>: blur(1px);
-}</code></pre>
+}</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7961,14 +7958,14 @@ Additional styling is added in the demo and a transform is applied on hover to v
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;p&gt;</b>My shadow always follows me.<b>&lt;/p&gt;</b></code></pre>
+<pre><b>&lt;p&gt;</b>My shadow always follows me.<b>&lt;/p&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>p {
+<pre>p {
   -webkit-filter: drop-shadow(10px 10px 1px green);
   <b>filter</b>: drop-shadow(10px 10px 1px green);
-}</code></pre>
+}</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7984,14 +7981,14 @@ Additional styling is added in the demo and a transform is applied on hover to v
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></code></pre>
+<pre><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>img {
+<pre>img {
   -webkit-filter: hue-rotate(120deg);
   <b>filter</b>: hue-rotate(120deg);
-}</code></pre>
+}</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8009,14 +8006,14 @@ Additional styling is added in the demo and a transform is applied on hover to v
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></code></pre>
+<pre><b>&lt;img</b> src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald Duck&apos; <b>/&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>img {
+<pre>img {
   -webkit-filter: brightness(200&percnt;) grayscale(100&percnt;) sepia(100&percnt;) invert(100&percnt;);
   <b>filter</b>: brightness(200&percnt;) grayscale(100&percnt;) sepia(100&percnt;) invert(100&percnt;);
-}</code></pre>
+}</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8032,17 +8029,17 @@ Additional styling is added in the demo and a transform is applied on hover to v
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background-color</b>: white;
   -webkit-filter: invert(100&percnt;);
   <b>filter</b>: invert(100&percnt;);
-}</code></pre>
+}</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8086,9 +8083,9 @@ Additional styling is added in the demo and a transform is applied on hover to v
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The pointer-events property allows for control over how HTML elements respond to mouse/touch events.</p>
 
-<pre><code>.disabled {
+<pre>.disabled {
   <b>pointer-events</b>: none;
-}</code></pre>
+}</pre>
 
 <p>In this example,</p>
 
@@ -8123,13 +8120,13 @@ other content is inserted by the user&apos;s typing or editing.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;input</b> id=&quot;example&quot;<b>/&gt;</b></code></pre>
+<pre><b>&lt;input</b> id=&quot;example&quot;<b>/&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>#example {
+<pre>#example {
   <b>caret-color</b>: red;
-}</code></pre>
+}</pre>
 
 <h4>Resources:</h4>
 
@@ -8160,11 +8157,11 @@ other content is inserted by the user&apos;s typing or editing.</p>
 
 <h4>HTML:</h4>
 
-<pre></code><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre></code><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.box_shadow {
+<pre>.box_shadow {
   <b>background-color</b>: #1C90F3;
   <b>width</b>: 200px;
   <b>height</b>: 100px;
@@ -8182,7 +8179,7 @@ other content is inserted by the user&apos;s typing or editing.</p>
   -webkit-box-shadow: 0px 0px 8px 2px #444444;
      -moz-box-shadow: 0px 0px 8px 2px #444444;
           <b>box-shadow</b>: 0px 0px 8px 2px #444444;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 220. blue rectangle (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -8198,25 +8195,25 @@ other content is inserted by the user&apos;s typing or editing.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.box_shadow {
+<pre>.box_shadow {
   -webkit-box-shadow: 0px 0px 10px -1px #444444;
      -moz-box-shadow: 0px 0px 10px -1px #444444;
           <b>box-shadow</b>: 0px 0px 10px -1px #444444;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch32-3">Section 32.3: inner drop shadow</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.box_shadow {
+<pre>.box_shadow {
   <b>background-color</b>: #1C90F3;
   <b>width</b>: 200px;
   <b>height</b>: 100px;
@@ -8224,7 +8221,7 @@ other content is inserted by the user&apos;s typing or editing.</p>
   -webkit-box-shadow: inset 0px 0px 10px 0px #444444;
      -moz-box-shadow: inset 0px 0px 10px 0px #444444;
       <b>box-shadow</b>: inset 0px 0px 10px 0px #444444;
-}</code></pre>
+}</pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8244,11 +8241,11 @@ other content is inserted by the user&apos;s typing or editing.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;box_shadow&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.box_shadow {
+<pre>.box_shadow {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>margin</b>: 100px;
@@ -8256,7 +8253,7 @@ other content is inserted by the user&apos;s typing or editing.</p>
                    52px -52px 0px 0px #7cbb00,
                   -52px 52px 0px 0px #00a1f1,
                    52px 52px 0px 0px #ffbb00;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 222. orange, gree, blue & yellow (ms shit colors) (xxx) ~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -8290,7 +8287,7 @@ instead of the float&apos;s box.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>img: nth-of-type (1) {
+<pre>img: nth-of-type (1) {
   <b>shape-outside</b>: circle (80px at 50&percnt; 50&percnt;);
   <b>float</b>: left;
   <b>width</b>: 200px;
@@ -8303,16 +8300,16 @@ img: nth-of-type (2) {
 p {
   <b>text-align</b>: center;
   <b>line-height</b>: 30px;  /* purely for demo */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
+<pre><b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
 <b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
 <b>&lt;p&gt;</b>Some paragraph whose text content is required to be wrapped
 such that it follows the curve of the circle on either side. And then
 there is some filler text just to make the text long enough. Lorem
-Ipsum Dolor Sit Amet&period;...<b>&lt;/p&gt;</b></code></pre>
+Ipsum Dolor Sit Amet&period;...<b>&lt;/p&gt;</b></pre>
 
 <p>In the above example, both the images are actually square images and
 when the text is placed without the shapeoutside property, it will not
@@ -8354,7 +8351,7 @@ be wrapped around when shape-outside is used and when it is not used.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>img:nth-of-type(1) {
+<pre>img:nth-of-type(1) {
   <b>shape-outside</b>: circle(80px at 50&percnt; 50&percnt;);
   <b>shape-margin</b>: 10px;
   <b>float</b>: left;
@@ -8369,16 +8366,16 @@ img:nth-of-type(2) {
 p {
   <b>text-align</b>: center;
   <b>line-height</b>: 30px;  /* purely for demo */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
+<pre><b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
 <b>&lt;img</b> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;<b>&gt;</b>
 <b>&lt;p&gt;</b>Some paragraph whose text content is required to be wrapped
 such that it follows the curve of the circle on either side. And then
 there is some filler text just to make the text long enough. Lorem
-Ipsum Dolor Sit Amet&period;...<b>&lt;/p&gt;</b></code></pre>
+Ipsum Dolor Sit Amet&period;...<b>&lt;/p&gt;</b></pre>
 
 <p>In this example, a 10px margin is added around the <b>shape</b> using
 shape-margin. This creates a bit more space between the <i>imaginary
@@ -8387,12 +8384,12 @@ flowing around.</p>
 
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 225.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 225. two red circles with text between (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="./images/image225.jpg"
   style="width:33%"
-  title=""
-  alt="." />
+  title="Two red circles with text between"
+  alt="Two red circles with text between." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch34">Chapter 34: List Styles</h2>
@@ -8420,11 +8417,11 @@ browser, these need to be set specifically.</p>
 marker. This box can either be placed inside or outside of the list
 item box.</p>
 
-<pre><code>list-style-position: inside;</code></pre>
+<pre>list-style-position: inside;</pre>
 
 <p>places the bullet within the <b>&lt;li&gt;</b> element, pushing the content to the right as needed.</p>
 
-<pre><code>list-style-position: outside;</code></pre>
+<pre>list-style-position: outside;</pre>
 
 <p>places the bullet left of the <b>&lt;li&gt;</b> element. If there is not enough
 space in the padding of the containing element, the marker box will
@@ -8437,33 +8434,33 @@ extend to the left even if it would fall off the page.</p>
 <p>Sometimes, a list should just not display any bullet points or
 numbers. In that case, remember to specify margin and padding.</p>
 
-<pre><code><b>&lt;ul&gt;</b>
+<pre><b>&lt;ul&gt;</b>
 <b>&lt;li&gt;</b>first item<b>&lt;/li&gt;</b>
 <b>&lt;li&gt;</b>second item<b>&lt;/li&gt;</b>
-<b>&lt;/ul&gt;</b></code></pre>
+<b>&lt;/ul&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>ul {
+<pre>ul {
   <b>list-style-type</b>: none;
 }
 li {
   <b>margin</b>: 0;
   <b>padding</b>: 0;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch34-3">Section 34.3: Type of Bullet or Numbering</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Specific for <b>&lt;li&gt;</b> tags within an unordered list (<b>&lt;ul&gt;</b>);
 
-<pre><code><b>list-style</b>: disc; /* A filled circle (default) */
+<pre><b>list-style</b>: disc; /* A filled circle (default) */
 <b>list-style</b>: circle; /* A hollow circle */ 
 <b>list-style</b>: square; /* A filled square */ 
-<b>list-style</b>: &apos;-&apos;; /* any string */</code></pre>
+<b>list-style</b>: &apos;-&apos;; /* any string */</pre>
 
 <p>Specific for <b>&lt;li&gt;</b> tags within an ordered list (<b>&lt;ol&gt;</b>);</p>
 
-<pre><code><b>list-style</b>: decimal; /* Decimal numbers beginning with 1 (default) */ 
+<pre><b>list-style</b>: decimal; /* Decimal numbers beginning with 1 (default) */ 
 <b>list-style</b>: decimal-leading-zero; /* Decimal numbers padded by initial zeros (01, 02, 03,* ... *10) */
 <b>list-style</b>: lower-roman;          /* Lowercase roman numerals (i., ii., iii., iv., &period;..) */
 <b>list-style</b>: upper-roman; /* Uppercase roman numerals (I., II., III., IV., &period;..) */
@@ -8471,12 +8468,12 @@ li {
 <b>list-style-type</b>: lower-alpha; /* Lowercase letters (a., b., c., d., &period;..) */
 <b>list-style-type</b>: lower-latin; /* Lowercase letters (a., b., c., d., &period;..) */ 
 <b>list-style-type</b>: upper-alpha; /* Uppercase letters (A., B., C., D., &period;..) */ 
-<b>list-style-type</b>: upper-latin; /* Uppercase letters (A., B., C., D., &period;..) */</code></pre>
+<b>list-style-type</b>: upper-latin; /* Uppercase letters (A., B., C., D., &period;..) */</pre>
 
 <p>Non-specific:</p>
 
-<pre><code><b>list-style</b>: none;    /* No visible list marker */
-<b>list-style</b>: inherit; /* Inherits from parent */</code></pre>
+<pre><b>list-style</b>: none;    /* No visible list marker */
+<b>list-style</b>: inherit; /* Inherits from parent */</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch35">Chapter 35: Counters</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8505,7 +8502,7 @@ li {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 
-<pre><code>body {
+<pre>body {
   <b>counter-reset</b>: item-counter;
 }
 .item {
@@ -8514,13 +8511,13 @@ li {
 .item: before {
   <b>content</b>: counter (item-counter, upper-roman) &quot;. &quot;; /* by specifying the upper-roman as style the
    output would be in roman numbers */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>Item No: 1<b>&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>Item No: 1<b>&lt;/div&gt;</b>
 <b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>Item No: 2<b>&lt;/div&gt;</b>
-<b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>Item No: 3<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>Item No: 3<b>&lt;/div&gt;</b></pre>
 
 <p>In the above example, the counter&apos;s output would be displayed as I,
 II, III (roman numbers) instead of the usual 1, 2, 3 as the developer
@@ -8530,7 +8527,7 @@ has explicitly specified the counter&apos;s style.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS:</h4>
 
-<pre><code>body {
+<pre>body {
   <b>counter-reset</b>: item-counter;  /* create the counter */
 }
 .item {
@@ -8554,11 +8551,11 @@ has explicitly specified the counter&apos;s style.</p>
 }
 .item-content {
   <b>padding</b>: 8px;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>
   <b>&lt;div</b> class=&apos;item-header&apos;<b>&gt;</b>Item 1 Header<b>&lt;/div&gt;</b>
   <b>&lt;div</b> class=&apos;item-content&apos;<b>&gt;</b>Lorem Ipsum Dolor Sit Amet&period;...<b>&lt;/div&gt;</b>
 <b>&lt;/div&gt;</b>
@@ -8569,7 +8566,7 @@ has explicitly specified the counter&apos;s style.</p>
 <b>&lt;div</b> class=&apos;item&apos;<b>&gt;</b>
   <b>&lt;div</b> class=&apos;item-header&apos;<b>&gt;</b>Item 3 Header<b>&lt;/div&gt;</b>
 <b>&lt;div</b> class=&apos;item-content&apos;<b>&gt;</b>Lorem Ipsum Dolor Sit Amet&period;...<b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <p>The above example numbers every &quot;item&quot; in the page and adds the
 item&apos;s number before its header (using content property of
@@ -8580,7 +8577,7 @@ item&apos;s number before its header (using content property of
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 
-<pre><code>ul {
+<pre>ul {
   <b>list-style</b>: none;
   <b>counter-reset</b>: list-item-number;  /* self nesting counter as name is same for all levels */
 }
@@ -8590,11 +8587,11 @@ li {
 li: before {
   <b>content</b>: counters (list-item-number, &quot;.&quot;)&quot; &quot;; /* usage of counters() function means value of
   counters at all higher levels are combined before printing */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;ul&gt;</b>
+<pre><b>&lt;ul&gt;</b>
   <b>&lt;li&gt;</b>Level 1
     <b>&lt;ul&gt;</b>
       <b>&lt;li&gt;</b>Level 1.1
@@ -8615,7 +8612,7 @@ li: before {
     <b>&lt;/ul&gt;</b>
   <b>&lt;/li&gt;</b>
   <b>&lt;li&gt;</b>Level 3<b>&lt;/li&gt;</b>
-<b>&lt;/ul&gt;</b></code></pre>
+<b>&lt;/ul&gt;</b></pre>
 
 <p>The above is an example of multi-level numbering using CSS counters.
 It makes use of the <i><b>self-nesting</b></i> concept of counters. Self
@@ -8645,7 +8642,7 @@ added to specify the order of operations if necessary.</p>
 
 <p>Use calc() to calculate the width of a div element:</p>
 
-<pre><code>#div1 {
+<pre>#div1 {
   <b>position</b>: absolute;
   <b>left</b>: 50px;
   <b>width</b>: calc (100&percnt; &minus; 100px);
@@ -8653,15 +8650,15 @@ added to specify the order of operations if necessary.</p>
   <b>background-color</b>: yellow;
   <b>padding</b>: 5px;
   <b>text-align</b>: center;
-}</code></pre>
+}</pre>
 
 <p>Use calc() to determine the position of a background-image:</p>
 
-<pre><code><b>background-position</b>: calc (50&percnt;&plus; 17px) calc (50&percnt;&plus; 10px), 50&percnt; 50&percnt;;</code></pre>
+<pre><b>background-position</b>: calc (50&percnt;&plus; 17px) calc (50&percnt;&plus; 10px), 50&percnt; 50&percnt;;</pre>
 
 <p>Use calc() to determine the height of an element:</p>
 
-<pre><code><b>height</b>: calc(100% - 20px);</code></pre>
+<pre><b>height</b>: calc(100% - 20px);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch36-2">Section 36.2: attr() function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8671,27 +8668,27 @@ added to specify the order of operations if necessary.</p>
 attribute which CSS can use (e.g. inside the ::before and ::after pseudo-element) using
 this function.</p>
 
-<pre><code><b>&lt;blockquote</b> data-mark=&apos;&quot;&apos;<b>&gt;&lt;/blockquote&gt;</b></code></pre>
+<pre><b>&lt;blockquote</b> data-mark=&apos;&quot;&apos;<b>&gt;&lt;/blockquote&gt;</b></pre>
 
 <p>In the following CSS block, the character is appended before and after the text inside the element:</p>
 
-<pre><code>blockquote&lbrack;data-mark&rbrack;::before,
+<pre>blockquote&lbrack;data-mark&rbrack;::before,
 blockquote&lbrack;data-mark&rbrack;::after {
   <b>content</b>: attr(data-mark);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch36-3">Section 36.3: var() function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The var() function allows CSS variables to be accessed.</p>
 
-<pre><code>/* set a variable */
+<pre>/* set a variable */
 :root {
   &minus;- primary-color: blue;
 }
 /* access variable */
 selector{
   <b>color</b>: var (&minus;-primary-color);
-}</code></pre>
+}</pre>
 
 <p>This feature is currently under development. Check 
 <a href="http://caniuse.com/#feat=css-variables">CanIuse.com</a> 
@@ -8702,14 +8699,14 @@ for the latest browser support.</p>
 <p>Creates an image representing a gradient of colors radiating from the
 center of the gradient.</p>
 
-<pre><code>radial-gradient(red, orange, yellow) /* A gradient coming out from the middle of the 
-gradient, red at the center, then orange, until it is finally yellow at the edges */</code></pre>
+<pre>radial-gradient(red, orange, yellow) /* A gradient coming out from the middle of the 
+gradient, red at the center, then orange, until it is finally yellow at the edges */</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch36-5">Section 36.5: linear-gradient() function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Creates a image representing a linear gradient of colors.</p>
 
-<pre><code>linear-gradient( 0 deg, red, yellow 50&percnt;, blue);</code></pre>
+<pre>linear-gradient( 0 deg, red, yellow 50&percnt;, blue);</pre>
 
 <p>This creates a gradient going from bottom to top, with colors starting
 at red, then yellow at 50%, and finishing in blue.</p>
@@ -8728,7 +8725,7 @@ using traditional CSS values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch37-1">Section 37.1: Variable Color</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>:root {
+<pre>:root {
   &minus;-red: #b00; 
   &minus;-blue: #4679bd; 
   &minus;- grey: #ddd;
@@ -8737,11 +8734,11 @@ using traditional CSS values.</p>
   <b>color</b>: var (&minus;- red);
   <b>background</b>: var(&minus;- grey);
   <b>border</b>: 1px solid var (&minus;- red);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch37-2">Section 37.2: Variable Dimensions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>:root {
+<pre>:root {
   &minus;-W200: 200px;
   &minus;- W 10: 10px;
 }
@@ -8749,7 +8746,7 @@ using traditional CSS values.</p>
   <b>width</b>: var (&minus;-W200);
   <b>height</b>: var (&minus;-W200);
   <b>margin</b>: var (&minus;- W 10);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch37-3">Section 37.3: Variable Cascading</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8761,13 +8758,13 @@ the highest specificity will apply to the element selected.</p>
 
 <p>Assuming this HTML:</p>
 
-<pre><code><b>&lt;a</b> class=&quot;button&quot;<b>&gt;</b>Button Green<b>&lt;/a&gt;</b>
+<pre><b>&lt;a</b> class=&quot;button&quot;<b>&gt;</b>Button Green<b>&lt;/a&gt;</b>
 <b>&lt;a</b> class=&quot;button button_red&quot;<b>&gt;</b>Button Red<b>&lt;/a&gt;</b>
-<b>&lt;a</b> class=&quot;button&quot;<b>&gt;</b>Button Hovered On<b>&lt;/a&gt;</b></code></pre>
+<b>&lt;a</b> class=&quot;button&quot;<b>&gt;</b>Button Hovered On<b>&lt;/a&gt;</b></pre>
 
 <p>We can write this CSS:</p>
 
-<pre><code>.button {
+<pre>.button {
   &minus;- color: green;
   <b>padding</b>: .5rem;
   <b>border</b>: 1px solid var (&minus;- color);
@@ -8778,7 +8775,7 @@ the highest specificity will apply to the element selected.</p>
 }
 .button_red {
   &minus;- color: red;
-}</code></pre>
+}</pre>
 
 <h4>And get this result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8796,35 +8793,35 @@ the highest specificity will apply to the element selected.</p>
 dashes just like other CSS properties (eg: lineheight,
 -moz-box-sizing) but it should start with double dashes (&minus;-)</p>
 
-<pre><code>//These are Invalids variable names
+<pre>//These are Invalids variable names
 &minus;-123color: blue;
 &minus;-&num;<b>color</b>: red;
 &minus;-bg&lowbar;color: yellow
-&minus;-&dollar;<b>width</b>: 100px;</code></pre>
+&minus;-&dollar;<b>width</b>: 100px;</pre>
 
 //Valid variable names
 &minus;-color: red;
 &minus;-bg-color: yellow
-&minus;-width: 100px;</code></pre>
+&minus;-width: 100px;</pre>
 
 <h4>CSS Variables are case sensitive</h4>
 
-<pre><code>/* The variable names below are all different variables */
+<pre>/* The variable names below are all different variables */
 &minus;-pcolor: ;
 &minus;-Pcolor: ;
-&minus;-pColor: ;</code></pre>
+&minus;-pColor: ;</pre>
 
 <h4>Empty Vs Space</h4>
 
-<pre><code>/* Invalid */
+<pre>/* Invalid */
   &minus;-color:;
 
 /* Valid */
-  &minus;-color:; /* space is assigned */</code></pre>
+  &minus;-color:; /* space is assigned */</pre>
 
 <h4>Concatenations</h4>
 
-<pre><code>/* Invalid - CSS doesn&apos;t support concatenation */
+<pre>/* Invalid - CSS doesn&apos;t support concatenation */
 .logo{
   &minus;-logo-url: &apos;logo&apos;;
   <b>background</b>: url(&apos;assets/img/&apos; var(&minus;-logo-url) &apos;.png&apos;);
@@ -8838,11 +8835,11 @@ dashes just like other CSS properties (eg: lineheight,
 .logo{
   &minus;-logo-url: url(&apos;assets/img/logo.png&apos;);
   <b>background</b>: var(&minus;-logo-url);
-}</code></pre>
+}</pre>
 
 <h4>Careful when using Units</h4>
 
-<pre><code>/* Invalid */
+<pre>/* Invalid */
 &minus;-width: 10;
 
 <b>width</b>: var(&minus;-width)px;
@@ -8853,7 +8850,7 @@ dashes just like other CSS properties (eg: lineheight,
 /* Valid */
 &minus;-width:10;
 <b>width</b>: calc(1px &ast; var(&minus;-width)); /* multiply by 1 unit to convert */
-<b>width</b>: calc(1em &ast; var(&minus;-width));</code></pre>
+<b>width</b>: calc(1em &ast; var(&minus;-width));</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch37-5">Section 37.5: With media queries</h3>
@@ -8867,14 +8864,14 @@ grid:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b>
 <b>&lt;div&gt;&lt;/div&gt;</b>
 <b>&lt;div&gt;&lt;/div&gt;</b>
-<b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>:root{
+<pre>:root{
   &minus;-width: 25&percnt;;
   &minus;-content: &apos;This is desktop&apos;;
 }
@@ -8909,7 +8906,7 @@ div {
   <b>margin</b>: 10px;
   <b>border</b>: 4px solid black;
   <b>background</b>: red;
-}</code></pre>
+}</pre>
 
 <p>You can try resizing the window in this 
 <a href="https://codepen.io/mkumaran/pen/BZaXvz">Demo (CodePen)</a>.</p>
@@ -8942,17 +8939,17 @@ except for one side:</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;trapezoid&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;trapezoid&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.trapezoid {
+<pre>.trapezoid {
   <b>width</b>: 50px;
   <b>height</b>: 0;
   <b>border-left</b>: 50px solid transparent;
   <b>border-right</b>: 50px solid transparent;
   <b>border-bottom</b>: 100px solid black;
-}</code></pre>
+}</pre>
 
 <p>With changing the border sides, the orientation of the trapezoid can be adjusted.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8999,14 +8996,14 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing up - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-up&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-up&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-up {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-left</b>: 25px solid transparent;
   <b>border-right</b>: 25px solid transparent;
   <b>border-bottom</b>: 50px solid rgb(246, 156, 85);
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Down</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9018,14 +9015,14 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing down - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-down&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-down&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-down {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-left</b>: 25px solid transparent;
   <b>border-right</b>: 25px solid transparent;
   <b>border-top</b>: 50px solid rgb(246, 156, 85);
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Right</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9037,14 +9034,14 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing right - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-right&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-right&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-right {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-top</b>: 25px solid transparent;
   <b>border-bottom</b>: 25px solid transparent;
   <b>border-left</b>: 50px solid rgb(246, 156, 85);
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Left</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9056,14 +9053,14 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing left - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-left&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-left&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-left {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-top</b>: 25px solid transparent;
   <b>border-bottom</b>: 25px solid transparent;
   <b>border-right</b>: 50px solid rgb(246, 156, 85);
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Up/Right</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9075,13 +9072,13 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing up/right - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-up-right&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-up-right&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-up-right {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-top</b>: 50px solid rgb(246, 156, 85);
   <b>border-left</b>: 50px solid transparent;
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Up/Left</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9093,13 +9090,13 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing up/left - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-up-left&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-up-left&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-up-left {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-top</b>: 50px solid rgb(246, 156, 85);
   <b>border-right</b>: 50px solid transparent;
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Down/Right</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9111,13 +9108,13 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing down/right - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-down-right&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-down-right&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-down-right {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-bottom</b>: 50px solid rgb(246, 156, 85);
   <b>border-left</b>: 50px solid transparent;
-}</code></pre>
+}</pre>
 
 <h4>Triangle - Pointing Down/Left</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9129,13 +9126,13 @@ below all show a 50x50 pixel triangle.</p>
   alt="Arrow pointing down/left - no shade." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;triangle-down-left&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;triangle-down-left&quot;<b>&gt;&lt;/div&gt;</b>
 .triangle-down-left {
   <b>width</b>: 0;
   <b>height</b>: 0;
   <b>border-bottom</b>: 50px solid rgb(246, 156, 85);
   <b>border-right</b>: 50px solid transparent;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch38-3">Section 38.3: Circles and Ellipses</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9155,16 +9152,16 @@ element to 50%.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;circle&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;circle&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.circle {
+<pre>.circle {
   <b>width</b>: 50px;
   <b>height</b>: 50px;
   <b>background</b>: rgb(246, 156, 85);
   <b>border-radius</b>: 50&percnt;;
-}</code></pre>
+}</pre>
 
 <h4>Ellipse</h4>
 
@@ -9181,16 +9178,16 @@ width and height.
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;oval&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;oval&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.oval {
+<pre>.oval {
   <b>width</b>: 50px;
   <b>height</b>: 80px;
   <b>background</b>:rgb(246, 156, 85);
   <b>border-radius</b>: 50&percnt;;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch38-4">Section 38.4: Bursts</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9214,7 +9211,7 @@ The bottom is rotated 20°, the top square is rotated 135°.</p>
   alt="8 Point Burst." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;burst-8&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;burst-8&quot;<b>&gt;&lt;/div&gt;</b>
 .burst-8 {
   background: rgb(246, 156, 85);
   width: 40px;
@@ -9234,7 +9231,7 @@ The bottom is rotated 20°, the top square is rotated 135°.</p>
   background: rgb(246, 156, 85);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-}</code></pre>
+}</pre>
 
 <h4>12 Point Burst</h4>
 
@@ -9251,7 +9248,7 @@ pseudo-elements. The bottom is rotated 0°, the next square is rotated
   alt="12 Point Burst." />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;burst-12&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;burst-12&quot;<b>&gt;&lt;/div&gt;</b>
 .burst-12 {
   width: 40px;
   height: 40px;
@@ -9275,7 +9272,7 @@ pseudo-elements. The bottom is rotated 0°, the next square is rotated
 .burst-12::after {
   -ms-transform: rotate(60deg);
   transform: rotate(60deg);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch38-5">Section 38.5: Square</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9291,16 +9288,16 @@ pixels each.</p>
   alt="Square" />
 </p>
 
-<pre><code><b>&lt;div</b> class=&quot;square&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;square&quot;<b>&gt;&lt;/div&gt;</b>
 .square {
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background</b>: rgb(246, 156, 85);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch38-6">Section 38.6: Cube</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>skewX () and skewY</code></pre>
+<pre>skewX () and skewY</pre>
 
 <p>This example shows how to create a cube using 2D transformation
 methods () on pseudo elements.</p>
@@ -9315,11 +9312,11 @@ methods () on pseudo elements.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;cube&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;cube&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.cube {
+<pre>.cube {
   <b>background</b>: #dc2e2e;
   <b>width</b>: 100px;
   <b>height</b>: 100px;
@@ -9347,7 +9344,7 @@ methods () on pseudo elements.</p>
   <b>position</b>: absolute;
   <b>top</b>: -10px;
   <b>left</b>: 100&percnt;;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/codename0/9po0r1L1/">See demo</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9366,11 +9363,11 @@ transformation methods skew() and rotate() on pseudo elements.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;pyramid&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div</b> class=&quot;pyramid&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.pyramid {
+<pre>.pyramid {
   <b>width</b>: 100px;
   <b>height</b>: 200px;
   <b>position</b>: relative;
@@ -9391,7 +9388,7 @@ transformation methods skew() and rotate() on pseudo elements.</p>
 .pyramid::after {
   <b>border-color</b>: transparent transparent #d64444 transparent;
   <b>transform</b>: scaleY(2) skewY(40deg) rotate(-45deg);
-}</code></pre>
+}</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch39">Chapter 39: Columns</h2>
@@ -9403,7 +9400,7 @@ of text.</p>
 
 <h4>Code</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;multi-columns&quot;<b>&gt;</b>Lorem ipsum dolor sit amet,
+<pre><b>&lt;div</b> id=&quot;multi-columns&quot;<b>&gt;</b>Lorem ipsum dolor sit amet,
 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -9416,7 +9413,7 @@ laborum<b>&lt;/div&gt;</b>
   -moz-column-count: 2;
   -webkit-column-count: 2; 
   <b>column-count</b>: 2; 
-  }</code></pre>
+  }</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9436,7 +9433,7 @@ fit in the available width.</p>
 
 <h4>Code:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;multi-columns&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;multi-columns&quot;<b>&gt;</b>
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -9450,7 +9447,7 @@ culpa qui officia deserunt mollit anim id est laborum
   -moz-column-width: 100px;
   -webkit-column-width: 100px;
   <b>column-width</b>: 100px;
-}</code></pre>
+}</pre>
 
 <h4>Result</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9469,7 +9466,7 @@ with gaps and rules between them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch40-1">Section 40.1: Create Multiple Columns</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b> Lorem ipsum dolor sit amet,
+<pre><b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b> Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
 ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
 veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
@@ -9479,21 +9476,21 @@ eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
 dignissim qui blandit praesent luptatum zzril delenit augue duis
 dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
 eleifend option congue nihil imperdiet doming id quod mazim placerat
-facer possim assum. <b>&lt;/div&gt;</b></code></pre>
+facer possim assum. <b>&lt;/div&gt;</b></pre>
 
 <h4>CSS</h4>
 
-<pre><code>.content {
+<pre>.content {
 &minus;webkit-column-count: 3; /* Chrome, Safari, Opera */
 &minus;moz-column-count: 3;    /* Firefox */
 <b>column-count</b>: 3;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch40-2">Section 40.2: Basic example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Consider the following HTML markup:</p>
 
-<pre><code><b>&lt;section&gt;</b>
+<pre><b>&lt;section&gt;</b>
   <b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
   invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
   justo duo dolores et ea rebum.<b>&lt;/p&gt;</b>
@@ -9506,16 +9503,16 @@ facer possim assum. <b>&lt;/div&gt;</b></code></pre>
   invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
   justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum 
   dolor sit amet.<b>&lt;/p&gt;</b>
-<b>&lt;/section&gt;</b></code></pre>
+<b>&lt;/section&gt;</b></pre>
 
 <p>With the following CSS applied the content is split into three columns
 separated by a gray column rule of two pixels.</p>
 
-<pre><code>section {
+<pre>section {
   <b>columns</b>: 3;
   <b>column-gap</b>: 40px;
   <b>column-rule</b>: 2px solid gray;
-}</code></pre>
+}</pre>
 
 <p>See a <a href="https://jsfiddle.net/vjL9ewmb/">live sample of this on jsFiddle</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9531,17 +9528,17 @@ on the individual item width.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;nav&gt;</b>
+<pre><b>&lt;nav&gt;</b>
   <b>&lt;ul&gt;</b>
     <b>&lt;li&gt;</b>abc<b>&lt;/li&gt;</b>
     <b>&lt;li&gt;</b>abcdefghijkl<b>&lt;/li&gt;</b>
     <b>&lt;li&gt;</b>abcdef<b>&lt;/li&gt;</b>
   <b>&lt;/ul&gt;</b>
-<b>&lt;/nav&gt;</b></code></pre>
+<b>&lt;/nav&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>nav {
+<pre>nav {
   <b>width</b>: 100&percnt;;
   <b>line-height</b>: 1.4em;
 }
@@ -9561,7 +9558,7 @@ ul:after {
 }
 li {
   <b>display</b>: inline-block;
-}</code></pre>
+}</pre>
 
 <b>Notes</b>
 
@@ -9592,19 +9589,19 @@ text-align, line-height.</p>
 
 <p>Assume the following stylesheet:</p>
 
-<pre><code>#myContainer {
+<pre>#myContainer {
   <b>color</b>: red;
   <b>padding</b>: 5px;
-}</code></pre>
+}</pre>
 
 <p>This will apply color: red not only to the <b>&lt;div&gt;</b> element but also to the 
 <b>&lt;h3&gt;</b> and <b>&lt;p&gt;</b> elements. However, due to the nature of padding its 
 value will <b>not</b> be inherited to those elements.</p>
 
-<pre><code><b>&lt;div</b> id=&quot;myContainer&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;myContainer&quot;<b>&gt;</b>
   <b>&lt;h3&gt;</b>Some header<b>&lt;/h3&gt;</b>
   <b>&lt;p&gt;</b>Some paragraph<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch42-2">Section 42.2: Enforced inheritance</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9621,22 +9618,22 @@ element.</p>
 
 <p>Assume the following stylesheet:</p>
 
-<pre><code>#myContainer {
+<pre>#myContainer {
   <b>color</b>: red;
   <b>padding</b>: 5px;
 }
 #myContainer p {
   <b>padding</b>: inherit;
-}</code></pre>
+}</pre>
 
 <p>This will apply <b>color</b>: red to both the <b>&lt;h3&gt;</b> and <b>&lt;p&gt;</b> 
 elements due to the inheritance nature of the color property.  However, the <b>&lt;p&gt;</b> 
 element will also inherit the padding value from its&apos; parent because this was specified.</p>
 
-<pre><code><b>&lt;div</b> id=&quot;myContainer&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;myContainer&quot;<b>&gt;</b>
   <b>&lt;h3&gt;</b>Some header<b>&lt;/h3&gt;</b>
   <b>&lt;p&gt;</b>Some paragraph<b>&lt;/p&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch43">Chapter 43: CSS Image Sprites</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9668,13 +9665,13 @@ requests a browser might have to make.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;icon icon1&quot;<b>&gt;&lt;/div&gt;</b>
+<pre><b>&lt;div</b> class=&quot;icon icon1&quot;<b>&gt;&lt;/div&gt;</b>
 <b>&lt;div</b> class=&quot;icon icon2&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;div</b> class=&quot;icon icon3&quot;<b>&gt;&lt;/div&gt;</b></code></pre>
+<b>&lt;div</b> class=&quot;icon icon3&quot;<b>&gt;&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.icon {
+<pre>.icon {
   <b>background</b>: url("icons-sprite.png");
   <b>display</b>: inline-block;
   <b>height</b>: 20px;
@@ -9688,7 +9685,7 @@ requests a browser might have to make.</p>
 }
 .icon3 {
   <b>background-position</b>: -40px 0px;
-}</code></pre>
+}</pre>
 
 <p>By using setting the sprite&apos;s width and height and by using the
 background-position property in CSS (with an x and y value) you can
@@ -9755,7 +9752,7 @@ circle(), polygon() or ellipse().</p>
 
 <h5>Example</h5>
 
-<pre><code><b>clip-path</b>: circle(100px at center);</code></pre>
+<pre><b>clip-path</b>: circle(100px at center);</pre>
 
 <p>The element will be only visible inside of this circle, which is
 positioned at the center of the element and has a radius of 100px.</p>
@@ -9790,7 +9787,7 @@ used as layer.</p>
 
 <h5>Example<h5>
 
-<pre><code><b>mask</b>: url(masks.svg#rectangle) luminance;</code></pre>
+<pre><b>mask</b>: url(masks.svg#rectangle) luminance;</pre>
 
 <p>An element called rectangle defined in masks.svg will be used as an
 <b>luminance mask</b> on the element.</p>
@@ -9799,16 +9796,16 @@ used as layer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>height</b>: 200px;
   <b>width</b>: 200px;
   <b>background</b>: url(http://lorempixel.com/200/200/nature/1);
   <b>mask-image</b>: linear-gradient(to right, white, transparent);
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <p>In the above example there is an element with an image as its
 background. The mask that is applied on the image (using CSS) makes it
@@ -9848,16 +9845,16 @@ Firefox.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 200px;
   <b>height</b>: 200px;
   <b>background</b>: teal;
   <b>clip-path</b>: circle(30&percnt; at 50&percnt; 50&percnt;); /* refer remarks before usage */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <p>This example shows how to clip a div to a circle. The element is
 clipped into a circle whose radius is 30% based on the dimensions of
@@ -9868,7 +9865,7 @@ reference box.</p>
 
 <p>The circle shape needs to have a radius and a center with (x,y) coordinates:
 
-<pre><code>circle(radius at x y)</code></pre>
+<pre>circle(radius at x y)</pre>
 
 <p><a href="https://jsfiddle.net/webtiki/qp69n494/">View Example (jsFiddle)</a>.</p>
 
@@ -9887,16 +9884,16 @@ reference box.</p>
 
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 200px;
   <b>height</b>: 200px;
   <b>background</b>: teal;
   <b>clip-path</b>: polygon(0 0, 0 100&percnt;, 100&percnt; 50&percnt;); /* refer remarks before usage */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <p>In the above example, a <b>polygonal</b> clipping path is used to clip
 the square (200 x 200) element into a triangle shape. The output shape
@@ -9926,12 +9923,12 @@ background.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS:</h4>
 
-<pre><code>div {
+<pre>div {
   <b>width</b>: 200px;
   <b>height</b>: 200px;
   <b>background</b>: url (http://lorempixel.com/ 200/200/abstract/6);
   <b>mask-image</b>: radial-gradient (circle farthest-side at center, transparent 49&percnt;, white 50&percnt;); /* check remarks before using */
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
@@ -9963,7 +9960,7 @@ effect of a circle being cut out from the center of an image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS:</h4>
 
-<pre><code>div { /* check remarks before usage */
+<pre>div { /* check remarks before usage */
   <b>height</b>: 200px;
   <b>width</b>: 400px;
   <b>background-image</b>: url(http://lorempixel.com/400/200/nature/4);
@@ -9972,11 +9969,11 @@ effect of a circle being cut out from the center of an image.</p>
   <b>mask-size</b>: 75&percnt; 25&percnt;, 25&percnt; 25&percnt;, 100&percnt; 75&percnt;;
   <b>mask-position</b>: bottom left, bottom right, top left;
   <b>mask-repeat</b>: no-repeat;
-}</code></pre>
+}</pre>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div&gt;&lt;/div&gt;</b></code></pre>
+<pre><b>&lt;div&gt;&lt;/div&gt;</b></pre>
 
 <p>In the above example, three linear-gradient images (which when placed
 in their appropriate positions would cover 100% x 100% of the
@@ -10018,7 +10015,7 @@ triangular shaped cut at the bottom of the image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch45-1">Section 45.1: Media print page-break</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>&commat;media</b> print {
+<pre><b>&commat;media</b> print {
   p {
     <b>page-break-inside</b>: avoid;
   }
@@ -10028,7 +10025,7 @@ triangular shaped cut at the bottom of the image.</p>
   h2 {
     <b>page-break-after</b>: avoid;
   }
-}</code></pre>
+}</pre>
 
 <p>This code does 3 things:</p>
 
@@ -10047,17 +10044,17 @@ triangular shaped cut at the bottom of the image.</p>
 <p>To add a background-image rule via the CSSOM, first get a reference to the 
 rules of the first stylesheet:</p>
 
-<pre><code>var stylesheet = document.styleSheets&lbrack;0&rbrack;.cssRules;</code></pre>
+<pre>var stylesheet = document.styleSheets&lbrack;0&rbrack;.cssRules;</pre>
 
 <p>Then, get a reference to the end of the stylesheet:</p>
 
-<pre><code>var end = stylesheet.length &minus; 1;</code></pre>
+<pre>var end = stylesheet.length &minus; 1;</pre>
 
 <p>Finally, insert a background-image rule for the body element at the end of 
 the stylesheet:</p>
 
-<pre><code>stylesheet.insertRule(&quot;body { background-image:
-url(&apos;http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico&apos;);}&quot;, end);</code></pre>
+<pre>stylesheet.insertRule(&quot;body { background-image:
+url(&apos;http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico&apos;);}&quot;, end);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch46-2">Section 46.2: Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10100,12 +10097,12 @@ Object Model.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch47-1">Section 47.1: Basic &commat;supports usage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>&commat;supports</b> (<b>display</b>: flex) {
+<pre><b>&commat;supports</b> (<b>display</b>: flex) {
   /* Flexbox is available, so use it */
   .my-container {
     <b>display</b>: flex;
   }
-}</code></pre>
+}</pre>
 
 <p>In terms of syntax, &commat;supports is very similar to &commat;media, but instead
 of detecting screen size and orientation, &commat;supports will detect
@@ -10118,25 +10115,25 @@ rule is &commat;supports (<b>display</b>: flex).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To detect multiple features at once, use the and operator.</p>
 
-<pre><code><b>&commat;supports</b> (<b>transform</b>: translateZ(1px)) and (<b>transform-style</b>: preserve-3d) and (<b>perspective</b>: 1px) {
+<pre><b>&commat;supports</b> (<b>transform</b>: translateZ(1px)) and (<b>transform-style</b>: preserve-3d) and (<b>perspective</b>: 1px) {
   /* Probably do some fancy 3d stuff here */
-}</code></pre>
+}</pre>
 
 <p>There is also an or opeartor and a not operator:</p>
 
-<pre><code><b>&commat;supports</b> (<b>display</b>: flex) or (<b>display</b>: table-cell) {
+<pre><b>&commat;supports</b> (<b>display</b>: flex) or (<b>display</b>: table-cell) {
   /* Will be used if the browser supports flexbox or display: table-cell */
 }
 <b>&commat;supports</b> not (webkit-transform &minus;: translate(0, 0, 0)) {
   /* Will &ast;not&ast; be used if the browser supports -webkit-transform: translate(&period;..) */
-}</code></pre>
+}</pre>
 
 <p>For the ultimate &commat;supports experience, try grouping logical expressions with parenthesis:</p>
 
-<pre><code><b>&commat;supports</b> ((<b>display</b>: block) and (zoom: 1)) or ((<b>display</b>: flex) and (not(<b>display</b>: table-cell))) or 
+<pre><b>&commat;supports</b> ((<b>display</b>: block) and (zoom: 1)) or ((<b>display</b>: flex) and (not(<b>display</b>: table-cell))) or 
   (<b>transform</b>: translateX (1px) ) {
   /* &period;.. */
-}</code></pre>
+}</pre>
 
 <p>This will work if the browser</p>
 
@@ -10184,7 +10181,7 @@ respect to its sibling&apos;s DIV.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> id=&quot;div1&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> id=&quot;div1&quot;<b>&gt;</b>
   <b>&lt;h1&gt;</b>Division Element #1<b>&lt;/h1&gt;</b>
   <b>&lt;code&gt;</b>position: relative;<b>&lt;br/&gt;</b>
   z-index: 5;<b>&lt;/code&gt;</b>
@@ -10213,11 +10210,11 @@ respect to its sibling&apos;s DIV.</p>
     <b>&lt;code&gt;</b>position: absolute;<b>&lt;br/&gt;</b>
     z-index: 3;<b>&lt;/code&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
   
 <h4>CSS:</h4>
 
-<pre><code>&ast; {
+<pre>&ast; {
   <b>margin</b>: 0;
 }
 html {
@@ -10279,7 +10276,7 @@ h1 {
   <b>padding-top</b>: 125px;
   <b>background-color</b>: #ddf;
   <b>text-align</b>: center;
-}</code></pre>
+}</pre>
 
 <h4>Result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10300,7 +10297,7 @@ Demo (Understanding z-index)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch49-1">Section 49.1: Using the overflow property with a value dierent to visible</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>img {
+<pre>img {
   <b>float</b>: left;
   <b>width</b>: 100px;
   <b>margin</b>: 0 10px;
@@ -10313,7 +10310,7 @@ Demo (Understanding z-index)</a>.</p>
   <b>background</b>: #f1f1f1;
   <b>overflow</b>: hidden;
 /* creates block formatting context */
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~ 262. example; using the overflow property with a value different to visible (211) ~~~~-->
 <p align="left" width="100%">
@@ -10344,17 +10341,17 @@ this example</a> on CSS-trics.com.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;outer&quot;<b>&gt;</b>
     <b>&lt;div</b> class=&quot;inner&quot;<b>&gt;</b>
       centered
     <b>&lt;/div&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>height</b>: 600px;
   <b>text-align</b>: center;
 }
@@ -10367,19 +10364,19 @@ this example</a> on CSS-trics.com.</p>
   <b>display</b>: table-cell;
   <b>text-align</b>: center;
   <b>vertical-align</b>: middle;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch50-2">Section 50.2: Centering with Flexbox</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;child&quot;<b>&gt;&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.container {
+<pre>.container {
   <b>height</b>: 500px;
   <b>width</b>: 500px;
   <b>display</b>: flex;           // Use Flexbox
@@ -10391,21 +10388,21 @@ this example</a> on CSS-trics.com.</p>
   <b>width</b>: 100px;
   <b>height</b>: 100px;
   <b>background</b>: blue;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch50-3">Section 50.3: Centering with Transform</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;centered&quot;<b>&gt;</b>
     centered
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>position</b>: relative;
   <b>height</b>: 600px;
 }
@@ -10415,23 +10412,23 @@ this example</a> on CSS-trics.com.</p>
   <b>transform</b>: translate(-50&percnt;, -50&percnt;);
   <b>top</b>: 50&percnt;;
   <b>left</b>: 50&percnt;;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch50-4">Section 50.4: Centering Text with Line Height</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;container&quot;<b>&gt;</b>
   <b>&lt;span&gt;</b>vertically centered<b>&lt;/span&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.container {
+<pre>.container {
   <b>height</b>: 50px;  /* set height */
   <b>line-height</b>: 50px; /* set line-height equal to the height */
   <b>vertical-align</b>: middle; /* works without this rule, but it is good having it explicitly set */
-}</code></pre>
+}</pre>
 
 <p><b>Note:</b> This method will only vertically center a <i>single line of
 text</i>. It will not center block elements correctly and if the text
@@ -10442,14 +10439,14 @@ breaks onto a new line, you will have two very tall lines of text.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;img</b> 
   src=&quot;http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a&quot;<b>&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>position</b>: relative;
   <b>height</b>: 600px;
 }
@@ -10460,22 +10457,22 @@ breaks onto a new line, you will have two very tall lines of text.</p>
   <b>right</b>: 0;
   <b>bottom</b>: 0;
   <b>margin</b>: auto;
-}</code></pre>
+}</pre>
 
 <p>If you want to center other then images, then you must give height and
 width to that element.</p>
 
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;child&quot;<b>&gt;</b>
     make me center
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>position</b>: relative;
   <b>height</b>: 600px;
 }
@@ -10489,20 +10486,20 @@ width to that element.</p>
   <b>width</b>: 200px;
   <b>height</b>: 30px;
   <b>border</b>: 1px solid #f00;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch50-6">Section 50.6: Centering with pseudo element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML:</h4>
 
-<pre><code><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
+<pre><b>&lt;div</b> class=&quot;wrapper&quot;<b>&gt;</b>
   <b>&lt;div</b> class=&quot;content&quot;<b>&gt;</b>
   <b>&lt;/div&gt;</b>
-<b>&lt;/div&gt;</b></code></pre>
+<b>&lt;/div&gt;</b></pre>
 
 <h4>CSS:</h4>
 
-<pre><code>.wrapper {
+<pre>.wrapper {
   <b>min-height</b>: 600px;
 }
 .wrapper:before {
@@ -10515,7 +10512,7 @@ width to that element.</p>
   <b>display</b>: inline-block;
   <b>height</b>: 80px;
   <b>vertical-align</b>: middle;
-}</code></pre>
+}</pre>
 
 <p>This method is best used in cases where you have a varied-height
 .content centered inside .wrapper; and you want .wrapper&apos;s height to
@@ -10531,7 +10528,7 @@ image or video, Object-fit accepts the following five values:</p>
 
 <b>FILL</b>
 
-<pre><code><b>object-fit</b>: fill;</code></pre>
+<pre><b>object-fit</b>: fill;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 263. original and object-fit: fill (217) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -10543,7 +10540,7 @@ image or video, Object-fit accepts the following five values:</p>
 
 <p>Fill stretches the image to fit the content box without regard to the
 image&apos;s original aspect ratio.</p>
-<pre><code><b>CONTAIN object-fit</b>:contain;</code></pre>
+<pre><b>CONTAIN object-fit</b>:contain;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 265. original and object-fit: contain (217) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -10555,7 +10552,7 @@ image&apos;s original aspect ratio.</p>
 <p>Contain fits the image in the box&apos;s height or width while maintaining
 the image&apos;s aspect ratio.</p>
 
-<pre><code><b>COVER object-fit</b>:cover;</code></pre>
+<pre><b>COVER object-fit</b>:cover;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 266. original and object-fit: cover (217) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
@@ -10586,7 +10583,7 @@ preserved, but the image is cropped to the dimensions of the box.</p>
 
 <h4>SCALE-DOWN</h4>
 
-<pre><code><b>object-fit</b>:scale-down;</code></pre>
+<pre><b>object-fit</b>:scale-down;</pre>
 
 <p>Scale-down either sizes the object as none or as contain. It displays
 whichever option results in a smaller image size.</p>
@@ -10649,19 +10646,19 @@ the following rules.</p>
 <p>If you apply BEM to your form elements, your CSS selectors should look
 something like this:</p>
 
-<pre><code>.form { }            // Block
+<pre>.form { }            // Block
 .form&minus;-theme-xmas { }     // Block + modifier 
 .form&minus;-simple { }         // Block + modifier
 .form&lowbar;&lowbar;input { }  // Block &gt; element
 .form&lowbar;&lowbar;submit { } // Block &gt; element
-.form&lowbar;&lowbar;submit&minus;-disabled { } // Block &gt; element + modifier</code></pre>
+.form&lowbar;&lowbar;submit&minus;-disabled { } // Block &gt; element + modifier</pre>
 
 <p>The corresponding HTML should look something like this:</p>
 
-<pre><code><b>&lt;form</b> class=&quot;form form&minus;-theme-xmas form&minus;-simple&quot;<b>&gt;</b>
+<pre><b>&lt;form</b> class=&quot;form form&minus;-theme-xmas form&minus;-simple&quot;<b>&gt;</b>
   <b>&lt;input</b> class=&quot;form&lowbar;&lowbar;input&quot; type=&quot;text&quot;<b>/&gt;</b>
   <b>&lt;input</b> class=&quot;form&lowbar;&lowbar;submit form&lowbar;&lowbar;submit&minus;-disabled&quot; type=&quot;submit&quot;<b>/&gt;</b>
-<b>&lt;/form&gt;</b></code></pre>
+<b>&lt;/form&gt;</b></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch53">Chapter 53: Browser Support & Prefixes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10680,22 +10677,22 @@ something like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch53-1">Section 53.1: Transitions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>div {
+<pre>div {
   -webkit-transition: all 4s ease;
      -moz-transition: all 4s ease;
        -o-transition: all 4s ease;
        <b>transition</b>: all 4s ease;
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch53-2">Section 53.2: Transform</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>div {
+<pre>div {
   -webkit-transform: rotate(45deg);
      -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
        -o-transform: rotate(45deg);
           <b>transform</b>: rotate(45deg);
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch54">Chapter 54: Normalizing Browser Styles</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10755,7 +10752,7 @@ the browser elements that have been known to cause problems right off
 the back. The following is from his version (v2.0 &vert; 20110126) CSS
 Reset.</p>
 
-<pre><code>html, body, div, span, applet, object, iframe,
+<pre>html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, <b>p</b>, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -10774,14 +10771,14 @@ time, mark, audio, video <b>{</b>
   font-size: 100%;
   font: inherit; 
   vertical-align: baseline;
-}</code></pre>
+}</pre>
 
 <p><a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&apos;s Reset CSS</a></p>
 
 <p>Normalize CSS on the other and deals with many of these separately.
 The following is a sample from the version (v4.2.0) of the code.</p>
 
-<pre><code>/*&ast;
+<pre>/*&ast;
 <i>&ast; 1. Change the default font family in all browsers (opinionated).</i>
 <i>&ast; 2. Correct the line height in all browsers.</i>
 <i>&ast; 3. Prevent adjustments of font size after orientation changes in IE
@@ -10821,7 +10818,7 @@ section {
 h1 {
   <b>font-size</b>: 2em;
   <b>margin</b>: 0.67em0;
-}</code></pre>
+}</pre>
 
 <a href="https://www.npmjs.com/package/normalize.css/v/3.0.3">Normalize CSS</a>
 
@@ -10830,13 +10827,13 @@ h1 {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch55-1">Section 55.1: Adding Inline Block support to IE6 and IE7</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code><b>display</b>: inline-block;</code></pre>
+<pre><b>display</b>: inline-block;</pre>
 
 <p>The display property with the value of inline-block is not supported
 by Internet Explorer 6 and 7. A work-around for this is:</p>
 
-<pre><code>zoom: 1;
-&ast;<b>display</b>: inline;</code></pre>
+<pre>zoom: 1;
+&ast;<b>display</b>: inline;</pre>
 
 <p>The zoom property triggers the hasLayout feature of elements, and it
 is available only in Internet Explorer (woopie). The &ast;display makes sure that the
@@ -10855,23 +10852,23 @@ longer supported in Edge going forward.</p>
 
 <h4>Examples</h4>
 
-<pre><code><b>&commat;media</b> screen and (&minus; ms-high-contrast: active), (&minus;ms-high-contrast: black-on-white) {
+<pre><b>&commat;media</b> screen and (&minus; ms-high-contrast: active), (&minus;ms-high-contrast: black-on-white) {
   .header {
     <b>background</b>: #fff;
     <b>color</b>: #000;
   }
-}</code></pre>
+}</pre>
 
 <p>This will change the header background to white and the text color to
 black when high contrast mode is active *and* it is in black-on-white
 mode.</p>
 
-<pre><code><b>&commat;media</b> screen and (&minus;ms-high-contrast: white-on-black){
+<pre><b>&commat;media</b> screen and (&minus;ms-high-contrast: white-on-black){
   .header {
     <b>background</b>: #000;
     <b>color</b>: #fff;
   }
-}</code></pre>
+}</pre>
 
 <p>Similar to the first example, but this specifically selects the
 white-on-black state only, and inverts the header colors to a black
@@ -10887,9 +10884,9 @@ on -ms-high-contrast.</p>
 To target Internet Explorer 6 and Internet Explorer 7, start your
 properties with &ast;:
 
-<pre><code>.hide-on-ie6-and-ie7 {
+<pre>.hide-on-ie6-and-ie7 {
 &ast;<b>display</b>: none; // This line is processed only on IE6 and IE7
-}</code></pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch55-4">Section 55.4: Internet Explorer 8 only</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10900,11 +10897,11 @@ properties with &ast;:
 <p>So pathetic. The only good MS code was stolen from Universities, Digital
 Equipment Corporation, Linux, or Unix.</p>
 
-<pre><code><b>&commat;media</b>&bsol;&bsol; 0 screen {
+<pre><b>&commat;media</b>&bsol;&bsol; 0 screen {
   .hide-on-ie8 {
     <b>display</b>: none;
   }
-}</code></pre>
+}</pre>
 
 <p>Everything between &commat;media \0 screen { } is processed only by I</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10920,7 +10917,7 @@ animate at 60fps.</p>
 
 <p>Animate with left and top trigger layout.</p>
 
-<pre><code>#box {
+<pre>#box {
   <b>left</b>: 0;
   <b>top</b>: 0;
   <b>transition</b>: left 0.5s, top 0.5s;
@@ -10932,7 +10929,7 @@ animate at 60fps.</p>
 #box.active {
   <b>left</b>: 100px;
   <b>top</b>: 100px;
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/trungdq88/gmpzxLyq/">Demo</a> 
 took 11.7ms for rendering 9.8ms for painting.</p>
@@ -10949,7 +10946,7 @@ took 11.7ms for rendering 9.8ms for painting.</p>
 
 <p>Animate with transform with the same animation.</p>
 
-<pre><code>#box {
+<pre>#box {
   <b>left</b>: 0;
   <b>top</b>: 0;
   <b>position</b>: absolute;
@@ -10962,7 +10959,7 @@ took 11.7ms for rendering 9.8ms for painting.</p>
 
 #box.active {
   <b>transform</b>: translate3d(100px, 100px, 0);
-}</code></pre>
+}</pre>
 
 <p><a href="https://jsfiddle.net/trungdq88/Logdo0rn/">Demo (jsFiddle)</a>
 same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
