@@ -212,10 +212,9 @@ example, if you have a main.css file with some code in it:</p>
 
 <pre>p.green { color: #00ff00; }</pre>
 
-<p>All your paragraphs with the 'green' class will be written in light
-green, but you can override this with another .css file just by
-including it <em>after</em> main.css. You can have override.css with the
-following code follow main.css, for example:</p>
+<p>All your paragraphs with the 'green' class will be written in light green, but you 
+can override this with another .css file just by including it <em>after</em> main.css. 
+You can have override.css with the following code follow main.css, for example:</p>
 
 <pre>p.green { color: #006600; }</pre>
 
@@ -224,22 +223,20 @@ green rather than light green.</p>
 
 <p>Other principles apply, such as the '!important' rule, specificity, and inheritance.</p>
 
-<p>When someone first visits your website, their browser downloads the HTML
-of the current page plus the linked CSS file. Then when they navigate to
-another page, their browser only needs to download the HTML of that
-page; the CSS file is cached, so it does not need to be downloaded
-again. Since browsers cache the external stylesheet, your pages load
-faster.</p>
+<p>When someone first visits your website, their browser downloads the HTML of the 
+current page plus the linked CSS file. Then when they navigate to another page, their 
+browser only needs to download the HTML of that page; the CSS file is cached, so it does 
+not need to be downloaded again. Since browsers cache the external stylesheet, your 
+pages load faster.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2">Section 1.2: Internal Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>CSS enclosed in <b>&lt;style&gt;&lt;/style&gt;</b> tags within an
-HTML document function like an external stylesheet, except that it lives
-in the HTML document it styles instead of in a separate file, and
-therefore can only be applied to the document in which it lives. Note
-that this element <i>must</i> be inside the <b>&lt;head&gt;</b> element
-for HTML validation (though it will work in all current &lt;head&gt;
-browsers if placed in body).</p>
+<p>CSS enclosed in <b>&lt;style&gt;&lt;/style&gt;</b> tags within an HTML document 
+function like an external stylesheet, except that it lives in the HTML document it styles 
+instead of in a separate file, and therefore can only be applied to the document in which 
+it lives. Note that this element <i>must</i> be inside the <b>&lt;head&gt;</b> element
+for HTML validation (though it will work in all current &lt;head&gt; browsers if placed 
+in body).</p>
 
 <pre>&lt;head&gt;
   &lt;style&gt;
@@ -722,7 +719,7 @@ attribute contains the given value anywhere (as a substring).</p>
 <p><a href="http://jsbin.com/dazige/1/edit?html,css,output" 
 target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
-<pre>&lbrack;<b>attribute~="value"</b>&rbrack;<p></pre>
+<pre>&lbrack;<b>attribute~="value"</b>&rbrack;</pre>
 
 <p>Selects elements with the given attribute and value where the given
 value appears in a whitespace-separated list.</p>
@@ -741,8 +738,8 @@ target="_blank" rel="noopener noreferrer">Live Demo (jsBin)</a></p>
 
 <pre>&lbrack;<b>attribute^="value"</b>&rbrack;</pre>
 
-<p>Selects elements with the given attribute and value where the given
-attribute begins with the value.</p>
+<p>Selects elements with the given attribute and value where the given attribute begins 
+with the value.</p>
 
 <pre>&lbrack;class^="foo-"&rbrack; {
   <b>color</b>: red;
@@ -2680,8 +2677,8 @@ property has no effect.</p>
   <b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
   tincidunt ut laoreet dolore magna aliquam erat volutpat.<b>&lt;/p&gt;</b>
   <b>&lt;p&gt;</b>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-  aliquip ex ea commodo consequat.<b>&lt;/p&gt;
-&lt;/div&gt;</b>
+  aliquip ex ea commodo consequat.<b>&lt;/p&gt;</b>
+<b>&lt;/div&gt;</b>
 
 <b>&lt;p&gt;</b>background-origin: border-box:<b>&lt;/p&gt;</b>
 <b>&lt;div</b> class=&quot;example example2&quot;<b>&gt;</b>
@@ -2903,8 +2900,8 @@ painting area of the background.</p>
   When he rubbed them together, he made stormy weather.
   And lightning struck out of his ass.<b>&lt;/p&gt;</b> 
   <b>&lt;p&gt;</b>And more goes here, as well. It beats Latin. I don't know Latin so better 
-  for me the end.<b>&lt;/p&gt; 
-&lt;/div&gt;</b></pre>
+  for me the end.<b>&lt;/p&gt;</b>
+<b>&lt;/div&gt;</b></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3413,9 +3410,8 @@ element to be centered.</p>
 <h3 id="6-11">Section 6.11: Centering vertically and horizontally without worrying
 about height or width</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The following technique allows you to add your content to an HTML
-element and center it both horizontally and vertically <b>without
-worrying about its height or width</b>.</p>
+<p>The following technique allows you to add your content to an HTML element and center 
+it both horizontally and vertically <b>without worrying about its height or width</b>.</p>
 
 <h4>The outer container</h4>
 
@@ -8583,7 +8579,7 @@ relative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch20-1">Section 20.1: Creating scalable elements using rems and ems</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Version ≥ 3</h4>
+<h5>Version ≥ 3</h5>
 
 <p>You can use rem defined by the font-size of your html tag to style
 elements by setting their font-size to a value of rem and use em inside
@@ -8660,7 +8656,7 @@ expressed in rem units, assuming that the base size is 16px:</p>
 
 <h4>CODE:</h4>
 
-<p>Version ≥ 3</p>
+<h5>Version ≥ 3</h5>
 
 <pre>html {
   <b>font-size</b>: 16px;
@@ -8707,7 +8703,7 @@ target="_blank" rel="noopener noreferrer">vmax is not supported</a> in:</p>
     width.</li>
 </ul>
 
-<h4>Version ≥ 3</h4>
+<h5>Version ≥ 3</h5>
 
 <pre>div {
   <b>width</b>: 20vw;
@@ -11562,7 +11558,7 @@ li {
 <pre><b>list-style</b>: decimal; /* <i>Decimal numbers beginning with 1 (default)</i> */ 
 <b>list-style</b>: decimal-leading-zero; /* <i>Decimal numbers padded by initial zeros (01, 02, 03,* ... *10)</i> */
 <b>list-style</b>: lower-roman;          /* <i>Lowercase roman numerals (i., ii., iii., iv., &period;..)</i> */
-<b>list-style</b>: upper-roman;      /* <i>Uppercase roman numerals (I., II., III., IV., &period;..) */
+<b>list-style</b>: upper-roman;      /* <i>Uppercase roman numerals (I., II., III., IV., &period;..)</i> */
 <b>list-style-type</b>: lower-greek; /* <i>Lowercase roman letters (*α*.,* β*.,* γ*.,* δ*., &period;..)</i> */ 
 <b>list-style-type</b>: lower-alpha; /* <i>Lowercase letters (a., b., c., d., &period;..)</i> */
 <b>list-style-type</b>: lower-latin; /* <i>Lowercase letters (a., b., c., d., &period;..)</i> */ 
@@ -11590,67 +11586,24 @@ li {
   <tbody>
     <tr class="odd">
       <td>counter-name</td>
-      <td>This is the name of the counter that needs to be created</td>
+      <td>This is the name of the counter that needs to be created or incremented or printed. It can be any custom name as the developer wishes.</td>
     </tr>
-      <tr class="even">
-      <td></td>
-      <td>or incremented or printed. It can be any custom name as</td>
-    </tr>
-      <tr class="odd">
-      <td></td>
-      <td>the developer wishes.</td>
-    </tr>
-      <tr class="even">
+    <tr class="even">
       <td>integer</td>
-      <td>This integer is an optional value that when provided next</td>
+      <td>This integer is an optional value that when provided next to the counter name will represent the initial value of the counter (in counter-set, counter-reset properties) or the value by which the counter should be incremented (in counter-increment).</td>
     </tr>
-      <tr class="odd">
-      <td></td>
-      <td>to the counter name will represent the initial value of</td>
-    </tr>
-      <tr class="even">
-      <td></td>
-      <td>the counter (in counter-set, counter-reset properties) or</td>
-    </tr>
-      <tr class="odd">
-      <td></td>
-      <td>the value by which the counter should be incremented (in</td>
-    </tr>
-      <tr class="even">
-      <td></td>
-      <td>counter-increment).</td>
-    </tr>
-      <tr class="odd">
+    <tr class="odd">
       <td>none</td>
-      <td>This is the initial value for all 3 counter-* properties. When this value is used for counter-</td>
+      <td>This is the initial value for all 3 counter-* properties. When this value is used for counter-increment, the value of none of the counters are affected. When this is used for the other two, no counter is created.</td>
     </tr>
-      <tr class="even">
-      <td></td>
-      <td>increment, the value of none of the counters are affected. When this is used for the other two, no</td>
     </tr>
-      <tr class="odd">
-      <td></td>
-      <td>counter is created.</td>
-    </tr>
-      <tr class="even">
+    <tr class="even">
       <td>counter-style</td>
-      <td>This specifies the style in which the counter value needs to be displayed. It supports all values</td>
+      <td>This specifies the style in which the counter value needs to be displayed. It supports all values supported by the list-style-type property. If none is used then the counter value is not printed at all.</td>
     </tr>
-      <tr class="odd">
-      <td></td>
-      <td>supported by the list-style-type property. If none is used then the counter value is not printed</td>
-    </tr>
-      <tr class="even">
-      <td></td>
-      <td>at all.</td>
-    </tr>
-      <tr class="odd">
+	<tr class="odd">
       <td>connector-string</td>
-      <td>This represents the string that must be placed between the values of two different counter levels</td>
-    </tr>
-      <tr class="even">
-      <td></td>
-      <td>(like the "." in "2.1.1").</td>
+      <td>This represents the string that must be placed between the values of two different counter levels (like the "." in "2.1.1").</td>
     </tr>
   </tbody>
 </table>
@@ -14449,3 +14402,4 @@ same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.</p>
 <!-- 8/23/2024 Fri 7:16pm -->
 <!-- 9/29/2024 Sun 5:16pm -->
 <!-- 10/26/2024 Sat 4:54pm -->
+<!-- 11/01/2024 Fri 12:56am -->
