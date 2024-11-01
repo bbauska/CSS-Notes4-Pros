@@ -12844,150 +12844,43 @@ easily extract sprites from a sprite sheet using CSS.</p>
   <tbody>
     <tr class="odd">
       <td>clip-source</td>
-      <td>A URL which can point to an inline SVG element (or) an</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>SVG element in an external file that contains the clip</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>path's definition.</td>
+      <td>A URL which can point to an inline SVG element (or) an SVG element in an external file that contains the clip path's definition.</td>
     </tr>
     <tr class="even">
       <td>basic-shape</td>
-      <td>Refers to one among inset(), circle(), ellipse() or polygon. Using one of these</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>functions the clipping path is defined. These shape functions work 
-        exactly the same way as</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>they do in Shapes for Floats.</td>
+      <td>Refers to one among inset(), circle(), ellipse() or polygon. Using one of these functions the clipping path is defined. These shape functions work exactly the same way as they do in Shapes for Floats.</td>
     </tr>
     <tr class="odd">
       <td>clip-geometry-box</td>
-      <td>This can have one among content-box, padding-box, border-box,
-        margin-box, fill-box,</td>
+      <td>This can have one among content-box, padding-box, border-box, margin-box, fill-box, stroke-box, view-box as values. When this is provided without any value for &lt;basic-shape&gt;, the edges of the corresponding box is used as the path for clipping. When used with a &lt;basic-shape&gt;, this acts as the reference box for the shape.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>stroke-box, view-box as values. When this is provided without any
-        value for &lt;basic-shape&gt;,</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>the edges of the corresponding box is used as the path for clipping.
-        When used with a</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>&lt;basic-shape&gt;, this acts as the reference box for the shape.</td>
-    </tr>
-    <tr class="odd">
       <td>mask-reference</td>
       <td>This can be none or an image or a reference URL to a mask image source.</td>
     </tr>
-    <tr class="even">
-      <td>repeat-style</td>
-      <td>This specifies how the mask should be repeated or tiled in the X and 
-        Y axes. The supported</td>
-    </tr>
     <tr class="odd">
-      <td></td>
-      <td>values are repeat-x, repeat-y, repeat, space, round, no-repeat.</td>
+      <td>repeat-style</td>
+      <td>This specifies how the mask should be repeated or tiled in the X and Y axes. The supported values are repeat-x, repeat-y, repeat, space, round, no-repeat.</td>
     </tr>
     <tr class="even">
       <td>mask-mode</td>
-      <td>Can be alpha or luminance or auto and indicates whether the mask
-        should be treated as a</td>
+      <td>Can be alpha or luminance or auto and indicates whether the mask should be treated as a alpha mask or a luminance mask. If no value is provided and the mask-reference is a direct image then it would be considered as alpha mask (or) if the mask-reference is a URL then it would be considered as luminance mask.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>alpha mask or a luminance mask. If no value is provided and the
-      mask-reference is a direct</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>image then it would be considered as alpha mask (or) if the
-        mask-reference is a URL then it</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>would be considered as luminance mask.</td>
-    </tr>
-    <tr class="even">
       <td>position</td>
-      <td>This specifies the position of each mask layer and is similar in
-      behavior to the background-</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>position property. The value can be provided in 1 value syntax (like
-      top, 10%) or in 2 value</td>
+      <td>This specifies the position of each mask layer and is similar in behavior to the background-position property. The value can be provided in 1 value syntax (like top, 10%) or in 2 value syntx (like top right, 50% 50%).</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>syntx (like top right, 50% 50%).</td>
-    </tr>
-    <tr class="odd">
       <td>geometry-box</td>
-      <td>This specifies the box to which the mask should be clipped (<i>mask
-        painting area</i>) or the box</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>which should be used as reference for the mask's origin (<i>mask
-      positioning area</i>) depending</td>
+      <td>This specifies the box to which the mask should be clipped (<i>mask painting area</i>) or the box which should be used as reference for the mask's origin (<i>mask positioning area</i>) dependingon the property. The list of possible values are content-box, padding-box, border-box, margin-box, fill-box, stroke-box, view-box. Detailed explanation of how each of those values work is available in the <a href="https://www.w3.org/TR/css-masking/#the-mask-clip" target="_blank" rel="noopener noreferrer">W3C Specs</a>.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>on the property. The list of possible values are content-box,
-        padding-box, border-box,</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>margin-box, fill-box, stroke-box, view-box. Detailed explanation of
-        how each of those</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>values work is available in the 
-        <a href="https://www.w3.org/TR/css-masking/#the-mask-clip" 
-        target="_blank" rel="noopener noreferrer">W3C Specs</a>.</td>
-    </tr>
-    <tr class="even">
       <td>bg-size</td>
-      <td>This represents the size of each mask-image layer and has the same
-        syntax as background-</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>size. The value can be length or percentage or auto or cover or
-        contain. Length, percentage</td>
+      <td>This represents the size of each mask-image layer and has the same syntax as background-size. The value can be length or percentage or auto or cover or contain. Length, percentage and auto can either be provided as a single value or as one for each axis.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>and auto can either be provided as a single value or as one for each
-      axis.</td>
-    </tr>
-    <tr class="odd">
       <td>compositing-operator</td>
-      <td>This can be any one among add, subtract, exclude, multiply per layer
-      and defines the type</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>compositing operation that should be used for this layer with those
-      below it. Detailed</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>explanation about each value is available in the
-      <a href="https://www.w3.org/TR/css-masking/#the-mask-composite" target="_blank" rel="noopener noreferrer">W3C
-      Specs</a>.</td>
+      <td>This can be any one among add, subtract, exclude, multiply per layer and defines the type compositing operation that should be used for this layer with those below it. Detailed explanation about each value is available in the <a href="https://www.w3.org/TR/css-masking/#the-mask-composite" target="_blank" rel="noopener noreferrer">W3C Specs</a>.</td>
     </tr>
   </tbody>
 </table>
