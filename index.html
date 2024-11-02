@@ -540,7 +540,7 @@ and patterns.</p>
       <td>All elements with class <span style='color: red;'>blue</span> <b>and</b> <span style='color: red;'>red</span> (a type of Compound selector)</td>
     </tr>
     <tr>
-      <td><span style='color: indigo;'>#headline</span></td>
+      <td style='color: indigo;'>#headline</td>
       <td>ID selector (the element with “id” attribute set to headline)</td>
     </tr>
     <tr>
@@ -583,9 +583,9 @@ the presence of a given attribute or attribute value.</p>
 
 <table border="1" style="border-collapse: collapse;">
   <colgroup>
-    <col style="width: 25%" />
-    <col style="width: 34%" />
-    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 30%" />
+    <col style="width: 50%" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -598,62 +598,42 @@ the presence of a given attribute or attribute value.</p>
     <tr class="odd">
       <td style="text-align: right;">[attr]</td>
       <td>&lt;div attr&gt;</td>
-      <td>With attribute attr</td>
+      <td>With attribute attr.</td>
     </tr>
     <tr class="even">
       <td style="text-align: right;">[attr=<span style='color: red;'>'val'</span>]</td>
       <td>&lt;div attr=<span style='color: red;'>"val"</span>&gt;</td>
-      <td>Where attribute attr has value val</td>
+      <td>Where attribute attr has value val.</td>
     </tr>
     <tr class="odd">
       <td style="text-align: right;">[attr~=<span style='color: red;'>'val'</span>]</td>
       <td>&lt;div attr=<span style='color: red;'>"val val2 val3"</span>&gt;</td>
-      <td>Where val appears in the</td>
+      <td>Where val appears in the whitespace-separated list of attr.</td>
     </tr>
     <tr class="even">
-      <td style="text-align: right;"></td>
-      <td></td>
-      <td>whitespace-separated list of attr</td>
-    </tr>
-    <tr class="odd">
       <td style="text-align: right;">[attr^=<span style='color: red;'>'val'</span>]</td>
       <td>&lt;div attr=<span style='color: red;'>"val1 val2"</span>&gt;</td>
-      <td>Where attr’s value begins with val</td>
-    </tr>
-    <tr class="even">
-      <td style="text-align: right;">[attr$=<span style='color: red;'>'val'</span>]</td>
-      <td>&lt;div attr=<span style='color: red;'>"sth aval"</span>&gt;</td>
-      <td>Where attr’s value ends with val</td>
+      <td>Where attr’s value begins with val.</td>
     </tr>
     <tr class="odd">
+      <td style="text-align: right;">[attr$=<span style='color: red;'>'val'</span>]</td>
+      <td>&lt;div attr=<span style='color: red;'>"sth aval"</span>&gt;</td>
+      <td>Where attr’s value ends with val.</td>
+    </tr>
+    <tr class="even">
       <td style="text-align: right;">[attr*=<span style='color: red;'>'val'</span>]</td>
       <td>&lt;div attr=<span style='color: red;'>"somevalhere"</span>&gt;</td>
-      <td>Where attr contains val anywhere</td>
+      <td>Where attr contains val anywhere.</td>
     </tr>
     <tr class="even">
       <td style="text-align: right;">[attr|=<span style='color: red;'>'val'</span>]</td>
       <td>&lt;div attr=<span style='color: red;'>"val-sth etc"</span>&gt;</td>
-      <td>Where attr’s value is exactly val,</td>
-    </tr>
-    <tr class="odd">
-      <td style="text-align: right;"></td>
-      <td></td>
-      <td>or starts with val and immediately</td>
-    </tr>
-    <tr class="even">
-      <td style="text-align: right;"></td>
-      <td></td>
-      <td>followed by - (U+002D)</td>
+      <td>Where attr’s value is exactly val, or starts with val and immediately followed by - (U+002D).</td>
     </tr>
     <tr class="odd">
       <td style="text-align: right;">[attr=<span style='color: red;'>'val'</span> i]</td>
       <td>&lt;div attr=<span style='color: red;'>"val"</span>&gt;</td>
-      <td>Where attr has val,</td>
-    </tr>
-    <tr class="even">
-      <td style="text-align: right;"></td>
-      <td></td>
-      <td>ignoring val’s letter casing.</td>
+      <td>Where attr has val, ignoring val's letter casing.</td>
     </tr>
   </tbody>
 </table>
@@ -1007,38 +987,22 @@ whether or not a link has been followed (:visited), the mouse is over an element
     <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:any" 
         target="_blank" rel="noopener noreferrer">:any</a></td>
-      <td>Allows you to build sets of related selectors by creating groups that</td>
+      <td>Allows you to build sets of related selectors by creating groups that included items will match. This is an alternative to repeating an entire selector.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>included items will match. This is an alternative to repeating an entire selector.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" 
         target="_blank" rel="noopener noreferrer">:target</a></td>
-      <td>Selects the current active #news element (clicked on a URL</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>containing that anchor name)</td>
+      <td>Selects the current active #news element (clicked on a URL containing that anchor name).</td>
     </tr>
     <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#checked" 
         target="_blank" rel="noopener noreferrer">:checked</a></td>
-      <td>Applies to radio, checkbox, or option elements that are checked</td>
+      <td>Applies to radio, checkbox, or option elements that are checked or toggled into an “on” state.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>or toggled into an “on” state.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:default" 
         target="_blank" rel="noopener noreferrer">:default</a></td>
-      <td>Represents any user interface element that is the default among a group of</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>similar elements.</td>
+      <td>Represents any user interface element that is the default among a group of similar elements.</td>
     </tr>
     <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#enableddisabled" 
@@ -1059,151 +1023,86 @@ whether or not a link has been followed (:visited), the mouse is over an element
       <td><a href="http://tympanus.net/codrops/css_reference/first" 
         target="_blank" rel="noopener noreferrer">:first</a></td>
       <td>Used in conjunction with <span class="citation" data-cites="page">
-      @page</span> rule, this selects the first page in a</td>
+      @page</span> rule, this selects the first page in a printed document.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>printed document.</td>
-    </tr>
-    <tr class="odd">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child" 
         target="_blank" rel="noopener noreferrer">:first-child</a></td>
-      <td>Represents any element that is the first child element of its
-      parent.</td>
-    </tr>
-    <tr class="even">
-      <td><a href="https://www.w3.org/TR/css3-selectors/#first-of-type-pseudo" 
-        target="_blank" rel="noopener noreferrer">:first-of-type</a></td>
-      <td>Applies when an element is the first of the selected element type</td>
+      <td>Represents any element that is the first child element of its parent.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>inside its parent. This may or may not be the first-child.</td>
+      <td><a href="https://www.w3.org/TR/css3-selectors/#first-of-type-pseudo" 
+        target="_blank" rel="noopener noreferrer">:first-of-type</a></td>
+      <td>Applies when an element is the first of the selected element type inside its 
+	    parent. This may or may not be the first-child.</td>
     </tr>
     <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act" 
         target="_blank" rel="noopener noreferrer">:focus</a></td>
-      <td>Applies to any element which has the user’s focus. This can be given
-      by the</td>
+      <td>Applies to any element which has the user’s focus. This can be given by the 
+	    user’s keyboard, mouse events, or other forms of input.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>user’s keyboard, mouse events, or other forms of input.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within" 
         target="_blank" rel="noopener noreferrer">:focus-within</a></td>
       <td>Can be used to highlight a whole section when one element inside it
-      is focused. It matches</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>any element that the :focus pseudo-class matches or that has a
-        descendant focused.</td>
+      is focused. It matches any element that the :focus pseudo-class matches or that has a descendant focused.</td>
     </tr>
     <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen" 
         target="_blank" rel="noopener noreferrer">:full-screen</a></td>
-      <td>Applies to any element displayed in full-screen mode. It selects the
-        whole stack</td>
+      <td>Applies to any element displayed in full-screen mode. It selects the whole 
+	    stack of elements and not just the top level element.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>of elements and not just the top level element.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act" 
         target="_blank" rel="noopener noreferrer">:hover</a></td>
-      <td>Applies to any element being hovered by the user's pointing device,
-      but</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>not activated.</td>
+      <td>Applies to any element being hovered by the user's pointing device, but not activated.</td>
     </tr>
     <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#indeterminate" 
         target="_blank" rel="noopener noreferrer">:indeterminate</a></td>
-      <td>Applies radio or checkbox UI elements which are neither checked nor</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>unchecked, but are in an indeterminate state. This can be due to an</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>element’s attribute or DOM manipulation.</td>
+      <td>Applies radio or checkbox UI elements which are neither checked nor unchecked, 
+	    but are in an indeterminate state. This can be due to an element’s attribute or 
+		DOM manipulation.</td>
     </tr>
     <tr class="odd">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range" 
         target="_blank" rel="noopener noreferrer">:in-range</a></td>
-      <td>The :in-range CSS pseudo-class matches when an element has</td>
+      <td>The :in-range CSS pseudo-class matches when an element has its value attribute 
+	    inside the specified range limitations for this element. It allows the page to 
+		give a feedback that the value currently defined using the elements is inside 
+		the range limits.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>its value attribute inside the specified range limitations for this
-      element.</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>It allows the page to give a feedback that the value currently
-      defined</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>using the elements is inside the range limits.</td>
-    </tr>
-    <tr class="odd">
       <td><a href="http://tympanus.net/codrops/css_reference/invalid/" 
         target="_blank" rel="noopener noreferrer">:invalid</a></td>
-      <td>Applies to &lt;input&gt; elements whose values are invalid according to</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>the type specified in the type= attribute.</td>
+      <td>Applies to &lt;input&gt; elements whose values are invalid according to the 
+	    type specified in the type= attribute.</td>
     </tr>
     <tr class="odd">
       <td><a href="https://www.w3.org/TR/css3-selectors/#lang-pseudo" 
         target="_blank" rel="noopener noreferrer">:lang</a></td>
-      <td>Applies to any element who's wrapping &lt;body&gt; element has a
-      properly</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>designated lang= attribute. For the pseudo-class to be valid, it
-      must</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>contain a
-      <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" 
-        target="_blank" rel="noopener noreferrer">valid 
-        two or three langauge code</a>.</td>
+      <td>Applies to any element who's wrapping &lt;body&gt; element has a properly 
+	    designated lang= attribute. For the pseudo-class to be valid, it must contain a 
+		<a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank" rel="noopener noreferrer">
+		valid two or three langauge code</a>.</td>
     </tr>
     <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child" 
         target="_blank" rel="noopener noreferrer">:last-child</a></td>
-      <td>Represents any element that is the last child element of its
-      parent.</td>
+      <td>Represents any element that is the last child element of its parent.</td>
     </tr>
     <tr class="odd">
       <td><a href="https://www.w3.org/TR/css3-selectors/#last-of-type-pseudo" 
         target="_blank" rel="noopener noreferrer">:last-of-type</a></td>
-      <td>Applies when an element is the last of the selected element type
-      inside</td>
+      <td>Applies when an element is the last of the selected element type inside its 
+	    parent. This may or may not be the last-child.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>its parent. This may or may not be the last-child.</td>
-    </tr>
-    <tr class="odd">
       <td><a href="http://tympanus.net/codrops/css_reference/left_pseudo-class/" 
         target="_blank" rel="noopener noreferrer">:left</a></td>
-      <td>Used in conjunction with the @page rule, this selects all the left</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>pages in a printed document.</td>
+      <td>Used in conjunction with the @page rule, this selects all the left pages in a printed document.</td>
     </tr>
     <tr class="odd">
       <td><a href="https://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited" 
@@ -1213,100 +1112,45 @@ whether or not a link has been followed (:visited), the mouse is over an element
     <tr class="even">
       <td><a href="https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:not" 
         target="_blank" rel="noopener noreferrer">:not()</td>
-      <td>Applies to all elements which <b>do not</b> match the value passed
-      to</td>
+      <td>Applies to all elements which <b>do not</b> match the value passed to :not(p) 
+	    or :not(.class-name) for example. It must have a value to be valid and it can 
+		only contain one selector. However, youi can chain multiple together.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>:not(p) or :not(.class-name) for example. It must have a value to be</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>valid and it can only contain one selector. However, youi can chain
-      multiple</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>together.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#nth-child-pseudo" 
         target="_blank" rel="noopener noreferrer">:nth-child</td>
-      <td>Applies when an element is the n-th element of its parent, where an</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>can be an integer, a mathematical expression (e.g n+3) or the keywords</td>
+      <td>Applies when an element is the n-th element of its parent, where an can be an 
+	    integer, a mathematical expression (e.g n+3) or the keywords odd or even.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>odd or even.</td>
-    </tr>
-    <tr class="odd">
       <td><a href="https://www.w3.org/TR/css3-selectors/#nth-of-type-pseudo" 
         target="_blank" rel="noopener noreferrer">:nth-of-type</td>
-      <td>Applies when an eleent is the n-th element of its parent of the</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>same element type, where n can be an integer, a mathematical</td>
+      <td>Applies when an eleent is the n-th element of its parent of the same element 
+	    type, where n can be an integer, a mathematical expression (e.g n+3) or the 
+		keywords odd or even.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>expression (e.g n+3) or the keywords odd or even.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child" 
         target="_blank" rel="noopener noreferrer">:only-child</td>
-      <td>The :only-child CSS pseudo-class represents any element</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>which is the only child of a parent. This is the same as</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>:first-child:last-child or :nth-child(1):nth-last-child(1),</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>but with a lower specificity.</td>
+      <td>The :only-child CSS pseudo-class represents any element which is the only 
+	    child of a parent. This is the same as :first-child:last-child or 
+		:nth-child(1):nth-last-child(1), but with a lower specificity.</td>
     </tr>
     <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:optional" 
         target="_blank" rel="noopener noreferrer">:optional</td>
-      <td>The :optional CSS pseudo-class represents any element</td>
+      <td>The :optional CSS pseudo-class represents any element that does not have the 
+	    required attribute set on it. This allows forms to easily indicate optional 
+		fields and to style them accordingly.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>that does not have the required attribute set on it. This
-      allows</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>forms to easily indicate optional fields and to style them accordingly.</td>
-    </tr>
-    <tr class="odd">
-      <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range" target="_blank" rel="noopener noreferrer">:out-of-range</td>
-      <td>The :out-of-range CSS pseudo-class matches when an element has its</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>value attribute outside the specified range limitations for this element.</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>It allows the page to give a feedback that the value currently
-      defined using the</td>
-    </tr>
-    <tr class="even">
-      <td></td>
-      <td>element is outside the range limits. A value can be outside of a
-        range if it is</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>either smaller or larger than maximum and minimum set values.</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range" 
+	    target="_blank" rel="noopener noreferrer">:out-of-range</td>
+      <td>The :out-of-range CSS pseudo-class matches when an element has its value 
+	    attribute outside the specified range limitations for this element. It allows the 
+		page to give a feedback that the value currently defined using the element is 
+		outside the range limits. A value can be outside of a range if it is either 
+		smaller or larger than maximum and minimum set values.</td>
     </tr>
     <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown" 
@@ -1329,13 +1173,9 @@ whether or not a link has been followed (:visited), the mouse is over an element
       <td><a href="http://tympanus.net/codrops/css_reference/right_pseudo-class" 
         target="_blank" rel="noopener noreferrer">:right</td>
       <td>Used in conjunction with the <span class="citation"
-      data-cites="page">@page</span> rule, this selects all the right pages in a</td>
+      data-cites="page">@page</span> rule, this selects all the right pages in a printed document.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>printed document.</td>
-    </tr>
-    <tr class="odd">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root" 
         target="_blank" rel="noopener noreferrer">:root</td>
       <td>Matches the root element of a tree representing the document.</td>
@@ -1343,20 +1183,12 @@ whether or not a link has been followed (:visited), the mouse is over an element
     <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:scope" 
         target="_blank" rel="noopener noreferrer">:scope</td>
-      <td>CSS pseudo-class matches the elements that are a reference</td>
+      <td>CSS pseudo-class matches the elements that are a reference point for selectors to match against.</td>
     </tr>
     <tr class="odd">
-      <td></td>
-      <td>point for selectors to match against.</td>
-    </tr>
-    <tr class="even">
       <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" 
         target="_blank" rel="noopener noreferrer">:target</td>
-      <td>Selects the current active #news element (clicked on a URL</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>containing that anchor name).</td>
+      <td>Selects the current active #news element (clicked on a URL containing that anchor name).</td>
     </tr>
     <tr class="even">
       <td><a href="https://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited" 
@@ -8402,23 +8234,20 @@ hsla(240, 100%, 50%, 1)      /* <i>fully opaque blue</i> */</pre>
   <tbody>
     <tr class="odd">
       <td><b>&lt;hue&gt;</b></td>
-      <td>specified in degrees around the color wheel (without units), where 
-        0° is red, 60° is yellow, 120° is</td>
+      <td>specified in degrees around the color wheel (without units), where 0° is red, 
+	    60° is yellow, 120° is green, 180° is cyan, 240° is blue, 300° is magenta, and 
+		360° is red.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>green, 180° is cyan, 240° is blue, 300° is magenta, and 360° is red.</td>
-    </tr>
-    <tr class="odd">
       <td><b>&lt;saturation&gt;</b></td>
       <td>percentage where 0% is fully desaturated (grayscale) and 100% is fully 
-        saturated (vividly colored)</td>
+	    saturated (vividly colored).</td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
       <td><b>&lt;lightness&gt;</b></td>
       <td>percentage where 0% is fully black and 100% is fully white.</td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
       <td><b>&lt;alpha&gt;</b></td>
       <td>a number from 0 - 1 where 0 is fully transparent and 1 is fully opaque.</td>
     </tr>
