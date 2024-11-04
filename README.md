@@ -8,7 +8,7 @@ date last editted: "7/28/2024 Sun 3+pm"
 ---
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>CSS-Notes4Pros</h1>
+<h1>CSS-Notes4Pros</h1>  <!-- 56 chapters -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>CSS Notes For Professionals - intermediate level CSS learning course.  
 All on-line.  No money, unless you'd like to donate. I'm game for that.</p>
