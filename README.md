@@ -446,32 +446,39 @@ change the selection criteria accordingly. They select an element
 using the presence of a given attribute or attribute value.</p>
 
 <table class="greenTbl">
-<thead>
-<tr>
-<th>Selector(1)</th>
-<th>Matched element</th>
-<th>Selects elements...</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lbrack;attr&rbrack;</td><td>&lt;div attr&gt;</td><td>With attribute attr</td></tr>
-<tr>
-<td>&lbrack;attr='val'&rbrack;</td><td>&lt;div attr="val"&gt;</td><td>Where attribute attr has value val</td></tr>
-<tr>
-<td>&lbrack;attr~='val'&rbrack;</td><td>&lt;div attr="val val2 val3"&gt;</td><td>Where val appears in the whitespace-separated list of attr</td></tr>
-<tr>
-<td>&lbrack;attr^='val'&rbrack;</td><td>&lt;div attr="val1 val2"&gt;</td><td>Where attr's value begins with val</td></tr>
-<tr>
-<td>&lbrack;attr$='val'&rbrack;</td><td>&lt;div attr="sth aval"&gt;</td><td>Where attr's value ends with val</td></tr>
-<tr>
-<td>&lbrack;attr&ast;='val'&rbrack;</td><td>&lt;div attr="somevalhere"&gt;</td><td>Where attr contains val anywhere</td></tr>
-<tr>
-<td>&lbrack;attr&vert;='val'&rbrack;</td><td>&lt;div attr="val-sth etc"&gt;</td><td>Where attr's value is exactly val, or starts with val and immediately followed by - (U+002D)</td></tr>
-<tr>
-<td>&lbrack;attr&vert;='val' i&rbrack;</td><td>&lt;div attr="val"&gt;</td><td>Where attr has val, ignoring val's letter casing.</td></tr>
-</tbody>
-</tr>
+  <thead>
+    <tr>
+      <th>Selector(1)</th>
+      <th>Matched element</th>
+      <th>Selects elements...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lbrack;attr&rbrack;</td><td>&lt;div attr&gt;</td><td>With attribute attr</td>
+	</tr>
+    <tr>
+      <td>&lbrack;attr='val'&rbrack;</td><td>&lt;div attr="val"&gt;</td><td>Where attribute attr has value val</td>
+    </tr>
+    <tr>
+      <td>&lbrack;attr~='val'&rbrack;</td><td>&lt;div attr="val val2 val3"&gt;</td><td>Where val appears in the whitespace-separated list of attr</td>
+    </tr>
+    <tr>
+      <td>&lbrack;attr^='val'&rbrack;</td><td>&lt;div attr="val1 val2"&gt;</td><td>Where attr's value begins with val</td>
+	</tr>
+    <tr>
+      <td>&lbrack;attr$='val'&rbrack;</td><td>&lt;div attr="sth aval"&gt;</td><td>Where attr's value ends with val</td>
+    </tr>
+    <tr>
+      <td>&lbrack;attr&ast;='val'&rbrack;</td><td>&lt;div attr="somevalhere"&gt;</td><td>Where attr contains val anywhere</td>
+	</tr>
+    <tr>
+      <td>&lbrack;attr&vert;='val'&rbrack;</td><td>&lt;div attr="val-sth etc"&gt;</td><td>Where attr's value is exactly val, or starts with val and immediately followed by - (U+002D)</td>
+	</tr>
+    <tr>
+      <td>&lbrack;attr&vert;='val' i&rbrack;</td><td>&lt;div attr="val"&gt;</td><td>Where attr has val, ignoring val's letter casing.</td>
+	</tr>
+  </tbody>
 </table>
 
 <b>Notes:</b>
