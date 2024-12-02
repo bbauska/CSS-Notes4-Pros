@@ -511,10 +511,10 @@ and patterns.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-1">Section 4.1: Basic selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table border="1" style="width:400px;">
+<table border="1" style="width:500px;">
   <colgroup>
-    <col style="width: 100px;" />
-    <col style="width: 300px;" />
+    <col style="width: 125px;" />
+    <col style="width: 375px;" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -552,7 +552,7 @@ and patterns.</p>
       <td>Element that matches pseudo-element</td>
     </tr>
     <tr>
-      <td><b><span style='color: pink;'>:lang</span></b>(en)</td>
+      <td><b><span style='color: darkpink;'>:lang</span></b>(en)</td>
       <td>Element that matches :lang declaration, for example <b>&lt;span lang=<span style='color: red;'>"en"</span>&gt;</b></td>
     </tr>
     <tr>
@@ -582,7 +582,7 @@ change the selection criteria accordingly. They select an element using
 the presence of a given attribute or attribute value.</p>
 <!-- border="1" style="border-collapse: collapse;"> -->
 
-<table style="width:600px;">
+<table border="1" style="width:550px;">
   <colgroup>
     <col style="width: 100px;" />
     <col style="width: 150px;" />
@@ -652,7 +652,7 @@ the presence of a given attribute or attribute value.</p>
     target="_blank" rel="noopener noreferrer">See browser support</a>.</li>
 </ol>
 <h4>Details<br/> 
-  [<b>attribute</b>]</h4>
+&nbsp;&nbsp;[<b>attribute</b>]</h4>
 
 <p>Selects elements with the given attribute.</p>
 
@@ -8197,10 +8197,10 @@ saturation and lightness are represented as percentages.</p>
 
 <pre><b>color</b>: hsl(&lt;hue&gt;, &lt;saturation&gt;&percnt;, &lt;lightness&gt;&percnt;);</pre>
 
-<table border="1" style="width:400px;">
+<table border="1" style="width:500px;">
   <colgroup>
     <col style="width: 50px;" />
-    <col style="width: 350px;" />
+    <col style="width: 450px;" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -8248,10 +8248,10 @@ hsla(240, 100%, 50%, 1)      /* <i>fully opaque blue</i> */</pre>
 <pre>hsla(&lt;hue&gt;, &lt;saturation&gt;&percnt;, &lt;lightness&gt;&percnt;, 
 &lt;alpha&gt;);</pre>
 <!-- page 125 -->
-<table border="1" style="width:400px;">
+<table border="1" style="width:500px;">
   <colgroup>
     <col style="width: 50px;" />
-    <col style="width: 350px;" />
+    <col style="width: 450px;" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -8482,7 +8482,7 @@ input&lbrack;type=text&rbrack; {
 <p align="left" width="100%">
 <img src="./images/image190.jpg"
   class="lazyload"
-  style="width:50%"
+  style="width:40%"
   title="Button, slide bar, and text"
   alt="Button, slide bar, and text." />
 </p>
@@ -8769,7 +8769,7 @@ gradient boxes for bullets.</p>
 <p align="left" width="100%">
 <img src="./images/image193.jpg"
   class="lazyload"
-  style="width:25%"
+  style="width:15%"
   title="Example; linear-gradient; Test I, Test II"
   alt="Example; linear-gradient; Test I, Test II." />
 </p>
@@ -8882,7 +8882,7 @@ div #div3 {
 <p align="left" width="100%">
 <img src="./images/image194.jpg"
   class="lazyload"
-  style="width:35%"
+  style="width:25%"
   title="3 overlapping squares; red, blue, green"
   alt="3 overlapping squares; red, blue, green." />
 </p>
@@ -8894,10 +8894,10 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
 
 <pre><b>z-index</b>: &lbrack; number &rbrack; &vert; auto;</pre>
 
-<table border="1" style="width:400px;">
+<table border="1" style="width:500px;">
   <colgroup>
     <col style="width: 50px;" />
-    <col style="width: 350px;" />
+    <col style="width: 450px;" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -8909,13 +8909,9 @@ target="_blank" rel="noopener noreferrer">Demo (jsFiddle)</a>.</p>
     <tr class="odd">
       <td>number</td>
       <td>An integer value. A higher number is higher on the z-index stack. 0
-        is the default value. Negative</td>
+        is the default value. Negative values are allowed.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>values are allowed.</td>
-    </tr>
-    <tr class="odd">
       <td>auto</td>
       <td>Gives the element the same stacking context as its parent. (<b>Default</b>)</td>
     </tr>
@@ -9077,29 +9073,25 @@ target="_blank" rel="noopener noreferrer">MDN</a>:</p>
     <tr class="even">
       <td style="text-align: right;">initial</td>
       <td>Reset the value to the default value taken from behaviors described 
-        in the HTML specifications or</td>
+        in the HTML specifications or from the browser/user default stylesheet.</td>
     </tr>
     <tr class="odd">
-      <td style="text-align: right;"></td>
-      <td>from the browser/user default stylesheet.</td>
-    </tr>
-    <tr class="even">
       <td style="text-align: right;">table</td>
       <td>Behaves like the HTML table element.</td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
       <td style="text-align: right;">table-cell</td>
       <td>Let the element behave like a <b>&lt;td&gt;</b> element.</td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
       <td style="text-align: right;">table-column</td>
       <td>Let the element behave like a <b>&lt;col&gt;</b> element.</td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
       <td style="text-align: right;">table-row</td>
       <td>Let the element behave like a <b>&lt;tr&gt;</b> element.</td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
       <td style="text-align: right;">list-item</td>
       <td>Let the element behave like a <b>&lt;li&gt;</b> element.</td>
     </tr>
@@ -9126,7 +9118,7 @@ text!<b>&lt;</b><b>/span</b><b>&gt;</b>
 <p align="left" width="100%">
 <img src="./images/image195.png"
   class="lazyload"
-  style="width:25%"
+  style="width:15%"
   title="This is some bolded text"
   alt="This is some bolded text." />
 </p>
@@ -9189,7 +9181,7 @@ li {
 <p align="left" width="100%">
 <img src="./images/image197.png"
   class="lazyload"
-  style="width:40%"
+  style="width:25%"
   title="3 horizontal rectangles; First Element, Second Element, Third Element"
   alt="3 horizontal rectangles; First Element, Second Element, Third Element." />
 </p>
@@ -9216,7 +9208,7 @@ li {
 <p align="left" width="100%">
 <img src="./images/image198.png"
   class="lazyload"
-  style="width:50%"
+  style="width:25%"
   title="3 vertical rectangles; First Element, Second Element, Third Element"
   alt="3 vertical rectangles; First Element, Second Element, Third Element." />
 </p>
@@ -9242,7 +9234,7 @@ li {
 <p align="left" width="100%">
 <img src="./images/image199.png"
   class="lazyload"
-  style="width:40%"
+  style="width:25%"
   title="3 horizontal rectangles; First Element, Second Element, Third Element"
   alt="3 horizontal rectangles; First Element, Second Element, Third Element." />
 </p>
@@ -9411,7 +9403,7 @@ layout of a table.</p>
 <p align="left" width="100%">
 <img src="./images/image200.jpg"
   class="lazyload"
-  style="width:45%"
+  style="width:35%"
   title="Two tables, both set to width: 150px"
   alt="Two tables, both set to width: 150px." />
 </p>
@@ -9445,12 +9437,6 @@ overflow or not.</p>
           property provided to the table. If the content fixed of a cell exceeds 
           this width, the cell will not resize but instead, let the content overflow.</td>
     </tr>
-    <tr class="even">
-      <td></td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-    </tr>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9465,7 +9451,7 @@ displayed or not. This has no effect unless border-collapse is set to separate.<
 <p align="left" width="100%">
 <img src="./images/image201.jpg"
   class="lazyload"
-  style="width:50%"
+  style="width:35%"
   title="Two tables with different values set to empty-cells property"
   alt="Two tables with different values set to empty-cells property." />
 </p>
@@ -9522,7 +9508,7 @@ border-collapse property:</p>
 <p align="left" width="100%">
 <img src="./images/image202.jpg"
   class="lazyload"
-  style="width:50%"
+  style="width:35%"
   title="Two tables with different values set to the border-collapse property"
   alt="Two tables with different values set to the border-collapse property." />
 </p>
@@ -9566,7 +9552,7 @@ border-spacing property:</p>
 <p align="left" width="100%">
 <img src="./images/image203.jpg"
   class="lazyload"
-  style="width:50%"
+  style="width:35%"
   title="Two tables with diff values to the border-spacing property"
   alt="Two tables with diff values to the border-spacing property." />
 </p>
@@ -9574,10 +9560,10 @@ border-spacing property:</p>
 <p>The table on the left has <b>border-spacing</b>: 2px (default) while
 the one on the right has <b>border-spacing</b>: 8px.</p>
 
-<table border="1" style="width:650px;">
+<table border="1" style="width:600px;">
   <colgroup>
-    <col style="width: 100px;" />
-    <col style="width: 550px;" />
+    <col style="width: 125px;" />
+    <col style="width: 475px;" />
   </colgroup>
   <thead>
     <tr class="header">
@@ -9610,7 +9596,7 @@ caption-side property:</p>
 <p align="left" width="100%">
 <img src="./images/image204.jpg"
   class="lazyload"
-  style="width:50%"
+  style="width:35%"
   title="Two tables with diff values set to caption-side property"
   alt="Two tables with diff values set to caption-side property." />
 </p>
@@ -9719,7 +9705,7 @@ used for custom and smooth transitions.</p>
 <p align="left" width="100%">
 <img src="./images/image205.jpg"
   class="lazyload"
-  style="width:40%"
+  style="width:25%"
   title="Cubic-bezier"
   alt="Cubic-bezier." />
 </p>
@@ -9732,7 +9718,7 @@ target="_blank" rel="noopener noreferrer">Bézier curve</a>:</p>
 <p align="left" width="100%">
 <img src="./images/image206.jpg"
   class="lazyload"
-  style="width:40%"
+  style="width:25%"
   title="Bézier curve"
   alt="Bézier curve." />
 </p>
@@ -9799,9 +9785,9 @@ div: hover {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Transition</h4>
 
-<table border="1" style="width:500px;">
+<table border="1" style="width:600px;">
   <colgroup>
-    <col style="width: 50px;" />
+    <col style="width: 150px;" />
     <col style="width: 450px;" />
   </colgroup>
   <thead>
@@ -9814,32 +9800,20 @@ div: hover {
     <tr class="odd">
       <td>property</td>
       <td>Either the CSS property to transition on, or all, which specifies
-        all transition-able</td>
+        all transition-able properties.</td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>properties.</td>
-    </tr>
-    <tr class="odd">
       <td>duration</td>
       <td>Transition time, either in seconds or milliseconds.</td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
       <td>timing-function</td>
       <td>Specifies a function to define how intermediate values for
-        properties are computed.</td>
-    </tr>
-    <tr class="odd">
-      <td></td>
-      <td>Common values are ease, linear, and step-end. Check out the
-        <a href="http://easings.net/ 
-        target="_blank" rel="noopener noreferrer">easing function cheat-</a></td>
+        properties are computed. Common values are ease, linear, and step-end. 
+		Check out the <a href="http://easings.net/" target="_blank" rel="noopener noreferrer">
+		easing function cheat-sheet for more</a></td>
     </tr>
     <tr class="even">
-      <td></td>
-      <td>sheet</a> for more.</td>
-    </tr>
-    <tr class="odd">
       <td>delay</td>
       <td>Amount of time, in seconds or milliseconds, to wait before playing
         the animation.</td>
@@ -9849,12 +9823,23 @@ div: hover {
 
 <h4><span class="citation" data-cites="keyframes">@keyframes</span></h4>
 
-<div class="line-block">[ from | to | <b>&lt;percentage&gt;</b> ] | You
-can either specify a set time with a percentage value, or two percentage
-values, IE |<br/>
-                                                      | 10%, 20%, for a
-period of time where the keyframe’s set attributes are set. |<br/>
-block | Any amount of CSS attributes for the keyframe. |</div>
+<table border="1" style="width:600px;">
+  <colgroup>
+    <col style="width: 150px;" />
+    <col style="width: 450px;" />
+  </colgroup>
+  <tbody>
+    <tr class="odd">
+      <td>[ from | to | <b>&lt;percentage&gt;</b></td>
+	  <td>You can can either specify a set time with a percentage value, or two percentage values, IE
+          10%, 20%, for a period of time where the keyframe’s set attributes are set.</td>
+    </tr>
+	<tr class="even">
+	  <td>block</td>
+      <td>Any amount of CSS attributes for the keyframe.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch27-1">Section 27.1: Animations with keyframes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
