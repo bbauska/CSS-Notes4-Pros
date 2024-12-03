@@ -70,7 +70,7 @@
 /*    document.documentElement.scrollTop = 0; */
 /*  } */
 
-  // when the user clicks on the button, scroll to the table of contents near top of document.
+  // when the user clicks on the button, scroll to chapter 1 near top of document.
   function topFunction() {
     document.getElementById('ch1').scrollIntoView();
   }
@@ -87,12 +87,12 @@ All on-line. No money, unless you’d like to donate. I’m an old programmer fr
 the late 70's without retirement. So, would greatly appreciate any donations to paypal 
 @brianbauska@gmail.com or @Brian-Bauska with Venmo.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01/02. javascript/css logos (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01/02. css notes/css logos (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.jpg"
   style="width:20%"
-  title="JavaScript coffee cup logo version"
-  alt="JavaScript coffee cup logo version." />
+  title="CSS Advanced Notes for Professionals book cover"
+  alt="CSS Advanced Notes for Professionals book cover." />
 &nbsp;&nbsp;&nbsp;
 <img src="./images/image002.jpg"
   style="width:20%"
@@ -170,7 +170,6 @@ users will see a flash of unstyled content</a>.</p>
   color: <span class='color: red;'>green</span>;
   text-decoration: <span class='color: red;'>underline</span>;
 }
-
 p {
   font-size: <span class='color: red;'>25px</span>;
   font-family: <span class='color: red;'>'Trebuchet MS', sans-serif</span>;
@@ -183,9 +182,7 @@ required (like the example above) but if it’s saved in a folder, then
 specify it like this;<br/>
 href=<span class='color: red;'>"foldername/style.css"</span></p>
 
-<pre>&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
-type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>
-"foldername/style.css"</span>&gt;</pre>
+<pre>&lt;link rel=<span class='color: red;'>"stylesheet"</span> type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'> "foldername/style.css"</span>&gt;</pre>
 
 <p>External stylesheets are considered the best way to handle your CSS.
 There's a very simple reason for this: when you're managing a site of,
@@ -200,12 +197,8 @@ your website, you only need to update this one file.</p>
 <!-- page 3 -->
 <p>You can load as many CSS files in your HTML page as needed.</p>
 
-<pre>
-&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
-type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"main.css"</span>&gt;
-&lt;link rel=<span class='color: red;'>"stylesheet"</span> 
-type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"override.css"</span>&gt;
-</pre>
+<pre>&lt;link rel=<span class='color: red;'>"stylesheet"</span> type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"main.css"</span>&gt;
+&lt;link rel=<span class='color: red;'>"stylesheet"</span> type=<span class='color: red;'>"text/css"</span> href=<span class='color: red;'>"override.css"</span>&gt;</pre>
 
 <p>CSS rules are applied with some basic rules, and order does matter. For
 example, if you have a main.css file with some code in it:</p>
